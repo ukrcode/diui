@@ -1,0 +1,17 @@
+{
+  "name": "diia-ui",
+  "version": "0.1.0",
+  "description": "The CSS library using Diia design system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "diia",
+    "css-library",
+    "css",
+    "library"
+  ],
+  "author": "",
+  "license": "ISC"
+}
