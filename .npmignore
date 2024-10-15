@@ -1,0 +1,26 @@
+# .npmignore
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build directories
+dist/
+build/
+
+# Configuration files
+*.config.js
+
+# Test directories and files
+test/
+tests/
+*.spec.js
+*.test.js
+
+# Environment files
+.env
+.env.*
