@@ -37,3 +37,6 @@ jspm_packages/
 *.ntvs*
 *.njsproj
 *.sln
+
+# Build folders
+dist/
