@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite --open",
-    "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build": "npm run build:source && npm run minify:build",
+    "build:source": "sass --style=expanded --source-map diui.scss css/diui.css",
+    "minify:build": "postcss css/diui.css --no-map --use cssnano --output css/diui.min.css"
   },
   "keywords": [
     "css-library",
@@ -21,6 +23,9 @@
     "web"
   ],
   "devDependencies": {
+    "cssnano": "^7.0.6",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.79.5",
     "vite": "^5.4.8"
   },
   "author": "",

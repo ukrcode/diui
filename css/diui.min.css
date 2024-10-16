@@ -1,0 +1,16 @@
+.di-heading-1 {
+  font-size: 2.5rem;
+}
+.di-heading-1,
+.di-heading-2 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+.di-heading-2 {
+  font-size: 2rem;
+}
+.di-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
