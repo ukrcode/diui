@@ -1,1 +1,2 @@
-import './style.css'
+import './utils.scss'
+import '../diui.scss';
