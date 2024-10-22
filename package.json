@@ -9,7 +9,7 @@
   "description": "Repo for all diui code",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve:watch:docs": "cd packages/docs && npm run dev"
   },
   "author": "",
   "license": "ISC"
