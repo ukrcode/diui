@@ -1,12 +1,18 @@
+@use "utils" as utils;
+
 :root {
-    --di-c-black: #000000;
-    --di-c-white: #ffffff;
+  @include utils.register-vars(
+    (
+      "c-black": #000000,
+      "c-white": #ffffff,
 
-    --di-c-light-gray: #E7EEF3
-    --di-c-gray: #959595;
+      "c-light-gray": #e7eef3,
+      "c-gray": #959595,
 
-    --di-c-gray-80: rgba(149, 149, 149, .8);
-    --di-c-gray-60: rgba(149, 149, 149, .6);
-    --di-c-gray-40: rgba(149, 149, 149, .4);
-    --di-c-gray-20: rgba(149, 149, 149, .2);
+      "c-gray-80": rgba(149, 149, 149, 0.8),
+      "c-gray-60": rgba(149, 149, 149, 0.6),
+      "c-gray-40": rgba(149, 149, 149, 0.4),
+      "c-gray-20": rgba(149, 149, 149, 0.2),
+    )
+  );
 }

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../lib/typography.scss","../lib/sections.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;AAGJ;EACI;EACA;EACA;;;ACTJ;EACI;EACA;EACA","file":"diui.css"}
+{"version":3,"sourceRoot":"","sources":["../lib/colors.scss","../lib/utils.scss"],"names":[],"mappings":"AAEA;ECWE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA","file":"diui.css"}

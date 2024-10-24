@@ -9,7 +9,9 @@
   "description": "Repo for all diui code",
   "main": "index.js",
   "scripts": {
-    "serve:watch:docs": "cd packages/docs && npm run dev"
+    "serve:watch:docs": "cd packages/docs && npm run dev",
+    "build:all": "cd packages/docs && npm run build && cd ../diui && npm run build",
+    "build:lib": "cd packages/diui && npm run build"
   },
   "author": "",
   "license": "ISC"

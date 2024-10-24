@@ -1,0 +1,21 @@
+@use "config" as config;
+
+@function buildVarName($name, $prefix: "", $suffix: "") {
+  @return "--#{config.$cssvars-prefix}#{$prefix}#{$name}#{$suffix}";
+}
+
+@function getVarAsValue($name, $prefix: "", $suffix: "") {
+  $varName: buildVarName($name, $prefix, $suffix);
+  @return var(#{$varName});
+}
+
+@mixin register-var($name, $value, $prefix: "", $suffix: "") {
+  $varName: buildVarName($name, $prefix, $suffix);
+  #{$varName}: #{$value};
+}
+
+@mixin register-vars($vars, $prefix: "", $suffix: "") {
+  @each $name, $value in $vars {
+    @include register-var($name, $value, $prefix, $suffix);
+  }
+}
