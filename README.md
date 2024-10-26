@@ -13,8 +13,8 @@
 4. Шрифти і заголовки:
     - Опис: <https://thedigital.gov.ua/fonts>
     - [Завантажити шрифти](https://www.dropbox.com/scl/fo/gylb537vfe58stu3wubg0/AMPXS4cao0-0UCPWYaSkXDM?rlkey=mkgtdslwk272lps89wb9hiqqq&e=1&dl=0)
-    - [Типографіка в Figma](https://www.figma.com/file/t4n0PcuOT0qBGU61QVR5z0/Digital-State-UI-kit?node-id=1%3A893)
-    - [Приклад типографіки в Figma](https://www.figma.com/design/t4n0PcuOT0qBGU61QVR5z0/Digital-State-UI-kit?node-id=8-101&node-type=frame&t=TNXMlOBniViQWoCn-0)
+    - [ОФІЦІЙНА Типографіка в Figma](https://www.figma.com/file/t4n0PcuOT0qBGU61QVR5z0/Digital-State-UI-kit?node-id=1%3A893)
+    - [ОФІЦІЙНИЙ Приклад типографіки в Figma](https://www.figma.com/design/t4n0PcuOT0qBGU61QVR5z0/Digital-State-UI-kit?node-id=8-101&node-type=frame&t=TNXMlOBniViQWoCn-0)
 
 ## NPM скрипти
 

@@ -1,0 +1,20 @@
+$beige-light: #f5f5f5;
+$purple: #8a4d76;
+$pink: #ff3366;
+
+// Check how it works
+@use "bulma/sass" with (
+  $cssvars-prefix: 'diui-',
+  $family-primary: '"Nunito", sans-serif',
+  $grey-light: $beige-light,
+  $primary: $purple,
+  $link: $pink,
+  $control-border-width: 2px,
+  $input-shadow: none
+);
+
+// Check how it workss
+@use "diui/sass" with (
+  $cssvars-prefix: 'custom-',
+);
+

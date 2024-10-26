@@ -2,7 +2,16 @@
   "name": "diui",
   "version": "0.1.0",
   "description": "The CSS library using Diia design system.",
-  "main": "index.js",
+  "main": "diui.scss",
+  "unpkg": "css/diui.css",
+  "style": "css/diui.min.css",
+  "files": [
+    "css",
+    "sass",
+    "diui.scss",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "dev": "vite --open",
     "preview": "vite preview",
