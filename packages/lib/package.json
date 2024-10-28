@@ -16,6 +16,7 @@
     "dev": "vite --open",
     "preview": "vite preview",
     "build": "npm run build:source && npm run minify:build",
+    "build:watch": "sass --watch --style=expanded --source-map diui.scss css/diui.css",
     "build:source": "sass --style=expanded --source-map diui.scss css/diui.css",
     "minify:build": "postcss css/diui.css --no-map --use cssnano --output css/diui.min.css"
   },

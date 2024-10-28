@@ -1,0 +1,11 @@
+@use "../utilities/mixins.scss" as mx;
+@use "../config" as config;
+
+// Body styles
+.#{config.$class-prefix}-body {
+  @include mx.basic-font-configuration(11px, 14px);
+
+  @include mx.tablet {
+    @include mx.basic-font-configuration(16px, 24px);
+  }
+}

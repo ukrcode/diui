@@ -1,7 +1,8 @@
-@use "utils" as utils;
+@use "./utilities/css-vars" as cssVars;
 
 :root {
-  @include utils.register-vars(
+  // Colors
+  @include cssVars.register-vars(
     (
       "c-black": #000000,
       "c-white": #ffffff,
@@ -15,4 +16,11 @@
       "c-gray-20": rgba(149, 149, 149, 0.2),
     )
   );
+
+  // Spacing
+  @include cssVars.register-vars(
+    (
+      "base-font-size": 1em,
+    )
+  )
 }

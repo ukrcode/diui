@@ -7,6 +7,122 @@
   --di-c-gray-60: rgba(149, 149, 149, 0.6);
   --di-c-gray-40: rgba(149, 149, 149, 0.4);
   --di-c-gray-20: rgba(149, 149, 149, 0.2);
+  --di-base-font-size: 1em;
+}
+
+.di-h1-display {
+  font-size: 7.9375rem;
+  line-height: 9.75rem;
+}
+
+.di-h1 {
+  font-size: 1.625rem;
+  line-height: 1.75rem;
+}
+@media screen and (min-width: 769px), print {
+  .di-h1 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
+
+.di-h2 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+@media screen and (min-width: 769px), print {
+  .di-h2 {
+    font-size: 2.375rem;
+    line-height: 2.5rem;
+  }
+}
+
+.di-h3 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+@media screen and (min-width: 769px), print {
+  .di-h3 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+
+.di-h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+@media screen and (min-width: 769px), print {
+  .di-h4 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+.di-h5 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+@media screen and (min-width: 769px), print {
+  .di-h5 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+.di-h6 {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+@media screen and (min-width: 769px), print {
+  .di-h6 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.di-text-sm {
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+}
+@media screen and (min-width: 769px), print {
+  .di-text-sm {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+}
+
+.di-text-regular {
+  font-size: 0.6875rem;
+  line-height: 0.875rem;
+}
+@media screen and (min-width: 769px), print {
+  .di-text-regular {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.di-text-xsm {
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+}
+@media screen and (min-width: 769px), print {
+  .di-text-xsm {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+.di-body {
+  font-size: 0.6875rem;
+  line-height: 0.875rem;
+}
+@media screen and (min-width: 769px), print {
+  .di-body {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=diui.css.map */

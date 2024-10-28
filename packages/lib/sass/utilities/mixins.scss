@@ -1,0 +1,25 @@
+@use "../config" as config;
+@use "functions" as fn;
+
+@mixin mobile {
+  @media screen and (max-width: (config.$tablet - 1px)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: config.$tablet), print {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: config.$desktop) {
+    @content;
+  }
+}
+
+@mixin basic-font-configuration($font-size, $line-height) {
+  font-size: fn.to-rem($font-size);
+  line-height: fn.to-rem($line-height);
+}
