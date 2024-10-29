@@ -4,8 +4,20 @@ $gap: 32px !default;
 
 // 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
 $tablet: 769px !default;
-
 // 960px container + 4rem
 $desktop: 960px + 2 * $gap !default;
-
 $font-basis: 16px !default;
+
+// Colors
+$c-black: #000000 !default;
+$c-white: #ffffff !default;
+$c-light-gray: #e7eef3 !default;
+$c-gray: #959595 !default;
+
+// gorse
+$c-warning: #FFDB4D !default;
+// malachite
+$c-success: #04C65D !default;
+// scarlet
+$c-danger: #FF3800 !default;
+

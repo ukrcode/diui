@@ -7,7 +7,21 @@
   --di-c-gray-60: rgba(149, 149, 149, 0.6);
   --di-c-gray-40: rgba(149, 149, 149, 0.4);
   --di-c-gray-20: rgba(149, 149, 149, 0.2);
-  --di-base-font-size: 1em;
+  --di-c-success: #04c65d;
+  --di-c-success-80: rgba(4, 198, 93, 0.8);
+  --di-c-success-60: rgba(4, 198, 93, 0.6);
+  --di-c-success-40: rgba(4, 198, 93, 0.4);
+  --di-c-success-20: rgba(4, 198, 93, 0.2);
+  --di-c-warning: #ffdb4d;
+  --di-c-warning-80: rgba(255, 219, 77, 0.8);
+  --di-c-warning-60: rgba(255, 219, 77, 0.6);
+  --di-c-warning-40: rgba(255, 219, 77, 0.4);
+  --di-c-warning-20: rgba(255, 219, 77, 0.2);
+  --di-c-danger: #ff3800;
+  --di-c-danger-80: rgba(255, 56, 0, 0.8);
+  --di-c-danger-60: rgba(255, 56, 0, 0.6);
+  --di-c-danger-40: rgba(255, 56, 0, 0.4);
+  --di-c-danger-20: rgba(255, 56, 0, 0.2);
 }
 
 .di-h1-display {

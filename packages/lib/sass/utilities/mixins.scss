@@ -1,5 +1,7 @@
 @use "../config" as config;
 @use "functions" as fn;
+@use "./css-vars" as cssVars;
+
 
 @mixin mobile {
   @media screen and (max-width: (config.$tablet - 1px)) {
@@ -22,4 +24,16 @@
 @mixin basic-font-configuration($font-size, $line-height) {
   font-size: fn.to-rem($font-size);
   line-height: fn.to-rem($line-height);
+}
+
+@mixin create-vars-color-set($color-name, $color-value) {
+  @include cssVars.register-vars(
+    (
+      $color-name: rgba($color-value, 1),
+      "#{$color-name}-80": rgba($color-value, 0.8),
+      "#{$color-name}-60": rgba($color-value, 0.6),
+      "#{$color-name}-40": rgba($color-value, 0.4),
+      "#{$color-name}-20": rgba($color-value, 0.2),
+    )
+  );
 }
