@@ -1,0 +1,61 @@
+@use "../utilities/mixins" as mx;
+@use "../config" as config;
+
+// Display
+.#{config.$class-prefix}-h1-display {
+  @include mx.basic-font-configuration(127px, 156px);
+}
+
+// h1
+.#{config.$class-prefix}-h1 {
+  @include mx.basic-font-configuration(26px, 28px);
+
+  @include mx.tablet {
+    @include mx.basic-font-configuration(56px, 60px);
+  }
+}
+
+// h2
+.#{config.$class-prefix}-h2 {
+  @include mx.basic-font-configuration(20px, 24px);
+
+  @include mx.tablet {
+    @include mx.basic-font-configuration(38px, 40px);
+  }
+}
+
+// h3
+.#{config.$class-prefix}-h3 {
+  @include mx.basic-font-configuration(18px, 24px);
+
+  @include mx.tablet {
+    @include mx.basic-font-configuration(28px, 32px);
+  }
+}
+
+// h4
+.#{config.$class-prefix}-h4 {
+  @include mx.basic-font-configuration(16px, 24px);
+
+  @include mx.tablet {
+    @include mx.basic-font-configuration(24px, 28px);
+  }
+}
+
+// h5
+.#{config.$class-prefix}-h5 {
+  @include mx.basic-font-configuration(14px, 20px);
+
+  @include mx.tablet {
+    @include mx.basic-font-configuration(20px, 24px);
+  }
+}
+
+// h6
+.#{config.$class-prefix}-h6 {
+  @include mx.basic-font-configuration(13px, 18px);
+
+  @include mx.tablet {
+    @include mx.basic-font-configuration(18px, 28px);
+  }
+}

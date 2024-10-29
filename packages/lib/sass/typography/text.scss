@@ -1,0 +1,29 @@
+@use "../utilities/mixins.scss" as mx;
+@use "../config" as config;
+
+// text-small
+.#{config.$class-prefix}-text-sm {
+  @include mx.basic-font-configuration(10px, 14px);
+
+  @include mx.tablet {
+    @include mx.basic-font-configuration(13px, 18px);
+  }
+}
+
+// text-regular
+.#{config.$class-prefix}-text-regular {
+  @include mx.basic-font-configuration(11px, 14px);
+
+  @include mx.tablet {
+    @include mx.basic-font-configuration(16px, 24px);
+  }
+}
+
+// text-tiny
+.#{config.$class-prefix}-text-xsm {
+  @include mx.basic-font-configuration(10px, 14px);
+
+  @include mx.tablet {
+    @include mx.basic-font-configuration(12px, 16px);
+  }
+}
