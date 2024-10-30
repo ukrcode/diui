@@ -15,9 +15,31 @@ $c-light-gray: #e7eef3 !default;
 $c-gray: #959595 !default;
 
 // gorse
-$c-warning: #FFDB4D !default;
+$c-warning: #ffdb4d !default;
 // malachite
-$c-success: #04C65D !default;
+$c-success: #04c65d !default;
 // scarlet
-$c-danger: #FF3800 !default;
+$c-danger: #ff3800 !default;
+// radiance
+$c-info: #007eff !default;
+// dodger blue
+$c-dodger-blue: #5b5aff !default;
+// violet
+$c-violet: #aa2b8e !default;
+// brick-red
+$c-brick-red: #cc2e4f !default;
+// pumpkin
+$c-pumpkin: #ff831a !default;
+// yellow green
+$c-yellow-green: #d7f64d !default;
+// lima
+$c-lima: #89db33 !default;
 
+// Gradients
+$gr-primary: linear-gradient(
+    217deg,
+    rgba(255, 0, 0, 0.8),
+    rgba(255, 0, 0, 0) 50.71%
+  ),
+  linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+  linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
