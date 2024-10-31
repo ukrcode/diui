@@ -58,6 +58,8 @@
   --di-c-lima-40: rgba(137, 219, 51, 0.4);
   --di-c-lima-20: rgba(137, 219, 51, 0.2);
   --di-gr-primary: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 50.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  --di-font-family-primary: Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --di-font-family-secondary: Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .di-h1-display {
@@ -165,6 +167,8 @@
 }
 
 .di-body {
+  font-family: var(--di-font-family-primary);
+  margin: 0;
   font-size: 0.6875rem;
   line-height: 0.875rem;
 }
@@ -173,6 +177,10 @@
     font-size: 1rem;
     line-height: 1.5rem;
   }
+}
+
+.di-primary-background {
+  background-image: var(--di-gr-primary);
 }
 
 /*# sourceMappingURL=diui.css.map */

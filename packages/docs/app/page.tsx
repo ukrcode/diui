@@ -1,10 +1,12 @@
-import Image from "next/image";
+import clsx from "clsx";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <section>
-      <h1>Hello, docs!</h1>
+      <div className={clsx(styles["heading-container"], "di-primary-background")} >
+        <h1 className="di-h1">🇺🇦 diui docs</h1>
+      </div>
     </section>
   );
 }

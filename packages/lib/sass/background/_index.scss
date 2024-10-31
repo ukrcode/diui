@@ -1,0 +1,6 @@
+@use "../config" as config;
+@use "../utilities/css-vars.scss" as cssVars;
+
+.#{config.$class-prefix}-primary-background {
+  background-image: cssVars.get-var("gr-primary");
+}

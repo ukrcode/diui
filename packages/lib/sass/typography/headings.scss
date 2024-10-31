@@ -1,13 +1,15 @@
 @use "../utilities/mixins" as mx;
 @use "../config" as config;
 
+$prefix: config.$class-prefix;
+
 // Display
-.#{config.$class-prefix}-h1-display {
+.#{$prefix}-h1-display {
   @include mx.basic-font-configuration(127px, 156px);
 }
 
 // h1
-.#{config.$class-prefix}-h1 {
+.#{$prefix}-h1 {
   @include mx.basic-font-configuration(26px, 28px);
 
   @include mx.tablet {
@@ -16,7 +18,7 @@
 }
 
 // h2
-.#{config.$class-prefix}-h2 {
+.#{$prefix}-h2 {
   @include mx.basic-font-configuration(20px, 24px);
 
   @include mx.tablet {
@@ -25,7 +27,7 @@
 }
 
 // h3
-.#{config.$class-prefix}-h3 {
+.#{$prefix}-h3 {
   @include mx.basic-font-configuration(18px, 24px);
 
   @include mx.tablet {
@@ -34,7 +36,7 @@
 }
 
 // h4
-.#{config.$class-prefix}-h4 {
+.#{$prefix}-h4 {
   @include mx.basic-font-configuration(16px, 24px);
 
   @include mx.tablet {
@@ -43,7 +45,7 @@
 }
 
 // h5
-.#{config.$class-prefix}-h5 {
+.#{$prefix}-h5 {
   @include mx.basic-font-configuration(14px, 20px);
 
   @include mx.tablet {
@@ -52,7 +54,7 @@
 }
 
 // h6
-.#{config.$class-prefix}-h6 {
+.#{$prefix}-h6 {
   @include mx.basic-font-configuration(13px, 18px);
 
   @include mx.tablet {

@@ -32,4 +32,12 @@
       "gr-primary": config.$gr-primary,
     )
   );
+
+  // Fonts
+  @include cssVars.register-vars(
+    (
+      "font-family-primary": "Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif",
+      "font-family-secondary": "Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif",
+    )
+  );
 }

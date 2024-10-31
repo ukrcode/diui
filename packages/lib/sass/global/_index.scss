@@ -1,11 +1,18 @@
 @use "../utilities/mixins.scss" as mx;
 @use "../config" as config;
+@use "../utilities/css-vars";
 
 // Body styles
 .#{config.$class-prefix}-body {
+  font-family: css-vars.get-var("font-family-primary");
+  margin: 0; // Remove default margin
+  
+  // Set font size and line height for MOBILE
   @include mx.basic-font-configuration(11px, 14px);
 
+  // Set font size and line height for TABLET and DESKTOP
   @include mx.tablet {
     @include mx.basic-font-configuration(16px, 24px);
   }
+
 }
