@@ -6,7 +6,9 @@ $gap: 32px !default;
 $tablet: 769px !default;
 // 960px container + 4rem
 $desktop: 960px + 2 * $gap !default;
-$font-basis: 16px !default;
+
+// You can't change it, it sets all values in REM
+$font-basis: 16px;
 
 // Colors
 $c-black: #000000 !default;

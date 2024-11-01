@@ -1,16 +1,35 @@
 @use "../utilities/mixins" as mx;
+@use "../utilities/functions" as fn;
 @use "../config" as config;
+@use "sass:math" as math;
 
 $prefix: config.$class-prefix;
+
+$basic-top-margin: fn.to-rem(80px);
+$mobile-top-margin: fn.to-rem(40px);
+$basic-bottom-margin: fn.to-rem(16px);
+$mobile-bottom-margin: fn.to-rem(8px);
+
+@mixin apply-heading-margins {
+  margin-top: $mobile-top-margin;
+  margin-bottom: $mobile-bottom-margin;
+
+  @include mx.tablet {
+    margin-top: $basic-top-margin;
+    margin-bottom: $basic-bottom-margin;
+  }
+}
 
 // Display
 .#{$prefix}-h1-display {
   @include mx.basic-font-configuration(127px, 156px);
+  @include apply-heading-margins;
 }
 
 // h1
 .#{$prefix}-h1 {
   @include mx.basic-font-configuration(26px, 28px);
+  @include apply-heading-margins;
 
   @include mx.tablet {
     @include mx.basic-font-configuration(56px, 60px);
@@ -20,6 +39,7 @@ $prefix: config.$class-prefix;
 // h2
 .#{$prefix}-h2 {
   @include mx.basic-font-configuration(20px, 24px);
+  @include apply-heading-margins;
 
   @include mx.tablet {
     @include mx.basic-font-configuration(38px, 40px);
@@ -29,6 +49,7 @@ $prefix: config.$class-prefix;
 // h3
 .#{$prefix}-h3 {
   @include mx.basic-font-configuration(18px, 24px);
+  @include apply-heading-margins;
 
   @include mx.tablet {
     @include mx.basic-font-configuration(28px, 32px);
@@ -38,6 +59,7 @@ $prefix: config.$class-prefix;
 // h4
 .#{$prefix}-h4 {
   @include mx.basic-font-configuration(16px, 24px);
+  @include apply-heading-margins;
 
   @include mx.tablet {
     @include mx.basic-font-configuration(24px, 28px);
@@ -47,6 +69,7 @@ $prefix: config.$class-prefix;
 // h5
 .#{$prefix}-h5 {
   @include mx.basic-font-configuration(14px, 20px);
+  @include apply-heading-margins;
 
   @include mx.tablet {
     @include mx.basic-font-configuration(20px, 24px);
@@ -56,6 +79,7 @@ $prefix: config.$class-prefix;
 // h6
 .#{$prefix}-h6 {
   @include mx.basic-font-configuration(13px, 18px);
+  @include apply-heading-margins;
 
   @include mx.tablet {
     @include mx.basic-font-configuration(18px, 28px);
