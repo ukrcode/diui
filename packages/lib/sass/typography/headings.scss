@@ -5,31 +5,48 @@
 
 $prefix: config.$class-prefix;
 
-$basic-top-margin: fn.to-rem(80px);
-$mobile-top-margin: fn.to-rem(40px);
-$basic-bottom-margin: fn.to-rem(16px);
-$mobile-bottom-margin: fn.to-rem(8px);
+// h1-h3 margins
+$big-heading-top-margin: fn.to-rem(80px);
+$big-heading-mobile-top-margin: fn.to-rem(40px);
+$big-heading-basic-bottom-margin: fn.to-rem(16px);
+$big-heading-mobile-bottom-margin: fn.to-rem(8px);
 
-@mixin apply-heading-margins {
-  margin-top: $mobile-top-margin;
-  margin-bottom: $mobile-bottom-margin;
+// h4-h6 margins
+$small-heading-top-margin: fn.to-rem(40px);
+$small-heading-mobile-top-margin: fn.to-rem(20px);
+$small-heading-basic-bottom-margin: fn.to-rem(8px);
+$small-heading-mobile-bottom-margin: fn.to-rem(4px);
+
+@mixin apply-big-heading-margins {
+  margin-top: $big-heading-mobile-top-margin;
+  margin-bottom: $big-heading-mobile-bottom-margin;
 
   @include mx.tablet {
-    margin-top: $basic-top-margin;
-    margin-bottom: $basic-bottom-margin;
+    margin-top: $big-heading-top-margin;
+    margin-bottom: $big-heading-basic-bottom-margin;
+  }
+}
+
+@mixin apply-small-heading-margins {
+  margin-top: $small-heading-mobile-top-margin;
+  margin-bottom: $small-heading-mobile-bottom-margin;
+
+  @include mx.tablet {
+    margin-top: $small-heading-top-margin;
+    margin-bottom: $small-heading-basic-bottom-margin;
   }
 }
 
 // Display
 .#{$prefix}-h1-display {
   @include mx.basic-font-configuration(127px, 156px);
-  @include apply-heading-margins;
+  @include apply-big-heading-margins;
 }
 
 // h1
 .#{$prefix}-h1 {
   @include mx.basic-font-configuration(26px, 28px);
-  @include apply-heading-margins;
+  @include apply-big-heading-margins;
 
   @include mx.tablet {
     @include mx.basic-font-configuration(56px, 60px);
@@ -39,7 +56,7 @@ $mobile-bottom-margin: fn.to-rem(8px);
 // h2
 .#{$prefix}-h2 {
   @include mx.basic-font-configuration(20px, 24px);
-  @include apply-heading-margins;
+  @include apply-big-heading-margins;
 
   @include mx.tablet {
     @include mx.basic-font-configuration(38px, 40px);
@@ -49,7 +66,7 @@ $mobile-bottom-margin: fn.to-rem(8px);
 // h3
 .#{$prefix}-h3 {
   @include mx.basic-font-configuration(18px, 24px);
-  @include apply-heading-margins;
+  @include apply-big-heading-margins;
 
   @include mx.tablet {
     @include mx.basic-font-configuration(28px, 32px);
@@ -59,7 +76,7 @@ $mobile-bottom-margin: fn.to-rem(8px);
 // h4
 .#{$prefix}-h4 {
   @include mx.basic-font-configuration(16px, 24px);
-  @include apply-heading-margins;
+  @include apply-small-heading-margins;
 
   @include mx.tablet {
     @include mx.basic-font-configuration(24px, 28px);
@@ -69,7 +86,7 @@ $mobile-bottom-margin: fn.to-rem(8px);
 // h5
 .#{$prefix}-h5 {
   @include mx.basic-font-configuration(14px, 20px);
-  @include apply-heading-margins;
+  @include apply-small-heading-margins;
 
   @include mx.tablet {
     @include mx.basic-font-configuration(20px, 24px);
@@ -79,7 +96,7 @@ $mobile-bottom-margin: fn.to-rem(8px);
 // h6
 .#{$prefix}-h6 {
   @include mx.basic-font-configuration(13px, 18px);
-  @include apply-heading-margins;
+  @include apply-small-heading-margins;
 
   @include mx.tablet {
     @include mx.basic-font-configuration(18px, 28px);

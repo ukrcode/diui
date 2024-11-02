@@ -135,13 +135,13 @@
 .di-h4 {
   font-size: 1rem;
   line-height: 1.5rem;
-  margin-top: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
 }
 @media screen and (min-width: 769px), print {
   .di-h4 {
-    margin-top: 5rem;
-    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 @media screen and (min-width: 769px), print {
@@ -154,13 +154,13 @@
 .di-h5 {
   font-size: 0.875rem;
   line-height: 1.25rem;
-  margin-top: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
 }
 @media screen and (min-width: 769px), print {
   .di-h5 {
-    margin-top: 5rem;
-    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 @media screen and (min-width: 769px), print {
@@ -173,13 +173,13 @@
 .di-h6 {
   font-size: 0.8125rem;
   line-height: 1.125rem;
-  margin-top: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
 }
 @media screen and (min-width: 769px), print {
   .di-h6 {
-    margin-top: 5rem;
-    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 @media screen and (min-width: 769px), print {
@@ -224,6 +224,7 @@
 
 .di-body {
   font-family: var(--di-font-family-primary);
+  font-display: swap;
   margin: 0;
   font-size: 0.6875rem;
   line-height: 0.875rem;

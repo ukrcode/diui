@@ -1,0 +1,33 @@
+// TODO
+// APPLY ASSETS PATH
+// https://web.dev/articles/font-best-practices
+
+@mixin register-primary-font {
+  @font-face {
+    font-family: "e-ukraine";
+    font-style: normal;
+    src: url("../../font/e-Ukraine-Light.woff") format("woff");
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: "e-ukraine";
+    font-style: normal;
+    src: url("../../font/e-Ukraine-Regular.woff") format("woff");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "e-ukraine";
+    font-style: normal;
+    src: url("../../font/e-Ukraine-Medium.woff") format("woff");
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: "e-ukraine-heading";
+    font-style: normal;
+    src: url("../../font/e-UkraineHead-Regular.woff") format("woff");
+    font-weight: 400;
+  }
+}

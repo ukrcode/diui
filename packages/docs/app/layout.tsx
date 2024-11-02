@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./ui/header";
 
-import "diui/css/diui.min.css";
+// TODO switch to node_modules when finish development
+import "../../lib/css/diui.css";
 
 export const metadata: Metadata = {
   title: "diui CSS library documentation",
