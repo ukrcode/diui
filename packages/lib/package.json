@@ -16,8 +16,8 @@
     "dev": "vite --open",
     "preview": "vite preview",
     "build": "npm run build:source && npm run minify:build",
-    "build:watch": "sass --watch --style=expanded --source-map diui.scss css/diui.css",
-    "build:source": "sass --style=expanded --source-map diui.scss css/diui.css",
+    "build:watch": "postcss --watch diui.scss --output css/diui.css",
+    "build:source": "postcss diui.scss --output css/diui.css",
     "minify:build": "postcss css/diui.css --no-map --use cssnano --output css/diui.min.css"
   },
   "keywords": [
@@ -33,9 +33,10 @@
     "web"
   ],
   "devDependencies": {
+    "@csstools/postcss-sass": "^5.1.1",
     "cssnano": "^7.0.6",
     "postcss-cli": "^11.0.0",
-    "sass": "^1.79.5",
+    "postcss-scss": "^4.0.9",
     "vite": "^5.4.8"
   },
   "author": "",
