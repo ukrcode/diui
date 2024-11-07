@@ -1,6 +1,6 @@
 @use "../utilities/mixins" as mx;
 @use "../config" as config;
-@use "../utilities/css-vars";
+@use "../utilities/css-vars" as cssVars;
 @use "./fonts" as fonts;
 
 // Register primary fonts
@@ -8,15 +8,14 @@
 
 // Body styles
 .#{config.$class-prefix}-body {
-  font-family: css-vars.get-var("font-family-primary");
-  // font-display: swap;
   margin: 0; // Remove default margin
-  
+  color: cssVars.get-var("text-color");
+
   // Set font size and line height for MOBILE
-  @include mx.basic-font-configuration(11px, 14px);
+  @include mx.basic-font-configuration(11px, 14px, 300);
 
   // Set font size and line height for TABLET and DESKTOP
   @include mx.tablet {
-    @include mx.basic-font-configuration(16px, 24px);
+    @include mx.basic-font-configuration(16px, 24px, 300);
   }
 }

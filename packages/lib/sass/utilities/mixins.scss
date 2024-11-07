@@ -21,9 +21,12 @@
   }
 }
 
-@mixin basic-font-configuration($font-size, $line-height) {
+@mixin basic-font-configuration($font-size, $line-height, $font-weight: 400) {
   font-size: fn.to-rem($font-size);
   line-height: fn.to-rem($line-height);
+  
+  font-family: cssVars.get-var("font-family-primary");
+  font-weight: $font-weight;
 }
 
 @mixin create-vars-color-set($color-name, $color-value) {

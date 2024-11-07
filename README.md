@@ -17,6 +17,7 @@
 2. Офіційний анонс від агенції Федорів: <https://diia.fedoriv.com/>
 3. Анонс від київського дизайн-бюро Spiilka: <https://spiilka.com/projects/diia-web>
 4. Неофіційна реалізація в `Figma`: <https://www.figma.com/community/file/1270778058754270235>
+    - [Посилання на редагування](https://www.figma.com/design/zcNMq1KZboyZHrlNz66e54/Diia---Design-System-%2F-%D0%94%D1%96%D1%8F---%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-(Community)?node-id=0-1&node-type=canvas&t=l79ViJI0tYb9eFl5-0).
 5. Шрифти і заголовки:
     - Опис: <https://thedigital.gov.ua/fonts>
     - [Завантажити шрифти](https://www.dropbox.com/scl/fo/gylb537vfe58stu3wubg0/AMPXS4cao0-0UCPWYaSkXDM?rlkey=mkgtdslwk272lps89wb9hiqqq&e=1&dl=0)

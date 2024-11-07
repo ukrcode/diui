@@ -1,6 +1,6 @@
-@mixin apply-font-face($file-name, $font-weight) {
+@mixin apply-font-face($file-name, $font-weight, $font-family: "e-ukraine") {
   @font-face {
-    font-family: "e-ukraine";
+    font-family: $font-family;
     font-style: normal;
     src: url("/#{$file-name}.woff2") format("woff2"),
       url("/#{$file-name}.woff") format("woff"),
@@ -21,5 +21,7 @@
   @include apply-font-face("e-Ukraine-Medium", 500);
 
   // Heading Regular
-  @include apply-font-face("e-UkraineHead-Regular", 400);
+  @include apply-font-face("e-UkraineHead-Regular", 400, "e-ukraine-head");
+
+  
 }

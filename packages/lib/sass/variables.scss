@@ -38,6 +38,9 @@
     (
       "font-family-primary": "e-ukraine, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif",
       "font-family-secondary": "e-ukraine, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif",
+      "text-color": cssVars.get-var("c-black"),
+      "background-color": cssVars.get-var("c-white"),
     )
   );
+
 }

@@ -60,11 +60,15 @@
   --di-gr-primary: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 50.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
   --di-font-family-primary: e-ukraine, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
   --di-font-family-secondary: e-ukraine, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --di-text-color: var(--di-c-black);
+  --di-background-color: var(--di-c-white);
 }
 
 .di-h1-display {
   font-size: 7.9375rem;
   line-height: 9.75rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
 }
@@ -78,6 +82,8 @@
 .di-h1 {
   font-size: 1.625rem;
   line-height: 1.75rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
 }
@@ -91,12 +97,16 @@
   .di-h1 {
     font-size: 3.5rem;
     line-height: 3.75rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
   }
 }
 
 .di-h2 {
   font-size: 1.25rem;
   line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
 }
@@ -110,12 +120,16 @@
   .di-h2 {
     font-size: 2.375rem;
     line-height: 2.5rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
   }
 }
 
 .di-h3 {
   font-size: 1.125rem;
   line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
 }
@@ -129,12 +143,16 @@
   .di-h3 {
     font-size: 1.75rem;
     line-height: 2rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
   }
 }
 
 .di-h4 {
   font-size: 1rem;
   line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
   margin-top: 1.25rem;
   margin-bottom: 0.25rem;
 }
@@ -148,12 +166,16 @@
   .di-h4 {
     font-size: 1.5rem;
     line-height: 1.75rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
   }
 }
 
 .di-h5 {
   font-size: 0.875rem;
   line-height: 1.25rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
   margin-top: 1.25rem;
   margin-bottom: 0.25rem;
 }
@@ -167,12 +189,16 @@
   .di-h5 {
     font-size: 1.25rem;
     line-height: 1.5rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
   }
 }
 
 .di-h6 {
   font-size: 0.8125rem;
   line-height: 1.125rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
   margin-top: 1.25rem;
   margin-bottom: 0.25rem;
 }
@@ -186,39 +212,69 @@
   .di-h6 {
     font-size: 1.125rem;
     line-height: 1.75rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
   }
 }
 
 .di-text-sm {
   font-size: 0.625rem;
   line-height: 0.875rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
 }
 @media screen and (min-width: 769px), print {
   .di-text-sm {
     font-size: 0.8125rem;
     line-height: 1.125rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
   }
 }
 
 .di-text-regular {
   font-size: 0.6875rem;
   line-height: 0.875rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
 }
 @media screen and (min-width: 769px), print {
   .di-text-regular {
     font-size: 1rem;
     line-height: 1.5rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
   }
 }
 
 .di-text-xsm {
   font-size: 0.625rem;
   line-height: 0.875rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
 }
 @media screen and (min-width: 769px), print {
   .di-text-xsm {
     font-size: 0.75rem;
     line-height: 1rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
+  }
+}
+
+.di-link {
+  color: var(--di-text-color);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
+}
+@media screen and (min-width: 769px), print {
+  .di-link {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
   }
 }
 
@@ -244,22 +300,26 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "e-ukraine";
+  font-family: "e-ukraine-head";
   font-style: normal;
   src: url("fonts/e-UkraineHead-Regular.woff2") format("woff2"), url("fonts/e-UkraineHead-Regular.woff") format("woff"), url("fonts/e-UkraineHead-Regular.otf") format("opentype");
   font-weight: 400;
   font-display: swap;
 }
 .di-body {
-  font-family: var(--di-font-family-primary);
   margin: 0;
+  color: var(--di-text-color);
   font-size: 0.6875rem;
   line-height: 0.875rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 300;
 }
 @media screen and (min-width: 769px), print {
   .di-body {
     font-size: 1rem;
     line-height: 1.5rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 300;
   }
 }
 

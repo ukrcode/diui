@@ -5,7 +5,10 @@ export default function HeadingsExample() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
         non! Fuga eaque quae quas architecto repellat amet, nobis qui ex, enim
         repellendus dolores quidem aliquam nulla nostrum doloremque dolorum
-        blanditiis!
+        blanditiis:{" "}
+        <a className="di-link" href="#">
+          Some cool Link
+        </a>
       </p>
 
       <h1 className="di-h1">
