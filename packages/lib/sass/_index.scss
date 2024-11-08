@@ -1,5 +1,6 @@
-@forward "config";
-@forward "variables";
-@forward "typography";
-@forward "global";
-@forward "background";
+@use "config";
+@use "variables";
+@use "typography";
+@use "global";
+@use "background";
+@use "colors";

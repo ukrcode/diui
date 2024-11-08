@@ -1,0 +1,25 @@
+@use "sass:color" as color;
+@use "../utilities/css-vars" as cssVars;
+@use "../utilities/mixins" as mx;
+@use "../config" as config;
+
+$prefix: config.$class-prefix;
+
+@mixin create-text-color($color-name) {
+  .#{$prefix}-#{$color-name}-text {
+    color: cssVars.get-var(c-#{$color-name});
+  }
+}
+
+// Create color text classes
+@include create-text-color("gray");
+@include create-text-color("success");
+@include create-text-color("warning");
+@include create-text-color("danger");
+@include create-text-color("info");
+@include create-text-color("dodger-blue");
+@include create-text-color("violet");
+@include create-text-color("brick-red");
+@include create-text-color("pumpkin");
+@include create-text-color("yellow-green");
+@include create-text-color("lima");
