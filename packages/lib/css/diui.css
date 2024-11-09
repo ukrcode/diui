@@ -370,4 +370,48 @@
 .di-lima-text {
   color: var(--di-c-lima);
 }
+
+.di-gray-bg {
+  background-color: var(--di-c-gray-40);
+}
+
+.di-success-bg {
+  background-color: var(--di-c-success-40);
+}
+
+.di-warning-bg {
+  background-color: var(--di-c-warning-40);
+}
+
+.di-danger-bg {
+  background-color: var(--di-c-danger-40);
+}
+
+.di-info-bg {
+  background-color: var(--di-c-info-40);
+}
+
+.di-dodger-blue-bg {
+  background-color: var(--di-c-dodger-blue-40);
+}
+
+.di-violet-bg {
+  background-color: var(--di-c-violet-40);
+}
+
+.di-brick-red-bg {
+  background-color: var(--di-c-brick-red-40);
+}
+
+.di-pumpkin-bg {
+  background-color: var(--di-c-pumpkin-40);
+}
+
+.di-yellow-green-bg {
+  background-color: var(--di-c-yellow-green-40);
+}
+
+.di-lima-bg {
+  background-color: var(--di-c-lima-40);
+}
 /*# sourceMappingURL=diui.css.map */

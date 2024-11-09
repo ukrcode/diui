@@ -1,6 +1,4 @@
-@use "sass:color" as color;
 @use "../utilities/css-vars" as cssVars;
-@use "../utilities/mixins" as mx;
 @use "../config" as config;
 
 $prefix: config.$class-prefix;
