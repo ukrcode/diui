@@ -1,9 +1,10 @@
-import HeadingsExample from "../ui/typography/headings-example";
+'use client';
+import PageDescription from "./page-description.mdx";
 
 export default function Typography() {
   return (
     <article className="utils-page">
-      <HeadingsExample />;
+      <PageDescription />
     </article>
   );
 }
