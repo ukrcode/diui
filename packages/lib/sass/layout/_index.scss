@@ -1,0 +1,18 @@
+@use "../utilities/mixins" as mx;
+@use "../utilities/functions" as fn;
+@use "../config" as config;
+
+.#{config.$class-prefix}-container {
+    padding-right: fn.to-rem(15px);
+    padding-left: fn.to-rem(15px);
+    margin-right: auto;
+    margin-left: auto;
+
+    @include mx.tablet {
+        padding: 0 fn.to-rem(64px);
+    }
+
+    @include mx.desktop {
+        padding: 0 fn.to-rem(80px);
+    }
+}

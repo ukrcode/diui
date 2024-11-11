@@ -2,28 +2,55 @@
 @use "../config" as config;
 
 // text-small
-.#{config.$class-prefix}-text-sm {
-  @include mx.basic-font-configuration(10px, 14px);
+.#{config.$class-prefix}-sm-text {
+  @include mx.basic-font-configuration(10px, 14px, 300);
 
   @include mx.tablet {
-    @include mx.basic-font-configuration(13px, 18px);
+    @include mx.basic-font-configuration(13px, 18px, 300);
   }
 }
 
 // text-regular
-.#{config.$class-prefix}-text-regular {
-  @include mx.basic-font-configuration(11px, 14px);
+.#{config.$class-prefix}-body-text {
+  @include mx.basic-font-configuration(11px, 14px, 300);
 
   @include mx.tablet {
-    @include mx.basic-font-configuration(16px, 24px);
+    @include mx.basic-font-configuration(16px, 24px, 300);
   }
 }
 
+// Bold Text
+.#{config.$class-prefix}-bold-text {
+  font-weight: 400;
+}
+
 // text-tiny
-.#{config.$class-prefix}-text-xsm {
-  @include mx.basic-font-configuration(10px, 14px);
+.#{config.$class-prefix}-xsm-text {
+  @include mx.basic-font-configuration(10px, 14px, 300);
 
   @include mx.tablet {
-    @include mx.basic-font-configuration(12px, 16px);
+    @include mx.basic-font-configuration(12px, 16px, 300);
   }
+}
+
+// Underline Large
+.#{config.$class-prefix}-lg-underline {
+  text-decoration: underline;
+  @include mx.basic-font-configuration(18px, 28px, 400);
+}
+
+// Underline Medium
+.#{config.$class-prefix}-md-underline {
+  text-decoration: underline;
+  @include mx.basic-font-configuration(11px, 14px, 300);
+  
+  @include mx.tablet {
+    @include mx.basic-font-configuration(16px, 24px, 400);
+  }
+}
+
+// Underline Small
+.#{config.$class-prefix}-sm-underline {
+  text-decoration: underline;
+  @include mx.basic-font-configuration(13px, 18px, 400);
 }

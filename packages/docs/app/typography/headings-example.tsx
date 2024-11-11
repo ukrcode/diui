@@ -12,7 +12,7 @@ export default function HeadingsExample() {
       </p>
 
       <h1 className="di-h1">
-        H1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibu
+        H1 Lorem ipsum dolor
       </h1>
 
       <p>
