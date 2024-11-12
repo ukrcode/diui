@@ -4,7 +4,7 @@ $class-prefix: "di" !default;
 $cssvars-prefix: "di-" !default;
 $gap: 32px !default;
 
-// 576, 
+// 576,
 // 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
 // $tablet: 769px !default; FROM BULMA
 $tablet: 576px !default;
@@ -18,8 +18,6 @@ $c-white: #ffffff !default;
 $c-light-gray: #e7eef3 !default;
 $c-gray: #959595 !default;
 
-// gorse
-$c-warning: #ffdb4d !default;
 // malachite
 $c-success: #04c65d !default;
 // scarlet

@@ -1,7 +1,7 @@
 @use "../config" as config;
 @use "functions" as fn;
 @use "./css-vars" as cssVars;
-
+@use "sass:map" as map;
 
 @mixin mobile {
   @media screen and (max-width: (config.$tablet - 1px)) {
@@ -24,7 +24,7 @@
 @mixin basic-font-configuration($font-size, $line-height, $font-weight: 400) {
   font-size: fn.to-rem($font-size);
   line-height: fn.to-rem($line-height);
-  
+
   font-family: cssVars.get-var("font-family-primary");
   font-weight: $font-weight;
 }
@@ -37,6 +37,18 @@
       "#{$color-name}-60": rgba($color-value, 0.6),
       "#{$color-name}-40": rgba($color-value, 0.4),
       "#{$color-name}-20": rgba($color-value, 0.2),
+    )
+  );
+}
+
+@mixin create-colors-set-vars($color-name, $colors) {
+  @include cssVars.register-vars(
+    (
+      $color-name: map.get($colors, "100"),
+      "#{$color-name}-80": map.get($colors, "80"),
+      "#{$color-name}-60": map.get($colors, "60"),
+      "#{$color-name}-40": map.get($colors, "40"),
+      "#{$color-name}-20": map.get($colors, "20"),
     )
   );
 }

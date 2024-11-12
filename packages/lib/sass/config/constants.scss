@@ -2,3 +2,12 @@
 
 $font-basis: 16px; // You can't change it, it sets all values in REM
 $font-basis-line-height: 24px;
+
+// gorse
+$c-warning-colors: (
+  "100": #ffdb4d,
+  "80": #ffe270,
+  "60": #fee994,
+  "40": #fff0b7,
+  "20": #fff7db,
+);
