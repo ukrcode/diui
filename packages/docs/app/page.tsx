@@ -10,9 +10,9 @@ export default function Home() {
       >
         <h1 className="di-h1">🇺🇦 diui</h1>
         <p className="di-body-text">
-          <span className="di-md-underline">неофіційна</span> CSS бібліотека
+          <span className="di-underline-md">неофіційна</span> CSS бібліотека
           побудована{" "}
-          <span className="di-md-underline">на базі дизайн системи Дії</span>
+          <span className="di-underline-md">на базі дизайн системи Дії</span>
         </p>
       </div>
 

@@ -34,23 +34,31 @@
 }
 
 // Underline Large
-.#{config.$class-prefix}-lg-underline {
+.#{config.$class-prefix}-underline-lg {
   text-decoration: underline;
-  @include mx.basic-font-configuration(18px, 28px, 400);
+  @include mx.basic-font-configuration(13px, 18px, 400);
+
+  @include mx.tablet {
+    @include mx.basic-font-configuration(18px, 28px, 400);
+  }
 }
 
 // Underline Medium
-.#{config.$class-prefix}-md-underline {
+.#{config.$class-prefix}-underline-md {
   text-decoration: underline;
-  @include mx.basic-font-configuration(11px, 14px, 300);
-  
+  @include mx.basic-font-configuration(11px, 14px, 400);
+
   @include mx.tablet {
     @include mx.basic-font-configuration(16px, 24px, 400);
   }
 }
 
 // Underline Small
-.#{config.$class-prefix}-sm-underline {
+.#{config.$class-prefix}-underline-sm {
   text-decoration: underline;
-  @include mx.basic-font-configuration(13px, 18px, 400);
+  @include mx.basic-font-configuration(10px, 14px, 400);
+
+  @include mx.tablet {
+    @include mx.basic-font-configuration(13px, 18px, 400);
+  }
 }

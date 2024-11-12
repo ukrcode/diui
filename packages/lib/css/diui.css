@@ -266,23 +266,31 @@
   }
 }
 
-.di-lg-underline {
+.di-underline-lg {
   text-decoration: underline;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
   font-family: var(--di-font-family-primary);
   font-weight: 400;
 }
+@media screen and (min-width: 576px), print {
+  .di-underline-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
+  }
+}
 
-.di-md-underline {
+.di-underline-md {
   text-decoration: underline;
   font-size: 0.6875rem;
   line-height: 0.875rem;
   font-family: var(--di-font-family-primary);
-  font-weight: 300;
+  font-weight: 400;
 }
 @media screen and (min-width: 576px), print {
-  .di-md-underline {
+  .di-underline-md {
     font-size: 1rem;
     line-height: 1.5rem;
     font-family: var(--di-font-family-primary);
@@ -290,12 +298,20 @@
   }
 }
 
-.di-sm-underline {
+.di-underline-sm {
   text-decoration: underline;
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
+  font-size: 0.625rem;
+  line-height: 0.875rem;
   font-family: var(--di-font-family-primary);
   font-weight: 400;
+}
+@media screen and (min-width: 576px), print {
+  .di-underline-sm {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
+  }
 }
 
 .di-link {
