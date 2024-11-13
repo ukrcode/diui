@@ -20,8 +20,9 @@
   // Medium
   @include apply-font-face("e-Ukraine-Medium", 500);
 
-  // Heading Regular
-  @include apply-font-face("e-UkraineHead-Regular", 400, "e-ukraine-head");
-
+  // Head Light
+  @include apply-font-face("e-UkraineHead-Light", 300, "e-ukraine-head");
   
+  // Head Regular
+  @include apply-font-face("e-UkraineHead-Regular", 400, "e-ukraine-head");
 }

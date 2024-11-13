@@ -69,7 +69,7 @@
   --di-c-pumpkin-20: rgba(255, 131, 26, 0.2);
   --di-gr-primary: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 50.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
   --di-font-family-primary: e-ukraine, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --di-font-family-secondary: e-ukraine, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --di-font-family-head: e-ukraine-head, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
   --di-text-color: var(--di-c-black);
   --di-background-color: var(--di-c-white);
 }
@@ -108,6 +108,29 @@
     font-size: 3.5rem;
     line-height: 3.75rem;
     font-family: var(--di-font-family-primary);
+    font-weight: 400;
+  }
+}
+
+.di-h1-head {
+  font-size: 1.625rem;
+  line-height: 1.75rem;
+  font-family: var(--di-font-family-head);
+  font-weight: 400;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 576px), print {
+  .di-h1-head {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 576px), print {
+  .di-h1-head {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+    font-family: var(--di-font-family-head);
     font-weight: 400;
   }
 }
@@ -359,6 +382,13 @@
   font-style: normal;
   src: url("fonts/e-Ukraine-Medium.woff2") format("woff2"), url("fonts/e-Ukraine-Medium.woff") format("woff"), url("fonts/e-Ukraine-Medium.otf") format("opentype");
   font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "e-ukraine-head";
+  font-style: normal;
+  src: url("fonts/e-UkraineHead-Light.woff2") format("woff2"), url("fonts/e-UkraineHead-Light.woff") format("woff"), url("fonts/e-UkraineHead-Light.otf") format("opentype");
+  font-weight: 300;
   font-display: swap;
 }
 @font-face {

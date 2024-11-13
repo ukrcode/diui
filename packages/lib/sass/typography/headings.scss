@@ -53,6 +53,16 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
   }
 }
 
+// h1-head
+.#{$prefix}-h1-head {
+  @include mx.basic-font-configuration(26px, 28px, 400, "head");
+  @include apply-big-heading-margins;
+
+  @include mx.tablet {
+    @include mx.basic-font-configuration(56px, 60px, 400, "head");
+  }
+}
+
 // h2
 .#{$prefix}-h2 {
   @include mx.basic-font-configuration(20px, 24px);
