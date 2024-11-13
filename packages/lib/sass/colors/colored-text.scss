@@ -9,10 +9,18 @@ $prefix: config.$class-prefix;
   }
 }
 
+@mixin create-text-color-for-var($color-name, $color-var) {
+  .#{$prefix}-#{$color-name}-text {
+    color: cssVars.get-var(c-#{$color-var});
+  }
+}
+
 // Create color text classes
 @include create-text-color("gray");
-@include create-text-color("success");
-@include create-text-color("warning");
+@include create-text-color-for-var("success", "malachite");
+@include create-text-color("malachite");
+@include create-text-color-for-var("warning", "gorse");
+@include create-text-color("gorse");
 @include create-text-color("danger");
 @include create-text-color("info");
 @include create-text-color("dodger-blue");

@@ -9,10 +9,18 @@ $prefix: config.$class-prefix;
   }
 }
 
+@mixin create-bg-color-for-var($color-name, $color-var) {
+  .#{$prefix}-#{$color-name}-bg {
+    background-color: cssVars.get-var(c-#{$color-var}-40);
+  }
+}
+
 // Create color text classes
 @include create-bg-color("gray");
-@include create-bg-color("success");
-@include create-bg-color("warning");
+@include create-bg-color-for-var("success", "malachite");
+@include create-bg-color("malachite"); 
+@include create-bg-color-for-var("warning", "gorse");
+@include create-bg-color("gorse"); 
 @include create-bg-color("danger"); 
 @include create-bg-color("info");
 @include create-bg-color("dodger-blue");

@@ -3,20 +3,40 @@
   --di-c-white: #ffffff;
   --di-c-light-gray: #e7eef3;
   --di-c-gray: #959595;
-  --di-c-gray-80: rgba(149, 149, 149, 0.8);
-  --di-c-gray-60: rgba(149, 149, 149, 0.6);
-  --di-c-gray-40: rgba(149, 149, 149, 0.4);
-  --di-c-gray-20: rgba(149, 149, 149, 0.2);
+  --di-c-gray-80: #aaaaaa;
+  --di-c-gray-60: #bfbfbf;
+  --di-c-gray-40: #d5d5d5;
+  --di-c-gray-20: #eaeaea;
   --di-c-success: #04c65d;
-  --di-c-success-80: rgba(4, 198, 93, 0.8);
-  --di-c-success-60: rgba(4, 198, 93, 0.6);
-  --di-c-success-40: rgba(4, 198, 93, 0.4);
-  --di-c-success-20: rgba(4, 198, 93, 0.2);
+  --di-c-success-80: #36d17d;
+  --di-c-success-60: #68dc9d;
+  --di-c-success-40: #9ae8be;
+  --di-c-success-20: #ccf3de;
+  --di-c-malachite: #04c65d;
+  --di-c-malachite-80: #36d17d;
+  --di-c-malachite-60: #68dc9d;
+  --di-c-malachite-40: #9ae8be;
+  --di-c-malachite-20: #ccf3de;
   --di-c-warning: #ffdb4d;
   --di-c-warning-80: #ffe270;
   --di-c-warning-60: #fee994;
   --di-c-warning-40: #fff0b7;
   --di-c-warning-20: #fff7db;
+  --di-c-gorse: #ffdb4d;
+  --di-c-gorse-80: #ffe270;
+  --di-c-gorse-60: #fee994;
+  --di-c-gorse-40: #fff0b7;
+  --di-c-gorse-20: #fff7db;
+  --di-c-lima: #89db33;
+  --di-c-lima-80: #a0e25b;
+  --di-c-lima-60: #b8e984;
+  --di-c-lima-40: #cff0ad;
+  --di-c-lima-20: #e7f7d6;
+  --di-c-yellow-green: #d7f64d;
+  --di-c-yellow-green-80: #dff770;
+  --di-c-yellow-green-60: #e6f994;
+  --di-c-yellow-green-40: #effbb7;
+  --di-c-yellow-green-20: #f7fddb;
   --di-c-danger: #ff3800;
   --di-c-danger-80: rgba(255, 56, 0, 0.8);
   --di-c-danger-60: rgba(255, 56, 0, 0.6);
@@ -47,16 +67,6 @@
   --di-c-pumpkin-60: rgba(255, 131, 26, 0.6);
   --di-c-pumpkin-40: rgba(255, 131, 26, 0.4);
   --di-c-pumpkin-20: rgba(255, 131, 26, 0.2);
-  --di-c-yellow-green: #d7f64d;
-  --di-c-yellow-green-80: rgba(215, 246, 77, 0.8);
-  --di-c-yellow-green-60: rgba(215, 246, 77, 0.6);
-  --di-c-yellow-green-40: rgba(215, 246, 77, 0.4);
-  --di-c-yellow-green-20: rgba(215, 246, 77, 0.2);
-  --di-c-lima: #89db33;
-  --di-c-lima-80: rgba(137, 219, 51, 0.8);
-  --di-c-lima-60: rgba(137, 219, 51, 0.6);
-  --di-c-lima-40: rgba(137, 219, 51, 0.4);
-  --di-c-lima-20: rgba(137, 219, 51, 0.2);
   --di-gr-primary: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 50.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
   --di-font-family-primary: e-ukraine, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
   --di-font-family-secondary: e-ukraine, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -384,11 +394,19 @@
 }
 
 .di-success-text {
-  color: var(--di-c-success);
+  color: var(--di-c-malachite);
+}
+
+.di-malachite-text {
+  color: var(--di-c-malachite);
 }
 
 .di-warning-text {
-  color: var(--di-c-warning);
+  color: var(--di-c-gorse);
+}
+
+.di-gorse-text {
+  color: var(--di-c-gorse);
 }
 
 .di-danger-text {
@@ -428,11 +446,19 @@
 }
 
 .di-success-bg {
-  background-color: var(--di-c-success-40);
+  background-color: var(--di-c-malachite-40);
+}
+
+.di-malachite-bg {
+  background-color: var(--di-c-malachite-40);
 }
 
 .di-warning-bg {
-  background-color: var(--di-c-warning-40);
+  background-color: var(--di-c-gorse-40);
+}
+
+.di-gorse-bg {
+  background-color: var(--di-c-gorse-40);
 }
 
 .di-danger-bg {

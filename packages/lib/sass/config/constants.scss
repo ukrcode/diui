@@ -3,11 +3,47 @@
 $font-basis: 16px; // You can't change it, it sets all values in REM
 $font-basis-line-height: 24px;
 
+// gray
+$c-gray-colors: (
+  "100": #959595,
+  "80": #aaaaaa,
+  "60": #bfbfbf,
+  "40": #d5d5d5,
+  "20": #eaeaea,
+);
+
 // gorse
-$c-warning-colors: (
+$c-gorse-colors: (
   "100": #ffdb4d,
   "80": #ffe270,
   "60": #fee994,
   "40": #fff0b7,
   "20": #fff7db,
+);
+
+// yellow-green
+$c-yellow-green-colors: (
+  "100": #d7f64d,
+  "80": #dff770,
+  "60": #e6f994,
+  "40": #effbb7,
+  "20": #f7fddb,
+);
+
+// lima
+$c-lima-colors: (
+  "100": #89db33,
+  "80": #a0e25b,
+  "60": #b8e984,
+  "40": #cff0ad,
+  "20": #e7f7d6,
+);
+
+// malachite
+$c-malachite-colors: (
+  "100": #04c65d,
+  "80": #36d17d,
+  "60": #68dc9d,
+  "40": #9ae8be,
+  "20": #ccf3de,
 );

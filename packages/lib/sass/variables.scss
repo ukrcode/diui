@@ -14,17 +14,24 @@
   );
 
   // Color sets
-  @include mx.create-vars-color-set("c-gray", config.$c-gray);
-  @include mx.create-vars-color-set("c-success", config.$c-success);
-  @include mx.create-colors-set-vars("c-warning", config.$c-warning-colors);
+  @include mx.create-colors-set-vars("c-gray", config.$c-gray-colors);
+  
+  @include mx.create-colors-set-vars("c-success", config.$c-malachite-colors);
+  @include mx.create-colors-set-vars("c-malachite", config.$c-malachite-colors);
+  
+  @include mx.create-colors-set-vars("c-warning", config.$c-gorse-colors);
+  @include mx.create-colors-set-vars("c-gorse", config.$c-gorse-colors);
+  
+  @include mx.create-colors-set-vars("c-lima", config.$c-lima-colors);
+  @include mx.create-colors-set-vars("c-yellow-green", config.$c-yellow-green-colors);
+
+  // Old implementation
   @include mx.create-vars-color-set("c-danger", config.$c-danger);
   @include mx.create-vars-color-set("c-info", config.$c-info);
   @include mx.create-vars-color-set("c-dodger-blue", config.$c-dodger-blue);
   @include mx.create-vars-color-set("c-violet", config.$c-violet);
   @include mx.create-vars-color-set("c-brick-red", config.$c-brick-red);
   @include mx.create-vars-color-set("c-pumpkin", config.$c-pumpkin);
-  @include mx.create-vars-color-set("c-yellow-green", config.$c-yellow-green);
-  @include mx.create-vars-color-set("c-lima", config.$c-lima);
 
   // Gradients
   @include cssVars.register-vars(
