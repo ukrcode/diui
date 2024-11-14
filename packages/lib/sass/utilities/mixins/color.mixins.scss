@@ -1,38 +1,5 @@
-@use "../config" as config;
-@use "functions" as fn;
-@use "./css-vars" as cssVars;
+@use "../css-vars" as cssVars;
 @use "sass:map" as map;
-
-@mixin mobile {
-  @media screen and (max-width: (config.$tablet - 1px)) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media screen and (min-width: config.$tablet), print {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media screen and (min-width: config.$desktop) {
-    @content;
-  }
-}
-
-@mixin basic-font-configuration(
-  $font-size,
-  $line-height,
-  $font-weight: 400,
-  $font-family: "primary"
-) {
-  font-size: fn.to-rem($font-size);
-  line-height: fn.to-rem($line-height);
-
-  font-family: cssVars.get-var("font-family-#{$font-family}");
-  font-weight: $font-weight;
-}
 
 @mixin create-vars-color-set($color-name, $color-value) {
   @include cssVars.register-vars(
@@ -54,6 +21,18 @@
       "#{$color-name}-60": map.get($colors, "60"),
       "#{$color-name}-40": map.get($colors, "40"),
       "#{$color-name}-20": map.get($colors, "20"),
+    )
+  );
+}
+
+@mixin map-color-variables($color-name, $color-name-to-map) {
+  @include cssVars.register-vars(
+    (
+      $color-name: cssVars.get-var($color-name-to-map),
+      "#{$color-name}-80": cssVars.get-var("#{$color-name-to-map}-80"),
+      "#{$color-name}-60": cssVars.get-var("#{$color-name-to-map}-60"),
+      "#{$color-name}-40": cssVars.get-var("#{$color-name-to-map}-40"),
+      "#{$color-name}-20": cssVars.get-var("#{$color-name-to-map}-20"),
     )
   );
 }

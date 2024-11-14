@@ -1,0 +1,19 @@
+@use "../../config" as config;
+
+@mixin mobile {
+  @media screen and (max-width: (config.$tablet - 1px)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: config.$tablet), print {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: config.$desktop) {
+    @content;
+  }
+}
