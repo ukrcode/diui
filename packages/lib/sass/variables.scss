@@ -15,25 +15,22 @@
 
   // Color sets
   @include mx.create-colors-set-vars("c-gray", config.$c-gray-colors);
-  
   @include mx.create-colors-set-vars("c-malachite", config.$c-malachite-colors);
-  @include mx.map-color-variables("c-success", "c-malachite");
-
   @include mx.create-colors-set-vars("c-gorse", config.$c-gorse-colors);
-  @include mx.map-color-variables("c-warning", "c-gorse");
-
   @include mx.create-colors-set-vars("c-lima", config.$c-lima-colors);
   @include mx.create-colors-set-vars("c-yellow-green", config.$c-yellow-green-colors);
-
   @include mx.create-colors-set-vars("c-radiance", config.$c-radiance-colors);
+  @include mx.create-colors-set-vars("c-dodger-blue", config.$c-dodger-blue-colors);
+  @include mx.create-colors-set-vars("c-violet", config.$c-violet-colors);
+  @include mx.create-colors-set-vars("c-brick-red", config.$c-brick-red-colors);
+  @include mx.create-colors-set-vars("c-pumpkin", config.$c-pumpkin-colors);
+  @include mx.create-colors-set-vars("c-scarlet", config.$c-scarlet-colors);
+  
+  // Business colors mapped from existing colors
   @include mx.map-color-variables("c-info", "c-radiance");
-
-  // Old implementation
-  @include mx.create-vars-color-set("c-danger", config.$c-danger);
-  @include mx.create-vars-color-set("c-dodger-blue", config.$c-dodger-blue);
-  @include mx.create-vars-color-set("c-violet", config.$c-violet);
-  @include mx.create-vars-color-set("c-brick-red", config.$c-brick-red);
-  @include mx.create-vars-color-set("c-pumpkin", config.$c-pumpkin);
+  @include mx.map-color-variables("c-success", "c-malachite");
+  @include mx.map-color-variables("c-danger", "c-scarlet");
+  @include mx.map-color-variables("c-warning", "c-gorse");
 
   // Gradients
   @include cssVars.register-vars(

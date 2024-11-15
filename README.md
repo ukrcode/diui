@@ -16,6 +16,8 @@
 1. Офіційний анонс: <https://thedigital.gov.ua/news/diia_design>
 2. Офіційний анонс від агенції Федорів: <https://diia.fedoriv.com/>
 3. Анонс від київського дизайн-бюро Spiilka: <https://spiilka.com/projects/diia-web>
+4. Мінінстерство цифрової трансформації: <https://thedigital.gov.ua/>
+    Тут як ніде багато прикладів використання дизайн системи Дії.
 4. Неофіційна реалізація в `Figma`: <https://www.figma.com/community/file/1270778058754270235>
 5. Шрифти і заголовки:
     - Опис: <https://thedigital.gov.ua/fonts>

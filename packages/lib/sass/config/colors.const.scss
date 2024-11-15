@@ -1,7 +1,8 @@
 // The variables in this file, could not be reassigned
 
-$font-basis: 16px; // You can't change it, it sets all values in REM
-$font-basis-line-height: 24px;
+$c-black: #000000;
+$c-white: #ffffff;
+$c-light-gray: #e7eef3;
 
 // gray
 $c-gray-colors: (
@@ -55,4 +56,49 @@ $c-radiance-colors: (
   "60": #66b1fe,
   "40": #99cbff,
   "20": #cce5ff,
+);
+
+// dodger-blue
+$c-dodger-blue-colors: (
+  "100": #5b5aff,
+  "80": #7b7bff,
+  "60": #9c9cfe,
+  "40": #bdbdff,
+  "20": #dedeff,
+);
+
+// violet
+$c-violet-colors: (
+  "100": #aa2b8e,
+  "80": #bb55a4,
+  "60": #cc7fbb,
+  "40": #ddaad1,
+  "20": #eed4e8,
+);
+
+// brick-red
+$c-brick-red-colors: (
+  "100": #cc2e4f,
+  "80": #d65772,
+  "60": #e08195,
+  "40": #eaabb8,
+  "20": #f4d5db,
+);
+
+//scarlet
+$c-scarlet-colors: (
+  "100": #ff3800,
+  "80": #ff5f33,
+  "60": #fe8766,
+  "40": #ffaf99,
+  "20": #ffd7cc,
+);
+
+// pumpkin
+$c-pumpkin-colors: (
+  "100": #ff831a,
+  "80": #ff9b47,
+  "60": #feb475,
+  "40": #ffcda3,
+  "20": #ffe6d1,
 );

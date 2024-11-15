@@ -1,4 +1,6 @@
-@forward "./constants";
+@forward "./typography.const";
+@forward "./colors.const";
+@forward "./gradients.const";
 
 $class-prefix: "di" !default;
 $cssvars-prefix: "di-" !default;
@@ -12,27 +14,3 @@ $tablet: 576px !default;
 // $desktop: 960px + 2 * $gap !default; FROM BULMA
 $desktop: 1280px !default;
 
-// Colors
-$c-black: #000000 !default;
-$c-white: #ffffff !default;
-$c-light-gray: #e7eef3 !default;
-
-// scarlet
-$c-danger: #ff3800 !default;
-// dodger blue
-$c-dodger-blue: #5b5aff !default;
-// violet
-$c-violet: #aa2b8e !default;
-// brick-red
-$c-brick-red: #cc2e4f !default;
-// pumpkin
-$c-pumpkin: #ff831a !default;
-
-// Gradients
-$gr-primary: linear-gradient(
-    217deg,
-    rgba(255, 0, 0, 0.8),
-    rgba(255, 0, 0, 0) 50.71%
-  ),
-  linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-  linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
