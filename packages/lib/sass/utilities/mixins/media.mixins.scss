@@ -17,3 +17,9 @@
     @content;
   }
 }
+
+@mixin on-reduced-motion {
+  @media screen and (prefers-reduced-motion) {
+    @content;
+  }
+}

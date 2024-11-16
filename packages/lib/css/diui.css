@@ -425,10 +425,6 @@
   }
 }
 
-.di-primary-background {
-  background-image: var(--di-gr-primary);
-}
-
 .di-gray-text {
   color: var(--di-c-gray);
 }
@@ -531,6 +527,28 @@
 
 .di-lima-bg {
   background-color: var(--di-c-lima-40);
+}
+
+@keyframes granimate {
+  0%, 100% {
+    background-position: 0 25%;
+  }
+  25%, 75% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+}
+.di-primary-gradient-bg {
+  background-size: 150vw 150vh;
+  background-image: var(--di-gr-primary);
+  animation: 15s linear 0s infinite alternate none running granimate;
+}
+@media screen and (prefers-reduced-motion) {
+  .di-primary-gradient-bg {
+    animation: none;
+  }
 }
 
 .di-container {

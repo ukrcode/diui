@@ -1,0 +1,29 @@
+@use "../config" as config;
+@use "../utilities/css-vars.scss" as cssVars;
+@use "../utilities/mixins" as mx;
+
+@keyframes granimate {
+  0%,
+  100% {
+    background-position: 0 25%;
+  }
+
+  25%,
+  75% {
+    background-position: 50% 50%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+}
+
+.#{config.$class-prefix}-primary-gradient-bg {
+  background-size: 150vw 150vh;
+  background-image: cssVars.get-var("gr-primary");
+  animation: 15s linear 0s infinite alternate none running granimate;
+
+  @include mx.on-reduced-motion {
+    animation: none;
+  }
+}
