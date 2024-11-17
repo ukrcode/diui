@@ -21,7 +21,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
   margin-top: $big-heading-mobile-top-margin;
   margin-bottom: $big-heading-mobile-bottom-margin;
 
-  @include mx.tablet {
+  @include mx.on-tablet {
     margin-top: $big-heading-top-margin;
     margin-bottom: $big-heading-basic-bottom-margin;
   }
@@ -31,7 +31,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
   margin-top: $small-heading-mobile-top-margin;
   margin-bottom: $small-heading-mobile-bottom-margin;
 
-  @include mx.tablet {
+  @include mx.on-tablet {
     margin-top: $small-heading-top-margin;
     margin-bottom: $small-heading-basic-bottom-margin;
   }
@@ -48,7 +48,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
   @include mx.basic-font-configuration(26px, 28px);
   @include apply-big-heading-margins;
 
-  @include mx.tablet {
+  @include mx.on-tablet {
     @include mx.basic-font-configuration(56px, 60px);
   }
 }
@@ -58,7 +58,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
   @include mx.basic-font-configuration(26px, 28px, 400, "head");
   @include apply-big-heading-margins;
 
-  @include mx.tablet {
+  @include mx.on-tablet {
     @include mx.basic-font-configuration(56px, 60px, 400, "head");
   }
 }
@@ -68,7 +68,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
   @include mx.basic-font-configuration(20px, 24px);
   @include apply-big-heading-margins;
 
-  @include mx.tablet {
+  @include mx.on-tablet {
     @include mx.basic-font-configuration(38px, 40px);
   }
 }
@@ -78,7 +78,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
   @include mx.basic-font-configuration(18px, 24px);
   @include apply-big-heading-margins;
 
-  @include mx.tablet {
+  @include mx.on-tablet {
     @include mx.basic-font-configuration(28px, 32px);
   }
 }
@@ -88,7 +88,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
   @include mx.basic-font-configuration(16px, 24px);
   @include apply-small-heading-margins;
 
-  @include mx.tablet {
+  @include mx.on-tablet {
     @include mx.basic-font-configuration(24px, 28px);
   }
 }
@@ -98,7 +98,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
   @include mx.basic-font-configuration(14px, 20px);
   @include apply-small-heading-margins;
 
-  @include mx.tablet {
+  @include mx.on-tablet {
     @include mx.basic-font-configuration(20px, 24px);
   }
 }
@@ -108,7 +108,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
   @include mx.basic-font-configuration(13px, 18px);
   @include apply-small-heading-margins;
 
-  @include mx.tablet {
+  @include mx.on-tablet {
     @include mx.basic-font-configuration(18px, 28px);
   }
 }

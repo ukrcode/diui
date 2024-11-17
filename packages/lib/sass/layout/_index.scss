@@ -8,11 +8,11 @@
     margin-right: auto;
     margin-left: auto;
 
-    @include mx.tablet {
+    @include mx.on-tablet {
         padding: 0 fn.to-rem(64px);
     }
 
-    @include mx.desktop {
+    @include mx.on-desktop {
         padding: 0 fn.to-rem(80px);
     }
 }

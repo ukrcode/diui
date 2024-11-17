@@ -357,6 +357,21 @@
   }
 }
 
+.di-quote {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
+}
+@media screen and (min-width: 576px), print {
+  .di-quote {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
+  }
+}
+
 .di-link {
   color: var(--di-text-color);
   font-size: 0.75rem;

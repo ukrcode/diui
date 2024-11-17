@@ -15,7 +15,7 @@
   @include mx.basic-font-configuration(11px, 14px, 300);
 
   // Set font size and line height for TABLET and DESKTOP
-  @include mx.tablet {
+  @include mx.on-tablet {
     @include mx.basic-font-configuration(16px, 24px, 300);
   }
 }
