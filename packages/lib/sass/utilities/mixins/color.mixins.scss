@@ -1,18 +1,6 @@
 @use "../css-vars" as cssVars;
 @use "sass:map" as map;
 
-@mixin create-vars-color-set($color-name, $color-value) {
-  @include cssVars.register-vars(
-    (
-      $color-name: rgba($color-value, 1),
-      "#{$color-name}-80": rgba($color-value, 0.8),
-      "#{$color-name}-60": rgba($color-value, 0.6),
-      "#{$color-name}-40": rgba($color-value, 0.4),
-      "#{$color-name}-20": rgba($color-value, 0.2),
-    )
-  );
-}
-
 @mixin create-colors-set-vars($color-name, $colors) {
   @include cssVars.register-vars(
     (

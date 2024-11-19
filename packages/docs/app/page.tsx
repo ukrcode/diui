@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <article>
       <div
-        className={clsx(styles["heading-container"], "di-primary-gradient-bg", "di-container")}
+        className={clsx(styles["heading-container"], "di-gr-bg-primary", "di-container")}
       >
         <h1 className="di-h1">🇺🇦 diui</h1>
         <p className="di-body-text">

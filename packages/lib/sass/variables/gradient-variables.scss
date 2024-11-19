@@ -1,0 +1,25 @@
+@use "../utilities/css-vars" as css-vars;
+
+@mixin create-gradient-variables {
+  // Gradients
+  $gr-primary: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 50.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+
+  $gr-simplified-1: linear-gradient(
+    90deg,
+    css-vars.get-var("c-yellow-green") 0%,
+    css-vars.get-var("c-radiance") 100%
+  );
+
+  @include css-vars.register-vars(
+    (
+      "gr-primary": $gr-primary,
+      "gr-1": $gr-simplified-1,
+    )
+  );
+}

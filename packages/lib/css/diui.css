@@ -78,6 +78,7 @@
   --di-c-warning-40: var(--di-c-gorse-40);
   --di-c-warning-20: var(--di-c-gorse-20);
   --di-gr-primary: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 50.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  --di-gr-1: linear-gradient(90deg, var(--di-c-yellow-green) 0%, var(--di-c-radiance) 100%);
   --di-font-family-primary: e-ukraine, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
   --di-font-family-head: e-ukraine-head, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
   --di-text-color: var(--di-c-black);
@@ -555,15 +556,19 @@
     background-position: 100% 100%;
   }
 }
-.di-primary-gradient-bg {
+.di-gr-bg-primary {
   background-size: 150vw 150vh;
   background-image: var(--di-gr-primary);
   animation: 15s linear 0s infinite alternate none running granimate;
 }
 @media screen and (prefers-reduced-motion) {
-  .di-primary-gradient-bg {
+  .di-gr-bg-primary {
     animation: none;
   }
+}
+
+.di-gr-bg-1 {
+  background-image: var(--di-gr-1);
 }
 
 .di-container {

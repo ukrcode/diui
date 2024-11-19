@@ -1,10 +1,9 @@
-@use "sass:color" as color;
-@use "./utilities/css-vars" as cssVars;
-@use "./config" as config;
-@use "./utilities/mixins" as mx;
+@use "../utilities/css-vars" as cssVars;
+@use "../config" as config;
+@use "../utilities/mixins" as mx;
 
-:root {
-  // Black-White-Gray colors
+@mixin create-color-variables {
+    // Black-White-Gray colors
   @include cssVars.register-vars(
     (
       "c-black": config.$c-black,
@@ -31,22 +30,4 @@
   @include mx.map-color-variables("c-success", "c-malachite");
   @include mx.map-color-variables("c-danger", "c-scarlet");
   @include mx.map-color-variables("c-warning", "c-gorse");
-
-  // Gradients
-  @include cssVars.register-vars(
-    (
-      "gr-primary": config.$gr-primary,
-    )
-  );
-
-  // Fonts
-  @include cssVars.register-vars(
-    (
-      "font-family-primary": "e-ukraine, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif",
-      "font-family-head": "e-ukraine-head, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif",
-      "text-color": cssVars.get-var("c-black"),
-      "background-color": cssVars.get-var("c-white"),
-    )
-  );
-
 }
