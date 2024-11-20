@@ -79,6 +79,10 @@
   --di-c-warning-20: var(--di-c-gorse-20);
   --di-gr-primary: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 50.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
   --di-gr-1: linear-gradient(90deg, var(--di-c-yellow-green) 0%, var(--di-c-radiance) 100%);
+  --di-gr-2: linear-gradient(90deg, var(--di-c-malachite) 0%, var(--di-c-dodger-blue) 100%);
+  --di-gr-3: linear-gradient(90deg, var(--di-c-radiance) 0%, var(--di-c-violet) 100%);
+  --di-gr-4: linear-gradient(90deg, var(--di-c-scarlet) 0%, var(--di-c-gorse) 100%);
+  --di-gr-5: linear-gradient(90deg, var(--di-c-pumpkin) 0%, var(--di-c-yellow-green) 100%);
   --di-font-family-primary: e-ukraine, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
   --di-font-family-head: e-ukraine-head, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
   --di-text-color: var(--di-c-black);
@@ -569,6 +573,22 @@
 
 .di-gr-bg-1 {
   background-image: var(--di-gr-1);
+}
+
+.di-gr-bg-2 {
+  background-image: var(--di-gr-2);
+}
+
+.di-gr-bg-3 {
+  background-image: var(--di-gr-3);
+}
+
+.di-gr-bg-4 {
+  background-image: var(--di-gr-4);
+}
+
+.di-gr-bg-5 {
+  background-image: var(--di-gr-5);
 }
 
 .di-container {

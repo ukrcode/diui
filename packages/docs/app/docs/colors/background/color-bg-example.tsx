@@ -1,6 +1,6 @@
 export default function ColorBgExample() {
   return (
-    <>
+    <div>
       <p className="di-gray-bg utils-p">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, illo
         animi? Quaerat iure pariatur, quidem, molestias amet assumenda, porro
@@ -66,6 +66,6 @@ export default function ColorBgExample() {
         animi? Quaerat iure pariatur, quidem, molestias amet assumenda, porro
         minus illum fugiat sed omnis adipisci aliquid earum hic voluptate sunt!
       </p>
-    </>
+    </div>
   );
 }

@@ -31,3 +31,19 @@
 .#{config.$class-prefix}-gr-bg-1 {
   background-image: css-vars.get-var("gr-1");
 }
+
+.#{config.$class-prefix}-gr-bg-2 {
+  background-image: css-vars.get-var("gr-2");
+}
+
+.#{config.$class-prefix}-gr-bg-3 {
+  background-image: css-vars.get-var("gr-3");
+}
+
+.#{config.$class-prefix}-gr-bg-4 {
+  background-image: css-vars.get-var("gr-4");
+}
+
+.#{config.$class-prefix}-gr-bg-5 {
+  background-image: css-vars.get-var("gr-5");
+}

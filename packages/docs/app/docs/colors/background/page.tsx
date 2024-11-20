@@ -1,12 +1,18 @@
-import ColorBgExample from "./color-bg-example";
-import GradientBgExample from "./gradient-bg-example";
+import ColorBgPage from "./color-bg-page.mdx";
+import GradientBgPage from "./gradient-bg-page.mdx";
 
 export default function ColorsBgPage() {
   return (
-    <article style={{ width: "50%" }} className="utils-page">
-      <ColorBgExample />
+    <article className="di-container">
+      <section style={{ display: "flex", gap: "1rem" }}>
+        <div>
+          <ColorBgPage />
+        </div>
 
-      <GradientBgExample />
+        <div>
+          <GradientBgPage />
+        </div>
+      </section>
     </article>
   );
 }

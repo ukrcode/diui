@@ -16,10 +16,38 @@
     css-vars.get-var("c-radiance") 100%
   );
 
+  $gr-simplified-2: linear-gradient(
+    90deg,
+    css-vars.get-var("c-malachite") 0%,
+    css-vars.get-var("c-dodger-blue") 100%
+  );
+
+  $gr-simplified-3: linear-gradient(
+    90deg,
+    css-vars.get-var("c-radiance") 0%,
+    css-vars.get-var("c-violet") 100%
+  );
+
+  $gr-simplified-4: linear-gradient(
+    90deg,
+    css-vars.get-var("c-scarlet") 0%,
+    css-vars.get-var("c-gorse") 100%
+  );
+
+  $gr-simplified-5: linear-gradient(
+    90deg,
+    css-vars.get-var("c-pumpkin") 0%,
+    css-vars.get-var("c-yellow-green") 100%
+  );
+
   @include css-vars.register-vars(
     (
       "gr-primary": $gr-primary,
       "gr-1": $gr-simplified-1,
+      "gr-2": $gr-simplified-2,
+      "gr-3": $gr-simplified-3,
+      "gr-4": $gr-simplified-4,
+      "gr-5": $gr-simplified-5,
     )
   );
 }
