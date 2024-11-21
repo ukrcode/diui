@@ -1,0 +1,17 @@
+@use "../utilities/css-vars" as css-vars;
+@use "../utilities/functions" as fn;
+@use "../utilities/mixins" as mx;
+@use "../config" as config;
+
+$prefix: config.$class-prefix;
+
+.#{$prefix}-btn {
+  display: flex;
+  align-items: center;
+  padding: fn.to-rem(16px) fn.to-rem(30px);
+  @include mx.basic-font-configuration(16px, 24px, 400);
+}
+
+.#{$prefix}-btn {
+  color: css-vars.get-var("text-color");
+}

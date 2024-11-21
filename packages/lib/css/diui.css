@@ -86,7 +86,9 @@
   --di-font-family-primary: e-ukraine, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
   --di-font-family-head: e-ukraine-head, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
   --di-text-color: var(--di-c-black);
-  --di-background-color: var(--di-c-white);
+  --di-invert-text-color: var(--di-c-white);
+  --di-bg-color: var(--di-c-white);
+  --di-invert-bg-color: var(--di-c-black);
 }
 
 .di-h1-display {
@@ -606,5 +608,19 @@
   .di-container {
     padding: 0 5rem;
   }
+}
+
+.di-btn {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.875rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
+}
+
+.di-btn {
+  color: var(--di-text-color);
 }
 /*# sourceMappingURL=diui.css.map */

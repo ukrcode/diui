@@ -1,9 +1,9 @@
-@use "css-vars" as cssVars;
+@use "css-vars" as css-vars;
 @use "../config" as config;
 @use "sass:math";
 
 @function to-rem($sizePx) {
-  $baseFontSize: cssVars.get-var("base-font-size");
+  $baseFontSize: css-vars.get-var("base-font-size");
 
   @return math.div($sizePx, config.$font-basis) + rem;
 }

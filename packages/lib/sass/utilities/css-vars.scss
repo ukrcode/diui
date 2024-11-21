@@ -1,7 +1,7 @@
 @use "../config" as config;
 
 @function build-var-name($name, $prefix: "", $suffix: "") {
-  @return "--#{config.$cssvars-prefix}#{$prefix}#{$name}#{$suffix}";
+  @return "--#{config.$css-vars-prefix}#{$prefix}#{$name}#{$suffix}";
 }
 
 @function get-var($name, $prefix: "", $suffix: "") {

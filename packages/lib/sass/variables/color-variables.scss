@@ -1,10 +1,10 @@
-@use "../utilities/css-vars" as cssVars;
+@use "../utilities/css-vars" as css-vars;
 @use "../config" as config;
 @use "../utilities/mixins" as mx;
 
 @mixin create-color-variables {
     // Black-White-Gray colors
-  @include cssVars.register-vars(
+  @include css-vars.register-vars(
     (
       "c-black": config.$c-black,
       "c-white": config.$c-white,

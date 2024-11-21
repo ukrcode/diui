@@ -1,10 +1,10 @@
 @use "../utilities/mixins" as mx;
 @use "../config" as config;
-@use "../utilities/css-vars" as cssVars;
+@use "../utilities/css-vars" as css-vars;
 
 // text-small
 .#{config.$class-prefix}-link {
-  color: cssVars.get-var("text-color");
+  color: css-vars.get-var("text-color");
   @include mx.basic-font-configuration(12px, 16px, 400);
 
   // Set font size and line height for TABLET and DESKTOP

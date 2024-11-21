@@ -1,5 +1,5 @@
 @use "../../config" as config;
-@use "../css-vars" as cssVars;
+@use "../css-vars" as css-vars;
 @use "../functions" as fn;
 
 @mixin basic-font-configuration(
@@ -11,6 +11,6 @@
   font-size: fn.to-rem($font-size);
   line-height: fn.to-rem($line-height);
 
-  font-family: cssVars.get-var("font-family-#{$font-family}");
+  font-family: css-vars.get-var("font-family-#{$font-family}");
   font-weight: $font-weight;
 }

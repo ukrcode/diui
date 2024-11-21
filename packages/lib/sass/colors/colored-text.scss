@@ -1,17 +1,17 @@
-@use "../utilities/css-vars" as cssVars;
+@use "../utilities/css-vars" as css-vars;
 @use "../config" as config;
 
 $prefix: config.$class-prefix;
 
 @mixin create-text-color($color-name) {
   .#{$prefix}-#{$color-name}-text {
-    color: cssVars.get-var(c-#{$color-name});
+    color: css-vars.get-var(c-#{$color-name});
   }
 }
 
 @mixin create-text-color-for-var($color-name, $color-var) {
   .#{$prefix}-#{$color-name}-text {
-    color: cssVars.get-var(c-#{$color-var});
+    color: css-vars.get-var(c-#{$color-var});
   }
 }
 
