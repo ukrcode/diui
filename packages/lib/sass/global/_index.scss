@@ -18,4 +18,9 @@
   @include mx.on-tablet {
     @include mx.basic-font-configuration(16px, 24px, 300);
   }
+
+  * {
+    box-sizing: border-box;
+  }
 }
+

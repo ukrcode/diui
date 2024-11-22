@@ -446,6 +446,9 @@
     font-weight: 300;
   }
 }
+.di-body * {
+  box-sizing: border-box;
+}
 
 .di-gray-text {
   color: var(--di-c-gray);
@@ -613,14 +616,21 @@
 .di-btn {
   display: flex;
   align-items: center;
-  padding: 1rem 1.875rem;
+  border-radius: 2.5rem;
+  color: var(--di-text-color);
+  padding: 0.75rem 1.25rem;
   font-size: 1rem;
   line-height: 1.5rem;
   font-family: var(--di-font-family-primary);
   font-weight: 400;
 }
-
-.di-btn {
-  color: var(--di-text-color);
+@media screen and (min-width: 576px), print {
+  .di-btn {
+    padding: 1rem 1.875rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
+  }
 }
 /*# sourceMappingURL=diui.css.map */

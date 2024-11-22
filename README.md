@@ -18,7 +18,7 @@
 3. Анонс від київського дизайн-бюро Spiilka: <https://spiilka.com/projects/diia-web>
 4. Мінінстерство цифрової трансформації: <https://thedigital.gov.ua/>
     Тут як ніде багато прикладів використання дизайн системи Дії.
-4. Неофіційна реалізація в `Figma`: <https://www.figma.com/community/file/1270778058754270235>
+4. **Неофіційна** реалізація в `Figma`: <https://www.figma.com/community/file/1270778058754270235>
 5. Шрифти і заголовки:
     - Опис: <https://thedigital.gov.ua/fonts>
     - [Завантажити шрифти](https://www.dropbox.com/scl/fo/gylb537vfe58stu3wubg0/AMPXS4cao0-0UCPWYaSkXDM?rlkey=mkgtdslwk272lps89wb9hiqqq&e=1&dl=0)
