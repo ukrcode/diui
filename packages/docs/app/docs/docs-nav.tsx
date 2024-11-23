@@ -4,14 +4,18 @@ export default function DocsNav() {
   return (
     <aside>
       <nav>
-        <ul>
+        <ol>
           <li>
             <Link href="/docs/typography">Типографіка</Link>
           </li>
           <li>
             <Link href="/docs/colors">Кольори</Link>
           </li>
-        </ul>
+
+          <li>
+            <Link href="/docs/components">Компоненти</Link>
+          </li>
+        </ol>
       </nav>
     </aside>
   );

@@ -10,6 +10,7 @@ $prefix: config.$class-prefix;
   align-items: center;
   border-radius: fn.to-rem(40px);
   color: css-vars.get-var("text-color");
+  border: none;
   
   // Mobile
   padding: fn.to-rem(12px) fn.to-rem(20px);
@@ -19,5 +20,17 @@ $prefix: config.$class-prefix;
   @include mx.on-tablet {
     padding: fn.to-rem(16px) fn.to-rem(30px);
     @include mx.basic-font-configuration(16px, 24px, 400);
+  }
+
+  &-primary {
+    background-color: css-vars.get-var("text-color");
+    border: 2px solid css-vars.get-var("text-color");
+    color: css-vars.get-var("bg-color");
+  }
+
+  &-outline {
+    background-color: transparent;
+    color: css-vars.get-var("text-color");
+    border: 2px solid css-vars.get-var("text-color");
   }
 }

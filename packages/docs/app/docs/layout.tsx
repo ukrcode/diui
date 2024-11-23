@@ -11,7 +11,7 @@ export default function DocsLayout({
       <aside>
         <DocsNav />
       </aside>
-      <article>{children}</article>
+      <article className="di-container">{children}</article>
     </>
   );
 }
