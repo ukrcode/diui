@@ -1,0 +1,7 @@
+@use "../css-vars" as css-vars;
+
+@mixin add-outline {
+  outline: 2px solid css-vars.get-var("c-radiance-60");
+  outline-offset: 4px;
+  box-shadow: 0 0 0 4px css-vars.get-var("c-radiance");
+}

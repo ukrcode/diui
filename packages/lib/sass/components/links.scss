@@ -11,4 +11,9 @@
   @include mx.on-tablet {
     @include mx.basic-font-configuration(16px, 24px, 400);
   }
+
+  // Focus
+  &:focus {
+    @include mx.add-outline;
+  }
 }

@@ -379,22 +379,6 @@
   }
 }
 
-.di-link {
-  color: var(--di-text-color);
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-family: var(--di-font-family-primary);
-  font-weight: 400;
-}
-@media screen and (min-width: 576px), print {
-  .di-link {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-family: var(--di-font-family-primary);
-    font-weight: 400;
-  }
-}
-
 @font-face {
   font-family: "e-ukraine";
   font-style: normal;
@@ -619,11 +603,21 @@
   border-radius: 2.5rem;
   color: var(--di-text-color);
   border: none;
+  background-color: var(--di-c-light-gray);
   padding: 0.75rem 1.25rem;
   font-size: 1rem;
   line-height: 1.5rem;
   font-family: var(--di-font-family-primary);
   font-weight: 400;
+}
+.di-btn:focus {
+  outline: 2px solid var(--di-c-radiance-60);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 4px var(--di-c-radiance);
+}
+.di-btn:active:not(:disabled) {
+  filter: brightness(0.9) saturate(1.2);
+  transform: scale(0.98);
 }
 @media screen and (min-width: 576px), print {
   .di-btn {
@@ -639,9 +633,51 @@
   border: 2px solid var(--di-text-color);
   color: var(--di-bg-color);
 }
+@media (hover: hover) and (pointer: fine) {
+  .di-btn-primary:hover {
+    border-color: var(--di-c-dodger-blue);
+    background-color: var(--di-c-dodger-blue);
+  }
+}
+.di-btn-primary:disabled {
+  border-color: var(--di-c-gray);
+  background-color: var(--di-c-gray);
+}
 .di-btn-outline {
   background-color: transparent;
   color: var(--di-text-color);
   border: 2px solid var(--di-text-color);
+}
+@media (hover: hover) and (pointer: fine) {
+  .di-btn-outline:hover {
+    color: var(--di-bg-color);
+    background-color: var(--di-text-color);
+  }
+}
+.di-btn-outline:disabled {
+  color: var(--di-c-gray);
+  border-color: var(--di-c-gray);
+  background-color: transparent;
+}
+
+.di-link {
+  color: var(--di-text-color);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
+}
+@media screen and (min-width: 576px), print {
+  .di-link {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: var(--di-font-family-primary);
+    font-weight: 400;
+  }
+}
+.di-link:focus {
+  outline: 2px solid var(--di-c-radiance-60);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 4px var(--di-c-radiance);
 }
 /*# sourceMappingURL=diui.css.map */

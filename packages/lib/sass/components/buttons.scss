@@ -11,11 +11,24 @@ $prefix: config.$class-prefix;
   border-radius: fn.to-rem(40px);
   color: css-vars.get-var("text-color");
   border: none;
-  
+
+  background-color: css-vars.get-var("c-light-gray");
+
+  // Outline
+  &:focus {
+    @include mx.add-outline;
+  }
+
+  // Pressed
+  &:active:not(:disabled) {
+    filter: brightness(0.9) saturate(1.2);
+    transform: scale(0.98);
+  }
+
   // Mobile
   padding: fn.to-rem(12px) fn.to-rem(20px);
   @include mx.basic-font-configuration(16px, 24px, 400);
-  
+
   // Tablet
   @include mx.on-tablet {
     padding: fn.to-rem(16px) fn.to-rem(30px);
@@ -26,11 +39,36 @@ $prefix: config.$class-prefix;
     background-color: css-vars.get-var("text-color");
     border: 2px solid css-vars.get-var("text-color");
     color: css-vars.get-var("bg-color");
+
+    @include mx.on-not-touch-devices {
+      &:hover {
+        border-color: css-vars.get-var("c-dodger-blue");
+        background-color: css-vars.get-var("c-dodger-blue");
+      }
+    }
+
+    &:disabled {
+      border-color: css-vars.get-var("c-gray");
+      background-color: css-vars.get-var("c-gray");
+    }
   }
 
   &-outline {
     background-color: transparent;
     color: css-vars.get-var("text-color");
     border: 2px solid css-vars.get-var("text-color");
+
+    @include mx.on-not-touch-devices {
+      &:hover {
+        color: css-vars.get-var("bg-color");
+        background-color: css-vars.get-var("text-color");
+      }
+    }
+
+    &:disabled {
+      color: css-vars.get-var("c-gray");
+      border-color: css-vars.get-var("c-gray");
+      background-color: transparent;
+    }
   }
 }

@@ -23,3 +23,9 @@
     @content;
   }
 }
+
+@mixin on-not-touch-devices {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}

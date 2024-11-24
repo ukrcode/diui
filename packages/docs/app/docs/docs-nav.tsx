@@ -6,14 +6,14 @@ export default function DocsNav() {
       <nav>
         <ol>
           <li>
-            <Link href="/docs/typography">Типографіка</Link>
+            <Link className="di-link" href="/docs/typography">Типографіка</Link>
           </li>
           <li>
-            <Link href="/docs/colors">Кольори</Link>
+            <Link className="di-link" href="/docs/colors">Кольори</Link>
           </li>
 
           <li>
-            <Link href="/docs/components">Компоненти</Link>
+            <Link className="di-link" href="/docs/components">Компоненти</Link>
           </li>
         </ol>
       </nav>
