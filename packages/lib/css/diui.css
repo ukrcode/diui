@@ -605,8 +605,8 @@
   border: none;
   background-color: var(--di-c-light-gray);
   padding: 0.75rem 1.25rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.8125rem;
+  line-height: 1rem;
   font-family: var(--di-font-family-primary);
   font-weight: 400;
 }
@@ -627,6 +627,13 @@
     font-family: var(--di-font-family-primary);
     font-weight: 400;
   }
+}
+.di-btn-sm {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
 }
 .di-btn-primary {
   background-color: var(--di-text-color);
