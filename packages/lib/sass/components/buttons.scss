@@ -17,6 +17,7 @@ $prefix: config.$class-prefix;
   border-radius: fn.to-rem(40px);
   color: css-vars.get-var("text-color");
   border: none;
+  white-space: nowrap;
 
   background-color: css-vars.get-var("c-light-gray");
 

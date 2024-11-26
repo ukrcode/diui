@@ -603,6 +603,7 @@
   border-radius: 2.5rem;
   color: var(--di-text-color);
   border: none;
+  white-space: nowrap;
   background-color: var(--di-c-light-gray);
   padding: 0.75rem 1.25rem;
   font-size: 0.8125rem;
