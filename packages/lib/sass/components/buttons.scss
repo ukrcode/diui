@@ -10,6 +10,7 @@ $prefix: config.$class-prefix;
   @include mx.basic-font-configuration(13px, 16px, 400);
 }
 
+// Regular Button
 .#{$prefix}-btn {
   display: flex;
   align-items: center;
@@ -19,9 +20,13 @@ $prefix: config.$class-prefix;
 
   background-color: css-vars.get-var("c-light-gray");
 
-  // Outline
+  // Outline Button
   &:focus {
     @include mx.add-outline;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
   }
 
   // Pressed
@@ -39,10 +44,12 @@ $prefix: config.$class-prefix;
     @include mx.basic-font-configuration(16px, 24px, 400);
   }
 
+  // Small Button
   &-sm {
     @include add-button-mobile-styles;
   }
 
+  // Primary Button
   &-primary {
     background-color: css-vars.get-var("text-color");
     border: 2px solid css-vars.get-var("text-color");
@@ -61,6 +68,7 @@ $prefix: config.$class-prefix;
     }
   }
 
+  // Outline Button
   &-outline {
     background-color: transparent;
     color: css-vars.get-var("text-color");
@@ -77,6 +85,23 @@ $prefix: config.$class-prefix;
       color: css-vars.get-var("c-gray");
       border-color: css-vars.get-var("c-gray");
       background-color: transparent;
+    }
+  }
+
+  // Text Button
+  &-text {
+    background-color: transparent;
+    border: none;
+    color: css-vars.get-var("text-color");
+
+    @include mx.on-not-touch-devices {
+      &:hover:not(:disabled) {
+        text-decoration: underline;
+      }
+    }
+
+    &:disabled {
+      color: css-vars.get-var("c-gray");
     }
   }
 }

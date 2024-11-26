@@ -615,6 +615,9 @@
   outline-offset: 4px;
   box-shadow: 0 0 0 4px var(--di-c-radiance);
 }
+.di-btn:disabled {
+  cursor: not-allowed;
+}
 .di-btn:active:not(:disabled) {
   filter: brightness(0.9) saturate(1.2);
   transform: scale(0.98);
@@ -665,6 +668,19 @@
   color: var(--di-c-gray);
   border-color: var(--di-c-gray);
   background-color: transparent;
+}
+.di-btn-text {
+  background-color: transparent;
+  border: none;
+  color: var(--di-text-color);
+}
+@media (hover: hover) and (pointer: fine) {
+  .di-btn-text:hover:not(:disabled) {
+    text-decoration: underline;
+  }
+}
+.di-btn-text:disabled {
+  color: var(--di-c-gray);
 }
 
 .di-link {

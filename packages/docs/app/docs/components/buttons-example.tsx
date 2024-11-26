@@ -16,6 +16,14 @@ export default function ButtonsExample() {
           <button className="di-btn di-btn-outline" disabled>
             Outline Disabled
           </button>
+
+          <button className="di-btn di-btn-text">
+            Text
+          </button>
+
+          <button disabled className="di-btn di-btn-text">
+            Text Disabled
+          </button>
         </div>
       </section>
 
@@ -35,6 +43,14 @@ export default function ButtonsExample() {
           </button>
           <button className="di-btn di-btn-outline di-btn-sm" disabled>
             Outline Disabled small
+          </button>
+
+          <button className="di-btn di-btn-text di-btn-sm">
+            Text
+          </button>
+
+          <button disabled className="di-btn di-btn-text di-btn-sm">
+            Text Disabled
           </button>
         </div>
       </section>
