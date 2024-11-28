@@ -704,4 +704,19 @@
   outline-offset: 4px;
   box-shadow: 0 0 0 4px var(--di-c-radiance);
 }
+
+.di-form-field {
+  position: relative;
+}
+
+.di-form-field-label[for] {
+  color: var(--di-c-gray);
+}
+
+.di-form-field-input[id] {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid var(--di-text-color);
+}
 /*# sourceMappingURL=diui.css.map */

@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
 import DocsNav from "./docs-nav";
+import "./layout.css";
 
 export default function DocsLayout({
   children,
@@ -11,7 +11,7 @@ export default function DocsLayout({
       <aside>
         <DocsNav />
       </aside>
-      <article className="di-container">{children}</article>
+      <article className="di-container utils-page">{children}</article>
     </>
   );
 }

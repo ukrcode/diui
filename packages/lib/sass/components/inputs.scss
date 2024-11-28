@@ -1,0 +1,21 @@
+@use "../utilities/css-vars" as css-vars;
+@use "../utilities/functions" as fn;
+@use "../utilities/mixins" as mx;
+@use "../config" as config;
+
+$prefix: config.$class-prefix;
+
+.#{$prefix}-form-field {
+  position: relative;
+}
+
+.#{$prefix}-form-field-label[for] {
+    color: css-vars.get-var("c-gray");
+}
+
+.#{$prefix}-form-field-input[id] {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid css-vars.get-var("text-color");
+}

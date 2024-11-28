@@ -28,7 +28,7 @@ export default function ButtonsExample() {
       </section>
 
       <section>
-        <h4>Regular Buttons</h4>
+        <h4>Small Buttons</h4>
 
         <div className="buttons-example-row ">
           <button className="di-btn di-btn-sm">Regular button small</button>
