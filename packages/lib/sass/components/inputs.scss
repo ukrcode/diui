@@ -5,17 +5,34 @@
 
 $prefix: config.$class-prefix;
 
+$label-selector: ".#{$prefix}-form-field-label";
+$input-selector: ".#{$prefix}-form-field-input";
+
 .#{$prefix}-form-field {
   position: relative;
+  padding-top: fn.to-rem(20px);
+  padding-bottom: fn.to-rem(20px);
 }
 
-.#{$prefix}-form-field-label[for] {
-    color: css-vars.get-var("c-gray");
+#{$label-selector} {
+  position: absolute;
+  top: fn.to-rem(16px);
+  left: fn.to-rem(0px);
+  transition: 0.2s ease all;
+  color: css-vars.get-var("c-gray");
 }
 
-.#{$prefix}-form-field-input[id] {
+#{$input-selector}:not(:placeholder-shown) ~ #{$label-selector},
+#{$input-selector}:focus ~ #{$label-selector} {
+  top: 0;
+  font-size: fn.to-rem(12px);
+}
+
+#{$input-selector} {
   border-top: none;
   border-right: none;
   border-left: none;
   border-bottom: 2px solid css-vars.get-var("text-color");
+  padding-top: fn.to-rem(5px);
+  padding-bottom: fn.to-rem(5px);
 }

@@ -707,16 +707,30 @@
 
 .di-form-field {
   position: relative;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
-.di-form-field-label[for] {
+.di-form-field-label {
+  position: absolute;
+  top: 1rem;
+  left: 0rem;
+  transition: 0.2s ease all;
   color: var(--di-c-gray);
 }
 
-.di-form-field-input[id] {
+.di-form-field-input:not(:placeholder-shown) ~ .di-form-field-label,
+.di-form-field-input:focus ~ .di-form-field-label {
+  top: 0;
+  font-size: 0.75rem;
+}
+
+.di-form-field-input {
   border-top: none;
   border-right: none;
   border-left: none;
   border-bottom: 2px solid var(--di-text-color);
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
 }
 /*# sourceMappingURL=diui.css.map */
