@@ -85,6 +85,7 @@
   --di-gr-5: linear-gradient(90deg, var(--di-c-pumpkin) 0%, var(--di-c-yellow-green) 100%);
   --di-font-family-primary: e-ukraine, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
   --di-font-family-head: e-ukraine-head, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --di-font-family-code: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --di-text-color: var(--di-c-black);
   --di-invert-text-color: var(--di-c-white);
   --di-bg-color: var(--di-c-white);
@@ -268,33 +269,17 @@
 }
 
 .di-sm-text {
-  font-size: 0.625rem;
-  line-height: 0.875rem;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
   font-family: var(--di-font-family-primary);
   font-weight: 300;
-}
-@media screen and (min-width: 576px), print {
-  .di-sm-text {
-    font-size: 0.8125rem;
-    line-height: 1.125rem;
-    font-family: var(--di-font-family-primary);
-    font-weight: 300;
-  }
 }
 
 .di-body-text {
-  font-size: 0.6875rem;
-  line-height: 0.875rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-family: var(--di-font-family-primary);
   font-weight: 300;
-}
-@media screen and (min-width: 576px), print {
-  .di-body-text {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-family: var(--di-font-family-primary);
-    font-weight: 300;
-  }
 }
 
 .di-bold-text {
@@ -302,81 +287,41 @@
 }
 
 .di-xsm-text {
-  font-size: 0.625rem;
-  line-height: 0.875rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   font-family: var(--di-font-family-primary);
   font-weight: 300;
 }
-@media screen and (min-width: 576px), print {
-  .di-xsm-text {
-    font-size: 0.75rem;
-    line-height: 1rem;
-    font-family: var(--di-font-family-primary);
-    font-weight: 300;
-  }
-}
 
 .di-underline-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
   text-decoration: underline;
+}
+
+.di-underline-md {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.di-underline-sm {
   font-size: 0.8125rem;
   line-height: 1.125rem;
   font-family: var(--di-font-family-primary);
   font-weight: 400;
-}
-@media screen and (min-width: 576px), print {
-  .di-underline-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    font-family: var(--di-font-family-primary);
-    font-weight: 400;
-  }
-}
-
-.di-underline-md {
   text-decoration: underline;
-  font-size: 0.6875rem;
-  line-height: 0.875rem;
-  font-family: var(--di-font-family-primary);
-  font-weight: 400;
-}
-@media screen and (min-width: 576px), print {
-  .di-underline-md {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-family: var(--di-font-family-primary);
-    font-weight: 400;
-  }
-}
-
-.di-underline-sm {
-  text-decoration: underline;
-  font-size: 0.625rem;
-  line-height: 0.875rem;
-  font-family: var(--di-font-family-primary);
-  font-weight: 400;
-}
-@media screen and (min-width: 576px), print {
-  .di-underline-sm {
-    font-size: 0.8125rem;
-    line-height: 1.125rem;
-    font-family: var(--di-font-family-primary);
-    font-weight: 400;
-  }
 }
 
 .di-quote {
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
   font-family: var(--di-font-family-primary);
   font-weight: 400;
-}
-@media screen and (min-width: 576px), print {
-  .di-quote {
-    font-size: 1.25rem;
-    line-height: 2rem;
-    font-family: var(--di-font-family-primary);
-    font-weight: 400;
-  }
 }
 
 @font-face {
@@ -417,18 +362,10 @@
 .di-body {
   margin: 0;
   color: var(--di-text-color);
-  font-size: 0.6875rem;
-  line-height: 0.875rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-family: var(--di-font-family-primary);
   font-weight: 300;
-}
-@media screen and (min-width: 576px), print {
-  .di-body {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-family: var(--di-font-family-primary);
-    font-weight: 300;
-  }
 }
 .di-body * {
   box-sizing: border-box;
@@ -597,6 +534,10 @@
   }
 }
 
+.di-page {
+  padding-bottom: 1.875rem;
+}
+
 .di-btn {
   display: flex;
   align-items: center;
@@ -610,11 +551,6 @@
   line-height: 1rem;
   font-family: var(--di-font-family-primary);
   font-weight: 400;
-}
-.di-btn:focus {
-  outline: 2px solid var(--di-c-radiance-60);
-  outline-offset: 4px;
-  box-shadow: 0 0 0 4px var(--di-c-radiance);
 }
 .di-btn:disabled {
   cursor: not-allowed;
@@ -685,24 +621,11 @@
 }
 
 .di-link {
-  color: var(--di-text-color);
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-family: var(--di-font-family-primary);
   font-weight: 400;
-}
-@media screen and (min-width: 576px), print {
-  .di-link {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-family: var(--di-font-family-primary);
-    font-weight: 400;
-  }
-}
-.di-link:focus {
-  outline: 2px solid var(--di-c-radiance-60);
-  outline-offset: 4px;
-  box-shadow: 0 0 0 4px var(--di-c-radiance);
+  color: var(--di-text-color);
 }
 
 .di-form-field {
@@ -732,5 +655,10 @@
   border-bottom: 2px solid var(--di-text-color);
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
+}
+
+.di-code {
+  font-family: var(--di-font-family-code);
+  color: var(--di-c-violet);
 }
 /*# sourceMappingURL=diui.css.map */

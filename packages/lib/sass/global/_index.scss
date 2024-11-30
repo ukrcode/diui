@@ -10,14 +10,17 @@
 .#{config.$class-prefix}-body {
   margin: 0; // Remove default margin
   color: css-vars.get-var("text-color");
+  @include mx.basic-font-configuration(16px, 24px, 300);
 
   // Set font size and line height for MOBILE
-  @include mx.basic-font-configuration(11px, 14px, 300);
-
+  // Consider not to change font-suze for mobile 
+  // In sake of accessibility
+  // @include mx.basic-font-configuration(11px, 14px, 300);
+  
   // Set font size and line height for TABLET and DESKTOP
-  @include mx.on-tablet {
-    @include mx.basic-font-configuration(16px, 24px, 300);
-  }
+  // @include mx.on-tablet {
+    // @include mx.basic-font-configuration(16px, 24px, 300);
+  // }
 
   * {
     box-sizing: border-box;

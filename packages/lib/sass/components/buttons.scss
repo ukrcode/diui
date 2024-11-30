@@ -22,9 +22,9 @@ $prefix: config.$class-prefix;
   background-color: css-vars.get-var("c-light-gray");
 
   // Outline Button
-  &:focus {
-    @include mx.add-outline;
-  }
+  // &:focus {
+    // @include mx.add-outline;
+  // }
 
   &:disabled {
     cursor: not-allowed;

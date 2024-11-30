@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="di-body">{children}</body>
+      <body className="di-body di-page">{children}</body>
     </html>
   );
 }

@@ -3,16 +3,20 @@
 @use "../config" as config;
 
 .#{config.$class-prefix}-container {
-    padding-right: fn.to-rem(15px);
-    padding-left: fn.to-rem(15px);
-    margin-right: auto;
-    margin-left: auto;
+  padding-right: fn.to-rem(15px);
+  padding-left: fn.to-rem(15px);
+  margin-right: auto;
+  margin-left: auto;
 
-    @include mx.on-tablet {
-        padding: 0 fn.to-rem(64px);
-    }
+  @include mx.on-tablet {
+    padding: 0 fn.to-rem(64px);
+  }
 
-    @include mx.on-desktop {
-        padding: 0 fn.to-rem(80px);
-    }
+  @include mx.on-desktop {
+    padding: 0 fn.to-rem(80px);
+  }
+}
+
+.#{config.$class-prefix}-page {
+  padding-bottom: fn.to-rem(30px);
 }

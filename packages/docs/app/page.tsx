@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import styles from "./page.module.css";
-import HomePage from "./home-page.mdx";
+import HomePage from "./home-page-content.mdx";
 
 export default function Home() {
   return (
