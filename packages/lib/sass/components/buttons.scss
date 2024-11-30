@@ -37,7 +37,10 @@ $prefix: config.$class-prefix;
   }
 
   // Mobile
-  @include add-button-mobile-styles;
+  // Commented code is an initial implementation
+  // where font-size was changed for mobile, to make it smaller
+  // However, we decided to keep it the same for mobile and desktop
+  // @include add-button-mobile-styles;
 
   // Tablet
   @include mx.on-tablet {
