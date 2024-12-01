@@ -1,13 +1,19 @@
-@use "../utilities/css-vars" as css-vars;
-@use "../utilities/functions" as fn;
-@use "../utilities/mixins" as mx;
-@use "../config" as config;
+@use "../../utilities/css-vars" as css-vars;
+@use "../../utilities/functions" as fn;
+@use "../../utilities/mixins" as mx;
+@use "../../config" as config;
 
 $prefix: config.$class-prefix;
 
-@mixin add-button-mobile-styles {
-  padding: fn.to-rem(12px) fn.to-rem(20px);
-  @include mx.basic-font-configuration(13px, 16px, 400);
+// @mixin add-button-mobile-styles {
+// padding: fn.to-rem(12px) fn.to-rem(20px);
+// @include mx.base-font-configuration(13px, 16px, 400);
+// }
+
+@mixin add-btn-active-styles {
+  &:active:not(:disabled) {
+    @content;
+  }
 }
 
 // Regular Button
@@ -15,7 +21,10 @@ $prefix: config.$class-prefix;
   display: flex;
   align-items: center;
   border-radius: fn.to-rem(40px);
+  padding: fn.to-rem(12px) fn.to-rem(20px);
+
   color: css-vars.get-var("text-color");
+  @include mx.base-font-configuration(16px, 24px, 400);
   border: none;
   white-space: nowrap;
 
@@ -23,7 +32,7 @@ $prefix: config.$class-prefix;
 
   // Outline Button
   // &:focus {
-    // @include mx.add-outline;
+  // @include mx.add-outline;
   // }
 
   &:disabled {
@@ -31,7 +40,7 @@ $prefix: config.$class-prefix;
   }
 
   // Pressed
-  &:active:not(:disabled) {
+  @include add-btn-active-styles {
     filter: brightness(0.9) saturate(1.2);
     transform: scale(0.98);
   }
@@ -45,12 +54,11 @@ $prefix: config.$class-prefix;
   // Tablet
   @include mx.on-tablet {
     padding: fn.to-rem(16px) fn.to-rem(30px);
-    @include mx.basic-font-configuration(16px, 24px, 400);
   }
 
   // Small Button
   &-sm {
-    @include add-button-mobile-styles;
+    @include mx.base-font-configuration(13px, 16px, 400);
   }
 
   // Primary Button
@@ -106,6 +114,11 @@ $prefix: config.$class-prefix;
 
     &:disabled {
       color: css-vars.get-var("c-gray");
+    }
+
+    @include add-btn-active-styles {
+      filter: brightness(0.8) saturate(1.2);
+      transform: scale(0.85);
     }
   }
 }

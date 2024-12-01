@@ -2,7 +2,7 @@
 @use "../css-vars" as css-vars;
 @use "../functions" as fn;
 
-@mixin basic-font-configuration(
+@mixin base-font-configuration(
   $font-size,
   $line-height,
   $font-weight: 400,

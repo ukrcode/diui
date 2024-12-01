@@ -4,7 +4,7 @@ export default function ButtonsExample() {
   return (
     <>
       <section>
-        <h4>Regular Buttons</h4>
+        <h3>Regular Buttons</h3>
 
         <div className="buttons-example-row ">
           <button className="di-btn">Regular button</button>
@@ -28,7 +28,7 @@ export default function ButtonsExample() {
       </section>
 
       <section>
-        <h4>Small Buttons</h4>
+        <h3>Small Buttons</h3>
 
         <div className="buttons-example-row ">
           <button className="di-btn di-btn-sm">Regular button small</button>

@@ -542,15 +542,15 @@
   display: flex;
   align-items: center;
   border-radius: 2.5rem;
+  padding: 0.75rem 1.25rem;
   color: var(--di-text-color);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
   border: none;
   white-space: nowrap;
   background-color: var(--di-c-light-gray);
-  padding: 0.75rem 1.25rem;
-  font-size: 0.8125rem;
-  line-height: 1rem;
-  font-family: var(--di-font-family-primary);
-  font-weight: 400;
 }
 .di-btn:disabled {
   cursor: not-allowed;
@@ -562,14 +562,9 @@
 @media screen and (min-width: 576px), print {
   .di-btn {
     padding: 1rem 1.875rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-family: var(--di-font-family-primary);
-    font-weight: 400;
   }
 }
 .di-btn-sm {
-  padding: 0.75rem 1.25rem;
   font-size: 0.8125rem;
   line-height: 1rem;
   font-family: var(--di-font-family-primary);
@@ -619,6 +614,10 @@
 .di-btn-text:disabled {
   color: var(--di-c-gray);
 }
+.di-btn-text:active:not(:disabled) {
+  filter: brightness(0.8) saturate(1.2);
+  transform: scale(0.85);
+}
 
 .di-link {
   font-size: 1rem;
@@ -626,6 +625,12 @@
   font-family: var(--di-font-family-primary);
   font-weight: 400;
   color: var(--di-text-color);
+}
+.di-link-sm {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
 }
 
 .di-form-field {
@@ -649,12 +654,24 @@
 }
 
 .di-form-field-input {
+  width: 100%;
   border-top: none;
   border-right: none;
   border-left: none;
   border-bottom: 2px solid var(--di-text-color);
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
+}
+
+.di-form-field-hint {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
+  background-color: var(--di-c-gorse-20);
+  color: var(--di-text-color);
+  padding: 0.5rem 0.25rem;
+  margin-top: 0.5rem;
 }
 
 .di-code {

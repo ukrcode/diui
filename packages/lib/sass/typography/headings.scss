@@ -39,76 +39,76 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
 
 // Display
 .#{$prefix}-h1-display {
-  @include mx.basic-font-configuration(127px, 156px);
+  @include mx.base-font-configuration(127px, 156px);
   @include apply-big-heading-margins;
 }
 
 // h1
 .#{$prefix}-h1 {
-  @include mx.basic-font-configuration(26px, 28px);
+  @include mx.base-font-configuration(26px, 28px);
   @include apply-big-heading-margins;
 
   @include mx.on-tablet {
-    @include mx.basic-font-configuration(56px, 60px);
+    @include mx.base-font-configuration(56px, 60px);
   }
 }
 
 // h1-head
 .#{$prefix}-h1-head {
-  @include mx.basic-font-configuration(26px, 28px, 400, "head");
+  @include mx.base-font-configuration(26px, 28px, 400, "head");
   @include apply-big-heading-margins;
 
   @include mx.on-tablet {
-    @include mx.basic-font-configuration(56px, 60px, 400, "head");
+    @include mx.base-font-configuration(56px, 60px, 400, "head");
   }
 }
 
 // h2
 .#{$prefix}-h2 {
-  @include mx.basic-font-configuration(20px, 24px);
+  @include mx.base-font-configuration(20px, 24px);
   @include apply-big-heading-margins;
 
   @include mx.on-tablet {
-    @include mx.basic-font-configuration(38px, 40px);
+    @include mx.base-font-configuration(38px, 40px);
   }
 }
 
 // h3
 .#{$prefix}-h3 {
-  @include mx.basic-font-configuration(18px, 24px);
+  @include mx.base-font-configuration(18px, 24px);
   @include apply-big-heading-margins;
 
   @include mx.on-tablet {
-    @include mx.basic-font-configuration(28px, 32px);
+    @include mx.base-font-configuration(28px, 32px);
   }
 }
 
 // h4
 .#{$prefix}-h4 {
-  @include mx.basic-font-configuration(16px, 24px);
+  @include mx.base-font-configuration(16px, 24px);
   @include apply-small-heading-margins;
 
   @include mx.on-tablet {
-    @include mx.basic-font-configuration(24px, 28px);
+    @include mx.base-font-configuration(24px, 28px);
   }
 }
 
 // h5
 .#{$prefix}-h5 {
-  @include mx.basic-font-configuration(14px, 20px);
+  @include mx.base-font-configuration(14px, 20px);
   @include apply-small-heading-margins;
 
   @include mx.on-tablet {
-    @include mx.basic-font-configuration(20px, 24px);
+    @include mx.base-font-configuration(20px, 24px);
   }
 }
 
 // h6
 .#{$prefix}-h6 {
-  @include mx.basic-font-configuration(13px, 18px);
+  @include mx.base-font-configuration(13px, 18px);
   @include apply-small-heading-margins;
 
   @include mx.on-tablet {
-    @include mx.basic-font-configuration(18px, 28px);
+    @include mx.base-font-configuration(18px, 28px);
   }
 }

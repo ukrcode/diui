@@ -1,7 +1,7 @@
-import PageDescription from "./page-description.mdx";
+import PageContent from "./components-page-content.mdx";
 
 export default function ComponentsPage() {
     return (
-        <PageDescription />
+        <PageContent />
     )
 }
