@@ -5,6 +5,8 @@ export default function FormFieldsExample() {
         type="text"
         id="some-text-field"
         placeholder=""
+        value="Some value"
+        disabled
         className="di-form-field-input"
       />
       <label htmlFor="some-text-field" className="di-form-field-label">

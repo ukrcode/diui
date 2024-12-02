@@ -538,6 +538,17 @@
   padding-bottom: 1.875rem;
 }
 
+.di-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.di-flex-gap-1 {
+  gap: 0.5rem;
+}
+.di-flex-gap-2 {
+  gap: 1rem;
+}
+
 .di-btn {
   display: flex;
   align-items: center;
@@ -641,7 +652,7 @@
 
 .di-form-field-label {
   position: absolute;
-  top: 1rem;
+  top: 1.25rem;
   left: 0rem;
   transition: 0.2s ease all;
   color: var(--di-c-gray);
@@ -662,16 +673,28 @@
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
 }
+.di-form-field-input:disabled {
+  color: var(--di-c-gray);
+  border-bottom-color: var(--di-c-gray);
+  background-color: transparent;
+}
+
+.di-form-field-invalid .di-form-field-input,
+.di-form-field-input:invalid {
+  color: var(--di-c-scarlet);
+  border-bottom-color: var(--di-c-scarlet);
+}
 
 .di-form-field-hint {
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-family: var(--di-font-family-primary);
-  font-weight: 400;
   background-color: var(--di-c-gorse-20);
   color: var(--di-text-color);
   padding: 0.5rem 0.25rem;
   margin-top: 0.5rem;
+}
+.di-form-field-hint-invalid, .di-form-field-invalid .di-form-field-hint, .di-form-field-input:invalid ~ .di-form-field-hint {
+  color: var(--di-c-scarlet);
+  background-color: transparent;
+  margin-top: 0;
 }
 
 .di-code {

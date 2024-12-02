@@ -18,7 +18,9 @@ $input-selector: ".#{$prefix}-form-field-input";
 // Label
 #{$label-selector} {
   position: absolute;
-  top: fn.to-rem(16px);
+
+  top: fn.to-rem(20px);
+
   left: fn.to-rem(0px);
   transition: 0.2s ease all;
   color: css-vars.get-var("c-gray");
@@ -38,15 +40,39 @@ $input-selector: ".#{$prefix}-form-field-input";
   border-right: none;
   border-left: none;
   border-bottom: 2px solid css-vars.get-var("text-color");
+
+
   padding-top: fn.to-rem(5px);
   padding-bottom: fn.to-rem(5px);
+
+  // Disabled Input
+  &:disabled {
+    color: css-vars.get-var("c-gray");
+    border-bottom-color: css-vars.get-var("c-gray");
+    background-color: transparent;
+  }
+}
+
+// Invalid Input
+.#{$prefix}-form-field-invalid #{$input-selector},
+#{$input-selector}:invalid {
+  color: css-vars.get-var("c-scarlet");
+  border-bottom-color: css-vars.get-var("c-scarlet");
 }
 
 // Hint
 .#{$prefix}-form-field-hint {
-  @include mx.base-font-configuration(12px, 16px, 400);
   background-color: css-vars.get-var("c-gorse-20");
   color: css-vars.get-var("text-color");
   padding: fn.to-rem(8px) fn.to-rem(4px);
   margin-top: fn.to-rem(8px);
+
+  // Invalid Hint
+  &-invalid,
+  .#{$prefix}-form-field-invalid &,
+  #{$input-selector}:invalid ~ & {
+    color: css-vars.get-var("c-scarlet");
+    background-color: transparent;
+    margin-top: 0;
+  }
 }

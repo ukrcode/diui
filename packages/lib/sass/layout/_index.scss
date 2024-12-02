@@ -20,3 +20,17 @@
 .#{config.$class-prefix}-page {
   padding-bottom: fn.to-rem(30px);
 }
+
+.#{config.$class-prefix}-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-gap-1 {
+    gap: fn.to-rem(8px);
+  }
+
+  &-gap-2 {
+    gap: fn.to-rem(16px);
+  }
+}
+
