@@ -18,10 +18,9 @@ $input-selector: ".#{$prefix}-form-field-input";
 // Label
 #{$label-selector} {
   position: absolute;
-
   top: fn.to-rem(20px);
-
   left: fn.to-rem(0px);
+
   transition: 0.2s ease all;
   color: css-vars.get-var("c-gray");
 }
@@ -40,7 +39,6 @@ $input-selector: ".#{$prefix}-form-field-input";
   border-right: none;
   border-left: none;
   border-bottom: 2px solid css-vars.get-var("text-color");
-
 
   padding-top: fn.to-rem(5px);
   padding-bottom: fn.to-rem(5px);
