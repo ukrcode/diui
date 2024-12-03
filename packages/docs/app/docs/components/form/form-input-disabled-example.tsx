@@ -3,17 +3,20 @@ export default function FormFieldsExample() {
     <div className="di-form-field" style={{ width: "200px" }}>
       <input
         type="text"
-        id="some-text-field"
+        id="some-text-field-100"
         placeholder=""
         value="Some value"
+        aria-describedby="some-text-field-100-hint"
         disabled
         className="di-form-field-input"
       />
-      <label htmlFor="some-text-field" className="di-form-field-label">
+      <label htmlFor="some-text-field-100" className="di-form-field-label">
         Label
       </label>
 
-      <div className="di-form-field-hint">Hint Text</div>
+      <div id="some-text-field-100-hint" className="di-form-field-hint">
+        Hint Text
+      </div>
     </div>
   );
 }

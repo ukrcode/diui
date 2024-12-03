@@ -1,0 +1,84 @@
+@use "../utilities/functions" as fn;
+@use "../config" as config;
+
+.#{config.$class-prefix}-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  // Flex direction
+  &-row {
+    flex-direction: row;
+  }
+
+  &-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &-column {
+    flex-direction: column;
+  }
+
+  &-column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  // Justify content
+  &-justify-center {
+    justify-content: center;
+  }
+
+  &-justify-end {
+    justify-content: flex-end;
+  }
+
+  &-justify-between {
+    justify-content: space-between;
+  }
+
+  &-justify-around {
+    justify-content: space-around;
+  }
+
+  &-justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  &-justify-start {
+    justify-content: flex-start;
+  }
+
+  // Align items
+  &-align-center {
+    align-items: center;
+  }
+
+  &-align-end {
+    align-items: flex-end;
+  }
+
+  &-align-stretch {
+    align-items: stretch;
+  }
+
+  &-align-baseline {
+    align-items: baseline;
+  }
+
+  &-align-start {
+    align-items: flex-start;
+  }
+}
+
+.#{config.$class-prefix}-gap {
+  &-1 {
+    gap: fn.to-rem(8px);
+  }
+
+  &-2 {
+    gap: fn.to-rem(16px);
+  }
+
+  &-3 {
+    gap: fn.to-rem(24px);
+  }
+}

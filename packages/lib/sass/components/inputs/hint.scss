@@ -1,0 +1,26 @@
+@use "../../utilities/css-vars" as css-vars;
+@use "../../utilities/functions" as fn;
+@use "../../utilities/mixins" as mx;
+@use "../../config" as config;
+@use "./vars" as vars;
+
+$prefix: config.$class-prefix;
+
+// Hint
+.#{$prefix}-form-field-hint {
+  background-color: css-vars.get-var("c-gorse-20");
+  color: css-vars.get-var("text-color");
+  padding: fn.to-rem(8px) fn.to-rem(4px);
+  margin-top: fn.to-rem(8px);
+  @include mx.base-font-configuration(12px, 16px, 300);
+
+  // Invalid Hint
+  .#{$prefix}-form-field-invalid &,
+  &-invalid,
+  #{vars.$input-selector}:invalid ~ & {
+    color: css-vars.get-var("c-scarlet");
+    background-color: transparent;
+    padding: 0;
+    @include mx.base-font-configuration(16px, 24px, 300);
+  }
+}

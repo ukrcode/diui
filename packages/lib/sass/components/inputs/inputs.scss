@@ -1,12 +1,9 @@
-@use "../utilities/css-vars" as css-vars;
-@use "../utilities/functions" as fn;
-@use "../utilities/mixins" as mx;
-@use "../config" as config;
+@use "../../utilities/css-vars" as css-vars;
+@use "../../utilities/functions" as fn;
+@use "../../config" as config;
+@use "./vars" as vars;
 
 $prefix: config.$class-prefix;
-
-$label-selector: ".#{$prefix}-form-field-label";
-$input-selector: ".#{$prefix}-form-field-input";
 
 // Form field wrapper
 .#{$prefix}-form-field {
@@ -16,7 +13,7 @@ $input-selector: ".#{$prefix}-form-field-input";
 }
 
 // Label
-#{$label-selector} {
+#{vars.$label-selector} {
   position: absolute;
   top: fn.to-rem(20px);
   left: fn.to-rem(0px);
@@ -26,14 +23,14 @@ $input-selector: ".#{$prefix}-form-field-input";
 }
 
 // Label when input is focused
-#{$input-selector}:not(:placeholder-shown) ~ #{$label-selector},
-#{$input-selector}:focus ~ #{$label-selector} {
+#{vars.$input-selector}:not(:placeholder-shown) ~ #{vars.$label-selector},
+#{vars.$input-selector}:focus ~ #{vars.$label-selector} {
   top: 0;
   font-size: fn.to-rem(12px);
 }
 
 // Input
-#{$input-selector} {
+#{vars.$input-selector} {
   width: 100%;
   border-top: none;
   border-right: none;
@@ -52,25 +49,34 @@ $input-selector: ".#{$prefix}-form-field-input";
 }
 
 // Invalid Input
-.#{$prefix}-form-field-invalid #{$input-selector},
-#{$input-selector}:invalid {
+.#{$prefix}-form-field-invalid #{vars.$input-selector},
+#{vars.$input-selector}:invalid {
   color: css-vars.get-var("c-scarlet");
   border-bottom-color: css-vars.get-var("c-scarlet");
 }
 
+@mixin invalid-hint {
+  color: css-vars.get-var("c-scarlet");
+  background-color: transparent;
+  margin-top: 0;
+}
+
 // Hint
-.#{$prefix}-form-field-hint {
+.#{$prefix}-form-field-hint[aria-errormsg],
+.#{$prefix}-form-field-hint[aria-describedby] {
   background-color: css-vars.get-var("c-gorse-20");
   color: css-vars.get-var("text-color");
   padding: fn.to-rem(8px) fn.to-rem(4px);
   margin-top: fn.to-rem(8px);
 
   // Invalid Hint
-  &-invalid,
   .#{$prefix}-form-field-invalid &,
-  #{$input-selector}:invalid ~ & {
-    color: css-vars.get-var("c-scarlet");
-    background-color: transparent;
-    margin-top: 0;
+  #{vars.$input-selector}:invalid ~ & {
+    @include invalid-hint;
   }
+} 
+
+.#{$prefix}-form-field-hint-invalid[aria-errormsg],
+.#{$prefix}-form-field-hint-invalid[aria-describedby] {
+  @include invalid-hint;
 }

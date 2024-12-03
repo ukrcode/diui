@@ -542,6 +542,87 @@
   display: flex;
   flex-wrap: wrap;
 }
+.di-flex-row {
+  flex-direction: row;
+}
+.di-flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.di-flex-column {
+  flex-direction: column;
+}
+.di-flex-column-reverse {
+  flex-direction: column-reverse;
+}
+.di-flex-justify-center {
+  justify-content: center;
+}
+.di-flex-justify-end {
+  justify-content: flex-end;
+}
+.di-flex-justify-between {
+  justify-content: space-between;
+}
+.di-flex-justify-around {
+  justify-content: space-around;
+}
+.di-flex-justify-evenly {
+  justify-content: space-evenly;
+}
+.di-flex-justify-start {
+  justify-content: flex-start;
+}
+.di-flex-align-center {
+  align-items: center;
+}
+.di-flex-align-end {
+  align-items: flex-end;
+}
+.di-flex-align-stretch {
+  align-items: stretch;
+}
+.di-flex-align-baseline {
+  align-items: baseline;
+}
+.di-flex-align-start {
+  align-items: flex-start;
+}
+
+.di-gap-1 {
+  gap: 0.5rem;
+}
+.di-gap-2 {
+  gap: 1rem;
+}
+.di-gap-3 {
+  gap: 1.5rem;
+}
+
+.di-container {
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 576px), print {
+  .di-container {
+    padding: 0 4rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .di-container {
+    padding: 0 5rem;
+  }
+}
+
+.di-page {
+  padding-bottom: 1.875rem;
+}
+
+.di-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
 .di-flex-gap-1 {
   gap: 0.5rem;
 }
@@ -685,16 +766,46 @@
   border-bottom-color: var(--di-c-scarlet);
 }
 
-.di-form-field-hint {
+.di-form-field-hint[aria-errormsg],
+.di-form-field-hint[aria-describedby] {
   background-color: var(--di-c-gorse-20);
   color: var(--di-text-color);
   padding: 0.5rem 0.25rem;
   margin-top: 0.5rem;
 }
-.di-form-field-hint-invalid, .di-form-field-invalid .di-form-field-hint, .di-form-field-input:invalid ~ .di-form-field-hint {
+.di-form-field-invalid .di-form-field-hint[aria-errormsg], .di-form-field-input:invalid ~ .di-form-field-hint[aria-errormsg],
+.di-form-field-invalid .di-form-field-hint[aria-describedby],
+.di-form-field-input:invalid ~ .di-form-field-hint[aria-describedby] {
   color: var(--di-c-scarlet);
   background-color: transparent;
   margin-top: 0;
+}
+
+.di-form-field-hint-invalid[aria-errormsg],
+.di-form-field-hint-invalid[aria-describedby] {
+  color: var(--di-c-scarlet);
+  background-color: transparent;
+  margin-top: 0;
+}
+
+.di-form-field-hint {
+  background-color: var(--di-c-gorse-20);
+  color: var(--di-text-color);
+  padding: 0.5rem 0.25rem;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 300;
+}
+.di-form-field-invalid .di-form-field-hint, .di-form-field-hint-invalid, .di-form-field-input:invalid ~ .di-form-field-hint {
+  color: var(--di-c-scarlet);
+  background-color: transparent;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 300;
 }
 
 .di-code {

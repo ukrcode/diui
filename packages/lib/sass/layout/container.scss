@@ -2,10 +2,6 @@
 @use "../utilities/functions" as fn;
 @use "../config" as config;
 
-@use "container";
-@use "page";
-@use "flex";
-
 .#{config.$class-prefix}-container {
   padding-right: fn.to-rem(15px);
   padding-left: fn.to-rem(15px);
@@ -20,21 +16,3 @@
     padding: 0 fn.to-rem(80px);
   }
 }
-
-.#{config.$class-prefix}-page {
-  padding-bottom: fn.to-rem(30px);
-}
-
-.#{config.$class-prefix}-flex {
-  display: flex;
-  flex-wrap: wrap;
-
-  &-gap-1 {
-    gap: fn.to-rem(8px);
-  }
-
-  &-gap-2 {
-    gap: fn.to-rem(16px);
-  }
-}
-
