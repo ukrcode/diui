@@ -13,8 +13,6 @@
     "README.md"
   ],
   "scripts": {
-    "dev": "vite --open",
-    "preview": "vite preview",
     "build": "npm run build:source && npm run minify:build",
     "build:watch": "postcss --watch diui.scss --output css/diui.css",
     "build:source": "postcss diui.scss --output css/diui.css",
