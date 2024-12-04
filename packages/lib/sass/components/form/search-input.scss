@@ -1,0 +1,24 @@
+// WIP WIP WIP WIP WIP WIP WIP WIP
+
+@use "../../utilities/css-vars" as css-vars;
+@use "../../utilities/functions" as fn;
+@use "../../utilities/mixins" as mx;
+@use "../../config" as config;
+@use "./vars" as vars;
+
+$prefix: config.$class-prefix;
+
+// Search Input
+#{vars.$search-input-selector} {
+  background-color: css-vars.get-var("bg-color");
+  border-radius: 100%;
+  border: none;
+  padding: fn.to-rem(12px) fn.to-rem(24px);
+  @include mx.base-font-configuration(16px, 24px, 300);
+
+  &:disabled {
+    color: css-vars.get-var("c-gray");
+    background-color: css-vars.get-var("c-gray-20");
+    border: none;
+  }
+}

@@ -751,6 +751,10 @@
   border-right: none;
   border-left: none;
   border-bottom: 2px solid var(--di-text-color);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 300;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
 }
@@ -759,6 +763,10 @@
   border-bottom-color: var(--di-c-gray);
   background-color: transparent;
 }
+.di-form-field-input:disabled.search {
+  background-color: var(--di-c-gray-20);
+  border: none;
+}
 
 .di-form-field-invalid .di-form-field-input,
 .di-form-field-input:invalid {
@@ -766,26 +774,20 @@
   border-bottom-color: var(--di-c-scarlet);
 }
 
-.di-form-field-hint[aria-errormsg],
-.di-form-field-hint[aria-describedby] {
-  background-color: var(--di-c-gorse-20);
-  color: var(--di-text-color);
-  padding: 0.5rem 0.25rem;
-  margin-top: 0.5rem;
+.di-form-field-search-input {
+  background-color: var(--di-bg-color);
+  border-radius: 100%;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 300;
 }
-.di-form-field-invalid .di-form-field-hint[aria-errormsg], .di-form-field-input:invalid ~ .di-form-field-hint[aria-errormsg],
-.di-form-field-invalid .di-form-field-hint[aria-describedby],
-.di-form-field-input:invalid ~ .di-form-field-hint[aria-describedby] {
-  color: var(--di-c-scarlet);
-  background-color: transparent;
-  margin-top: 0;
-}
-
-.di-form-field-hint-invalid[aria-errormsg],
-.di-form-field-hint-invalid[aria-describedby] {
-  color: var(--di-c-scarlet);
-  background-color: transparent;
-  margin-top: 0;
+.di-form-field-search-input:disabled {
+  color: var(--di-c-gray);
+  background-color: var(--di-c-gray-20);
+  border: none;
 }
 
 .di-form-field-hint {

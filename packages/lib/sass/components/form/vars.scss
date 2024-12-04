@@ -1,0 +1,10 @@
+@use "../../config" as config;
+
+$prefix: config.$class-prefix;
+
+$form-field-selector: ".#{$prefix}-form-field";
+$form-field-invalid-selector: ".#{$prefix}-form-field-invalid";
+
+$label-selector: ".#{$prefix}-form-field-label";
+$input-selector: ".#{$prefix}-form-field-input";
+$search-input-selector: ".#{$prefix}-form-field-search-input";

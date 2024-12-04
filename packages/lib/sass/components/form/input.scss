@@ -1,16 +1,10 @@
 @use "../../utilities/css-vars" as css-vars;
 @use "../../utilities/functions" as fn;
+@use "../../utilities/mixins" as mx;
 @use "../../config" as config;
 @use "./vars" as vars;
 
 $prefix: config.$class-prefix;
-
-// Form field wrapper
-.#{$prefix}-form-field {
-  position: relative;
-  padding-top: fn.to-rem(20px);
-  padding-bottom: fn.to-rem(20px);
-}
 
 // Label
 #{vars.$label-selector} {
@@ -36,6 +30,7 @@ $prefix: config.$class-prefix;
   border-right: none;
   border-left: none;
   border-bottom: 2px solid css-vars.get-var("text-color");
+  @include mx.base-font-configuration(16px, 24px, 300);
 
   padding-top: fn.to-rem(5px);
   padding-bottom: fn.to-rem(5px);
@@ -45,38 +40,17 @@ $prefix: config.$class-prefix;
     color: css-vars.get-var("c-gray");
     border-bottom-color: css-vars.get-var("c-gray");
     background-color: transparent;
+
+    &.search {
+      background-color: css-vars.get-var("c-gray-20");
+      border: none;
+    }
   }
 }
 
 // Invalid Input
-.#{$prefix}-form-field-invalid #{vars.$input-selector},
+#{vars.$form-field-invalid-selector} #{vars.$input-selector},
 #{vars.$input-selector}:invalid {
   color: css-vars.get-var("c-scarlet");
   border-bottom-color: css-vars.get-var("c-scarlet");
-}
-
-@mixin invalid-hint {
-  color: css-vars.get-var("c-scarlet");
-  background-color: transparent;
-  margin-top: 0;
-}
-
-// Hint
-.#{$prefix}-form-field-hint[aria-errormsg],
-.#{$prefix}-form-field-hint[aria-describedby] {
-  background-color: css-vars.get-var("c-gorse-20");
-  color: css-vars.get-var("text-color");
-  padding: fn.to-rem(8px) fn.to-rem(4px);
-  margin-top: fn.to-rem(8px);
-
-  // Invalid Hint
-  .#{$prefix}-form-field-invalid &,
-  #{vars.$input-selector}:invalid ~ & {
-    @include invalid-hint;
-  }
-} 
-
-.#{$prefix}-form-field-hint-invalid[aria-errormsg],
-.#{$prefix}-form-field-hint-invalid[aria-describedby] {
-  @include invalid-hint;
 }
