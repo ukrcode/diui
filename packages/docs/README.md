@@ -1,15 +1,13 @@
-## Getting Started
+# Документація бібліотеки diui
 
-First, run the development server:
+Тут зібрана вся наявна документація. Сама бібліотека `diui` додана до залежностей цього пакету.
+
+## Запуск локально
+
+Для початку запустить сервер для розробки:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Відкрийте [http://localhost:3000](http://localhost:3000) в браузері щоб побачити результат.
