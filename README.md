@@ -16,6 +16,7 @@
 
 1. Офіційний анонс: [https://thedigital.gov.ua/news/diia_design](https://thedigital.gov.ua/news/diia_design)
 2. Офіційний анонс від агенції Федорів: [https://diia.fedoriv.com/](https://diia.fedoriv.com/)
+    Тут найбільша кількість інформації щодо елементів дизайн системи.
 3. Анонс від київського дизайн-бюро Spiilka: [https://spiilka.com/projects/diia-web](https://spiilka.com/projects/diia-web)
 4. Мінінстерство цифрової трансформації: [https://thedigital.gov.ua/](https://thedigital.gov.ua/)
     Тут як ніде багато прикладів використання дизайн системи Дії.
@@ -26,6 +27,14 @@
     - [ОФІЦІЙНА Типографіка в Figma](https://www.figma.com/file/t4n0PcuOT0qBGU61QVR5z0/Digital-State-UI-kit?node-id=1%3A893)
     - [ОФІЦІЙНИЙ Приклад типографіки в Figma](https://www.figma.com/design/t4n0PcuOT0qBGU61QVR5z0/Digital-State-UI-kit?node-id=8-101&node-type=frame&t=TNXMlOBniViQWoCn-0)
 6. Логобук щодо використання логотипа Дії: [https://diia.gov.ua/img/diia-october-prod/sites/1/Diia_LOGO_GUIDE.pdf](https://diia.gov.ua/img/diia-october-prod/sites/1/Diia_LOGO_GUIDE.pdf)
+
+### Чого немає в неофіційній реалізації. 
+
+Ми звʼязалися з автором [неофіційної** реалізація в Figma](https://www.figma.com/community/file/1270778058754270235) і він сказав, що в цій реалізації присутне не всі компоненти з Дизайн Системи. 
+
+Нижче наведений список відмінностей. Цей список доповнюється.
+
+1. 
 
 ## NPM скрипти
 
