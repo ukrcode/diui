@@ -7,7 +7,7 @@
 $prefix: config.$class-prefix;
 
 // Hint
-.#{$prefix}-form-field-hint {
+.#{$prefix}-form-group-hint {
   background-color: css-vars.get-var("c-gorse-20");
   color: css-vars.get-var("text-color");
   padding: fn.to-rem(8px) fn.to-rem(4px);
@@ -15,7 +15,7 @@ $prefix: config.$class-prefix;
   @include mx.base-font-configuration(12px, 16px, 300);
 
   // Invalid Hint
-  .#{$prefix}-form-field-invalid &,
+  .#{$prefix}-form-group-invalid &,
   &-invalid,
   #{vars.$input-selector}:invalid ~ & {
     color: css-vars.get-var("c-scarlet");

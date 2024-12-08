@@ -2,7 +2,7 @@ export default function FormFieldsExample() {
   return (
     <div className="di-flex di-gap-2">
       <div
-        className="di-form-field di-form-field-invalid"
+        className="di-form-group di-form-group-invalid"
         style={{ width: "200px" }}
       >
         <input
@@ -11,35 +11,35 @@ export default function FormFieldsExample() {
           placeholder=""
           aria-invalid="true"
           aria-errormessage="some-text-field-10-hint"
-          className="di-form-field-input"
+          className="di-input"
           value="Some invalid value"
         />
-        <label htmlFor="some-text-field-10" className="di-form-field-label">
+        <label htmlFor="some-text-field-10" className="di-label">
           Label
         </label>
 
-        <div id="some-text-field-10-hint" className="di-form-field-hint">
+        <div id="some-text-field-10-hint" className="di-form-group-hint">
           Hint Text
         </div>
       </div>
 
-      <div className="di-form-field" style={{ width: "200px" }}>
+      <div className="di-form-group" style={{ width: "200px" }}>
         <input
           type="text"
           id="some-text-field-12"
           placeholder=""
           aria-invalid="true"
           aria-errormessage="some-text-field-12-hint"
-          className="di-form-field-input"
+          className="di-input"
           value="Some invalid value"
         />
-        <label htmlFor="some-text-field-12" className="di-form-field-label">
+        <label htmlFor="some-text-field-12" className="di-label">
           Label
         </label>
 
         <div
           id="some-text-field-12-hint"
-          className="di-form-field-hint di-form-field-hint-invalid"
+          className="di-form-group-hint di-form-group-hint-invalid"
         >
           Hint Text
         </div>

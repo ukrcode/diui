@@ -2,9 +2,13 @@
 
 $prefix: config.$class-prefix;
 
-$form-field-selector: ".#{$prefix}-form-field";
-$form-field-invalid-selector: ".#{$prefix}-form-field-invalid";
+$form-field-selector: ".#{$prefix}-form-group";
+$form-field-invalid-selector: ".#{$prefix}-form-group-invalid";
 
-$label-selector: ".#{$prefix}-form-field-label";
-$input-selector: ".#{$prefix}-form-field-input";
-$search-input-selector: ".#{$prefix}-form-field-search-input";
+// Regular Input
+$label-selector: ".#{$prefix}-label";
+$input-selector: ".#{$prefix}-input";
+
+// Search Input
+$search-label-selector: ".#{$prefix}-search-label";
+$search-input-selector: ".#{$prefix}-search-input";

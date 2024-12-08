@@ -1,0 +1,12 @@
+@use "../utilities/functions" as fn;
+@use "../config" as config;
+
+.#{config.$class-prefix}-p {
+    &-1 {
+        padding: fn.to-rem(8px);
+    }
+
+    &-2 {
+        padding: fn.to-rem(16px);
+    }
+}

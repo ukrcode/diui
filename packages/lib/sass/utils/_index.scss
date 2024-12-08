@@ -5,6 +5,7 @@
 @use "container";
 @use "page";
 @use "flex";
+@use "padding";
 
 .#{config.$class-prefix}-container {
   padding-right: fn.to-rem(15px);

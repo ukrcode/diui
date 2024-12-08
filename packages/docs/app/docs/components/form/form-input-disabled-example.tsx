@@ -1,6 +1,6 @@
 export default function FormFieldsExample() {
   return (
-    <div className="di-form-field" style={{ width: "200px" }}>
+    <div className="di-form-group" style={{ width: "200px" }}>
       <input
         type="text"
         id="some-text-field-100"
@@ -8,13 +8,13 @@ export default function FormFieldsExample() {
         value="Some value"
         aria-describedby="some-text-field-100-hint"
         disabled
-        className="di-form-field-input"
+        className="di-input"
       />
-      <label htmlFor="some-text-field-100" className="di-form-field-label">
+      <label htmlFor="some-text-field-100" className="di-label">
         Label
       </label>
 
-      <div id="some-text-field-100-hint" className="di-form-field-hint">
+      <div id="some-text-field-100-hint" className="di-form-group-hint">
         Hint Text
       </div>
     </div>

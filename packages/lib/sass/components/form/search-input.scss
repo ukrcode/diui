@@ -10,8 +10,9 @@ $prefix: config.$class-prefix;
 
 // Search Input
 #{vars.$search-input-selector} {
+  width: 100%;
   background-color: css-vars.get-var("bg-color");
-  border-radius: 100%;
+  border-radius: fn.to-rem(24px);
   border: none;
   padding: fn.to-rem(12px) fn.to-rem(24px);
   @include mx.base-font-configuration(16px, 24px, 300);
@@ -21,4 +22,20 @@ $prefix: config.$class-prefix;
     background-color: css-vars.get-var("c-gray-20");
     border: none;
   }
+}
+
+// Label when input is focused
+#{vars.$search-input-selector}:not(:placeholder-shown) ~ #{vars.$search-label-selector},
+#{vars.$search-input-selector}:focus ~ #{vars.$search-label-selector} {
+  display: none;
+}
+
+// Search Label
+#{vars.$search-label-selector} {
+  position: absolute;
+  top: fn.to-rem(20px);
+  left: fn.to-rem(0px);
+
+  transition: 0.2s ease all;
+  color: css-vars.get-var("c-gray");
 }
