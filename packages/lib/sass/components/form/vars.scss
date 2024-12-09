@@ -2,8 +2,11 @@
 
 $prefix: config.$class-prefix;
 
-$form-field-selector: ".#{$prefix}-form-group";
-$form-field-invalid-selector: ".#{$prefix}-form-group-invalid";
+$form-group-selector: ".#{$prefix}-form-group";
+$form-group-invalid-selector: ".#{$prefix}-form-group-invalid";
+
+// Hint
+$hint-selector: ".#{$prefix}-form-hint"; 
 
 // Regular Input
 $label-selector: ".#{$prefix}-label";

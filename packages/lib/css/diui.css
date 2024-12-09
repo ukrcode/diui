@@ -811,7 +811,7 @@
   color: var(--di-c-gray);
 }
 
-.di-form-group-hint {
+.di-form-hint {
   background-color: var(--di-c-gorse-20);
   color: var(--di-text-color);
   padding: 0.5rem 0.25rem;
@@ -821,7 +821,7 @@
   font-family: var(--di-font-family-primary);
   font-weight: 300;
 }
-.di-form-group-invalid .di-form-group-hint, .di-form-group-hint-invalid, .di-input:invalid ~ .di-form-group-hint {
+.di-form-group-invalid .di-form-hint, .di-form-hint-invalid, .di-input:invalid ~ .di-form-hint {
   color: var(--di-c-scarlet);
   background-color: transparent;
   padding: 0;

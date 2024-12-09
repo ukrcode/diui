@@ -6,7 +6,7 @@
 $prefix: config.$class-prefix;
 
 // Form field wrapper
-#{vars.$form-field-selector} {
+#{vars.$form-group-selector} {
   position: relative;
   padding-top: fn.to-rem(20px);
   padding-bottom: fn.to-rem(20px);

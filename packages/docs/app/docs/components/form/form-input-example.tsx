@@ -13,7 +13,7 @@ export default function FormFieldsExample() {
           Label
         </label>
 
-        <div id="some-text-field-1" className="di-form-group-hint">
+        <div id="some-text-field-1" className="di-form-hint">
           Hint Text
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function FormFieldsExample() {
           Label
         </label>
 
-        <div id="some-text-field-2" className="di-form-group-hint">
+        <div id="some-text-field-2" className="di-form-hint">
           Hint Text
         </div>
       </div>

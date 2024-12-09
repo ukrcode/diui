@@ -49,7 +49,7 @@ $prefix: config.$class-prefix;
 }
 
 // Invalid Input
-#{vars.$form-field-invalid-selector} #{vars.$input-selector},
+#{vars.$form-group-invalid-selector} #{vars.$input-selector},
 #{vars.$input-selector}:invalid {
   color: css-vars.get-var("c-scarlet");
   border-bottom-color: css-vars.get-var("c-scarlet");

@@ -13,7 +13,7 @@ export default function SearchInputExample() {
             Label
           </label>
   
-          <div id="some-text-field-111" className="di-form-group-hint">
+          <div id="some-text-field-111" className="di-form-hint">
             Hint Text
           </div>
         </div>
