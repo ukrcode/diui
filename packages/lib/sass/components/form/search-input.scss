@@ -4,7 +4,8 @@
 @use "../../utilities/functions" as fn;
 @use "../../utilities/mixins" as mx;
 @use "../../config" as config;
-@use "./vars" as vars;
+@use "./selectors-vars" as vars;
+@use "./form-mixins" as form-mx;
 
 $prefix: config.$class-prefix;
 
@@ -25,8 +26,10 @@ $prefix: config.$class-prefix;
 }
 
 // Label when input is focused
-#{vars.$search-input-selector}:not(:placeholder-shown) ~ #{vars.$search-label-selector},
-#{vars.$search-input-selector}:focus ~ #{vars.$search-label-selector} {
+@include form-mx.style-label-on-input-active(
+  vars.$search-input-selector,
+  vars.$search-label-selector
+) {
   display: none;
 }
 

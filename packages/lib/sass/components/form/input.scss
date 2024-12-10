@@ -2,7 +2,8 @@
 @use "../../utilities/functions" as fn;
 @use "../../utilities/mixins" as mx;
 @use "../../config" as config;
-@use "./vars" as vars;
+@use "./selectors-vars" as vars;
+@use "./form-mixins" as form-mx;
 
 $prefix: config.$class-prefix;
 
@@ -17,8 +18,10 @@ $prefix: config.$class-prefix;
 }
 
 // Label when input is focused
-#{vars.$input-selector}:not(:placeholder-shown) ~ #{vars.$label-selector},
-#{vars.$input-selector}:focus ~ #{vars.$label-selector} {
+@include form-mx.style-label-on-input-active(
+  vars.$input-selector,
+  vars.$label-selector
+) {
   top: 0;
   font-size: fn.to-rem(12px);
 }

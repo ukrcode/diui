@@ -821,7 +821,7 @@
   font-family: var(--di-font-family-primary);
   font-weight: 300;
 }
-.di-form-group-invalid .di-form-hint, .di-form-hint-invalid, .di-input:invalid ~ .di-form-hint {
+.di-form-group-invalid .di-form-hint, .di-form-hint.di-form-hint-invalid, .di-input:invalid ~ .di-form-hint {
   color: var(--di-c-scarlet);
   background-color: transparent;
   padding: 0;

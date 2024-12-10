@@ -1,0 +1,6 @@
+@mixin style-label-on-input-active($input-selector, $label-selector) {
+  #{$input-selector}:not(:placeholder-shown) ~ #{$label-selector},
+  #{$input-selector}:focus ~ #{$label-selector} {
+    @content;
+  }
+}
