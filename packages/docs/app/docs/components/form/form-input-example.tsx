@@ -24,7 +24,7 @@ export default function FormFieldsExample() {
           id="some-text-field-2"
           placeholder=""
           aria-describedby="some-text-field-2"
-          value="Some value"
+          defaultValue="Some value"
           className="di-input"
         />
         <label htmlFor="some-text-field-2" className="di-label">
