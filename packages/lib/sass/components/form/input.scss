@@ -10,7 +10,7 @@ $prefix: config.$class-prefix;
 // Label
 #{vars.$label-selector} {
   position: absolute;
-  top: fn.to-rem(20px);
+  top: fn.to-rem(24px);
   left: fn.to-rem(0px);
 
   transition: 0.2s ease all;
@@ -43,11 +43,6 @@ $prefix: config.$class-prefix;
     color: css-vars.get-var("c-gray");
     border-bottom-color: css-vars.get-var("c-gray");
     background-color: transparent;
-
-    &.search {
-      background-color: css-vars.get-var("c-gray-20");
-      border: none;
-    }
   }
 }
 

@@ -1,5 +1,4 @@
 // WIP WIP WIP WIP WIP WIP WIP WIP
-
 @use "../../utilities/css-vars" as css-vars;
 @use "../../utilities/functions" as fn;
 @use "../../utilities/mixins" as mx;
@@ -8,14 +7,15 @@
 @use "./form-mixins" as form-mx;
 
 $prefix: config.$class-prefix;
+$horizontal-gap: 24px;
 
 // Search Input
 #{vars.$search-input-selector} {
   width: 100%;
   background-color: css-vars.get-var("bg-color");
-  border-radius: fn.to-rem(24px);
+  border-radius: fn.to-rem($horizontal-gap);
   border: none;
-  padding: fn.to-rem(12px) fn.to-rem(24px);
+  padding: fn.to-rem(12px) fn.to-rem($horizontal-gap);
   @include mx.base-font-configuration(16px, 24px, 300);
 
   &:disabled {
@@ -36,9 +36,7 @@ $prefix: config.$class-prefix;
 // Search Label
 #{vars.$search-label-selector} {
   position: absolute;
-  top: fn.to-rem(20px);
-  left: fn.to-rem(0px);
-
-  transition: 0.2s ease all;
+  top: fn.to-rem(32px);
+  left: fn.to-rem($horizontal-gap);
   color: css-vars.get-var("c-gray");
 }

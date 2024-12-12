@@ -740,7 +740,7 @@
 
 .di-label {
   position: absolute;
-  top: 1.25rem;
+  top: 1.5rem;
   left: 0rem;
   transition: 0.2s ease all;
   color: var(--di-c-gray);
@@ -769,10 +769,6 @@
   color: var(--di-c-gray);
   border-bottom-color: var(--di-c-gray);
   background-color: transparent;
-}
-.di-input:disabled.search {
-  background-color: var(--di-c-gray-20);
-  border: none;
 }
 
 .di-form-group-invalid .di-input,
@@ -805,9 +801,8 @@
 
 .di-search-label {
   position: absolute;
-  top: 1.25rem;
-  left: 0rem;
-  transition: 0.2s ease all;
+  top: 2rem;
+  left: 1.5rem;
   color: var(--di-c-gray);
 }
 
