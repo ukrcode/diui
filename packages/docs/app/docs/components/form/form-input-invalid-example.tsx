@@ -12,7 +12,7 @@ export default function FormFieldsExample() {
           aria-invalid="true"
           aria-errormessage="some-text-field-10-hint"
           className="di-input"
-          defaultValue="Some invalid value"
+          value="Some invalid value"
         />
         <label htmlFor="some-text-field-10" className="di-label">
           Label
@@ -31,7 +31,7 @@ export default function FormFieldsExample() {
           aria-invalid="true"
           aria-errormessage="some-text-field-12-hint"
           className="di-input"
-          defaultValue="Some invalid value"
+          value="Some invalid value"
         />
         <label htmlFor="some-text-field-12" className="di-label">
           Label

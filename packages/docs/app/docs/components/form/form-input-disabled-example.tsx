@@ -5,7 +5,7 @@ export default function FormFieldsExample() {
         type="text"
         id="some-text-field-100"
         placeholder=""
-        defaultValue="Some value"
+        value="Some value"
         aria-describedby="some-text-field-100-hint"
         disabled
         className="di-input"
