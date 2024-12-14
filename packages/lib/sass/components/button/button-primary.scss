@@ -1,0 +1,23 @@
+@use "../../utilities/css-vars" as css-vars;
+@use "../../utilities/mixins" as mx;
+
+@use "./selector-vars" as vars;
+@use "./button-mixins" as btn-mx;
+
+#{vars.$button-primary-selector} {
+    background-color: css-vars.get-var("text-color");
+    border: 2px solid css-vars.get-var("text-color");
+    color: css-vars.get-var("bg-color");
+
+    @include mx.on-not-touch-devices {
+      &:hover {
+        border-color: css-vars.get-var("c-dodger-blue");
+        background-color: css-vars.get-var("c-dodger-blue");
+      }
+    }
+
+    &:disabled {
+      border-color: css-vars.get-var("c-gray");
+      background-color: css-vars.get-var("c-gray");
+    }
+  }

@@ -1,0 +1,52 @@
+@use "../../utilities/css-vars" as css-vars;
+@use "../../utilities/functions" as fn;
+@use "../../utilities/mixins" as mx;
+
+@use "./selector-vars" as vars;
+@use "./button-mixins" as btn-mx;
+
+// @mixin add-button-mobile-styles {
+// padding: fn.to-rem(12px) fn.to-rem(20px);
+// @include mx.base-font-configuration(13px, 16px, 400);
+// }
+
+// Regular Button
+#{vars.$button-root-selector} {
+  display: flex;
+  align-items: center;
+  border-radius: fn.to-rem(40px);
+  padding: fn.to-rem(12px) fn.to-rem(20px);
+
+  color: css-vars.get-var("text-color");
+  @include mx.base-font-configuration(16px, 24px, 400);
+  border: none;
+  white-space: nowrap;
+
+  background-color: css-vars.get-var("c-light-gray");
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  // Pressed
+  @include btn-mx.add-btn-active-styles {
+    filter: brightness(0.9) saturate(1.2);
+    transform: scale(0.98);
+  }
+
+  // Mobile
+  // Commented code is an initial implementation
+  // where font-size was changed for mobile, to make it smaller
+  // However, we decided to keep it the same for mobile and desktop
+  // @include add-button-mobile-styles;
+
+  // Tablet
+  @include mx.on-tablet {
+    padding: fn.to-rem(16px) fn.to-rem(30px);
+  }
+}
+
+// Small Button
+#{vars.$button-sm-selector} {
+  @include mx.base-font-configuration(13px, 16px, 400);
+}

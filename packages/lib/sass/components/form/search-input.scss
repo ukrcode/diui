@@ -3,7 +3,7 @@
 @use "../../utilities/functions" as fn;
 @use "../../utilities/mixins" as mx;
 @use "../../config" as config;
-@use "./selectors-vars" as vars;
+@use "./selector-vars" as vars;
 @use "./form-mixins" as form-mx;
 
 $prefix: config.$class-prefix;

@@ -1,0 +1,12 @@
+@use "../../utilities/css-vars" as css-vars;
+@use "../../utilities/functions" as fn;
+@use "../../utilities/mixins" as mx;
+@use "../../config" as config;
+
+$prefix: config.$class-prefix;
+
+$button-root-selector: ".#{$prefix}-btn";
+$button-sm-selector: ".#{$prefix}-btn-sm";
+$button-primary-selector: ".#{$prefix}-btn-primary";
+$button-outline-selector: ".#{$prefix}-btn-outline";
+$button-text-selector: ".#{$prefix}-btn-text";

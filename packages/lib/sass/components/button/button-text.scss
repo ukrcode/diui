@@ -1,0 +1,27 @@
+@use "../../utilities/css-vars" as css-vars;
+@use "../../utilities/mixins" as mx;
+
+@use "./selector-vars" as vars;
+@use "./button-mixins" as btn-mx;
+
+// Text Button
+#{vars.$button-text-selector} {
+  background-color: transparent;
+  border: none;
+  color: css-vars.get-var("text-color");
+
+  @include mx.on-not-touch-devices {
+    &:hover:not(:disabled) {
+      text-decoration: underline;
+    }
+  }
+
+  &:disabled {
+    color: css-vars.get-var("c-gray");
+  }
+
+  @include btn-mx.add-btn-active-styles {
+    filter: brightness(0.8) saturate(1.2);
+    transform: scale(0.85);
+  }
+}

@@ -1,0 +1,5 @@
+@mixin add-btn-active-styles {
+  &:active:not(:disabled) {
+    @content;
+  }
+}
