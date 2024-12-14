@@ -7,7 +7,7 @@
 @include fonts.register-primary-fonts;
 
 // Body styles
-.#{config.$class-prefix}-body {
+.#{config.$class-prefix}body {
   margin: 0; // Remove default margin
   color: css-vars.get-var("text-color");
   @include mx.base-font-configuration(16px, 24px, 300);

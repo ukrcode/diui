@@ -2,17 +2,17 @@
 
 $prefix: config.$class-prefix;
 
-$form-group-selector: ".#{$prefix}-form-group";
-$form-group-invalid-selector: ".#{$prefix}-form-group-invalid";
+$form-group-selector: ".#{$prefix}form-group";
+$form-group-invalid-selector: ".#{$prefix}form-group-invalid";
 
 // Hint
-$hint-selector: ".#{$prefix}-form-hint";
-$hint-invalid-selector: ".#{$prefix}-form-hint-invalid";
+$hint-selector: ".#{$prefix}form-hint";
+$hint-invalid-selector: ".#{$prefix}form-hint-invalid";
 
 // Regular Input
-$label-selector: ".#{$prefix}-label";
-$input-selector: ".#{$prefix}-input";
+$label-selector: ".#{$prefix}label";
+$input-selector: ".#{$prefix}input";
 
 // Search Input
-$search-label-selector: ".#{$prefix}-search-label";
-$search-input-selector: ".#{$prefix}-search-input";
+$search-label-selector: ".#{$prefix}search-label";
+$search-input-selector: ".#{$prefix}search-input";

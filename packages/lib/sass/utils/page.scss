@@ -1,6 +1,6 @@
 @use "../utilities/functions" as fn;
 @use "../config" as config;
 
-.#{config.$class-prefix}-page {
+.#{config.$class-prefix}page {
   padding-bottom: fn.to-rem(30px);
 }

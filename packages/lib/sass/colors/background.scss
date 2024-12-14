@@ -4,13 +4,13 @@
 $prefix: config.$class-prefix;
 
 @mixin create-bg-color($color-name) {
-  .#{$prefix}-#{$color-name}-bg {
+  .#{$prefix}#{$color-name}-bg {
     background-color: css-vars.get-var(c-#{$color-name}-40);
   }
 }
 
 @mixin create-bg-color-for-var($color-name, $color-var) {
-  .#{$prefix}-#{$color-name}-bg {
+  .#{$prefix}#{$color-name}-bg {
     background-color: css-vars.get-var(c-#{$color-var}-40);
   }
 }

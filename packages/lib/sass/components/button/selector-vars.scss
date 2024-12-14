@@ -5,8 +5,8 @@
 
 $prefix: config.$class-prefix;
 
-$button-root-selector: ".#{$prefix}-btn";
-$button-sm-selector: ".#{$prefix}-btn-sm";
-$button-primary-selector: ".#{$prefix}-btn-primary";
-$button-outline-selector: ".#{$prefix}-btn-outline";
-$button-text-selector: ".#{$prefix}-btn-text";
+$button-root-selector: ".#{$prefix}btn";
+$button-sm-selector: ".#{$prefix}btn-sm";
+$button-primary-selector: ".#{$prefix}btn-primary";
+$button-outline-selector: ".#{$prefix}btn-outline";
+$button-text-selector: ".#{$prefix}btn-text";

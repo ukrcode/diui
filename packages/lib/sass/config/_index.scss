@@ -1,15 +1,4 @@
 @forward "./typography.const";
 @forward "./colors.const";
-
-$class-prefix: "di" !default;
-$css-vars-prefix: "di-" !default;
-$gap: 32px !default;
-
-// 576,
-// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
-// $tablet: 769px !default; FROM BULMA
-$tablet: 576px !default;
-// 960px container + 4rem
-// $desktop: 960px + 2 * $gap !default; FROM BULMA
-$desktop: 1280px !default;
+@forward "./root.const";
 

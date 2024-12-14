@@ -3,7 +3,7 @@
 @use "../utilities/css-vars" as css-vars;
 
 // text-small
-.#{config.$class-prefix}-link {
+.#{config.$class-prefix}link {
   @include mx.base-font-configuration(16px, 24px, 400);
   color: css-vars.get-var("text-color");
 

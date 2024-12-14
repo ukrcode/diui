@@ -4,13 +4,13 @@
 $prefix: config.$class-prefix;
 
 @mixin create-text-color($color-name) {
-  .#{$prefix}-#{$color-name}-text {
+  .#{$prefix}#{$color-name}-text {
     color: css-vars.get-var(c-#{$color-name});
   }
 }
 
 @mixin create-text-color-for-var($color-name, $color-var) {
-  .#{$prefix}-#{$color-name}-text {
+  .#{$prefix}#{$color-name}-text {
     color: css-vars.get-var(c-#{$color-var});
   }
 }

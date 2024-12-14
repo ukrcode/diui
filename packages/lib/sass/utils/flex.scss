@@ -1,7 +1,7 @@
 @use "../utilities/functions" as fn;
 @use "../config" as config;
 
-.#{config.$class-prefix}-flex {
+.#{config.$class-prefix}flex {
   display: flex;
   flex-wrap: wrap;
 
@@ -69,7 +69,7 @@
   }
 }
 
-.#{config.$class-prefix}-gap {
+.#{config.$class-prefix}gap {
   &-1 {
     gap: fn.to-rem(8px);
   }

@@ -2,7 +2,7 @@
 @use "../utilities/functions" as fn;
 @use "../config" as config;
 
-.#{config.$class-prefix}-container {
+.#{config.$class-prefix}container {
   padding-right: fn.to-rem(15px);
   padding-left: fn.to-rem(15px);
   margin-right: auto;

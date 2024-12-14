@@ -2,7 +2,7 @@
 @use "../config" as config;
 @use "../utilities/css-vars" as css-vars;
 
-.#{config.$class-prefix}-code {
+.#{config.$class-prefix}code {
     font-family: css-vars.get-var("font-family-code");
     color: css-vars.get-var("c-violet");
 }

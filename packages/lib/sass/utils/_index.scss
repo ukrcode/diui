@@ -7,7 +7,7 @@
 @use "flex";
 @use "padding";
 
-.#{config.$class-prefix}-container {
+.#{config.$class-prefix}container {
   padding-right: fn.to-rem(15px);
   padding-left: fn.to-rem(15px);
   margin-right: auto;
@@ -22,11 +22,11 @@
   }
 }
 
-.#{config.$class-prefix}-page {
+.#{config.$class-prefix}page {
   padding-bottom: fn.to-rem(30px);
 }
 
-.#{config.$class-prefix}-flex {
+.#{config.$class-prefix}flex {
   display: flex;
   flex-wrap: wrap;
 
