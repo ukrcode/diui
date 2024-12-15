@@ -1,15 +1,15 @@
 @use "../utilities/mixins" as mx;
 @use "../config" as config;
+@use "../selectors" as vars;
 @use "../utilities/css-vars" as css-vars;
 
-// text-small
-.#{config.$class-prefix}link {
+#{vars.$link-selector} {
   @include mx.base-font-configuration(16px, 24px, 400);
   color: css-vars.get-var("text-color");
+}
 
-  &-sm {
-    @include mx.base-font-configuration(12px, 16px, 400);
-  }
+#{vars.$link-sm-selector} {
+  @include mx.base-font-configuration(12px, 16px, 400);
   // Commented code is an initial implementation
   // where font-size was changed for mobile, to make it smaller
   // However, we decided to keep it the same for mobile and desktop

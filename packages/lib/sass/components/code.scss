@@ -1,8 +1,7 @@
-@use "../utilities/mixins" as mx;
-@use "../config" as config;
+@use "../selectors" as vars;
 @use "../utilities/css-vars" as css-vars;
 
-.#{config.$class-prefix}code {
-    font-family: css-vars.get-var("font-family-code");
-    color: css-vars.get-var("c-violet");
+#{vars.$code-selector} {
+  font-family: css-vars.get-var("font-family-code");
+  color: css-vars.get-var("c-violet");
 }

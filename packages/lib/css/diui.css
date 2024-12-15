@@ -729,6 +729,7 @@
   font-weight: 400;
   color: var(--di-text-color);
 }
+
 .di-link-sm {
   font-size: 0.75rem;
   line-height: 1rem;
