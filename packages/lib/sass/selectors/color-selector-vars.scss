@@ -1,0 +1,3 @@
+@use "../config" as config;
+
+$bg-color-selector-base: ".#{config.$class-prefix}-bg-" !default;
