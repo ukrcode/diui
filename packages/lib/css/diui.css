@@ -423,6 +423,26 @@
   color: var(--di-c-lima);
 }
 
+.di-bg-malachite-100 {
+  background-color: var(--di-c-malachite);
+}
+
+.di-bg-malachite-80 {
+  background-color: var(--di-c-malachite-80);
+}
+
+.di-bg-malachite-60 {
+  background-color: var(--di-c-malachite-60);
+}
+
+.di-bg-malachite-40 {
+  background-color: var(--di-c-malachite-40);
+}
+
+.di-bg-malachite-20 {
+  background-color: var(--di-c-malachite-20);
+}
+
 .di-gray-bg {
   background-color: var(--di-c-gray-40);
 }
