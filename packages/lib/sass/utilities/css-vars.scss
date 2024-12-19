@@ -9,6 +9,12 @@
   @return var(#{$varName});
 }
 
+@function get-color-var($name) {
+  $varName: build-var-name($name, "c-");
+  
+  @return var(#{$varName});
+}
+
 @mixin register-var($name, $value, $prefix: "", $suffix: "") {
   $varName: build-var-name($name, $prefix, $suffix);
   #{$varName}: #{$value};
