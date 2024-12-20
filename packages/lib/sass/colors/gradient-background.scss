@@ -1,6 +1,7 @@
 @use "../config" as config;
 @use "../utilities/css-vars" as css-vars;
 @use "../utilities/mixins" as mx;
+@use "../selectors" as vars;
 
 @keyframes granimate {
   0%,
@@ -18,7 +19,7 @@
   }
 }
 
-.#{config.$class-prefix}gr-bg-primary {
+#{vars.$primary-gradient-bg-selector} {
   background-size: 150vw 150vh;
   background-image: css-vars.get-var("gr-primary");
   animation: 15s linear 0s infinite alternate none running granimate;
@@ -28,22 +29,22 @@
   }
 }
 
-.#{config.$class-prefix}gr-bg-1 {
+#{vars.$simplified-gradient-bg-selector-prefix}-1 {
   background-image: css-vars.get-var("gr-1");
 }
 
-.#{config.$class-prefix}gr-bg-2 {
+#{vars.$simplified-gradient-bg-selector-prefix}-2 {
   background-image: css-vars.get-var("gr-2");
 }
 
-.#{config.$class-prefix}gr-bg-3 {
+#{vars.$simplified-gradient-bg-selector-prefix}-3 {
   background-image: css-vars.get-var("gr-3");
 }
 
-.#{config.$class-prefix}gr-bg-4 {
+#{vars.$simplified-gradient-bg-selector-prefix}-4 {
   background-image: css-vars.get-var("gr-4");
 }
 
-.#{config.$class-prefix}gr-bg-5 {
+#{vars.$simplified-gradient-bg-selector-prefix}-5 {
   background-image: css-vars.get-var("gr-5");
 }

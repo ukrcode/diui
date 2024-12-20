@@ -1,31 +1,30 @@
 @use "../utilities/css-vars" as css-vars;
-@use "../config" as config;
+@use "../selectors" as vars;
 
-$prefix: config.$class-prefix;
-
-@mixin create-text-color($color-name) {
-  .#{$prefix}#{$color-name}-text {
-    color: css-vars.get-var(c-#{$color-name});
-  }
-}
-
-@mixin create-text-color-for-var($color-name, $color-var) {
-  .#{$prefix}#{$color-name}-text {
-    color: css-vars.get-var(c-#{$color-var});
+@mixin create-color-text-class($color-name) {
+  #{vars.$text-color-selector-prefix}#{$color-name} {
+    color: css-vars.get-color-var(#{$color-name});
   }
 }
 
 // Create color text classes
-@include create-text-color("gray");
-@include create-text-color-for-var("success", "malachite");
-@include create-text-color("malachite");
-@include create-text-color-for-var("warning", "gorse");
-@include create-text-color("gorse");
-@include create-text-color("danger");
-@include create-text-color("info");
-@include create-text-color("dodger-blue");
-@include create-text-color("violet");
-@include create-text-color("brick-red");
-@include create-text-color("pumpkin");
-@include create-text-color("yellow-green");
-@include create-text-color("lima");
+@include create-color-text-class("gray");
+@include create-color-text-class("malachite");
+@include create-color-text-class("gorse");
+@include create-color-text-class("dodger-blue");
+@include create-color-text-class("violet");
+@include create-color-text-class("brick-red");
+@include create-color-text-class("pumpkin");
+@include create-color-text-class("yellow-green");
+@include create-color-text-class("lima");
+
+// Business colors
+@include create-color-text-class("success");
+@include create-color-text-class("warning");
+@include create-color-text-class("info");
+@include create-color-text-class("danger");
+
+// Classes for variables with single color
+@include create-color-text-class("black");
+@include create-color-text-class("white");
+@include create-color-text-class("light-gray");

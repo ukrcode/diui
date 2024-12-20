@@ -1,3 +1,11 @@
 @use "../config" as config;
 
+// Background color selector(s)
 $bg-color-selector-prefix: ".#{config.$class-prefix}bg-" !default;
+
+// Text color selector(s)
+$text-color-selector-prefix: ".#{config.$class-prefix}text-" !default;
+
+// Gradient color selector(s)
+$primary-gradient-bg-selector: ".#{config.$class-prefix}gr-bg-primary" !default;
+$simplified-gradient-bg-selector-prefix: ".#{config.$class-prefix}gr-bg" !default;
