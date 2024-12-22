@@ -1,11 +1,14 @@
 @use "../utilities/mixins" as mx;
-@use "../config" as config;
 @use "../selectors" as vars;
 @use "../utilities/css-vars" as css-vars;
 
 #{vars.$link-selector} {
   @include mx.base-font-configuration(16px, 24px, 400);
   color: css-vars.get-var("text-color");
+
+  &:visited {
+    color: css-vars.get-color-var("dodger-blue");
+  }
 }
 
 #{vars.$link-sm-selector} {

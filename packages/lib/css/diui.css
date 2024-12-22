@@ -961,6 +961,9 @@
   font-weight: 400;
   color: var(--di-text-color);
 }
+.di-link:visited {
+  color: var(--di-c-dodger-blue);
+}
 
 .di-link-sm {
   font-size: 0.75rem;
