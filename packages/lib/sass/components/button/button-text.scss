@@ -1,7 +1,7 @@
 @use "../../utilities/css-vars" as css-vars;
 @use "../../utilities/mixins" as mx;
 
-@use "./selector-vars" as vars;
+@use "../../selectors" as vars;
 @use "./button-mixins" as btn-mx;
 
 // Text Button

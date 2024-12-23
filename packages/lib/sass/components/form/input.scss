@@ -5,8 +5,6 @@
 @use "./selector-vars" as vars;
 @use "./form-mixins" as form-mx;
 
-$prefix: config.$class-prefix;
-
 // Label
 #{vars.$label-selector} {
   position: absolute;

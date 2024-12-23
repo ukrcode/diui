@@ -1,10 +1,7 @@
 @use "../../utilities/css-vars" as css-vars;
 @use "../../utilities/functions" as fn;
 @use "../../utilities/mixins" as mx;
-@use "../../config" as config;
 @use "./selector-vars" as vars;
-
-$prefix: config.$class-prefix;
 
 // Hint
 #{vars.$hint-selector} {

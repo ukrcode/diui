@@ -1,9 +1,5 @@
-@use "../../utilities/css-vars" as css-vars;
 @use "../../utilities/functions" as fn;
-@use "../../config" as config;
 @use "./selector-vars" as vars;
-
-$prefix: config.$class-prefix;
 
 // Form field wrapper
 #{vars.$form-group-selector} {

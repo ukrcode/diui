@@ -2,6 +2,7 @@
 
 $prefix: config.$class-prefix;
 
+// Form Group
 $form-group-selector: ".#{$prefix}form-group";
 $form-group-invalid-selector: ".#{$prefix}form-group-invalid";
 
