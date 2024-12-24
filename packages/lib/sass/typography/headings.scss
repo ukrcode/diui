@@ -1,9 +1,7 @@
 @use "../utilities/mixins" as mx;
 @use "../utilities/functions" as fn;
-@use "../config" as config;
 @use "sass:math" as math;
-
-$prefix: config.$class-prefix;
+@use "../selectors" as vars;
 
 // h1-h3 margins
 $big-heading-top-margin: fn.to-rem(80px);
@@ -38,13 +36,13 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
 }
 
 // Display
-.#{$prefix}h1-display {
+#{vars.$heading-1-display-selector} {
   @include mx.base-font-configuration(127px, 156px);
   @include apply-big-heading-margins;
 }
 
 // h1
-.#{$prefix}h1 {
+#{vars.$heading-1-selector} {
   @include mx.base-font-configuration(26px, 28px);
   @include apply-big-heading-margins;
 
@@ -54,7 +52,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
 }
 
 // h1-head
-.#{$prefix}h1-head {
+#{vars.$heading-1-head-selector} {
   @include mx.base-font-configuration(26px, 28px, 400, "head");
   @include apply-big-heading-margins;
 
@@ -64,7 +62,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
 }
 
 // h2
-.#{$prefix}h2 {
+#{vars.$heading-2-selector} {
   @include mx.base-font-configuration(20px, 24px);
   @include apply-big-heading-margins;
 
@@ -74,7 +72,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
 }
 
 // h3
-.#{$prefix}h3 {
+#{vars.$heading-3-selector} {
   @include mx.base-font-configuration(18px, 24px);
   @include apply-big-heading-margins;
 
@@ -84,7 +82,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
 }
 
 // h4
-.#{$prefix}h4 {
+#{vars.$heading-4-selector} {
   @include mx.base-font-configuration(16px, 24px);
   @include apply-small-heading-margins;
 
@@ -94,7 +92,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
 }
 
 // h5
-.#{$prefix}h5 {
+#{vars.$heading-5-selector} {
   @include mx.base-font-configuration(14px, 20px);
   @include apply-small-heading-margins;
 
@@ -104,7 +102,7 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
 }
 
 // h6
-.#{$prefix}h6 {
+#{vars.$heading-6-selector} {
   @include mx.base-font-configuration(13px, 18px);
   @include apply-small-heading-margins;
 

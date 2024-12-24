@@ -268,32 +268,28 @@
   }
 }
 
-.di-sm-text {
+.di-text-sm {
   font-size: 0.8125rem;
   line-height: 1.125rem;
   font-family: var(--di-font-family-primary);
   font-weight: 300;
 }
 
-.di-body-text {
+.di-text-body {
   font-size: 1rem;
   line-height: 1.5rem;
   font-family: var(--di-font-family-primary);
   font-weight: 300;
 }
 
-.di-bold-text {
-  font-weight: 400;
-}
-
-.di-xsm-text {
+.di-text-xsm {
   font-size: 0.75rem;
   line-height: 1rem;
   font-family: var(--di-font-family-primary);
   font-weight: 300;
 }
 
-.di-underline-lg {
+.di-underline-md {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-family: var(--di-font-family-primary);
@@ -309,7 +305,7 @@
   text-decoration: underline;
 }
 
-.di-underline-sm {
+.di-underline-md {
   font-size: 0.8125rem;
   line-height: 1.125rem;
   font-family: var(--di-font-family-primary);

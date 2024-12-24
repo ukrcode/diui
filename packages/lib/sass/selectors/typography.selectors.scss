@@ -1,0 +1,25 @@
+@use "../config" as config;
+
+// Typography selector(s)
+
+// Heading selector(s)
+$heading-1-selector: ".#{config.$class-prefix}h1" !default;
+$heading-1-head-selector: ".#{config.$class-prefix}h1-head" !default;
+$heading-1-display-selector: ".#{config.$class-prefix}h1-display" !default;
+
+$heading-2-selector: ".#{config.$class-prefix}h2" !default;
+$heading-3-selector: ".#{config.$class-prefix}h3" !default;
+$heading-4-selector: ".#{config.$class-prefix}h4" !default;
+$heading-5-selector: ".#{config.$class-prefix}h5" !default;
+$heading-6-selector: ".#{config.$class-prefix}h6" !default;
+
+// Text selector(s)
+$text-small-selector: ".#{config.$class-prefix}text-sm" !default;
+$text-extra-small-selector: ".#{config.$class-prefix}text-xsm" !default;
+$text-body-selector: ".#{config.$class-prefix}text-body" !default;
+
+// Special text selector(s)
+$text-underline-medium-selector: ".#{config.$class-prefix}underline-md" !default;
+$text-underline-small-selector: ".#{config.$class-prefix}underline-md" !default;
+$text-underline-large-selector: ".#{config.$class-prefix}underline-md" !default;
+$quote-selector: ".#{config.$class-prefix}quote" !default;
