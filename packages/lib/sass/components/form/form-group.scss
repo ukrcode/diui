@@ -1,5 +1,5 @@
 @use "../../utilities/functions" as fn;
-@use "./selector-vars" as vars;
+@use "../../selectors" as vars;
 
 // Form field wrapper
 #{vars.$form-group-selector} {

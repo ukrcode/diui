@@ -1,0 +1,17 @@
+@use "../config" as config;
+
+// Form Group
+$form-group-selector: ".#{config.$class-prefix}form-group";
+$form-group-invalid-selector: ".#{config.$class-prefix}form-group-invalid";
+
+// Hint
+$hint-selector: ".#{config.$class-prefix}form-hint";
+$hint-invalid-selector: ".#{config.$class-prefix}form-hint-invalid";
+
+// Regular Input
+$label-selector: ".#{config.$class-prefix}label";
+$input-selector: ".#{config.$class-prefix}input";
+
+// Search Input
+$search-label-selector: ".#{config.$class-prefix}search-label";
+$search-input-selector: ".#{config.$class-prefix}search-input";

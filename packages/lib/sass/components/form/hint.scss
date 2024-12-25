@@ -1,7 +1,7 @@
 @use "../../utilities/css-vars" as css-vars;
 @use "../../utilities/functions" as fn;
 @use "../../utilities/mixins" as mx;
-@use "./selector-vars" as vars;
+@use "../../selectors" as vars;
 
 // Hint
 #{vars.$hint-selector} {

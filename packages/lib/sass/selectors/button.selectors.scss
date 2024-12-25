@@ -3,10 +3,8 @@
 @use "../utilities/mixins" as mx;
 @use "../config" as config;
 
-$prefix: config.$class-prefix;
-
-$button-root-selector: ".#{$prefix}btn";
-$button-sm-selector: ".#{$prefix}btn-sm";
-$button-primary-selector: ".#{$prefix}btn-primary";
-$button-outline-selector: ".#{$prefix}btn-outline";
-$button-text-selector: ".#{$prefix}btn-text";
+$button-root-selector: ".#{config.$class-prefix}btn";
+$button-sm-selector: ".#{config.$class-prefix}btn-sm";
+$button-primary-selector: ".#{config.$class-prefix}btn-primary";
+$button-outline-selector: ".#{config.$class-prefix}btn-outline";
+$button-text-selector: ".#{config.$class-prefix}btn-text";
