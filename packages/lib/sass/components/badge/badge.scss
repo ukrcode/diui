@@ -1,0 +1,16 @@
+@use "../../selectors" as vars;
+@use "../../utilities/functions" as fn;
+@use "../../utilities/css-vars" as css-vars;
+
+#{vars.$badge-selector} {
+  display: inline-block;
+  padding: fn.to-rem(4px) fn.to-rem(8px);
+  border-radius: fn.to-rem(24px);
+
+  white-space: nowrap;
+}
+
+#{vars.$badge-primary-selector} {
+  color: css-vars.get-var("text-color-invert");
+  background-color: css-vars.get-var("bg-color-invert");
+}

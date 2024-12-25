@@ -1046,11 +1046,13 @@
   background-color: var(--di-c-gorse-20);
   color: var(--di-text-color);
   padding: 0.5rem 0.25rem;
-  margin-top: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
   font-family: var(--di-font-family-primary);
   font-weight: 300;
+}
+.di-form-group .di-form-hint {
+  margin-top: 0.5rem;
 }
 .di-form-group-invalid .di-form-hint, .di-form-hint.di-form-hint-invalid, .di-input:invalid ~ .di-form-hint {
   color: var(--di-c-scarlet);
@@ -1065,5 +1067,17 @@
 .di-code {
   font-family: var(--di-font-family-code);
   color: var(--di-c-violet);
+}
+
+.di-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1.5rem;
+  white-space: nowrap;
+}
+
+.di-badge-primary {
+  color: var(--di-text-color-invert);
+  background-color: var(--di-bg-color-invert);
 }
 /*# sourceMappingURL=diui.css.map */

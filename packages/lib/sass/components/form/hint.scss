@@ -8,8 +8,13 @@
   background-color: css-vars.get-var("c-gorse-20");
   color: css-vars.get-var("text-color");
   padding: fn.to-rem(8px) fn.to-rem(4px);
-  margin-top: fn.to-rem(8px);
+
   @include mx.base-font-configuration(12px, 16px, 300);
+
+  // Set margin only when a part of a form group
+  #{vars.$form-group-selector} & {
+    margin-top: fn.to-rem(8px);
+  }
 
   // Invalid Hint
   #{vars.$form-group-invalid-selector} &,

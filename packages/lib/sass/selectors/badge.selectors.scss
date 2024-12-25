@@ -1,0 +1,10 @@
+@use "../config" as config;
+
+// Badge
+$badge-selector: ".#{config.$class-prefix}badge" !default;
+$badge-primary-selector: ".#{config.$class-prefix}badge-primary" !default;
+$badge-secondary-selector: ".#{config.$class-prefix}badge-secondary" !default;
+$badge-info-selector: ".#{config.$class-prefix}badge-info" !default;
+$badge-success-selector: ".#{config.$class-prefix}badge-success" !default;
+$badge-warning-selector: ".#{config.$class-prefix}badge-warning" !default;
+$badge-danger-selector: ".#{config.$class-prefix}badge-danger" !default;
