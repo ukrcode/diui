@@ -1080,4 +1080,29 @@
   color: var(--di-text-color-invert);
   background-color: var(--di-bg-color-invert);
 }
+
+.di-badge-secondary {
+  color: var(--di-c-black);
+  background-color: var(--di-c-gray-20);
+}
+
+.di-badge-success {
+  color: var(--di-c-white);
+  background-color: var(--di-c-success);
+}
+
+.di-badge-info {
+  color: var(--di-c-white);
+  background-color: var(--di-c-info);
+}
+
+.di-badge-warning {
+  color: var(--di-c-black);
+  background-color: var(--di-c-warning);
+}
+
+.di-badge-danger {
+  color: var(--di-c-white);
+  background-color: var(--di-c-danger);
+}
 /*# sourceMappingURL=diui.css.map */
