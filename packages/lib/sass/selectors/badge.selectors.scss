@@ -1,10 +1,25 @@
 @use "../config" as config;
 
-// Badge
+// Badge Selectors
 $badge-selector: ".#{config.$class-prefix}badge" !default;
+
+// Badge Business Colors Selectors
 $badge-primary-selector: ".#{config.$class-prefix}badge-primary" !default;
 $badge-secondary-selector: ".#{config.$class-prefix}badge-secondary" !default;
 $badge-info-selector: ".#{config.$class-prefix}badge-info" !default;
 $badge-success-selector: ".#{config.$class-prefix}badge-success" !default;
 $badge-warning-selector: ".#{config.$class-prefix}badge-warning" !default;
 $badge-danger-selector: ".#{config.$class-prefix}badge-danger" !default;
+
+// Badge Colors Selectors
+$badge-light-gray-selector: ".#{config.$class-prefix}badge-light-gray" !default;
+$badge-gray-selector: ".#{config.$class-prefix}badge-gray" !default;
+$badge-gorse-selector: ".#{config.$class-prefix}badge-gorse" !default;
+$badge-yellow-green-selector: ".#{config.$class-prefix}badge-yellow-green" !default;
+$badge-lima-selector: ".#{config.$class-prefix}badge-lima" !default;
+$badge-malachite-selector: ".#{config.$class-prefix}badge-malachite" !default;
+$badge-radiance-selector: ".#{config.$class-prefix}badge-radiance" !default;
+$badge-dodger-blue-selector: ".#{config.$class-prefix}badge-dodger-blue" !default;
+$badge-violet-selector: ".#{config.$class-prefix}badge-violet" !default;
+$badge-brick-red-selector: ".#{config.$class-prefix}badge-brick-red" !default;
+$badge-pumpkin-selector: ".#{config.$class-prefix}badge-pumpkin" !default;
