@@ -1105,4 +1105,64 @@
   color: var(--di-c-white);
   background-color: var(--di-c-danger);
 }
+
+.di-badge-light-gray {
+  color: var(--di-c-black);
+  background-color: var(--di-c-light-gray);
+}
+
+.di-badge-gray {
+  color: var(--di-c-black);
+  background-color: var(--di-c-gray);
+}
+
+.di-badge-gorse {
+  color: var(--di-c-black);
+  background-color: var(--di-c-gorse);
+}
+
+.di-badge-yellow-green {
+  color: var(--di-c-black);
+  background-color: var(--di-c-yellow-green);
+}
+
+.di-badge-lima {
+  color: var(--di-c-white);
+  background-color: var(--di-c-lima);
+}
+
+.di-badge-malachite {
+  color: var(--di-c-white);
+  background-color: var(--di-c-malachite);
+}
+
+.di-badge-radiance {
+  color: var(--di-c-white);
+  background-color: var(--di-c-radiance);
+}
+
+.di-badge-dodger-blue {
+  color: var(--di-c-white);
+  background-color: var(--di-c-dodger-blue);
+}
+
+.di-badge-violet {
+  color: var(--di-c-white);
+  background-color: var(--di-c-violet);
+}
+
+.di-badge-brick-red {
+  color: var(--di-c-white);
+  background-color: var(--di-c-brick-red);
+}
+
+.di-badge-scarlet {
+  color: var(--di-c-white);
+  background-color: var(--di-c-scarlet);
+}
+
+.di-badge-pumpkin {
+  color: var(--di-c-black);
+  background-color: var(--di-c-pumpkin);
+}
 /*# sourceMappingURL=diui.css.map */
