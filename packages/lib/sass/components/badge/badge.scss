@@ -47,7 +47,7 @@
 }
 
 #{vars.$badge-gray-selector} {
-  color: css-vars.get-color-var("black");
+  color: css-vars.get-color-var("white");
   background-color: css-vars.get-color-var("gray");
 }
 
@@ -97,6 +97,6 @@
 }
 
 #{vars.$badge-pumpkin-selector} {
-  color: css-vars.get-color-var("black");
+  color: css-vars.get-color-var("white");
   background-color: css-vars.get-color-var("pumpkin");
 }

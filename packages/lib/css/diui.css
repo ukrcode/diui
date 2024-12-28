@@ -1112,7 +1112,7 @@
 }
 
 .di-badge-gray {
-  color: var(--di-c-black);
+  color: var(--di-c-white);
   background-color: var(--di-c-gray);
 }
 
@@ -1162,7 +1162,7 @@
 }
 
 .di-badge-pumpkin {
-  color: var(--di-c-black);
+  color: var(--di-c-white);
   background-color: var(--di-c-pumpkin);
 }
 /*# sourceMappingURL=diui.css.map */
