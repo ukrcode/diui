@@ -1,0 +1,24 @@
+@use "../config" as config;
+
+// Tab Selectors
+$tab-section-selector: ".#{config.$class-prefix}tabs" !default;
+$tab-list-selector: ".#{config.$class-prefix}tab-list" !default;
+$tab-selector: ".#{config.$class-prefix}tab" !default;
+
+$tab-panel-selector: ".#{config.$class-prefix}tab-panel" !default;
+$tab-panel-hidden-selector: ".#{config.$class-prefix}tab-panel-active" !default;
+
+/*
+<div class="tabs">
+  <ul role="tablist">
+    <li>
+      <button id="tab-1" role="tab" aria-controls="panel-1" aria-selected="true">Tab 1</button>
+    </li>
+    <li>
+      <button id="tab-2" role="tab" aria-controls="panel-2" aria-selected="false">Tab 2</button>
+    </li>
+  </ul>
+  <div id="panel-1" role="tabpanel" aria-labelledby="tab-1">Content for Tab 1</div>
+  <div id="panel-2" role="tabpanel" aria-labelledby="tab-2" hidden>Content for Tab 2</div>
+</div>
+*/
