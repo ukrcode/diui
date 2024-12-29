@@ -1,5 +1,5 @@
-@use "../utilities/css-vars" as css-vars;
-@use "../selectors" as vars;
+@use "../../utilities/css-vars" as css-vars;
+@use "../../selectors" as vars;
 
 @mixin create-bg-color-classes($color-name) {
   #{vars.$bg-color-selector-prefix}#{$color-name} {

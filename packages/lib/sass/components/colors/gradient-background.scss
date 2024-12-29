@@ -1,7 +1,7 @@
-@use "../config" as config;
-@use "../utilities/css-vars" as css-vars;
-@use "../utilities/mixins" as mx;
-@use "../selectors" as vars;
+@use "../../config" as config;
+@use "../../utilities/css-vars" as css-vars;
+@use "../../utilities/mixins" as mx;
+@use "../../selectors" as vars;
 
 @keyframes granimate {
   0%,

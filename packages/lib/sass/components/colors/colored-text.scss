@@ -1,5 +1,5 @@
-@use "../utilities/css-vars" as css-vars;
-@use "../selectors" as vars;
+@use "../../utilities/css-vars" as css-vars;
+@use "../../selectors" as vars;
 
 @mixin create-color-text-class($color-name) {
   #{vars.$text-color-selector-prefix}#{$color-name} {
