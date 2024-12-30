@@ -1,7 +1,7 @@
 @use "../config" as config;
 
 // Tab Selectors
-$tab-section-selector: ".#{config.$class-prefix}tabs" !default;
+$tabs-selector: ".#{config.$class-prefix}tabs" !default;
 $tab-list-selector: ".#{config.$class-prefix}tab-list" !default;
 $tab-selector: ".#{config.$class-prefix}tab" !default;
 

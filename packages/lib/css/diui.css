@@ -1179,4 +1179,34 @@
 .di-gr-bg-5 {
   background-image: var(--di-gr-5);
 }
+
+.di-tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.di-tab-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.di-tab {
+  height: 100%;
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+  border: none;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
+  background-color: var(--di-c-light-gray);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.di-tab:active {
+  filter: brightness(0.8);
+  transform: scale(0.95);
+}
 /*# sourceMappingURL=diui.css.map */

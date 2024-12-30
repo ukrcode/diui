@@ -1,2 +1,35 @@
 @use "../../selectors" as vars;
+@use "../../utilities/css-vars" as css-vars;
+@use "../../utilities/functions" as fn;
+@use "../../utilities/mixins" as mx;
 
+#{vars.$tabs-selector} {
+  display: flex;
+  flex-direction: column;
+}
+
+#{vars.$tab-list-selector} {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#{vars.$tab-selector} {
+  height: 100%;
+  width: 100%;
+
+  padding: fn.to-rem(10px) fn.to-rem(20px);
+  border: none;
+
+  @include mx.base-font-configuration(18px, 28px, 400);
+
+  background-color: css-vars.get-color-var("light-gray");
+  transition: filter 0.3s ease, transform 0.3s ease;
+
+  &:active {
+    filter: brightness(0.8);
+    transform: scale(0.95);
+  }
+}
