@@ -3,6 +3,25 @@
 @use "../../utilities/functions" as fn;
 @use "../../utilities/mixins" as mx;
 
+$tab-horizontal-padding: 20px;
+
+// Active tab
+@mixin active-tab-styles {
+  color: css-vars.get-color-var("black");
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0;
+    width: calc(100% - fn.to-rem(2 * $tab-horizontal-padding));
+    height: 2px;
+    background-color: css-vars.get-color-var("black");
+  }
+}
+
 #{vars.$tabs-selector} {
   display: flex;
   flex-direction: column;
@@ -17,19 +36,33 @@
 }
 
 #{vars.$tab-selector} {
+  position: relative;
   width: 100%;
   height: 100%;
 
-  padding: fn.to-rem(10px) fn.to-rem(20px);
+  padding: fn.to-rem(10px) fn.to-rem($tab-horizontal-padding);
   border: none;
 
   @include mx.base-font-configuration(18px, 28px, 400);
 
   background-color: css-vars.get-color-var("light-gray");
-  transition: filter 0.3s ease, transform 0.3s ease;
+  transition: all 0.2s, filter 0.3s ease, transform 0.3s ease;
+  color: css-vars.get-color-var("gray");
+  cursor: pointer;
 
+  @include mx.on-not-touch-devices {
+    &:hover {
+      @include active-tab-styles;
+    }
+  }
+
+  // For clicking
   &:active {
     filter: brightness(0.8);
     transform: scale(0.95);
   }
+}
+
+#{vars.$tab-active-selector} {
+  @include active-tab-styles;
 }

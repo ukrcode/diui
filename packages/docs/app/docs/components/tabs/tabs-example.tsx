@@ -4,13 +4,13 @@ export default function TabsExample() {
       <ul className="di-tab-list" role="tablist">
         <li>
           <button
-            className="di-tab"
+            className="di-tab di-tab-active"
             id="tab-1"
             role="tab"
             aria-controls="panel-1"
             aria-selected="true"
           >
-            Tab 1
+            Заголовок 1
           </button>
         </li>
         <li>
@@ -21,7 +21,7 @@ export default function TabsExample() {
             aria-controls="panel-2"
             aria-selected="false"
           >
-            Tab 2
+            Заголовок 2
           </button>
         </li>
       </ul>
