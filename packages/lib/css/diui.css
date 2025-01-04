@@ -1212,27 +1212,16 @@
   .di-tab:hover {
     color: var(--di-c-black);
   }
-  .di-tab:hover::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: auto;
-    bottom: 0;
-    width: calc(100% - 2.5rem);
-    height: 2px;
-    background-color: var(--di-c-black);
-  }
 }
-.di-tab:active {
+.di-tab:active:not(.di-tab-active) {
   filter: brightness(0.8);
   transform: scale(0.95);
 }
 
-.di-tab-active {
+.di-tab.di-tab-active {
   color: var(--di-c-black);
 }
-.di-tab-active::after {
+.di-tab.di-tab-active::after {
   content: "";
   position: absolute;
   right: 0;
@@ -1242,5 +1231,33 @@
   width: calc(100% - 2.5rem);
   height: 2px;
   background-color: var(--di-c-black);
+}
+
+.di-tab-button {
+  background-color: var(--di-c-gray-20);
+  border: 2px solid var(--di-c-gray-20);
+  padding: 0.75rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
+  color: inherit;
+  cursor: pointer;
+}
+@media (hover: hover) and (pointer: fine) {
+  .di-tab-button:hover {
+    background-color: var(--di-c-gray-40);
+    border: 2px solid var(--di-c-gray-40);
+  }
+}
+.di-tab-button:active:not(.di-tab-active) {
+  filter: brightness(0.8);
+  transform: scale(0.95);
+}
+
+.di-tab-button.di-tab-active {
+  border-color: var(--di-text-color);
+  background-color: transparent;
 }
 /*# sourceMappingURL=diui.css.map */
