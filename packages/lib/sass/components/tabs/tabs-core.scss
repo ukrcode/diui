@@ -1,0 +1,14 @@
+@use "../../selectors" as vars;
+
+#{vars.$tabs-selector} {
+  display: flex;
+  flex-direction: column;
+}
+
+#{vars.$tab-list-selector} {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

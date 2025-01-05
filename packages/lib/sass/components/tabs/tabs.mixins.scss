@@ -1,0 +1,21 @@
+@use "../../selectors" as vars;
+@use "../../utilities/css-vars" as css-vars;
+
+$tab-horizontal-padding: 20px;
+
+// Active tab
+@mixin active-tab-styles {
+  color: css-vars.get-color-var("black");
+}
+
+@mixin tab-press-styles {
+  filter: brightness(0.8);
+  transform: scale(0.95);
+}
+
+@mixin apply-press-tab-styles {
+  // For clicking
+  &:active:not(#{vars.$tab-active-selector}) {
+    @include tab-press-styles;
+  }
+}

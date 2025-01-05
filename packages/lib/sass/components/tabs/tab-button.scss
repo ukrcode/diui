@@ -1,0 +1,34 @@
+@use "../../selectors" as vars;
+@use "../../utilities/css-vars" as css-vars;
+@use "../../utilities/functions" as fn;
+@use "../../utilities/mixins" as mx;
+@use "./tabs.mixins" as tabs-mx;
+
+$tab-horizontal-padding: 20px;
+
+// Button tab
+#{vars.$tab-button-selector} {
+  background-color: css-vars.get-color-var("gray-20");
+  border: 2px solid css-vars.get-color-var("gray-20");
+
+  padding: fn.to-rem(12px) fn.to-rem(16px);
+  border-radius: fn.to-rem(24px);
+
+  @include mx.base-font-configuration(16px, 24px, 400);
+  color: inherit;
+  cursor: pointer;
+
+  @include mx.on-not-touch-devices {
+    &:hover {
+      background-color: css-vars.get-color-var("gray-40");
+      border: 2px solid css-vars.get-color-var("gray-40");
+    }
+  }
+
+  @include tabs-mx.apply-press-tab-styles;
+}
+
+#{vars.$tab-button-selector}#{vars.$tab-active-selector} {
+  border-color: css-vars.get-var("text-color");
+  background-color: transparent;
+}
