@@ -11,6 +11,9 @@ $hint-invalid-selector: ".#{config.$class-prefix}form-hint-invalid";
 // Regular Input
 $label-selector: ".#{config.$class-prefix}label";
 $input-selector: ".#{config.$class-prefix}input";
+$switch-selector: ".#{config.$class-prefix}switch";
+$checkbox-selector: ".#{config.$class-prefix}checkbox";
+$radio-selector: ".#{config.$class-prefix}radio";
 
 // Search Input
 $search-label-selector: ".#{config.$class-prefix}search-label";
