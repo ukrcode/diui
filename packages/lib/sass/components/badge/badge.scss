@@ -1,6 +1,6 @@
 @use "../../selectors" as vars;
-@use "../../utilities/functions" as fn;
-@use "../../utilities/css-vars" as css-vars;
+@use "../../shared/functions" as fn;
+@use "../../shared/css-vars" as css-vars;
 
 #{vars.$badge-selector} {
   display: inline-block;

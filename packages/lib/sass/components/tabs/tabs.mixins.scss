@@ -1,5 +1,5 @@
 @use "../../selectors" as vars;
-@use "../../utilities/css-vars" as css-vars;
+@use "../../shared/css-vars" as css-vars;
 
 $tab-horizontal-padding: 20px;
 

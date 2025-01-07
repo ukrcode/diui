@@ -1,7 +1,7 @@
 @use "../../selectors" as vars;
-@use "../../utilities/css-vars" as css-vars;
-@use "../../utilities/functions" as fn;
-@use "../../utilities/mixins" as mx;
+@use "../../shared/css-vars" as css-vars;
+@use "../../shared/functions" as fn;
+@use "../../shared/mixins" as mx;
 @use "./tabs.mixins" as tabs-mx;
 
 $tab-horizontal-padding: 20px;

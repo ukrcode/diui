@@ -1,6 +1,6 @@
-@use "../utilities/mixins" as mx;
+@use "../shared/mixins" as mx;
 @use "../selectors" as vars;
-@use "../utilities/css-vars" as css-vars;
+@use "../shared/css-vars" as css-vars;
 
 #{vars.$link-selector} {
   @include mx.base-font-configuration(16px, 24px, 400);

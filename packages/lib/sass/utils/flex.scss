@@ -1,4 +1,4 @@
-@use "../utilities/functions" as fn;
+@use "../shared/functions" as fn;
 @use "../config" as config;
 
 .#{config.$class-prefix}flex {

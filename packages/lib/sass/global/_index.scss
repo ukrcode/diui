@@ -1,6 +1,6 @@
-@use "../utilities/mixins" as mx;
+@use "../shared/mixins" as mx;
 @use "../config" as config;
-@use "../utilities/css-vars" as css-vars;
+@use "../shared/css-vars" as css-vars;
 @use "./fonts" as fonts;
 
 // Register primary fonts

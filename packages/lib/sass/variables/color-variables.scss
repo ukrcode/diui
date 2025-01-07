@@ -1,6 +1,6 @@
-@use "../utilities/css-vars" as css-vars;
+@use "../shared/css-vars" as css-vars;
 @use "../config" as config;
-@use "../utilities/mixins" as mx;
+@use "../shared/mixins" as mx;
 
 @mixin create-color-variables {
     // Black-White-Gray colors

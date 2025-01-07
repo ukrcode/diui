@@ -1,5 +1,5 @@
-@use "../../utilities/css-vars" as css-vars;
-@use "../../utilities/mixins" as mx;
+@use "../../shared/css-vars" as css-vars;
+@use "../../shared/mixins" as mx;
 
 @use "../../selectors" as vars;
 @use "./button-mixins" as btn-mx;

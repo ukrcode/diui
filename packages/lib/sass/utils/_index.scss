@@ -1,5 +1,5 @@
-@use "../utilities/mixins" as mx;
-@use "../utilities/functions" as fn;
+@use "../shared/mixins" as mx;
+@use "../shared/functions" as fn;
 @use "../config" as config;
 
 @use "container";
