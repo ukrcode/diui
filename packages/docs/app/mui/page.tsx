@@ -1,5 +1,5 @@
 import Button from "@mui/material/Button";
-import Slider from "@mui/material/Slider";
+import SuccessSlider from "./components/SuccessSlider";
 
 export default function Page() {
   return (
@@ -10,7 +10,7 @@ export default function Page() {
 
       <br />
 
-      <Slider defaultValue={30} sx={{ width: 300, paddingTop: 10 }} />
+      <SuccessSlider successType="main" defaultValue={30} />
     </section>
   );
 }
