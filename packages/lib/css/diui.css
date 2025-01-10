@@ -700,6 +700,12 @@
   font-weight: 300;
 }
 
+.di-checkbox {
+  position: relative;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .di-code {
   font-family: var(--di-font-family-code);
   color: var(--di-c-violet);

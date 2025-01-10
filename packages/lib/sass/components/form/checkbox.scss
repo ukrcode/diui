@@ -1,0 +1,9 @@
+@use "../../shared/functions" as fn;
+@use "../../selectors" as vars;
+
+// Form field wrapper
+#{vars.$checkbox-selector} {
+  position: relative;
+  padding-top: fn.to-rem(20px);
+  padding-bottom: fn.to-rem(20px);
+}
