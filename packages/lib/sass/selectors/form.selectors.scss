@@ -18,3 +18,8 @@ $radio-selector: ".#{config.$class-prefix}radio";
 // Search Input
 $search-label-selector: ".#{config.$class-prefix}search-label";
 $search-input-selector: ".#{config.$class-prefix}search-input";
+
+// Form Check
+$form-check-selector: ".#{config.$class-prefix}form-check";
+$form-check-label-selector: ".#{config.$class-prefix}form-check-label";
+$form-check-input-selector: ".#{config.$class-prefix}form-check-input";

@@ -15,6 +15,7 @@
   "scripts": {
     "build": "pnpm build:source && pnpm minify:build",
     "build:watch": "postcss --watch diui.scss --output css/diui.css",
+    "dev": "pnpm build:watch",
     "build:source": "postcss diui.scss --output css/diui.css",
     "minify:build": "postcss css/diui.css --no-map --use cssnano --output css/diui.min.css"
   },

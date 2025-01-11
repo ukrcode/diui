@@ -3,8 +3,6 @@ const path = require("path");
 const sassPlugin = require("@csstools/postcss-sass");
 const assetsUrlPlugin = require("postcss-url");
 
-console.log(__dirname);
-
 const config = {
   plugins: [
     sassPlugin({
@@ -14,9 +12,9 @@ const config = {
     assetsUrlPlugin({
       url: "copy",
       // base path to search assets from
-      basePath: path.resolve(__dirname, "fonts"),
+      basePath: path.resolve(__dirname, "assets"),
       // dir to copy assets
-      assetsPath: "fonts",
+      assetsPath: "assets",
       // using hash names for assets (generates from asset content)
     }),
   ],

@@ -1,0 +1,33 @@
+@use "../../shared/functions" as fn;
+@use "../../selectors" as vars;
+
+#{vars.$form-check-selector} {
+  position: relative;
+  display: block;
+
+  min-height: fn.to-rem(24px);
+  padding-left: fn.to-rem(24px);
+
+  #{vars.$form-check-input-selector} {
+    float: left;
+    appearance: none;
+
+    width: 1em;
+    height: 1em;
+    margin-top: 0.25em;
+    vertical-align: top;
+
+    background-image: url("/icons/check.svg");
+    
+    background-color: var(--bs-form-check-bg);
+    background-image: var(--bs-form-check-bg-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    border: var(--bs-border-width) solid var(--bs-border-color);
+  }
+}
+
+// min-height: 1.5rem;
+// padding-left: 1.5em;
