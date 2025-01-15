@@ -1,4 +1,5 @@
 @use "../../shared/functions" as fn;
+@use "../../shared/mixins" as mx;
 @use "../../selectors" as vars;
 @use "../../shared/css-vars" as css-vars;
 
@@ -15,19 +16,37 @@
 
     width: fn.to-rem(24px);
     height: fn.to-rem(24px);
+
     margin: 0;
-    
     vertical-align: top;
- 
+
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    
+
     border: #{css-vars.get-var("text-color")} solid #{fn.to-rem(2px)};
-   
+
     &:checked {
-        background-image: url("/icons/check.svg"); 
+      background-image: url("/icons/check.svg");
     }
+  }
+
+  #{vars.$form-check-label-selector} {
+    @include mx.base-font-configuration(18px, 28px, 400);
+  }
+}
+
+#{vars.$form-check-small-selector} {
+  min-height: fn.to-rem(20px);
+  gap: fn.to-rem(8px);
+
+  #{vars.$form-check-input-selector} {
+    width: fn.to-rem(20px);
+    height: fn.to-rem(20px);
+  }
+
+  #{vars.$form-check-label-selector} {
+    @include mx.base-font-configuration(13px, 16px, 400);
   }
 }
