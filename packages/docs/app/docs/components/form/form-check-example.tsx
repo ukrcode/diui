@@ -13,6 +13,22 @@ export default function FormCheckExample() {
         </label>
       </div>
 
+      <div className="di-form-check">
+        <input
+          id="form-check-id-1-disabled"
+          className="di-form-check-input"
+          type="checkbox"
+          checked
+          disabled
+        />
+        <label
+          className="di-form-check-label"
+          htmlFor="form-check-id-1-disabled"
+        >
+          Disabled and checked
+        </label>
+      </div>
+
       <div className="di-form-check di-form-check-sm">
         <input
           id="form-check-id-2"

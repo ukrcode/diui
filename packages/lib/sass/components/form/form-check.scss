@@ -11,7 +11,8 @@
   min-height: fn.to-rem(24px);
   gap: fn.to-rem(12px);
 
-  #{vars.$form-check-input-selector} {
+  // Checkbox
+  #{vars.$form-check-input-selector}[type="checkbox"] {
     appearance: none;
 
     width: fn.to-rem(24px);
@@ -27,8 +28,15 @@
 
     border: #{css-vars.get-var("text-color")} solid #{fn.to-rem(2px)};
 
-    &:checked {
+    &:checked:not(:disabled) {
       background-image: url("/icons/check.svg");
+    }
+
+    &:disabled {
+      border-color: css-vars.get-color-var("gray-40");
+      background-color: css-vars.get-color-var("gray-20");
+      color: css-vars.get-color-var("gray");
+      background-image: url("/icons/check-disabled.svg");
     }
   }
 
@@ -41,7 +49,7 @@
   min-height: fn.to-rem(20px);
   gap: fn.to-rem(8px);
 
-  #{vars.$form-check-input-selector} {
+  #{vars.$form-check-input-selector}[type="checkbox"] {
     width: fn.to-rem(20px);
     height: fn.to-rem(20px);
   }
@@ -49,4 +57,8 @@
   #{vars.$form-check-label-selector} {
     @include mx.base-font-configuration(13px, 16px, 400);
   }
+}
+
+#{vars.$form-check-input-selector}:disabled + #{vars.$form-check-label-selector} {
+  color: css-vars.get-color-var("gray");
 }
