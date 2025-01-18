@@ -592,6 +592,13 @@
   font-family: var(--di-font-family-primary);
   font-weight: 400;
   color: var(--di-text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (hover: hover) and (pointer: fine) {
+  .di-link:hover {
+    text-decoration: underline;
+  }
 }
 .di-link:visited {
   color: var(--di-c-dodger-blue);

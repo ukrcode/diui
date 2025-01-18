@@ -10,5 +10,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h5: ({ children }) => <h5 className="di-h5">{children}</h5>,
     h6: ({ children }) => <h6 className="di-h6">{children}</h6>,
     code: ({ children }) => <code className="di-code">{children}</code>,
+    a: ({ children, ...restProps }) => {
+      return (
+        <a className="di-link" {...restProps}>
+          {children}
+        </a>
+      );
+    },
   };
 }

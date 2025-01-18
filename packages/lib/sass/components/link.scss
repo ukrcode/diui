@@ -5,6 +5,14 @@
 #{vars.$link-selector} {
   @include mx.base-font-configuration(16px, 24px, 400);
   color: css-vars.get-var("text-color");
+  text-decoration: none;
+  cursor: pointer;
+
+  @include mx.on-not-touch-devices {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
   &:visited {
     color: css-vars.get-color-var("dodger-blue");
