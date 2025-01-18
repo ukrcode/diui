@@ -1,8 +1,9 @@
-@use "../../shared/functions" as fn;
-@use "../../shared/mixins" as mx;
-@use "../../selectors" as vars;
-@use "../../shared/css-vars" as css-vars;
+@use "../../../shared/functions" as fn;
+@use "../../../shared/mixins" as mx;
+@use "../../../selectors" as vars;
+@use "../../../shared/css-vars" as css-vars;
 
+// General Form Check Styles
 #{vars.$form-check-selector} {
   position: relative;
   display: flex;
@@ -11,8 +12,7 @@
   min-height: fn.to-rem(24px);
   gap: fn.to-rem(12px);
 
-  // Checkbox
-  #{vars.$form-check-input-selector}[type="checkbox"] {
+  #{vars.$form-check-input-selector} {
     appearance: none;
 
     width: fn.to-rem(24px);
@@ -24,19 +24,13 @@
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
 
     border: #{css-vars.get-var("text-color")} solid #{fn.to-rem(2px)};
-
-    &:checked:not(:disabled) {
-      background-image: url("/icons/check.svg");
-    }
 
     &:disabled {
       border-color: css-vars.get-color-var("gray-40");
       background-color: css-vars.get-color-var("gray-20");
       color: css-vars.get-color-var("gray");
-      background-image: url("/icons/check-disabled.svg");
     }
   }
 
@@ -59,6 +53,7 @@
   }
 }
 
-#{vars.$form-check-input-selector}:disabled + #{vars.$form-check-label-selector} {
+#{vars.$form-check-input-selector}:disabled
+  + #{vars.$form-check-label-selector} {
   color: css-vars.get-color-var("gray");
 }

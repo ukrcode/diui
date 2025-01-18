@@ -1,0 +1,25 @@
+@use "../../../shared/functions" as fn;
+@use "../../../shared/mixins" as mx;
+@use "../../../selectors" as vars;
+@use "../../../shared/css-vars" as css-vars;
+
+// Radio styles
+#{vars.$form-check-selector} {
+  // Checkbox
+  #{vars.$form-check-input-selector}[type="radio"] {
+    background-size: 60%;
+    border-radius: 50%;
+
+    &:checked:not(:disabled) {
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=");
+    }
+
+    &:checked:disabled {
+      background-image: url("/icons/check-disabled.svg");
+    }
+  }
+
+  #{vars.$form-check-label-selector} {
+    @include mx.base-font-configuration(18px, 28px, 400);
+  }
+}

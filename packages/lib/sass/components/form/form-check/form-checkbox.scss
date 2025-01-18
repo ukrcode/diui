@@ -1,0 +1,24 @@
+@use "../../../shared/functions" as fn;
+@use "../../../shared/mixins" as mx;
+@use "../../../selectors" as vars;
+@use "../../../shared/css-vars" as css-vars;
+
+// Checkbox styles
+#{vars.$form-check-selector} {
+  // Checkbox
+  #{vars.$form-check-input-selector}[type="checkbox"] {
+    background-size: contain;
+
+    &:checked:not(:disabled) {
+      background-image: url("/icons/check.svg");
+    }
+
+    &:checked:disabled {
+      background-image: url("/icons/check-disabled.svg");
+    }
+  }
+
+  #{vars.$form-check-label-selector} {
+    @include mx.base-font-configuration(18px, 28px, 400);
+  }
+}
