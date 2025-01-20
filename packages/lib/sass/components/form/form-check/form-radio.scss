@@ -5,7 +5,6 @@
 
 // Radio styles
 #{vars.$form-check-selector} {
-  // Checkbox
   #{vars.$form-check-input-selector}[type="radio"] {
     background-size: 60%;
     border-radius: 50%;
@@ -17,9 +16,5 @@
     &:checked:disabled {
       background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiM5NTk1OTUiLz4KPC9zdmc+Cg==");
     }
-  }
-
-  #{vars.$form-check-label-selector} {
-    @include mx.base-font-configuration(18px, 28px, 400);
   }
 }

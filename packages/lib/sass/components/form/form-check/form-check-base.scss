@@ -3,7 +3,7 @@
 @use "../../../selectors" as vars;
 @use "../../../shared/css-vars" as css-vars;
 
-// General Form Check Styles
+// Regular Form Check Styles
 #{vars.$form-check-selector} {
   position: relative;
   display: flex;
@@ -31,6 +31,11 @@
       border-color: css-vars.get-color-var("gray-40");
       background-color: css-vars.get-color-var("gray-20");
       color: css-vars.get-color-var("gray");
+
+      // Label for disabled input
+      & + #{vars.$form-check-label-selector} {
+        color: css-vars.get-color-var("gray");
+      }
     }
   }
 
@@ -39,6 +44,7 @@
   }
 }
 
+// Small Form Check Styles
 #{vars.$form-check-small-selector} {
   min-height: fn.to-rem(20px);
   gap: fn.to-rem(8px);
@@ -51,9 +57,4 @@
   #{vars.$form-check-label-selector} {
     @include mx.base-font-configuration(13px, 16px, 400);
   }
-}
-
-#{vars.$form-check-input-selector}:disabled
-  + #{vars.$form-check-label-selector} {
-  color: css-vars.get-color-var("gray");
 }

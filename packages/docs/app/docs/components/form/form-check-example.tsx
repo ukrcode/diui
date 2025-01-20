@@ -117,7 +117,7 @@ export default function FormCheckExample() {
             className="di-form-check-label"
             htmlFor="form-radio-id-4"
           >
-            Small Radio Button Disabled
+            Small Radio Button
           </label>
         </div>
       </div>

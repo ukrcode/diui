@@ -16,8 +16,4 @@
       background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGlkPSJJY29uIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTkuNDUgMTguMjY2M0wzLjQyMjgyIDEyLjIzOTFMNC45MjA2NSAxMC43NDEzTDkuNDUgMTUuMjg0OEwxOS4wNjUyIDUuNjY5NTZMMjAuNTYzIDcuMTUzMjZMOS40NSAxOC4yNjYzWiIgZmlsbD0iIzk1OTU5NSIvPgo8L2c+Cjwvc3ZnPgo=");
     }
   }
-
-  #{vars.$form-check-label-selector} {
-    @include mx.base-font-configuration(18px, 28px, 400);
-  }
 }
