@@ -43,7 +43,7 @@
   min-height: fn.to-rem(20px);
   gap: fn.to-rem(8px);
 
-  #{vars.$form-check-input-selector}[type="checkbox"] {
+  #{vars.$form-check-input-selector} {
     width: fn.to-rem(20px);
     height: fn.to-rem(20px);
   }

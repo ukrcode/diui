@@ -1,6 +1,7 @@
 export default function FormCheckExample() {
   return (
     <div className="di-flex di-flex-col di-gap-2">
+      {/* Checkboxes */}
       <div className="di-flex di-gap-2">
         <div className="di-form-check">
           <input
@@ -30,6 +31,22 @@ export default function FormCheckExample() {
           </label>
         </div>
 
+        <div className="di-form-check">
+          <input
+            id="form-check-id-1-disabled"
+            className="di-form-check-input"
+            type="checkbox"
+            value=""
+            disabled
+          />
+          <label
+            className="di-form-check-label"
+            htmlFor="form-check-id-1-disabled"
+          >
+            Just Disabled
+          </label>
+        </div>
+
         <div className="di-form-check di-form-check-sm">
           <input
             id="form-check-id-2"
@@ -43,6 +60,7 @@ export default function FormCheckExample() {
         </div>
       </div>
 
+      {/* Radio buttons */}
       <div className="di-flex di-gap-2">
         <div className="di-form-check">
           <input
@@ -55,6 +73,51 @@ export default function FormCheckExample() {
             htmlFor="form-radio-id-1-disabled"
           >
             Radio Button
+          </label>
+        </div>
+
+        <div className="di-form-check">
+          <input
+            id="form-radio-id-2-disabled"
+            className="di-form-check-input"
+            type="radio"
+            disabled
+            checked
+          />
+          <label
+            className="di-form-check-label"
+            htmlFor="form-radio-id-2-disabled"
+          >
+            Radio Button Disabled Checked
+          </label>
+        </div>
+
+        <div className="di-form-check">
+          <input
+            id="form-radio-id-3-disabled"
+            className="di-form-check-input"
+            type="radio"
+            disabled
+          />
+          <label
+            className="di-form-check-label"
+            htmlFor="form-radio-id-3-disabled"
+          >
+            Radio Button Disabled
+          </label>
+        </div>
+
+        <div className="di-form-check di-form-check-sm">
+          <input
+            id="form-radio-id-4"
+            className="di-form-check-input"
+            type="radio"
+          />
+          <label
+            className="di-form-check-label"
+            htmlFor="form-radio-id-4"
+          >
+            Small Radio Button Disabled
           </label>
         </div>
       </div>
