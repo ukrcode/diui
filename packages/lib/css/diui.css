@@ -776,6 +776,18 @@
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiM5NTk1OTUiLz4KPC9zdmc+Cg==");
 }
 
+.di-form-check.di-form-switch .di-form-check-input[type=checkbox] {
+  width: 2.75rem;
+  height: 1.5rem;
+  background-position: left center;
+  background-color: var(--di-c-success);
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiM5NTk1OTUiLz4KPC9zdmc+Cg==");
+  transition: background-position 0.15s ease-in-out;
+  border-radius: 50%;
+}
+.di-form-check.di-form-switch .di-form-check-input[type=checkbox]:checked:not(:disabled) {
+  background-position: right center;
+}
 .di-code {
   font-family: var(--di-font-family-code);
   color: var(--di-c-violet);
