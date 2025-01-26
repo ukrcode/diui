@@ -15,13 +15,21 @@
     transition: background-position .15s ease-in-out;
     border-radius: 50%;
 
-    &:checked:not(:disabled) {
-      background-position: right center;
+    &:not(:checked):disabled {
       background-color: css-vars.get-color-var("light-gray");
     }
 
-    &:checked:disabled {
-      // 
+    &:checked {
+      background-position: right center;
     }
+
+    &:checked:disabled {
+      background-color: css-vars.get-color-var("success-40");
+    }
+
+    &:checked:not(:disabled) {
+      background-color: css-vars.get-color-var("success");
+    }
+
   }
 }
