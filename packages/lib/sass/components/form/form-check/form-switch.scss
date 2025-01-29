@@ -15,20 +15,24 @@
     transition: background-position 0.15s ease-in-out;
     border-radius: 50%;
 
-    &:not(:checked):disabled {
-      background-color: css-vars.get-color-var("light-gray");
+    // Not Checked
+    &:not(:checked) {
+      &:disabled {
+        background-color: css-vars.get-color-var("light-gray");
+      }
     }
 
+    // Checked state
     &:checked {
       background-position: right center;
-    }
 
-    &:checked:disabled {
-      background-color: css-vars.get-color-var("success-40");
-    }
+      &:disabled {
+        background-color: css-vars.get-color-var("success-40");
+      }
 
-    &:checked:not(:disabled) {
-      background-color: css-vars.get-color-var("success");
+      &:not(:disabled) {
+        background-color: css-vars.get-color-var("success");
+      }
     }
   }
 }
