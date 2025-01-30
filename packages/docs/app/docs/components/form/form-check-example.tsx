@@ -121,6 +121,60 @@ export default function FormCheckExample() {
           </label>
         </div>
       </div>
+
+      {/* Switches */}
+      <div className="di-flex di-gap-2">
+        <div className="di-form-check di-form-switch">
+          <input
+            id="form-switch-id-1"
+            className="di-form-check-input"
+            type="checkbox"
+            value=""
+          />
+          <label className="di-form-check-label" htmlFor="form-switch-id-1">
+            Switch
+          </label>
+        </div>
+
+        <div className="di-form-check di-form-switch">
+          <input
+            id="form-switch-id-2"
+            className="di-form-check-input"
+            type="checkbox"
+            disabled
+            checked
+            value=""
+          />
+          <label className="di-form-check-label" htmlFor="form-switch-id-2">
+            Switch Disabled Checked
+          </label>
+        </div>
+
+        <div className="di-form-check di-form-switch">
+          <input
+            id="form-switch-id-3"
+            className="di-form-check-input"
+            type="checkbox"
+            disabled
+            value=""
+          />
+          <label className="di-form-check-label" htmlFor="form-switch-id-3">
+            Switch Disabled
+          </label>
+        </div>
+
+        <div className="di-form-check di-form-check-sm di-form-switch">
+          <input
+            id="form-switch-id-1"
+            className="di-form-check-input"
+            type="checkbox"
+            value=""
+          />
+          <label className="di-form-check-label" htmlFor="form-switch-id-1">
+            Switch Small
+          </label>
+        </div>
+      </div>
     </div>
   );
 }
