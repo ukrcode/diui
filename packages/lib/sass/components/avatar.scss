@@ -1,0 +1,18 @@
+@use "../selectors" as vars;
+@use "../shared/css-vars" as css-vars;
+@use "../shared/mixins" as mx;
+
+#{vars.$avatar-selector} {
+  display: inline-block;
+
+  background-color: css-vars.get-color-var("grey");
+  color: css-vars.get-color-var("text-color");
+
+  @include mx.on-tablet {
+
+  }
+
+  @include mx.on-desktop {
+
+  }
+}

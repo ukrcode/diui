@@ -8,14 +8,16 @@ $thumb-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQ
 // Checkbox styles
 #{vars.$form-check-selector}#{vars.$form-switch-selector} {
   #{vars.$form-check-input-selector}[type="checkbox"] {
+    --di-switch-height: #{fn.to-rem(24px)};
+
     width: fn.to-rem(44px);
-    height: fn.to-rem(24px);
+    height: var(--di-switch-height);
 
     border: none;
     background-position: left center;
     background-image: $thumb-image;
 
-    border-radius: fn.to-rem(24px);
+    border-radius: var(--di-switch-height);
     transition: background-position 0.15s ease-in-out;
 
     // Not Checked
@@ -42,8 +44,8 @@ $thumb-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQ
   // Small Form Check Styles
   &#{vars.$form-check-small-selector} {
     #{vars.$form-check-input-selector} {
+      --di-switch-height: #{fn.to-rem(20px)};
       width: fn.to-rem(36px);
-      height: fn.to-rem(20px);
     }
   }
 }
