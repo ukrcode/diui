@@ -6,6 +6,7 @@ $avatar-square-selector: ".#{config.$class-prefix}avatar-square" !default;
 $avatar-rounded-square-selector: ".#{config.$class-prefix}avatar-rounded-square" !default;
 
 // Size selectors
+$avatar-xlarge-selector: ".#{config.$class-prefix}avatar-xl" !default;
 $avatar-large-selector: ".#{config.$class-prefix}avatar-lg" !default;
 $avatar-medium-selector: ".#{config.$class-prefix}avatar-md" !default;
 $avatar-small-selector: ".#{config.$class-prefix}avatar-sm" !default;

@@ -1,18 +1,34 @@
 @use "../selectors" as vars;
 @use "../shared/css-vars" as css-vars;
 @use "../shared/mixins" as mx;
+@use "../shared/functions" as fn;
 
 #{vars.$avatar-selector} {
+  --di-avatar-size: fn.to-rem(40px);
   display: inline-block;
+  width: #{var(--di-avatar-size)};
+  height: #{var(--di-avatar-size)};
 
   background-color: css-vars.get-color-var("grey");
   color: css-vars.get-color-var("text-color");
 
-  @include mx.on-tablet {
-
+  &#{vars.$avatar-xsmall-selector} {
+    --di-avatar-size: fn.to-rem(24px);
   }
 
-  @include mx.on-desktop {
+  &#{vars.$avatar-small-selector} {
+    --di-avatar-size: fn.to-rem(32px);
+  }
 
+  &#{vars.$avatar-medium-selector} {
+    --di-avatar-size: fn.to-rem(40px);
+  }
+
+  &#{vars.$avatar-large-selector} {
+    --di-avatar-size: fn.to-rem(48px);
+  }
+
+  &#{vars.$avatar-xlarge-selector} {
+    --di-avatar-size: fn.to-rem(64px);
   }
 }

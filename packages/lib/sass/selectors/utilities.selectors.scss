@@ -1,0 +1,3 @@
+@use "../config" as config;
+
+$circle-selector: ".#{config.$class-prefix}circle" !default;
