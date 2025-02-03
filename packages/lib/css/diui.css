@@ -469,6 +469,14 @@
   padding: 1rem;
 }
 
+.di-circle {
+  border-radius: 50%;
+}
+
+.di-rounded {
+  border-radius: 1.25rem;
+}
+
 .di-container {
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;

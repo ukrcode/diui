@@ -6,3 +6,7 @@
 #{vars.$circle-selector} {
   border-radius: 50%;
 }
+
+#{vars.$rounded-selector} {
+  border-radius: fn.to-rem(20px);
+}
