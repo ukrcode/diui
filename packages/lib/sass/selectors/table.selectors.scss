@@ -1,0 +1,5 @@
+@use "../config" as config;
+
+$table-selector: ".#{config.$class-prefix}table" !default;
+$table-stripped-selector: ".#{config.$class-prefix}table-stripped" !default;
+$table-head-selector: ".#{config.$class-prefix}table-head" !default;
