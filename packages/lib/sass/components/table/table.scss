@@ -1,0 +1,7 @@
+@use "../../selectors" as vars;
+@use "../../shared/css-vars" as css-vars;
+@use "../../shared/functions" as fn;
+@use "../../shared/mixins" as mx;
+
+#{vars.$table-selector} {
+}
