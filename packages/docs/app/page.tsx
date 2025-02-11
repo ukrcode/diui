@@ -12,7 +12,7 @@ export default function Home() {
         <p className="di-text-body">
           <span className="di-underline-md">неофіційна</span> CSS бібліотека
           побудована{" "}
-          <span className="di-underline-md">на базі дизайн системи Дії</span>
+          <span className="di-underline-md">на базі дизайн-системи Дії</span>
         </p>
       </div>
 
