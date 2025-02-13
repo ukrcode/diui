@@ -1400,11 +1400,11 @@
 
 .di-table {
   border-collapse: collapse;
+  border: 0.125rem solid var(--di-c-light-gray) thead tr;
+  border-background-color: var(--di-c-light-gray);
 }
-.di-table thead tr {
-  background-color: var(--di-c-light-gray);
+.di-table td {
   padding: 1rem 1.25rem;
   border: 0.125rem solid var(--di-c-light-gray);
-  border-collapse: collapse;
 }
 /*# sourceMappingURL=diui.css.map */

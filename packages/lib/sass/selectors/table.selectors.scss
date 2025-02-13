@@ -3,6 +3,7 @@
 $table-selector: ".#{config.$class-prefix}table" !default;
 $table-head-row-selector: "thead tr" !default;
 $table-row-selector: "tbody tr" !default;
+$table-cell-selector: "td" !default;
 
 $table-stripped-selector: ".#{config.$class-prefix}table-stripped" !default;
 $table-head-selector: ".#{config.$class-prefix}table-head" !default;

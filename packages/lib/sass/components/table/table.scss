@@ -4,13 +4,23 @@
 @use "../../shared/mixins" as mx;
 
 #{vars.$table-selector} {
+  $main-table-color: css-vars.get-color-var("light-gray");
+  $table-border: fn.to-rem(2px) solid $main-table-color; 
+
   border-collapse: collapse;
 
-  #{vars.$table-head-row-selector} {
-    background-color: css-vars.get-color-var("light-gray");
-    padding: fn.to-rem(16px) fn.to-rem(20px);
-    border: fn.to-rem(2px) solid css-vars.get-color-var("light-gray");
+  border:  $table-border
 
-    border-collapse: collapse;
+  #{vars.$table-head-row-selector} {
+    background-color: $main-table-color;
+    // padding: fn.to-rem(16px) fn.to-rem(20px);
+    // border: fn.to-rem(2px) solid $main-table-color;
+
+    // border-collapse: collapse;
+  }
+
+  #{vars.$table-cell-selector} {
+    padding: fn.to-rem(16px) fn.to-rem(20px);
+    border: $table-border;
   }
 }

@@ -12,7 +12,7 @@ export default function TableExample() {
 
             <tbody>
                 <tr>
-                    <td>Row 1, Cell 1</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam at possimus illum mollitia sunt nihil eveniet, ullam placeat ab fugit obcaecati quod officia debitis modi hic ea in vero?</td>
                     <td>Row 1, Cell 2</td>
                     <td>Row 1, Cell 3</td>
                 </tr>
