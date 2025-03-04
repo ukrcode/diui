@@ -1399,9 +1399,15 @@
 }
 
 .di-table {
+  width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
-  border: 0.125rem solid var(--di-c-light-gray) thead tr;
-  border-background-color: var(--di-c-light-gray);
+}
+.di-table th {
+  border: 0.125rem solid var(--di-c-light-gray);
+  background-color: var(--di-c-light-gray);
+  padding: 1rem 1.25rem;
+  text-align: left;
 }
 .di-table td {
   padding: 1rem 1.25rem;

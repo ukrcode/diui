@@ -3,22 +3,25 @@
 @use "../../shared/functions" as fn;
 @use "../../shared/mixins" as mx;
 
+$main-table-color: css-vars.get-color-var("light-gray");
+$table-border: fn.to-rem(2px) solid $main-table-color;
+$table-cell-padding: fn.to-rem(16px) fn.to-rem(20px);
+
 #{vars.$table-selector} {
-  $main-table-color: css-vars.get-color-var("light-gray");
-  $table-border: fn.to-rem(2px) solid $main-table-color; 
+  width: 100%;
+  max-width: 100%;
 
   border-collapse: collapse;
-
-  border:  $table-border
-
-  #{vars.$table-head-row-selector} {
+  
+  // Head Cells
+  #{vars.$table-head-cell-selector} {
+    border: $table-border;
     background-color: $main-table-color;
-    // padding: fn.to-rem(16px) fn.to-rem(20px);
-    // border: fn.to-rem(2px) solid $main-table-color;
-
-    // border-collapse: collapse;
+    padding: $table-cell-padding;
+    text-align: left;
   }
 
+  // Regular Cells
   #{vars.$table-cell-selector} {
     padding: fn.to-rem(16px) fn.to-rem(20px);
     border: $table-border;
