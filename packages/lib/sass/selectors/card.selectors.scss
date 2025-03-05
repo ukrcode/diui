@@ -1,0 +1,8 @@
+@use "../config" as config;
+
+$data-card-selector: ".#{config.$class-prefix}data-card";
+$info-card-selector: ".#{config.$class-prefix}info-card";
+
+$faq-card-selector: ".#{config.$class-prefix}faq-card";
+$faq-card-opened-selector: ".#{config.$class-prefix}faq-card-opened";
+$faq-card-closed-selector: ".#{config.$class-prefix}faq-card-closed";

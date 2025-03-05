@@ -1,6 +1,3 @@
-@use "../shared/css-vars" as css-vars;
-@use "../shared/functions" as fn;
-@use "../shared/mixins" as mx;
 @use "../config" as config;
 
 $button-root-selector: ".#{config.$class-prefix}btn";
