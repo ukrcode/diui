@@ -1413,4 +1413,10 @@
   padding: 1rem 1.25rem;
   border: 0.125rem solid var(--di-c-light-gray);
 }
+
+.di-data-card {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(35.8deg, #c3aab2 -4.77%, #9ec 46.72%, #80c0c8 90.23%, #4b8bfa 134.46%);
+}
 /*# sourceMappingURL=diui.css.map */
