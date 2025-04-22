@@ -1,0 +1,16 @@
+@use "../../selectors" as vars;
+@use "../../shared/css-vars" as css-vars;
+@use "../../shared/functions" as fn;
+@use "../../shared/mixins" as mx;
+ 
+#{vars.$data-card-selector} {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(
+    35.8deg,
+    #c3aab2 -4.77%,
+    #9ec 46.72%,
+    #80c0c8 90.23%,
+    #4b8bfa 134.46%
+  );
+}
