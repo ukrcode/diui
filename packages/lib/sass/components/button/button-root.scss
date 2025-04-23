@@ -15,6 +15,7 @@
   align-items: center;
   border-radius: fn.to-rem(40px);
   padding: fn.to-rem(12px) fn.to-rem(20px);
+  cursor: pointer;
 
   color: css-vars.get-var("text-color");
   @include mx.base-font-configuration(16px, 24px, 400);
