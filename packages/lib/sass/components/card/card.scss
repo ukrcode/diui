@@ -3,7 +3,7 @@
 @use "../../shared/functions" as fn;
 @use "../../shared/mixins" as mx;
  
-#{vars.$data-card-selector} {
+#{vars.$card-selector} {
   display: flex;
   flex-wrap: wrap;
   background-image: linear-gradient(
@@ -13,4 +13,15 @@
     #80c0c8 90.23%,
     #4b8bfa 134.46%
   );
+
+  padding: 2px;
+}
+
+#{vars.$card-inner-selector} {
+  background-color: css-vars.get-var("bg-color");
+}
+
+#{vars.$card-content-selector} {
+  padding: 20px;
+  padding: fn.to-rem(45px) fn.to-rem(60px) fn.to-rem(25px);
 }

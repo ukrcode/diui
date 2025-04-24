@@ -1,6 +1,12 @@
 @use "../config" as config;
 
-$data-card-selector: ".#{config.$class-prefix}data-card";
+$card-selector: ".#{config.$class-prefix}card";
+$card-inner-selector: ".#{config.$class-prefix}card-inner";
+$card-content-selector: ".#{config.$class-prefix}card-inner";
+
+
+
+
 $info-card-selector: ".#{config.$class-prefix}info-card";
 
 $faq-card-selector: ".#{config.$class-prefix}faq-card";

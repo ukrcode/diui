@@ -13,6 +13,8 @@ $heading-4-selector: ".#{config.$class-prefix}h4" !default;
 $heading-5-selector: ".#{config.$class-prefix}h5" !default;
 $heading-6-selector: ".#{config.$class-prefix}h6" !default;
 
+$heading-no-margin-selector: ".#{config.$class-prefix}h-no-margin" !default;
+
 // Text selector(s)
 $text-small-selector: ".#{config.$class-prefix}text-sm" !default;
 $text-extra-small-selector: ".#{config.$class-prefix}text-xsm" !default;
