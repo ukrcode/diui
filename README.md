@@ -6,9 +6,9 @@
 
 Ми використовуємо [pnpm](https://pnpm.io/) менеджер пакетів. 
 
-Тому перед тим як почату розробку, будь ласка встановіть його на свій компьютер: [Інсталяція pnpm](https://pnpm.io/installation)
+Тому перед тим як почати розробку, будь ласка встановіть його на свій компьютер: [Інсталяція pnpm](https://pnpm.io/installation)
 
-Після встановлення `pnpm`, запустіть команду а корені проєкту, яка встановить всі локальні залежності:
+Після встановлення `pnpm`, запустіть команду в корені проєкту, яка встановить всі локальні залежності:
 
 ```bash
 pnpm i
@@ -29,7 +29,7 @@ pnpm i
 1. Офіційний анонс: [https://thedigital.gov.ua/news/diia_design](https://thedigital.gov.ua/news/diia_design)
 2. Офіційний анонс від агенції Федорів: [https://diia.fedoriv.com/](https://diia.fedoriv.com/). Тут найбільша кількість інформації щодо елементів дизайн-системи.
 3. Анонс від київського дизайн-бюро Spiilka: [https://spiilka.com/projects/diia-web](https://spiilka.com/projects/diia-web)
-4. Мінінстерство цифрової трансформації: [https://thedigital.gov.ua/](https://thedigital.gov.ua/). Тут як ніде багато прикладів використання дизайн-системи Дії в реальному коді.
+4. Міністерство цифрової трансформації: [https://thedigital.gov.ua/](https://thedigital.gov.ua/). Тут як ніде багато прикладів використання дизайн-системи Дії в реальному коді.
 4. **Неофіційна** реалізація в `Figma`: [https://www.figma.com/community/file/1270778058754270235](https://www.figma.com/community/file/1270778058754270235)
 5. Шрифти і заголовки:
     - Опис: [https://thedigital.gov.ua/fonts](https://thedigital.gov.ua/fonts)
