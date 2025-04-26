@@ -1,5 +1,6 @@
 @use "../shared/mixins" as mx;
 @use "../shared/functions" as fn;
+@use "../shared/css-vars" as css-vars;
 @use "sass:math" as math;
 @use "../selectors" as vars;
 
