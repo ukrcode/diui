@@ -4,11 +4,10 @@
 @use "../../selectors" as vars;
 @use "./button-mixins" as btn-mx;
 
-// Text Button
-#{vars.$button-text-selector} {
-  background-color: transparent;
-  border: none;
-  color: css-vars.get-var("text-color");
+// Text, Icon Button
+#{vars.$button-text-selector},
+#{vars.$button-icon-selector} {
+  @include btn-mx.no-border-btn;
 
   @include mx.on-not-touch-devices {
     &:hover:not(:disabled) {
@@ -21,7 +20,8 @@
   }
 
   @include btn-mx.add-btn-active-styles {
-    filter: brightness(0.8) saturate(1.2);
-    transform: scale(0.85);
+    @include btn-mx.create-active-state-no-border;
   }
 }
+
+

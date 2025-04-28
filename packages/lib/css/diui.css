@@ -577,20 +577,24 @@
   background-color: transparent;
 }
 
-.di-btn-text {
+.di-btn-text,
+.di-btn-icon {
   background-color: transparent;
   border: none;
   color: var(--di-text-color);
 }
 @media (hover: hover) and (pointer: fine) {
-  .di-btn-text:hover:not(:disabled) {
+  .di-btn-text:hover:not(:disabled),
+  .di-btn-icon:hover:not(:disabled) {
     text-decoration: underline;
   }
 }
-.di-btn-text:disabled {
+.di-btn-text:disabled,
+.di-btn-icon:disabled {
   color: var(--di-c-gray);
 }
-.di-btn-text:active:not(:disabled) {
+.di-btn-text:active:not(:disabled),
+.di-btn-icon:active:not(:disabled) {
   filter: brightness(0.8) saturate(1.2);
   transform: scale(0.85);
 }

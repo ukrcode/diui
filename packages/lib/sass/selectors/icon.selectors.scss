@@ -1,0 +1,5 @@
+@use "../config" as config;
+
+$icon-plus-selector: ".#{config.$class-prefix}-icon-plus";
+$icon-minus-selector: ".#{config.$class-prefix}-icon-minus";
+$icon-download-elector: ".#{config.$class-prefix}-icon-download";
