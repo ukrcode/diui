@@ -1,0 +1,22 @@
+@use "../../selectors" as vars;
+@use "../../shared/css-vars" as css-vars;
+@use "../../shared/functions" as fn;
+@use "../../shared/mixins" as mx;
+
+// Icon
+#{vars.$icon-selector} {
+  content: "";
+  display: inline-block;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+// Icon plus
+#{vars.$icon-file-selector} {
+  width: fn.to-rem(24px);
+  height: fn.to-rem(24px);
+
+  background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.06251 17.714H15.95V16.0569H8.06251V17.714ZM8.06251 13.5806H15.95V11.9236H8.06251V13.5806ZM3.9826 22.0008V1.9953H14.4218L20.0214 7.58443V22.0008H3.9826ZM13.5069 8.4598V3.8098H5.79311V20.1903H18.2069V8.4598H13.5069Z" fill="currentColor"/></svg>');
+}
