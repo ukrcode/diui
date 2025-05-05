@@ -2,21 +2,39 @@
 @use "../../shared/css-vars" as css-vars;
 @use "../../shared/functions" as fn;
 @use "../../shared/mixins" as mx;
+@use "./icon.mixins" as icon-mx;
 
 // Icon
 #{vars.$icon-selector} {
-  content: "";
   display: inline-block;
+
+  width: fn.to-rem(16px);
+  height: fn.to-rem(16px);
 
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
 }
 
-// Icon plus
-#{vars.$icon-file-selector} {
-  width: fn.to-rem(24px);
-  height: fn.to-rem(24px);
+// Icon Sizes Selectors
+@include icon-mx.create-icon-sizes(
+  vars.$icon-selector,
+  (
+    "16": 16px,
+    "24": 24px,
+    "32": 32px,
+    "40": 40px,
+    "48": 48px,
+    "56": 56px,
+    "64": 64px,
+  )
+);
 
-  background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.06251 17.714H15.95V16.0569H8.06251V17.714ZM8.06251 13.5806H15.95V11.9236H8.06251V13.5806ZM3.9826 22.0008V1.9953H14.4218L20.0214 7.58443V22.0008H3.9826ZM13.5069 8.4598V3.8098H5.79311V20.1903H18.2069V8.4598H13.5069Z" fill="currentColor"/></svg>');
+// Icon File
+#{vars.$icon-file-selector} {
+  background-image: url('data:image/svg+xml,<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.06251 17.714H15.95V16.0569H8.06251V17.714ZM8.06251 13.5806H15.95V11.9236H8.06251V13.5806ZM3.9826 22.0008V1.9953H14.4218L20.0214 7.58443V22.0008H3.9826ZM13.5069 8.4598V3.8098H5.79311V20.1903H18.2069V8.4598H13.5069Z" fill="currentColor"/></svg>');
+}
+
+#{vars.$icon-download-selector} {
+  background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.9736L7.02337 10.9886L8.30542 9.7185L11.0989 12.514V3.9953H12.9094V12.514L15.7029 9.7185L16.985 10.9886L12 15.9736ZM3.99927 20.0008V14.8444H5.80977V18.1903H18.1902V14.8444H20.0047V20.0008H3.99927Z" fill="black"/></svg>');
 }
