@@ -3,9 +3,10 @@
 @use "form";
 @use "code";
 @use "badge";
-@use "colors";
 @use "tabs";
 @use "avatar";
 @use "table";
 @use "card";
 @use "icon";
+// Should go after all components to be possible to override
+@use "colors";
