@@ -4,7 +4,14 @@
 @use "../../selectors" as vars;
 @use "./form-mixins" as form-mx;
 
-$horizontal-gap: 24px;
+$horizontal-gap: 56px;
+$icon-gap: 24px;
+
+@mixin place-in-start($left) {
+  position: absolute;
+  top: fn.to-rem(32px);
+  left: fn.to-rem($left);
+}
 
 // Search Input
 #{vars.$search-input-selector} {
@@ -22,6 +29,11 @@ $horizontal-gap: 24px;
   }
 }
 
+// Search Input Icon
+#{vars.$search-input-icon-selector} {
+  @include place-in-start($icon-gap);
+}
+
 // Label when input is focused
 @include form-mx.style-label-on-input-active(
   vars.$search-input-selector,
@@ -32,8 +44,6 @@ $horizontal-gap: 24px;
 
 // Search Label
 #{vars.$search-label-selector} {
-  position: absolute;
-  top: fn.to-rem(32px);
-  left: fn.to-rem($horizontal-gap);
+  @include place-in-start($horizontal-gap);
   color: css-vars.get-var("c-gray");
 }
