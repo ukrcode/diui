@@ -45,7 +45,7 @@ export default function IconExample() {
     <>
       <IconAllSizesExample iconName="file" />
       <IconAllSizesExample iconName="download" />
-      <IconAllSizesExample iconName="search" />
+      <IconAllSizesExample iconName="magnify-glass" />
       <IconAllSizesExample iconName="minus" />
       <IconAllSizesExample iconName="plus" />
     </>

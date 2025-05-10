@@ -468,6 +468,30 @@
 .di-p-2 {
   padding: 1rem;
 }
+.di-p-3 {
+  padding: 1.5rem;
+}
+.di-p-4 {
+  padding: 2rem;
+}
+.di-p-5 {
+  padding: 2.5rem;
+}
+.di-p-6 {
+  padding: 3rem;
+}
+.di-p-7 {
+  padding: 3.5rem;
+}
+.di-p-8 {
+  padding: 4rem;
+}
+.di-p-9 {
+  padding: 4.5rem;
+}
+.di-p-10 {
+  padding: 5rem;
+}
 
 .di-circle {
   border-radius: 50%;
