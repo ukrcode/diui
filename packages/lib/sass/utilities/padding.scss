@@ -1,6 +1,8 @@
 @use "../shared/functions" as fn;
 @use "../config" as config;
 
+//TODO: add step for padding increase
+
 .#{config.$class-prefix}p {
   &-1 {
     padding: fn.to-rem(8px);
