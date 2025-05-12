@@ -1,0 +1,7 @@
+@use "../selectors" as vars;
+
+#{vars.$margin-selector} {
+  &-0 {
+    margin: 0 !important;
+  }
+}

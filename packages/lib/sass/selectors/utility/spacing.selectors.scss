@@ -1,0 +1,4 @@
+@use "../../config" as config;
+
+$margin-selector: ".#{config.$class-prefix}m";
+$padding-selector: ".#{config.$class-prefix}p";

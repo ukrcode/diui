@@ -1,0 +1,48 @@
+@use "../shared/functions" as fn;
+@use "../selectors" as vars;
+
+#{vars.$padding-selector} {
+  &-0 {
+    padding: 0 !important;
+  }
+
+  &-1 {
+    padding: fn.to-rem(8px) !important;
+  }
+
+  &-2 {
+    padding: fn.to-rem(16px) !important;
+  }
+
+  &-3 {
+    padding: fn.to-rem(24px) !important;
+  }
+
+  &-4 {
+    padding: fn.to-rem(32px) !important;
+  }
+
+  &-5 {
+    padding: fn.to-rem(40px) !important;
+  }
+
+  &-6 {
+    padding: fn.to-rem(48px) !important;
+  }
+
+  &-7 {
+    padding: fn.to-rem(56px) !important;
+  }
+
+  &-8 {
+    padding: fn.to-rem(64px) !important;
+  }
+
+  &-9 {
+    padding: fn.to-rem(72px) !important;
+  }
+
+  &-10 {
+    padding: fn.to-rem(80px) !important;
+  }
+}

@@ -2,10 +2,13 @@
 @use "../../shared/css-vars" as css-vars;
 @use "../../shared/functions" as fn;
 @use "../../shared/mixins" as mx;
- 
+
+$border-width: 2px;
+
 #{vars.$card-selector} {
   display: flex;
   flex-wrap: wrap;
+
   background-image: linear-gradient(
     35.8deg,
     #c3aab2 -4.77%,
@@ -14,13 +17,21 @@
     #4b8bfa 134.46%
   );
 
-  padding: 2px;
+  // The border is a gradient
+  padding: $border-width;
+}
+
+#{vars.$card-header-selector} {
 }
 
 #{vars.$card-inner-selector} {
+  display: flex;
+  gap: fn.to-rem(24px);
+
   background-color: css-vars.get-var("bg-color");
+  padding: fn.to-rem(24px);
 }
 
 #{vars.$card-content-selector} {
-  padding: fn.to-rem(45px) fn.to-rem(60px) fn.to-rem(25px);
+  // padding: fn.to-rem(45px) fn.to-rem(60px) fn.to-rem(25px);
 }

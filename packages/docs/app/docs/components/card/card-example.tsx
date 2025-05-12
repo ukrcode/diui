@@ -1,10 +1,14 @@
-export default function CardExample() {
+function Card() {
   return (
-    <div className="di-flex di-flex-col di-gap-2">
-      <article className="di-card">
-        <div className="di-card-inner">
+    <article className="di-card">
+      <div className="di-card-inner">
+        <aside>
+          <span role="img" className="di-icon di-icon-file di-icon-24"></span>
+        </aside>
+
+        <div className="di-card-content">
           <header>
-            <h4>Card Title</h4>
+            <h4 className="di-h4 di-m-0">Card Title</h4>
           </header>
 
           <p>
@@ -13,7 +17,15 @@ export default function CardExample() {
             at convallis enim nunc nec nisi.
           </p>
         </div>
-      </article>
+      </div>
+    </article>
+  );
+}
+
+export default function CardExample() {
+  return (
+    <div className="di-flex di-flex-col di-gap-2">
+      <Card />
     </div>
   );
 }

@@ -462,35 +462,42 @@
   gap: 1.5rem;
 }
 
+.di-p-0 {
+  padding: 0 !important;
+}
 .di-p-1 {
-  padding: 0.5rem;
+  padding: 0.5rem !important;
 }
 .di-p-2 {
-  padding: 1rem;
+  padding: 1rem !important;
 }
 .di-p-3 {
-  padding: 1.5rem;
+  padding: 1.5rem !important;
 }
 .di-p-4 {
-  padding: 2rem;
+  padding: 2rem !important;
 }
 .di-p-5 {
-  padding: 2.5rem;
+  padding: 2.5rem !important;
 }
 .di-p-6 {
-  padding: 3rem;
+  padding: 3rem !important;
 }
 .di-p-7 {
-  padding: 3.5rem;
+  padding: 3.5rem !important;
 }
 .di-p-8 {
-  padding: 4rem;
+  padding: 4rem !important;
 }
 .di-p-9 {
-  padding: 4.5rem;
+  padding: 4.5rem !important;
 }
 .di-p-10 {
-  padding: 5rem;
+  padding: 5rem !important;
+}
+
+.di-m-0 {
+  margin: 0 !important;
 }
 
 .di-circle {
@@ -499,38 +506,6 @@
 
 .di-rounded {
   border-radius: 1.25rem;
-}
-
-.di-container {
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media screen and (min-width: 576px), print {
-  .di-container {
-    padding: 0 4rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .di-container {
-    padding: 0 5rem;
-  }
-}
-
-.di-page {
-  padding-bottom: 1.875rem;
-}
-
-.di-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-.di-flex-gap-1 {
-  gap: 0.5rem;
-}
-.di-flex-gap-2 {
-  gap: 1rem;
 }
 
 .di-btn {
@@ -1079,11 +1054,10 @@
 }
 
 .di-card-inner {
+  display: flex;
+  gap: 1.5rem;
   background-color: var(--di-bg-color);
-}
-
-.di-card-inner {
-  padding: 2.8125rem 3.75rem 1.5625rem;
+  padding: 1.5rem;
 }
 
 .di-icon {
