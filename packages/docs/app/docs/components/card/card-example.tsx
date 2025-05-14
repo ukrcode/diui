@@ -7,8 +7,13 @@ function Card() {
         </aside>
 
         <div className="di-card-content">
-          <header>
-            <h4 className="di-h4 di-m-0">Card Title</h4>
+          <header className="di-card-header">
+            <div className="di-card-title">
+              <h4 className="di-h4 di-m-0">Заголовок</h4>
+              <h6 className="di-h6 di-m-0">Підзаголовок</h6>
+            </div>
+
+            <div className="di-card-controls">controls</div>
           </header>
 
           <p>

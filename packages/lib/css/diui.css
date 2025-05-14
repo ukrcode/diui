@@ -1047,8 +1047,6 @@
 }
 
 .di-card {
-  display: flex;
-  flex-wrap: wrap;
   background-image: linear-gradient(35.8deg, #c3aab2 -4.77%, #9ec 46.72%, #80c0c8 90.23%, #4b8bfa 134.46%);
   padding: 2px;
 }
@@ -1058,6 +1056,11 @@
   gap: 1.5rem;
   background-color: var(--di-bg-color);
   padding: 1.5rem;
+}
+
+.di-card-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .di-icon {
