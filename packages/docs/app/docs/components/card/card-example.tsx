@@ -13,7 +13,11 @@ function Card() {
               <h6 className="di-h6 di-m-0">Підзаголовок</h6>
             </div>
 
-            <div className="di-card-controls">controls</div>
+            <div className="di-card-controls">
+              <button className="di-btn di-btn-icon" aria-label="download">
+                <span className="di-icon di-icon-download di-icon-24"></span>
+              </button>
+            </div>
           </header>
 
           <p>

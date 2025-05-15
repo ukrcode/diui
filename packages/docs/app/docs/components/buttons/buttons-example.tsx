@@ -21,6 +21,10 @@ export default function ButtonsExample() {
             Text
           </button>
 
+          <button className="di-btn di-btn-icon" aria-label="download">
+            <span className="di-icon di-icon-download di-icon-24"></span>
+          </button>
+
           <button disabled className="di-btn di-btn-text">
             Text Disabled
           </button>
