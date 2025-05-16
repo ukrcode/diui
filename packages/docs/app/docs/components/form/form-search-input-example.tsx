@@ -7,7 +7,7 @@ type SearchInputProps = {
 
 function SearchInput({ id, bgClassName, disabled, isInvalidHint }: SearchInputProps) {
   return (
-    <div className={`di-flex di-gap-2 di-p-2 ${bgClassName}`}>
+    <div className={`di-flex di-flex-wrap di-gap-2 di-p-2 ${bgClassName}`}>
       <div className="di-form-group" style={{ width: "200px" }}>
         <span
           className="di-search-input-icon di-icon di-icon-24 di-icon-magnify-glass di-bg-gray"
@@ -24,7 +24,7 @@ function SearchInput({ id, bgClassName, disabled, isInvalidHint }: SearchInputPr
         />
         <label
           htmlFor={id}
-          className="di-search-label di-flex di-justify-center"
+          className="di-search-label di-flex di-flex-wrap di-justify-center"
         >
           Label
         </label>

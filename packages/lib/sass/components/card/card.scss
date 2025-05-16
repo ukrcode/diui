@@ -5,6 +5,7 @@
 
 $border-width: 2px;
 
+// Card with border
 #{vars.$card-selector} {
   background-image: linear-gradient(
     35.8deg,
@@ -16,6 +17,11 @@ $border-width: 2px;
 
   // The border is a gradient
   padding: $border-width;
+}
+
+// Info card
+#{vars.$info-card-selector} {
+  border-top: 2px solid css-vars.get-var("text-color");
 }
 
 // Required for the gradient border

@@ -1,6 +1,6 @@
 export default function TabsExample() {
   return (
-    <section className="di-flex di-flex-column di-gap-2">
+    <section className="di-flex di-flex-wrap di-flex-column di-gap-2">
       <div className="di-tabs">
         <ul className="di-tab-list" role="tablist">
           <li>

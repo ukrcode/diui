@@ -3,7 +3,10 @@
 
 .#{config.$class-prefix}flex {
   display: flex;
-  flex-wrap: wrap;
+
+  &-wrap {
+    flex-wrap: wrap;
+  }
 
   // Flex direction
   &-row {
@@ -80,5 +83,9 @@
 
   &-3 {
     gap: fn.to-rem(24px);
+  }
+
+  &-4 {
+    gap: fn.to-rem(32px);
   }
 }

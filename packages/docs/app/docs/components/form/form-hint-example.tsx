@@ -1,6 +1,6 @@
 export default function FormHintExample() {
   return (
-    <div className="di-flex di-gap-2">
+    <div className="di-flex di-flex-wrap di-gap-2">
       <div className="di-form-group" style={{ width: "200px" }}>
         <textarea
           name="some-textarea-for-data"

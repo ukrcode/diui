@@ -1,7 +1,103 @@
 @use "../selectors" as vars;
+@use "../shared/functions" as fn;
 
 #{vars.$margin-selector} {
   &-0 {
     margin: 0 !important;
+  }
+
+  &-1 {
+    margin: fn.to-rem(8px) !important;
+  }
+
+  &-2 {
+    margin: fn.to-rem(16px) !important;
+  }
+
+  &-3 {
+    margin: fn.to-rem(24px) !important;
+  }
+
+  &-4 {
+    margin: fn.to-rem(32px) !important;
+  }
+
+  &-5 {
+    margin: fn.to-rem(40px) !important;
+  }
+
+  &-6 {
+    margin: fn.to-rem(48px) !important;
+  }
+
+  &-7 {
+    margin: fn.to-rem(56px) !important;
+  }
+
+  &-8 {
+    margin: fn.to-rem(64px) !important;
+  }
+
+  &-9 {
+    margin: fn.to-rem(72px) !important;
+  }
+
+  &-10 {
+    padding: fn.to-rem(80px) !important;
+  }
+
+  // Top
+  &t-1 {
+    margin-top: fn.to-rem(8px) !important;
+  }
+
+  &t-2 {
+    margin-top: fn.to-rem(16px) !important;
+  }
+
+  &t-3 {
+    margin-top: fn.to-rem(24px) !important;
+  }
+
+  &t-4 {
+    margin-top: fn.to-rem(32px) !important;
+  }
+
+  // Bottom
+  &b-1 {
+    margin-bottom: fn.to-rem(8px) !important;
+  }
+
+  &b-2 {
+    margin-bottom: fn.to-rem(16px) !important;
+  }
+
+  &b-3 {
+    margin-bottom: fn.to-rem(24px) !important;
+  }
+
+  &b-4 {
+    margin-bottom: fn.to-rem(32px) !important;
+  }
+
+  // Verical
+
+  &y-1 {
+    margin-top: fn.to-rem(8px) !important;
+    margin-bottom: fn.to-rem(8px) !important;
+  }
+  &y-2 {
+    margin-top: fn.to-rem(16px) !important;
+    margin-bottom: fn.to-rem(16px) !important;
+  }
+
+  &y-3 {
+    margin-top: fn.to-rem(24px) !important;
+    margin-bottom: fn.to-rem(24px) !important;
+  }
+
+  &y-4 {
+    margin-top: fn.to-rem(32px) !important;
+    margin-bottom: fn.to-rem(32px) !important;
   }
 }

@@ -404,6 +404,8 @@
 
 .di-flex {
   display: flex;
+}
+.di-flex-wrap {
   flex-wrap: wrap;
 }
 .di-flex-row {
@@ -461,6 +463,9 @@
 .di-gap-3 {
   gap: 1.5rem;
 }
+.di-gap-4 {
+  gap: 2rem;
+}
 
 .di-p-0 {
   padding: 0 !important;
@@ -498,6 +503,76 @@
 
 .di-m-0 {
   margin: 0 !important;
+}
+.di-m-1 {
+  margin: 0.5rem !important;
+}
+.di-m-2 {
+  margin: 1rem !important;
+}
+.di-m-3 {
+  margin: 1.5rem !important;
+}
+.di-m-4 {
+  margin: 2rem !important;
+}
+.di-m-5 {
+  margin: 2.5rem !important;
+}
+.di-m-6 {
+  margin: 3rem !important;
+}
+.di-m-7 {
+  margin: 3.5rem !important;
+}
+.di-m-8 {
+  margin: 4rem !important;
+}
+.di-m-9 {
+  margin: 4.5rem !important;
+}
+.di-m-10 {
+  padding: 5rem !important;
+}
+.di-mt-1 {
+  margin-top: 0.5rem !important;
+}
+.di-mt-2 {
+  margin-top: 1rem !important;
+}
+.di-mt-3 {
+  margin-top: 1.5rem !important;
+}
+.di-mt-4 {
+  margin-top: 2rem !important;
+}
+.di-mb-1 {
+  margin-bottom: 0.5rem !important;
+}
+.di-mb-2 {
+  margin-bottom: 1rem !important;
+}
+.di-mb-3 {
+  margin-bottom: 1.5rem !important;
+}
+.di-mb-4 {
+  margin-bottom: 2rem !important;
+}
+.di-my-1 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.di-my-2 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+.di-my-3 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+.di-my-4 {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .di-circle {
@@ -1062,6 +1137,10 @@
 .di-card {
   background-image: linear-gradient(35.8deg, #c3aab2 -4.77%, #9ec 46.72%, #80c0c8 90.23%, #4b8bfa 134.46%);
   padding: 2px;
+}
+
+.di-info-card {
+  border-top: 2px solid var(--di-text-color);
 }
 
 .di-card-inner {

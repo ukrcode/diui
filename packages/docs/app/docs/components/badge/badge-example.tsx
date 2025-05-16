@@ -1,7 +1,7 @@
 export default function BadgeExample() {
   return (
-    <div className="di-flex di-flex-col di-gap-2">
-      <div className="di-flex di-gap-2">
+    <div className="di-flex di-flex-wrap di-flex-col di-gap-2">
+      <div className="di-flex di-flex-wrap di-gap-2">
         <div className="di-badge di-badge-primary">Label Primary</div>
         <div className="di-badge di-badge-secondary">Label Secondary</div>
         <div className="di-badge di-badge-success">Label Success</div>
@@ -10,7 +10,7 @@ export default function BadgeExample() {
         <div className="di-badge di-badge-danger">Label Danger</div>
       </div>
 
-      <div className="di-flex di-gap-2">
+      <div className="di-flex di-flex-wrap di-gap-2">
         <div className="di-badge di-badge-light-gray">Label Light Gray</div>
         <div className="di-badge di-badge-gray">Label Gray</div>
 

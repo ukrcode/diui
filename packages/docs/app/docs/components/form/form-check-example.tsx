@@ -1,8 +1,8 @@
 export default function FormCheckExample() {
   return (
-    <div className="di-flex di-flex-col di-gap-2">
+    <div className="di-flex di-flex-wrap di-flex-col di-gap-2">
       {/* Checkboxes */}
-      <div className="di-flex di-gap-2">
+      <div className="di-flex di-flex-wrap di-gap-2">
         <div className="di-form-check">
           <input
             id="form-check-id-1"
@@ -61,7 +61,7 @@ export default function FormCheckExample() {
       </div>
 
       {/* Radio buttons */}
-      <div className="di-flex di-gap-2">
+      <div className="di-flex di-flex-wrap di-gap-2">
         <div className="di-form-check">
           <input
             id="form-radio-id-1-disabled"
@@ -123,7 +123,7 @@ export default function FormCheckExample() {
       </div>
 
       {/* Switches */}
-      <div className="di-flex di-gap-2">
+      <div className="di-flex di-flex-wrap di-gap-2">
         <div className="di-form-check di-form-switch">
           <input
             id="form-switch-id-1"

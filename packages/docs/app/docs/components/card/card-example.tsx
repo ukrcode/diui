@@ -31,10 +31,31 @@ function Card() {
   );
 }
 
+function InfoCard({ className }: { className?: string }) {
+  return (
+    <article className={`di-info-card ${className}`}>
+      <h4 className="di-h4 di-my-4">Заголовок</h4>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+        fringilla, nunc ut facilisis tincidunt, nisi erat venenatis ligula, at
+        convallis enim nunc nec nisi.
+      </p>
+    </article>
+  );
+}
+
 export default function CardExample() {
   return (
-    <div className="di-flex di-flex-col di-gap-2">
+    <div>
       <Card />
+
+      <div className="di-flex di-gap-4 di-mt-2">
+        <InfoCard/>
+        <InfoCard/>
+        <InfoCard/>
+      </div>
+
     </div>
   );
 }

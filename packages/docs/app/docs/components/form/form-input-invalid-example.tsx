@@ -1,6 +1,6 @@
 export default function FormFieldsExample() {
   return (
-    <div className="di-flex di-gap-2">
+    <div className="di-flex di-flex-wrap di-gap-2">
       <div
         className="di-form-group di-form-group-invalid"
         style={{ width: "200px" }}
