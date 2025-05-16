@@ -13,6 +13,12 @@ $icon-gap: 24px;
   left: fn.to-rem($left);
 }
 
+@mixin place-in-end($left) {
+  position: absolute;
+  top: fn.to-rem(32px);
+  right: fn.to-rem($left);
+}
+
 // Search Input
 #{vars.$search-input-selector} {
   width: 100%;
