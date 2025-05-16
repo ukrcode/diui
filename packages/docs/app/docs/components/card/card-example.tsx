@@ -12,12 +12,6 @@ function Card() {
               <h4 className="di-h4 di-m-0">Заголовок</h4>
               <h6 className="di-h6 di-m-0">Підзаголовок</h6>
             </div>
-
-            <div className="di-card-controls">
-              <button className="di-btn di-btn-icon" aria-label="download">
-                <span className="di-icon di-icon-download di-icon-24"></span>
-              </button>
-            </div>
           </header>
 
           <p>
@@ -25,6 +19,12 @@ function Card() {
             fringilla, nunc ut facilisis tincidunt, nisi erat venenatis ligula,
             at convallis enim nunc nec nisi.
           </p>
+        </div>
+
+        <div className="di-card-controls">
+          <button className="di-btn di-btn-icon" aria-label="download">
+            <span className="di-icon di-icon-download di-icon-24"></span>
+          </button>
         </div>
       </div>
     </article>
