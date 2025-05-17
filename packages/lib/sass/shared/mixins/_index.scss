@@ -1,4 +1,5 @@
 @forward "./media.mixins";
-@forward "./typography.mixins.scss";
-@forward "./color.mixins.scss";
-@forward "./components.mixins.scss";
+@forward "./typography.mixins";
+@forward "./color.mixins";
+@forward "./components.mixins";
+@forward "./icon.mixins";

@@ -2,6 +2,8 @@
 
 // Form Group
 $form-group-selector: ".#{config.$class-prefix}form-group";
+$form-group-search-selector: ".#{config.$class-prefix}form-group-search";
+$form-group-search-reverse-selector: ".#{config.$class-prefix}form-group-search-reverse";
 $form-group-invalid-selector: ".#{config.$class-prefix}form-group-invalid";
 
 // Hint
@@ -16,9 +18,16 @@ $checkbox-selector: ".#{config.$class-prefix}checkbox";
 $radio-selector: ".#{config.$class-prefix}radio";
 
 // Search Input
-$search-label-selector: ".#{config.$class-prefix}search-label";
-$search-input-selector: ".#{config.$class-prefix}search-input";
-$search-input-icon-selector: ".#{config.$class-prefix}search-input-icon";
+$search-label-selector: "#{$form-group-search-selector} #{$label-selector}";
+$search-label-reverse-selector: "#{$form-group-search-reverse-selector} #{$label-selector}";
+// $search-label-selector: ".#{config.$class-prefix}search-label";
+$search-input-selector: "#{$form-group-search-selector} #{$input-selector}";
+$search-input-reverse-selector: "#{$form-group-search-reverse-selector} #{$input-selector}";
+// $search-input-selector: ".#{config.$class-prefix}search-input";
+$search-input-icon-selector: "#{$form-group-search-selector} .#{config.$class-prefix}search-input-icon";
+$search-input-icon-reverse-selector: "#{$form-group-search-reverse-selector} .#{config.$class-prefix}search-input-icon";
+// $search-input-icon-selector: ".#{config.$class-prefix}search-input-icon";
+
 
 // Form Check
 $form-check-selector: ".#{config.$class-prefix}form-check";

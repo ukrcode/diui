@@ -4,28 +4,32 @@
 @use "../../selectors" as vars;
 @use "./form-mixins" as form-mx;
 
-$horizontal-gap: 56px;
-$icon-gap: 24px;
+$icon-space-width: 24px;
+$horizontal-gap: 32px;
+$horizontal-gap-with-icon: $icon-space-width + $horizontal-gap;
 
 @mixin place-in-start($left) {
   position: absolute;
   top: fn.to-rem(32px);
   left: fn.to-rem($left);
+  right: auto;
 }
 
 @mixin place-in-end($left) {
   position: absolute;
   top: fn.to-rem(32px);
   right: fn.to-rem($left);
+  left: auto;
 }
 
-// Search Input
-#{vars.$search-input-selector} {
+@mixin search-input-base {
   width: 100%;
   background-color: css-vars.get-var("bg-color");
   border-radius: fn.to-rem($horizontal-gap);
   border: none;
-  padding: fn.to-rem(12px) fn.to-rem($horizontal-gap);
+  padding-top: fn.to-rem(12px);
+  padding-bottom: fn.to-rem(12px);
+
   @include mx.base-font-configuration(16px, 24px, 300);
 
   &:disabled {
@@ -35,9 +39,28 @@ $icon-gap: 24px;
   }
 }
 
+// Search Input
+#{vars.$search-input-selector} {
+  padding-left: fn.to-rem($horizontal-gap-with-icon);
+  padding-right: fn.to-rem($horizontal-gap);
+  @include search-input-base;
+}
+
+// Search Input Reverse
+#{vars.$search-input-reverse-selector} {
+  padding-right: fn.to-rem($horizontal-gap-with-icon);
+  padding-left: fn.to-rem($horizontal-gap);
+  @include search-input-base;
+}
+
 // Search Input Icon
 #{vars.$search-input-icon-selector} {
-  @include place-in-start($icon-gap);
+  @include place-in-start($icon-space-width);
+}
+
+// Search Input Reverse
+#{vars.$search-input-icon-reverse-selector} {
+  @include place-in-end($icon-space-width);
 }
 
 // Label when input is focused
@@ -50,6 +73,13 @@ $icon-gap: 24px;
 
 // Search Label
 #{vars.$search-label-selector} {
+  @include place-in-start($horizontal-gap-with-icon);
+  transition: none;
+  color: css-vars.get-var("c-gray");
+}
+
+#{vars.$search-label-reverse-selector} {
   @include place-in-start($horizontal-gap);
+  transition: none;
   color: css-vars.get-var("c-gray");
 }
