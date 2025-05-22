@@ -9,8 +9,11 @@
   width: #{var(--di-avatar-size)};
   height: #{var(--di-avatar-size)};
 
-  background-color: css-vars.get-color-var("grey");
+  background-color: css-vars.get-color-var("light-gray");
   color: css-vars.get-color-var("text-color");
+
+  padding: fn.to-rem(8px);
+  border-radius: 50%;
 
   &#{vars.$avatar-xsmall-selector} {
     --di-avatar-size: fn.to-rem(24px);

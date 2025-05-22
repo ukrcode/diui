@@ -1141,8 +1141,10 @@
   display: inline-block;
   width: var(--di-avatar-size);
   height: var(--di-avatar-size);
-  background-color: var(--di-c-grey);
+  background-color: var(--di-c-light-gray);
   color: var(--di-c-text-color);
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 .di-avatar.di-avatar-xs {
   --di-avatar-size: fn.to-rem(24px);
