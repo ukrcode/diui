@@ -4,34 +4,45 @@
 @use "../shared/functions" as fn;
 
 #{vars.$avatar-selector} {
-  --di-avatar-size: fn.to-rem(40px);
-  display: inline-block;
-  width: #{var(--di-avatar-size)};
-  height: #{var(--di-avatar-size)};
+  --diui-avatar-size: #{fn.to-rem(40px)};
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: #{var(--diui-avatar-size)};
+  height: #{var(--diui-avatar-size)};
 
   background-color: css-vars.get-color-var("light-gray");
   color: css-vars.get-color-var("text-color");
 
-  padding: fn.to-rem(8px);
   border-radius: 50%;
+}
 
-  &#{vars.$avatar-xsmall-selector} {
-    --di-avatar-size: fn.to-rem(24px);
-  }
+#{vars.$avatar-square-selector} {
+  border-radius: 0;
+}
 
-  &#{vars.$avatar-small-selector} {
-    --di-avatar-size: fn.to-rem(32px);
-  }
+#{vars.$avatar-xsmall-selector} {
+  --diui-avatar-size: #{fn.to-rem(24px)};
+  @include mx.base-font-configuration(14px, 20px);
+}
 
-  &#{vars.$avatar-medium-selector} {
-    --di-avatar-size: fn.to-rem(40px);
-  }
+#{vars.$avatar-small-selector} {
+  --diui-avatar-size: #{fn.to-rem(32px)};
+  @include mx.base-font-configuration(16px, 24px);
+}
 
-  &#{vars.$avatar-large-selector} {
-    --di-avatar-size: fn.to-rem(48px);
-  }
+#{vars.$avatar-medium-selector} {
+  --diui-avatar-size: #{fn.to-rem(40px)};
+  @include mx.base-font-configuration(18px, 28px);
+}
 
-  &#{vars.$avatar-xlarge-selector} {
-    --di-avatar-size: fn.to-rem(64px);
-  }
+#{vars.$avatar-large-selector} {
+  --diui-avatar-size: #{fn.to-rem(48px)};
+  @include mx.base-font-configuration(20px, 24px);
+}
+
+#{vars.$avatar-xlarge-selector} {
+  --diui-avatar-size: #{fn.to-rem(64px)};
+  @include mx.base-font-configuration(24px, 28px);
 }
