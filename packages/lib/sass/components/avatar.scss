@@ -3,6 +3,7 @@
 @use "../shared/mixins" as mx;
 @use "../shared/functions" as fn;
 
+// Base
 #{vars.$avatar-selector} {
   --diui-avatar-size: #{fn.to-rem(40px)};
   display: inline-flex;
@@ -18,10 +19,7 @@
   border-radius: 50%;
 }
 
-#{vars.$avatar-square-selector} {
-  border-radius: 0;
-}
-
+// Sizes
 #{vars.$avatar-xsmall-selector} {
   --diui-avatar-size: #{fn.to-rem(24px)};
   @include mx.base-font-configuration(14px, 20px);
@@ -45,4 +43,34 @@
 #{vars.$avatar-xlarge-selector} {
   --diui-avatar-size: #{fn.to-rem(64px)};
   @include mx.base-font-configuration(24px, 28px);
+}
+
+// Shapes
+#{vars.$avatar-square-selector} {
+  border-radius: 0;
+}
+
+#{vars.$avatar-rounded-square-selector} {
+  --diu-avatar-border-radius: #{fn.to-rem(10px)};
+  border-radius: var(--diu-avatar-border-radius);
+
+  &#{vars.$avatar-xsmall-selector} {
+    --diu-avatar-border-radius: #{fn.to-rem(4px)};
+  }
+
+  &#{vars.$avatar-small-selector} {
+    --diu-avatar-border-radius: #{fn.to-rem(8px)};
+  }
+
+  &#{vars.$avatar-medium-selector} {
+    --diu-avatar-border-radius: #{fn.to-rem(10px)};
+  }
+
+  &#{vars.$avatar-large-selector} {
+    --diu-avatar-border-radius: #{fn.to-rem(14px)};
+  }
+
+  &#{vars.$avatar-xlarge-selector} {
+    --diu-avatar-border-radius: #{fn.to-rem(18px)};
+  }
 }
