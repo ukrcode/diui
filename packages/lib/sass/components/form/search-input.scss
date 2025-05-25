@@ -53,13 +53,20 @@ $horizontal-gap-with-icon: $icon-space-width + $horizontal-gap;
   @include search-input-base;
 }
 
+@mixin search-icon {
+  @include mx.icon-as-bg(24px);
+  background-color: css-vars.get-color-var("gray");
+}
+
 // Search Input Icon
 #{vars.$search-input-icon-selector} {
+  @include search-icon;
   @include place-in-start($icon-space-width);
 }
 
 // Search Input Reverse
 #{vars.$search-input-icon-reverse-selector} {
+  @include search-icon;
   @include place-in-end($icon-space-width);
 }
 

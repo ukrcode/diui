@@ -797,6 +797,17 @@
 }
 
 .di-form-group-search .di-search-input-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: var(--di-text-color);
+  background-color: var(--di-c-gray);
   position: absolute;
   top: 2rem;
   left: 1.5rem;
@@ -804,6 +815,17 @@
 }
 
 .di-form-group-search-reverse .di-search-input-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: var(--di-text-color);
+  background-color: var(--di-c-gray);
   position: absolute;
   top: 2rem;
   right: 1.5rem;
@@ -1256,7 +1278,6 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  mask-image: url("data:image/svg+xml;base64,...");
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: center;

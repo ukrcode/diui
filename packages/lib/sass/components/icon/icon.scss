@@ -16,21 +16,7 @@
 
 // Icon
 #{vars.$icon-selector} {
-  display: inline-block;
-
-  width: fn.to-rem(16px);
-  height: fn.to-rem(16px);
-
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-
-  mask-image: url("data:image/svg+xml;base64,...");
-  mask-repeat: no-repeat;
-  mask-size: contain;
-  mask-position: center;
-
-  background-color: css-vars.get-var("text-color");
+  @include mx.icon-as-bg(16px);
 }
 
 // Icon Sizes Selectors

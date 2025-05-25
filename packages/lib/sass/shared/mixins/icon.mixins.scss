@@ -1,12 +1,18 @@
-@mixin icon-as-bg {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-  
-    mask-image: url("data:image/svg+xml;base64,...");
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    mask-position: center;
-  
-    background-color: css-vars.get-var("text-color");
+@use "../functions" as fn;
+@use "../css-vars" as css-vars;
+
+@mixin icon-as-bg($size: 16px) {
+  display: inline-block;
+  width: fn.to-rem($size);
+  height: fn.to-rem($size);
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+
+  background-color: css-vars.get-var("text-color");
 }
