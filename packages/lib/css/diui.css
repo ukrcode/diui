@@ -1282,6 +1282,8 @@
   mask-size: contain;
   mask-position: center;
   background-color: var(--di-text-color);
+  width: 75%;
+  height: 75%;
 }
 
 .di-icon-16 {
@@ -1337,6 +1339,10 @@
 
 .di-icon-plus {
   mask-image: url('data:image/svg+xml,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7283 17.2797H6.09346V14.7029H14.7283V6.05219H17.3051V14.7029H25.9145V17.2797H17.3051V25.8812H14.7283V17.2797Z" fill="currentColor"/></svg>');
+}
+
+.di-icon-user {
+  mask-image: url('data:image/svg+xml,<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none"><circle cx="32" cy="18" r="12" fill="currentColor" /><path d="M12 52c0-10.5 9-19 20-19s20 8.5 20 19H12z" fill="currentColor" /></svg>');
 }
 
 .di-text-gray {

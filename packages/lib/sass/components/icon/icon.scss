@@ -17,6 +17,8 @@
 // Icon
 #{vars.$icon-selector} {
   @include mx.icon-as-bg(16px);
+  width: 75%;
+  height: 75%;
 }
 
 // Icon Sizes Selectors
@@ -52,4 +54,8 @@
 
 #{vars.$icon-plus-selector} {
   mask-image: url(icon-strings.$plus);
+}
+
+#{vars.$icon-user-selector} {
+  mask-image: url(icon-strings.$user);
 }

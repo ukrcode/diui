@@ -1,4 +1,4 @@
-export default function BadgeExample() {
+export default function AvatarExample() {
   return (
     <>
       <div className="di-flex di-flex-align-center di-gap-2 di-mb-2">

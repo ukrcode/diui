@@ -7,32 +7,32 @@ function IconAllSizesExample({ iconName }: { iconName: string }) {
         aria-label="File Icon"
       ></span>
       <span
-        className={`di-icon di-icon-${iconName} di-icon-56`}
+        className={`di-icon di-icon-${iconName} di-icon-56 di-bg-gray`}
         role="img"
         aria-label="File Icon"
       ></span>
       <span
-        className={`di-icon di-icon-${iconName} di-icon-48`}
+        className={`di-icon di-icon-${iconName} di-icon-48 di-bg-success`}
         role="img"
         aria-label="File Icon"
       ></span>
       <span
-        className={`di-icon di-icon-${iconName} di-icon-40`}
+        className={`di-icon di-icon-${iconName} di-icon-40 di-bg-warning`}
         role="img"
         aria-label="File Icon"
       ></span>
       <span
-        className={`di-icon di-icon-${iconName} di-icon-32`}
+        className={`di-icon di-icon-${iconName} di-icon-32 di-bg-info`}
         role="img"
         aria-label="File Icon"
       ></span>
       <span
-        className={`di-icon di-icon-${iconName} di-icon-24`}
+        className={`di-icon di-icon-${iconName} di-icon-24 di-bg-danger`}
         role="img"
         aria-label="File Icon"
       ></span>
       <span
-        className={`di-icon di-icon-${iconName}`}
+        className={`di-icon di-icon-${iconName} di-bg-violet`}
         role="img"
         aria-label="File Icon"
       ></span>
@@ -48,6 +48,7 @@ export default function IconExample() {
       <IconAllSizesExample iconName="magnify-glass" />
       <IconAllSizesExample iconName="minus" />
       <IconAllSizesExample iconName="plus" />
+      <IconAllSizesExample iconName="user" />
     </>
   );
 }
