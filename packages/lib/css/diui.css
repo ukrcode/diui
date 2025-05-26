@@ -1159,6 +1159,8 @@
 }
 
 .di-avatar {
+  position: relative;
+  overflow: hidden;
   --diui-avatar-size: 2.5rem;
   display: inline-flex;
   align-items: center;

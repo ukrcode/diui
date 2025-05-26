@@ -5,6 +5,8 @@
 
 // Base
 #{vars.$avatar-selector} {
+  position: relative; // used for images positioned absolutely
+  overflow: hidden; // used for images that overflow the avatar
   --diui-avatar-size: #{fn.to-rem(40px)};
   display: inline-flex;
   align-items: center;
