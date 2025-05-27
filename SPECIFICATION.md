@@ -79,6 +79,7 @@
 5. ✅ Стилі та розмір шрифту для цитат.
 6. Списки нумеровані та ненумеровані з відступами.
 7. Блок тексту аля `<p>` із зовнішніми відступами.
+7. ✅ Посилання різних видів як тут: https://thedigital.gov.ua/news/rozvivaemo-napivprovidnikovi-tekhnologii-pidpisano-memorandum-pro-spivpratsyu
 8. ✅ Шрифти
    - ✅ Експортується і підключається шрифт `e-ukraine` для основного тексту і `e-ukrainer-head` спеціальних заголовків.
    - ✅ Більше про шрифти з дизайн-системи: [https://thedigital.gov.ua/fonts](https://thedigital.gov.ua/fonts)
