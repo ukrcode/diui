@@ -282,6 +282,13 @@
   }
 }
 
+p {
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 .di-text-sm {
   font-size: 0.8125rem;
   line-height: 1.125rem;

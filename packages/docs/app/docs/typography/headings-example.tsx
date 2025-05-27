@@ -27,8 +27,14 @@ export default function HeadingsExample() {
       <ul>
         <li>item 1</li>
         <li>item 2</li>
-        <li>item 3ƒ</li>
+        <li>item 3</li>
       </ul>
+
+      <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ol>
 
       <h3 className="di-h3">
         H3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,

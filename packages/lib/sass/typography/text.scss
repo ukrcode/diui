@@ -1,5 +1,14 @@
 @use "../shared/mixins" as mx;
+@use "../shared/functions" as fn;
 @use "../selectors" as vars;
+
+// Paragraph
+#{vars.$paragraph-selector} {
+  margin-block-end: fn.to-rem(16px);
+  margin-block-start: fn.to-rem(16px);
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 
 // text-small
 #{vars.$text-small-selector} {
