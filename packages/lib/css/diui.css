@@ -83,8 +83,8 @@
   --di-gr-3: linear-gradient(90deg, var(--di-c-radiance) 0%, var(--di-c-violet) 100%);
   --di-gr-4: linear-gradient(90deg, var(--di-c-scarlet) 0%, var(--di-c-gorse) 100%);
   --di-gr-5: linear-gradient(90deg, var(--di-c-pumpkin) 0%, var(--di-c-yellow-green) 100%);
-  --di-font-family-primary: e-ukraine, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --di-font-family-head: e-ukraine-head, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --di-font-family-primary: e-ukraine, Arial, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
+  --di-font-family-head: e-ukraine-head, Arial, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
   --di-font-family-code: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --di-text-color: var(--di-c-black);
   --di-text-color-invert: var(--di-c-white);
