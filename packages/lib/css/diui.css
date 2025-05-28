@@ -283,10 +283,12 @@
 }
 
 p {
-  margin-block-end: 1rem;
-  margin-block-start: 1rem;
-  margin-inline-start: 0px;
+  margin-block-end: 1.6875rem;
   margin-inline-end: 0px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 300;
 }
 
 .di-text-sm {
@@ -1352,6 +1354,14 @@ p {
 
 .di-icon-user {
   mask-image: url('data:image/svg+xml,<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none"><circle cx="32" cy="18" r="12" fill="currentColor" /><path d="M12 52c0-10.5 9-19 20-19s20 8.5 20 19H12z" fill="currentColor" /></svg>');
+}
+
+.di-icon-chevron-right {
+  mask-image: url('data:image/svg+xml,<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.1169 27.9645L18.9558 16.8034L21.9333 13.787L36.1109 27.9645L21.9333 42.1421L18.9558 39.1256L30.1169 27.9645Z" fill="currentColor" /></svg>');
+}
+
+.di-icon-chevron-left {
+  mask-image: url('data:image/svg+xml,<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32.6666 42.1421L18.4891 27.9645L32.6666 13.787L35.6442 16.8034L24.4831 27.9645L35.6442 39.1256L32.6666 42.1421Z" fill="currentColor" /></svg>');
 }
 
 .di-text-gray {

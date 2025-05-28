@@ -40,22 +40,37 @@
   mask-image: url(icon-strings.$file);
 }
 
+// Icon Download
 #{vars.$icon-download-selector} {
   mask-image: url(icon-strings.$download);
 }
 
+// Icon Magnify Glass
 #{vars.$icon-magnify-glass-selector} {
   mask-image: url(icon-strings.$magnify-glass);
 }
 
+// Icon Minus
 #{vars.$icon-minus-selector} {
   mask-image: url(icon-strings.$minus);
 }
 
+// Icon Plus
 #{vars.$icon-plus-selector} {
   mask-image: url(icon-strings.$plus);
 }
 
+// Icon User
 #{vars.$icon-user-selector} {
   mask-image: url(icon-strings.$user);
+}
+
+// Icon Chevron Right
+#{vars.$icon-chevron-right-selector} {
+  mask-image: url(icon-strings.$chevron-right);
+}
+
+// Icon Chevron Left
+#{vars.$icon-chevron-left-selector} {
+  mask-image: url(icon-strings.$chevron-left);
 }

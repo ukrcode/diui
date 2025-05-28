@@ -4,10 +4,9 @@
 
 // Paragraph
 #{vars.$paragraph-selector} {
-  margin-block-end: fn.to-rem(16px);
-  margin-block-start: fn.to-rem(16px);
-  margin-inline-start: 0px;
+  margin-block-end: fn.to-rem(27px);
   margin-inline-end: 0px;
+  @include mx.base-font-configuration(16px, 24px, 300);
 }
 
 // text-small

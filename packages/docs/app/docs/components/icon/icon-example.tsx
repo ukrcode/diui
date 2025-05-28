@@ -1,6 +1,8 @@
 function IconAllSizesExample({ iconName }: { iconName: string }) {
   return (
-    <div style={{ display: "flex", alignItems: "center", marginBottom: "1rem" }}>
+    <div
+      style={{ display: "flex", alignItems: "center", marginBottom: "1rem" }}
+    >
       <span
         className={`di-icon di-icon-${iconName} di-icon-64`}
         role="img"
@@ -49,6 +51,8 @@ export default function IconExample() {
       <IconAllSizesExample iconName="minus" />
       <IconAllSizesExample iconName="plus" />
       <IconAllSizesExample iconName="user" />
+      <IconAllSizesExample iconName="chevron-right" />
+      <IconAllSizesExample iconName="chevron-left" />
     </>
   );
 }
