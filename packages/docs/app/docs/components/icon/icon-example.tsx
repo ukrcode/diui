@@ -54,6 +54,7 @@ export default function IconExample() {
       <IconAllSizesExample iconName="chevron-right" />
       <IconAllSizesExample iconName="chevron-left" />
       <IconAllSizesExample iconName="arrow-undo" />
+      <IconAllSizesExample iconName="arrow-right" />
     </>
   );
 }
