@@ -1364,6 +1364,10 @@ p {
   mask-image: url('data:image/svg+xml,<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32.6666 42.1421L18.4891 27.9645L32.6666 13.787L35.6442 16.8034L24.4831 27.9645L35.6442 39.1256L32.6666 42.1421Z" fill="currentColor" /></svg>');
 }
 
+.di-icon-arrow-undo {
+  mask-image: url('data:image/svg+xml,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.20653 24.2116L6.39493 22.4L19.8312 8.9384H7.62679V6.3616H24.2116V22.9384H21.6268V10.7754L8.20653 24.2116Z" fill="currentColor"/></svg>');
+}
+
 .di-text-gray {
   color: var(--di-c-gray);
 }

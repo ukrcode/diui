@@ -53,6 +53,7 @@ export default function IconExample() {
       <IconAllSizesExample iconName="user" />
       <IconAllSizesExample iconName="chevron-right" />
       <IconAllSizesExample iconName="chevron-left" />
+      <IconAllSizesExample iconName="arrow-undo" />
     </>
   );
 }
