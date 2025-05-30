@@ -26,6 +26,9 @@
   @include mx.create-colors-set-vars("c-scarlet", config.$c-scarlet-colors);
   
   // Business colors mapped from existing colors
+  @include mx.map-color-variables("c-primary", "c-dodger-blue");
+  @include mx.map-color-variables("c-secondary", "c-gray");
+
   @include mx.map-color-variables("c-info", "c-radiance");
   @include mx.map-color-variables("c-success", "c-malachite");
   @include mx.map-color-variables("c-danger", "c-scarlet");

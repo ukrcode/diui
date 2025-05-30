@@ -13,9 +13,33 @@
       text-decoration: underline;
     }
   }
+}
 
-  &:visited {
-    color: css-vars.get-color-var("dodger-blue");
+#{vars.$link-inverted-selector} {
+  color: css-vars.get-var("text-color-invert");
+}
+
+#{vars.$link-primary-selector} {
+  color: css-vars.get-var("text-color");
+  font-weight: 300;
+
+  @include mx.on-not-touch-devices {
+    &:hover {
+      color: css-vars.get-color-var("primary");
+      text-decoration: none;
+    }
+  }
+}
+
+#{vars.$link-secondary-selector} {
+  color: css-vars.get-color-var("gray");
+  font-weight: 300;
+
+  @include mx.on-not-touch-devices {
+    &:hover {
+      color: css-vars.get-color-var("primary");
+      text-decoration: none;
+    }
   }
 }
 

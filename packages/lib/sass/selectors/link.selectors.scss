@@ -1,0 +1,9 @@
+@use "../config" as config;
+
+// Link
+$link-selector: ".#{config.$class-prefix}link" !default;
+$link-inverted-selector: ".#{config.$class-prefix}link-inverted" !default;
+$link-secondary-selector: ".#{config.$class-prefix}link-secondary" !default;
+$link-primary-selector: ".#{config.$class-prefix}link-primary" !default;
+
+$link-sm-selector: "#{$link-selector}-sm" !default;
