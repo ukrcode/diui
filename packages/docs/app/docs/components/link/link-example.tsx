@@ -17,6 +17,14 @@ export default function LinkExample() {
       <div className="di-p-2">
         <a className="di-link di-link-secondary" href="#">Secondary Link</a>
       </div>
+
+      <div className="di-p-2">
+        <a className="di-link di-link-underline" href="#">Secondary Link</a>
+      </div>
+
+      <div className="di-p-2 di-bg-black">
+        <a className="di-link di-link-underline di-link-inverted" href="#">Secondary Link</a>
+      </div>
     </>
   );
 }

@@ -720,6 +720,15 @@ p {
   }
 }
 
+.di-link-underline {
+  text-decoration: underline;
+}
+@media (hover: hover) and (pointer: fine) {
+  .di-link-underline:hover {
+    color: var(--di-c-primary);
+  }
+}
+
 .di-link-inverted {
   color: var(--di-text-color-invert);
 }

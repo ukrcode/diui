@@ -2,6 +2,7 @@
 @use "../selectors" as vars;
 @use "../shared/css-vars" as css-vars;
 
+// Regular Link with undeline on hover
 #{vars.$link-selector} {
   @include mx.base-font-configuration(16px, 24px, 400);
   color: css-vars.get-var("text-color");
@@ -15,10 +16,23 @@
   }
 }
 
+// Link with underline and primary color on hover
+#{vars.$link-underline-selector} {
+  text-decoration: underline;
+
+  @include mx.on-not-touch-devices {
+    &:hover {
+      color: css-vars.get-color-var("primary");
+    }
+  }
+}
+
+// Regular Link in inverted color scheme
 #{vars.$link-inverted-selector} {
   color: css-vars.get-var("text-color-invert");
 }
 
+// A link with regular text color changing to primary color on hover
 #{vars.$link-primary-selector} {
   color: css-vars.get-var("text-color");
   font-weight: 300;
@@ -31,6 +45,7 @@
   }
 }
 
+// A link with secondary text color changing to primary color on hover
 #{vars.$link-secondary-selector} {
   color: css-vars.get-color-var("gray");
   font-weight: 300;
@@ -43,6 +58,7 @@
   }
 }
 
+// Small Link with smaller font size
 #{vars.$link-sm-selector} {
   @include mx.base-font-configuration(12px, 16px, 400);
   // Commented code is an initial implementation
