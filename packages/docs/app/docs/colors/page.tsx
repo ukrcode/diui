@@ -7,12 +7,12 @@ export default function Colors() {
 
       <ul>
         <li>
-          <Link className="di-link" href="/docs/colors/text">
+          <Link className="di-link di-link-underline" href="/docs/colors/text">
             Класи для кольорового тексту
           </Link>
         </li>
         <li>
-          <Link className="di-link" href="/docs/colors/background">
+          <Link className="di-link di-link-underline" href="/docs/colors/background">
             Класи для кольорової підложки
           </Link>
         </li>
