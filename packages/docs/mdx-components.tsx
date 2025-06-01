@@ -12,7 +12,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     code: ({ children }) => <code className="di-code">{children}</code>,
     a: ({ children, ...restProps }) => {
       return (
-        <a className="di-link di-link-underline" {...restProps}>
+        <a className="di-link-underline" {...restProps}>
           {children}
         </a>
       );

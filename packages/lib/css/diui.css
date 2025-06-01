@@ -711,8 +711,8 @@ p {
   font-family: var(--di-font-family-primary);
   font-weight: 400;
   color: var(--di-text-color);
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
 }
 @media (hover: hover) and (pointer: fine) {
   .di-link:hover {
@@ -720,8 +720,46 @@ p {
   }
 }
 
+.di-link-primary {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
+  color: var(--di-text-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .di-link-primary:hover {
+    color: var(--di-c-primary);
+    text-decoration: none;
+  }
+}
+
+.di-link-secondary {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
+  color: var(--di-c-gray);
+  cursor: pointer;
+  text-decoration: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .di-link-secondary:hover {
+    color: var(--di-c-primary);
+    text-decoration: none;
+  }
+}
+
 .di-link-underline {
-  text-decoration: underline;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: var(--di-font-family-primary);
+  font-weight: 400;
+  color: var(--di-text-color);
+  cursor: pointer;
+  text-decoration: "underline";
 }
 @media (hover: hover) and (pointer: fine) {
   .di-link-underline:hover {
@@ -733,33 +771,9 @@ p {
   color: var(--di-text-color-invert);
 }
 
-.di-link-primary {
-  color: var(--di-text-color);
-  font-weight: 300;
-}
-@media (hover: hover) and (pointer: fine) {
-  .di-link-primary:hover {
-    color: var(--di-c-primary);
-    text-decoration: none;
-  }
-}
-
-.di-link-secondary {
-  color: var(--di-c-gray);
-  font-weight: 300;
-}
-@media (hover: hover) and (pointer: fine) {
-  .di-link-secondary:hover {
-    color: var(--di-c-primary);
-    text-decoration: none;
-  }
-}
-
 .di-link-sm {
   font-size: 0.75rem;
   line-height: 1rem;
-  font-family: var(--di-font-family-primary);
-  font-weight: 400;
 }
 
 .di-form-group {
