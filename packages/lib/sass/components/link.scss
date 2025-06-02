@@ -30,10 +30,6 @@
   }
 }
 
-// Link Tag
-#{vars.$link-tag-selector} {
-}
-
 // A link with regular text color changing to primary color on hover
 #{vars.$link-primary-selector} {
   @include link-base(css-vars.get-var("text-color"), 300);
