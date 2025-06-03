@@ -7,13 +7,10 @@ $card-header-selector: ".#{config.$class-prefix}card-header";
 $card-title-selector: ".#{config.$class-prefix}card-title";
 $card-controls-selector: ".#{config.$class-prefix}card-controls";
 $card-inner-selector: ".#{config.$class-prefix}card-inner";
-
-// Not in use
-$card-content-selector: ".#{config.$class-prefix}card-content";
-
 $info-card-selector: ".#{config.$class-prefix}info-card";
 
 // Not used for now
+$card-content-selector: ".#{config.$class-prefix}card-content";
 $faq-card-selector: ".#{config.$class-prefix}faq-card";
 $faq-card-opened-selector: ".#{config.$class-prefix}faq-card-opened";
 $faq-card-closed-selector: ".#{config.$class-prefix}faq-card-closed";

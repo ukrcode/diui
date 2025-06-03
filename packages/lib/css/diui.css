@@ -1322,10 +1322,6 @@ p {
   padding: 2px;
 }
 
-.di-info-card {
-  border-top: 2px solid var(--di-text-color);
-}
-
 .di-card-inner {
   display: flex;
   gap: 1.5rem;
@@ -1336,6 +1332,11 @@ p {
 .di-card-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.di-info-card {
+  border-top: 2px solid var(--di-text-color);
 }
 
 .di-icon {
