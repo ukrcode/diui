@@ -6,13 +6,11 @@
 $heading-1-selector: ".#{config.$class-prefix}h1" !default;
 $heading-1-head-selector: ".#{config.$class-prefix}h1-head" !default;
 $heading-1-display-selector: ".#{config.$class-prefix}h1-display" !default;
-
 $heading-2-selector: ".#{config.$class-prefix}h2" !default;
 $heading-3-selector: ".#{config.$class-prefix}h3" !default;
 $heading-4-selector: ".#{config.$class-prefix}h4" !default;
 $heading-5-selector: ".#{config.$class-prefix}h5" !default;
 $heading-6-selector: ".#{config.$class-prefix}h6" !default;
-
 $heading-no-margin-selector: ".#{config.$class-prefix}h-no-margin" !default;
 
 // Paragraph selector(s)

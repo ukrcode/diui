@@ -5,19 +5,21 @@
 }
 
 @function get-var($name, $prefix: "", $suffix: "") {
-  $varName: build-var-name($name, $prefix, $suffix);
-  @return var(#{$varName});
+  $var-name: build-var-name($name, $prefix, $suffix);
+
+  @return var(#{$var-name});
 }
 
 @function get-color-var($name) {
-  $varName: build-var-name($name, "c-");
+  $var-name: build-var-name($name, "c-");
   
-  @return var(#{$varName});
+  @return var(#{$var-name});
 }
 
 @mixin register-var($name, $value, $prefix: "", $suffix: "") {
-  $varName: build-var-name($name, $prefix, $suffix);
-  #{$varName}: #{$value};
+  $var-name: build-var-name($name, $prefix, $suffix);
+
+  #{$var-name}: #{$value};
 }
 
 @mixin register-vars($vars, $prefix: "", $suffix: "") {

@@ -3,7 +3,5 @@
 @use "sass:math";
 
 @function to-rem($sizePx) {
-  $baseFontSize: css-vars.get-var("base-font-size");
-
   @return math.div($sizePx, config.$font-basis) + rem;
 }

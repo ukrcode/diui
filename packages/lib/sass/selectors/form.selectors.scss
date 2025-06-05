@@ -20,12 +20,15 @@ $radio-selector: ".#{config.$class-prefix}radio";
 // Search Input
 $search-label-selector: "#{$form-group-search-selector} #{$label-selector}";
 $search-label-reverse-selector: "#{$form-group-search-reverse-selector} #{$label-selector}";
+
 // $search-label-selector: ".#{config.$class-prefix}search-label";
 $search-input-selector: "#{$form-group-search-selector} #{$input-selector}";
 $search-input-reverse-selector: "#{$form-group-search-reverse-selector} #{$input-selector}";
+
 // $search-input-selector: ".#{config.$class-prefix}search-input";
 $search-input-icon-selector: "#{$form-group-search-selector} .#{config.$class-prefix}search-input-icon";
 $search-input-icon-reverse-selector: "#{$form-group-search-reverse-selector} .#{config.$class-prefix}search-input-icon";
+
 // $search-input-icon-selector: ".#{config.$class-prefix}search-input-icon";
 
 

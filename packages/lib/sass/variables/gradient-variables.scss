@@ -4,36 +4,31 @@
   // Gradients
   $gr-primary: linear-gradient(
       217deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 50.71%
+      rgb(255 0 0 / 80%),
+      rgb(255 0 0 / 0%) 50.71%
     ),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
-
+    linear-gradient(127deg, rgb(0 255 0 / 80%), rgb(0 255 0 / 0%) 70.71%),
+    linear-gradient(336deg, rgb(0 0 255 / 80%), rgb(0 0 255 / 0%) 70.71%);
   $gr-simplified-1: linear-gradient(
     90deg,
     css-vars.get-var("c-yellow-green") 0%,
     css-vars.get-var("c-radiance") 100%
   );
-
   $gr-simplified-2: linear-gradient(
     90deg,
     css-vars.get-var("c-malachite") 0%,
     css-vars.get-var("c-dodger-blue") 100%
   );
-
   $gr-simplified-3: linear-gradient(
     90deg,
     css-vars.get-var("c-radiance") 0%,
     css-vars.get-var("c-violet") 100%
   );
-
   $gr-simplified-4: linear-gradient(
     90deg,
     css-vars.get-var("c-scarlet") 0%,
     css-vars.get-var("c-gorse") 100%
   );
-
   $gr-simplified-5: linear-gradient(
     90deg,
     css-vars.get-var("c-pumpkin") 0%,

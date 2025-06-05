@@ -16,6 +16,8 @@
     "build": "pnpm build:source && pnpm minify:build",
     "build:watch": "postcss --watch diui.scss --output css/diui.css",
     "dev": "pnpm build:watch",
+    "lint": "stylelint ./sass/**/*.scss",
+    "lint:fix": "stylelint ./sass/**/*.scss --fix",
     "build:source": "postcss diui.scss --output css/diui.css",
     "minify:build": "postcss css/diui.css --no-map --use cssnano --output css/diui.min.css"
   },
@@ -36,7 +38,9 @@
     "cssnano": "^7.0.6",
     "postcss-cli": "^11.0.0",
     "postcss-scss": "^4.0.9",
-    "postcss-url": "^10.1.3"
+    "postcss-url": "^10.1.3",
+    "stylelint": "^16.20.0",
+    "stylelint-config-standard-scss": "^15.0.1"
   },
   "author": "",
   "license": "ISC"

@@ -1,13 +1,13 @@
 // The variables in this file, could not be reassigned
 
-$c-black: #000000;
-$c-white: #ffffff;
+$c-black: #000;
+$c-white: #fff;
 $c-light-gray: #e7eef3;
 
 // gray
 $c-gray-colors: (
   "100": #959595,
-  "80": #aaaaaa,
+  "80": #aaa,
   "60": #bfbfbf,
   "40": #d5d5d5,
   "20": #eaeaea,
@@ -85,7 +85,7 @@ $c-brick-red-colors: (
   "20": #f4d5db,
 );
 
-//scarlet
+// scarlet
 $c-scarlet-colors: (
   "100": #ff3800,
   "80": #ff5f33,

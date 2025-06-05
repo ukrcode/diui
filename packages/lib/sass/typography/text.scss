@@ -5,17 +5,19 @@
 // Paragraph
 #{vars.$paragraph-selector} {
   margin-block-end: fn.to-rem(27px);
-  margin-inline-end: 0px;
+  margin-inline-end: 0;
+
   @include mx.base-font-configuration(16px, 24px, 300);
 }
 
 // text-small
 #{vars.$text-small-selector} {
   @include mx.base-font-configuration(13px, 18px, 300);
+
   // Commented code is an initial implementation
   // where font-size was changed for mobile, to make it smaller
   // However, we decided to keep it the same for mobile and desktop
-  //@include mx.base-font-configuration(10px, 14px, 300);
+  // @include mx.base-font-configuration(10px, 14px, 300);
 
   // @include mx.on-tablet {
   // @include mx.base-font-configuration(13px, 18px, 300);
@@ -26,6 +28,7 @@
 
 #{vars.$text-body-selector} {
   @include mx.base-font-configuration(16px, 24px, 300);
+
   // @include mx.base-font-configuration(11px, 14px, 300);
 
   // @include mx.on-tablet {
@@ -36,6 +39,7 @@
 // text tiny
 #{vars.$text-extra-small-selector} {
   @include mx.base-font-configuration(12px, 16px, 300);
+
   // @include mx.base-font-configuration(10px, 14px, 300);
 
   // @include mx.on-tablet {
@@ -46,7 +50,9 @@
 // Underline Large
 #{vars.$text-underline-large-selector} {
   @include mx.base-font-configuration(18px, 28px, 400);
+
   text-decoration: underline;
+
   // @include mx.base-font-configuration(13px, 18px, 400);
 
   // @include mx.on-tablet {
@@ -57,7 +63,9 @@
 // Underline Medium
 #{vars.$text-underline-medium-selector} {
   @include mx.base-font-configuration(16px, 24px, 400);
+
   text-decoration: underline;
+
   // @include mx.base-font-configuration(11px, 14px, 400);
 
   // @include mx.on-tablet {
@@ -68,7 +76,9 @@
 // Underline Small
 #{vars.$text-underline-small-selector} {
   @include mx.base-font-configuration(13px, 18px, 400);
+
   text-decoration: underline;
+
   // @include mx.base-font-configuration(10px, 14px, 400);
 
   // @include mx.on-tablet {
@@ -79,6 +89,7 @@
 // Quote
 #{vars.$quote-selector} {
   @include mx.base-font-configuration(20px, 32px, 400);
+
   // @include mx.base-font-configuration(14px, 24px, 400);
 
   // @include mx.on-tablet {

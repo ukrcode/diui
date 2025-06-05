@@ -5,6 +5,7 @@
 
 @mixin link-base($font-color, $font-weight: 300, $text-decoration: none) {
   @include mx.base-font-configuration(16px, 24px, 400);
+
   color: $font-color;
   cursor: pointer;
   text-decoration: $text-decoration;
@@ -64,6 +65,7 @@
 #{vars.$link-sm-selector} {
   font-size: fn.to-rem(12px);
   line-height: fn.to-rem(16px);
+
   // Commented code is an initial implementation
   // where font-size was changed for mobile, to make it smaller
   // However, we decided to keep it the same for mobile and desktop

@@ -1,9 +1,9 @@
 :root {
-  --di-c-black: #000000;
-  --di-c-white: #ffffff;
+  --di-c-black: #000;
+  --di-c-white: #fff;
   --di-c-light-gray: #e7eef3;
   --di-c-gray: #959595;
-  --di-c-gray-80: #aaaaaa;
+  --di-c-gray-80: #aaa;
   --di-c-gray-60: #bfbfbf;
   --di-c-gray-40: #d5d5d5;
   --di-c-gray-20: #eaeaea;
@@ -294,7 +294,7 @@
 
 p {
   margin-block-end: 1.6875rem;
-  margin-inline-end: 0px;
+  margin-inline-end: 0;
   font-size: 1rem;
   line-height: 1.5rem;
   font-family: var(--di-font-family-primary);
