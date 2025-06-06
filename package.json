@@ -7,6 +7,8 @@
   "scripts": {
     "serve:watch:docs": "cd packages/docs && pnpm dev",
     "dev": "pnpm --parallel --recursive dev",
+    "lint": "pnpm --parallel --recursive lint",
+    "lint:fix": "pnpm --parallel --recursive lint:fix",
     "build:all": "cd packages/docs && pnpm build && cd ../lib && pnpm build",
     "build:lib": "cd packages/lib && pnpm build",
     "build:lib:watch": "cd packages/lib && pnpm build:watch",
