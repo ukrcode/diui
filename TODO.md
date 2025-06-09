@@ -17,3 +17,4 @@
 - [ ] Картки різних видів, як в прикладі.
 - [ ] textarea і input як отут https://thedigital.gov.ua/community/appeal
 - [ ] hover на кнопки як отут
+- [ ] загальні стилі по типу CSSBaseline в Material UI

@@ -1,24 +1,72 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const pageTitle: string = "About Me";
+
+const identity = {
+  firstName: "Sarah",
+  country: "Canada",
+  occupation: "Technical Writer",
+  hobbies: ["photography", "birdwatching", "baseball"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
+
+const skillColor = "navy";
 ---
 
 <Layout>
+  <style define:vars={{ "skill-color": skillColor }}>
+    h1 {
+      color: purple;
+      font-size: 4rem;
+    }
+
+    .skill {
+      color: green;
+      font-weight: bold;
+      color: var(--skill-color);
+    }
+  </style>
   <nav>
     <a href="/">Home</a>
     <a href="/about/">About</a>
     <a href="/blog/">Blog</a>
   </nav>
 
-  <h1>About Me</h1>
+  <h1>{pageTitle}</h1>
   <h2>... and my new Astro site!</h2>
 
-  <p>
-    I am working through Astro's introductory tutorial. This is the second page
-    on my website, and it's the first one I built myself!
-  </p>
+  <ul>
+    <li>My name is {identity.firstName}</li>
+    <li>
+      I leave in {identity.country}
+    </li>
+  </ul>
+
+  <h4>My skills</h4>
+  <ul>
+    {skills.map((skill) => <li class="skill">{skill}</li>)}
+  </ul>
 
   <p>
     This site will update as I complete more of the tutorial, so keep checking
     back and see how my journey is going!
   </p>
+
+  {happy && <p>I am happy to be learning Astro!</p>}
+
+  {finished && <p>I finished this tutorial!</p>}
+
+  {
+    goal === 3 ? (
+      <p>My goal is to finish in 3 days.</p>
+    ) : (
+      <p>My goal is not 3 days.</p>
+    )
+  }
 </Layout>
