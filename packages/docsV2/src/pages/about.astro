@@ -1,7 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+import '../styles/global.css';
 
 const pageTitle: string = "About Me";
 
@@ -34,7 +36,7 @@ const skillColor = "navy";
       color: var(--skill-color);
     }
   </style>
-  <Navigation />
+  <Header />
 
   <h1>{pageTitle}</h1>
   <h2>... and my new Astro site!</h2>
