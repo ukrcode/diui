@@ -1,0 +1,20 @@
+---
+import Layout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+const keywords = frontmatter.tags.join(", ");
+---
+
+<Layout pageTitle={frontmatter.title}>
+  <meta name="description" content={frontmatter.description} />
+  <meta name="keywords" content={keywords} />
+
+  <h1>{frontmatter.title}</h1>
+
+  <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
+
+  <p>Written by {frontmatter.author}</p>
+
+  <p>Published on: {frontmatter.pubDate.toString().slice(0, 10)}</p>
+
+  <slot />
+</Layout>
