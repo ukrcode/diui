@@ -1,5 +1,9 @@
 ---
 import "../../../lib/css/diui.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const pageTitle: string = Astro.props.pageTitle || "Diui Library";
 ---
 
 <!doctype html>
@@ -9,10 +13,16 @@ import "../../../lib/css/diui.css";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Diui Library</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
+    <Header />
     <slot />
+    <Footer />
+
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
 

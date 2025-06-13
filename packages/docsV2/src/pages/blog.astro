@@ -1,14 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 
-import '../styles/global.css';
+import "../styles/global.css";
 ---
 
 <Layout>
-  <Header />
-
   <h1>Blog</h1>
 
   <ul>
@@ -16,10 +12,4 @@ import '../styles/global.css';
     <li><a href="/posts/post-2/">Post 2</a></li>
     <li><a href="/posts/post-3/">Post 3</a></li>
   </ul>
-
-  <Footer />
-
-  <script>
-    import "../scripts/menu.js";
-  </script>
 </Layout>
