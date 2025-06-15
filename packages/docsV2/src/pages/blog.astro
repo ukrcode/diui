@@ -1,13 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const allPosts: { url: string; frontmatter: { title: string } }[] =
+  Object.values(import.meta.glob("./posts/*.md", { eager: true }));
 ---
 
 <Layout>
   <h1>Blog</h1>
 
   <ul>
-    <li><a href="/posts/post-1/">Post 1</a></li>
-    <li><a href="/posts/post-2/">Post 2</a></li>
-    <li><a href="/posts/post-3/">Post 3</a></li>
+    {
+      allPosts.map((post) => (
+        <li>
+          <a href={post.url}>{post.frontmatter.title}</a>
+        </li>
+      ))
+    }
   </ul>
 </Layout>
