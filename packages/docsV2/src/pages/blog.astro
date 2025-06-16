@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import BlogPost from "../components/BlogPost.astro";
 
 const allPosts: { url: string; frontmatter: { title: string } }[] =
   Object.values(import.meta.glob("./posts/*.md", { eager: true }));
@@ -11,9 +12,7 @@ const allPosts: { url: string; frontmatter: { title: string } }[] =
   <ul>
     {
       allPosts.map((post) => (
-        <li>
-          <a href={post.url}>{post.frontmatter.title}</a>
-        </li>
+        <BlogPost url={post.url} title={post.frontmatter.title} />
       ))
     }
   </ul>
