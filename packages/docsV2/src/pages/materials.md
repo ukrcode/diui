@@ -1,3 +1,7 @@
+---
+layout: ../layouts/ContainerLayout.astro
+---
+
 # Матеріали
 
 Список матеріалів, які ми брали за основу.
