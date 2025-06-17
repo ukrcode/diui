@@ -322,7 +322,7 @@ p {
   font-weight: 300;
 }
 
-.di-underline-md {
+.di-underline-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-family: var(--di-font-family-primary);
@@ -338,7 +338,7 @@ p {
   text-decoration: underline;
 }
 
-.di-underline-md {
+.di-underline-sm {
   font-size: 0.8125rem;
   line-height: 1.125rem;
   font-family: var(--di-font-family-primary);

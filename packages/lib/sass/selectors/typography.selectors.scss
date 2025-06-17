@@ -23,6 +23,6 @@ $text-body-selector: ".#{config.$class-prefix}text-body" !default;
 
 // Special text selector(s)
 $text-underline-medium-selector: ".#{config.$class-prefix}underline-md" !default;
-$text-underline-small-selector: ".#{config.$class-prefix}underline-md" !default;
-$text-underline-large-selector: ".#{config.$class-prefix}underline-md" !default;
+$text-underline-small-selector: ".#{config.$class-prefix}underline-sm" !default;
+$text-underline-large-selector: ".#{config.$class-prefix}underline-lg" !default;
 $quote-selector: ".#{config.$class-prefix}quote" !default;
