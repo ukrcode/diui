@@ -1,4 +1,4 @@
-import DocsNav from "./docs-nav";
+// import DocsNav from "./docs-nav";
 import "./layout.css";
 
 export default function DocsLayout({
@@ -9,7 +9,7 @@ export default function DocsLayout({
   return (
     <>
       <aside>
-        <DocsNav />
+        {/*<DocsNav />*/}
       </aside>
       <article className="di-container utils-page">{children}</article>
     </>
