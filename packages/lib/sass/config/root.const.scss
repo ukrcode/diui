@@ -12,3 +12,6 @@ $tablet: 576px !default;
 // $desktop: 960px + 2 * $gap !default; FROM BULMA
 $desktop: 1280px !default;
 
+// The value content doesn't extend
+$content-max-width: 1440px !default;
+

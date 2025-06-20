@@ -405,6 +405,7 @@ p {
   padding-left: 0.9375rem;
   margin-right: auto;
   margin-left: auto;
+  max-width: 90rem;
 }
 @media screen and (min-width: 576px), print {
   .di-container {
