@@ -2,10 +2,10 @@
 
 // Avatar selectors
 $avatar-selector: ".#{config.$class-prefix}avatar" !default;
+// Avatar Types
 $avatar-square-selector: ".#{config.$class-prefix}avatar-square" !default;
 $avatar-rounded-square-selector: ".#{config.$class-prefix}avatar-r-square" !default;
 
-// Avatar Types
 
 // Size selectors
 $avatar-xlarge-selector: ".#{config.$class-prefix}avatar-xl" !default;
