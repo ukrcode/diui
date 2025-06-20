@@ -1,0 +1,13 @@
+---
+import MainBanner from "../components/MainBanner.astro";
+import Content from "../content/index.mdx";
+import Layout from "../layouts/Layout.astro";
+import { components } from "../mdx-components";
+---
+
+<Layout>
+  <MainBanner />
+  <section class="di-container">
+    <Content components={components} />
+  </section>
+</Layout>
