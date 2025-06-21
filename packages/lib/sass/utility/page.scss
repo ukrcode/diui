@@ -2,5 +2,5 @@
 @use "../config" as config;
 
 .#{config.$class-prefix}page {
-  padding-bottom: fn.to-rem(30px);
+  // padding-bottom: fn.to-rem(30px);
 }

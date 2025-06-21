@@ -117,9 +117,9 @@
 </div>
 */
 .di-h1-display {
+  font-family: var(--di-font-family-primary);
   font-size: 7.9375rem;
   line-height: 9.75rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
@@ -132,9 +132,9 @@
 }
 
 .di-h1 {
+  font-family: var(--di-font-family-primary);
   font-size: 1.625rem;
   line-height: 1.75rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
@@ -147,17 +147,17 @@
 }
 @media screen and (min-width: 576px), print {
   .di-h1 {
+    font-family: var(--di-font-family-primary);
     font-size: 3.5rem;
     line-height: 3.75rem;
-    font-family: var(--di-font-family-primary);
     font-weight: 400;
   }
 }
 
 .di-h1-head {
+  font-family: var(--di-font-family-head);
   font-size: 1.625rem;
   line-height: 1.75rem;
-  font-family: var(--di-font-family-head);
   font-weight: 400;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
@@ -170,17 +170,17 @@
 }
 @media screen and (min-width: 576px), print {
   .di-h1-head {
+    font-family: var(--di-font-family-head);
     font-size: 3.5rem;
     line-height: 3.75rem;
-    font-family: var(--di-font-family-head);
     font-weight: 400;
   }
 }
 
 .di-h2 {
+  font-family: var(--di-font-family-primary);
   font-size: 1.25rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
@@ -193,17 +193,17 @@
 }
 @media screen and (min-width: 576px), print {
   .di-h2 {
+    font-family: var(--di-font-family-primary);
     font-size: 2.375rem;
     line-height: 2.5rem;
-    font-family: var(--di-font-family-primary);
     font-weight: 400;
   }
 }
 
 .di-h3 {
+  font-family: var(--di-font-family-primary);
   font-size: 1.125rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
@@ -216,17 +216,17 @@
 }
 @media screen and (min-width: 576px), print {
   .di-h3 {
+    font-family: var(--di-font-family-primary);
     font-size: 1.75rem;
     line-height: 2rem;
-    font-family: var(--di-font-family-primary);
     font-weight: 400;
   }
 }
 
 .di-h4 {
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   margin-top: 1.25rem;
   margin-bottom: 0.25rem;
@@ -239,17 +239,17 @@
 }
 @media screen and (min-width: 576px), print {
   .di-h4 {
+    font-family: var(--di-font-family-primary);
     font-size: 1.5rem;
     line-height: 1.75rem;
-    font-family: var(--di-font-family-primary);
     font-weight: 400;
   }
 }
 
 .di-h5 {
+  font-family: var(--di-font-family-primary);
   font-size: 0.875rem;
   line-height: 1.25rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   margin-top: 1.25rem;
   margin-bottom: 0.25rem;
@@ -262,17 +262,17 @@
 }
 @media screen and (min-width: 576px), print {
   .di-h5 {
+    font-family: var(--di-font-family-primary);
     font-size: 1.25rem;
     line-height: 1.5rem;
-    font-family: var(--di-font-family-primary);
     font-weight: 400;
   }
 }
 
 .di-h6 {
+  font-family: var(--di-font-family-primary);
   font-size: 0.8125rem;
   line-height: 1.125rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   margin-top: 1.25rem;
   margin-bottom: 0.25rem;
@@ -285,9 +285,9 @@
 }
 @media screen and (min-width: 576px), print {
   .di-h6 {
+    font-family: var(--di-font-family-primary);
     font-size: 1.125rem;
     line-height: 1.75rem;
-    font-family: var(--di-font-family-primary);
     font-weight: 400;
   }
 }
@@ -295,61 +295,61 @@
 p {
   margin-block-end: 1.6875rem;
   margin-inline-end: 0;
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 300;
 }
 
 .di-text-sm {
+  font-family: var(--di-font-family-primary);
   font-size: 0.8125rem;
   line-height: 1.125rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 300;
 }
 
 .di-text-body {
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 300;
 }
 
 .di-text-xsm {
+  font-family: var(--di-font-family-primary);
   font-size: 0.75rem;
   line-height: 1rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 300;
 }
 
 .di-underline-lg {
+  font-family: var(--di-font-family-primary);
   font-size: 1.125rem;
   line-height: 1.75rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   text-decoration: underline;
 }
 
 .di-underline-md {
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   text-decoration: underline;
 }
 
 .di-underline-sm {
+  font-family: var(--di-font-family-primary);
   font-size: 0.8125rem;
   line-height: 1.125rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   text-decoration: underline;
 }
 
 .di-quote {
+  font-family: var(--di-font-family-primary);
   font-size: 1.25rem;
   line-height: 2rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
 }
 
@@ -391,13 +391,15 @@ p {
 .di-body {
   margin: 0;
   color: var(--di-text-color);
-  font-size: 1rem;
-  line-height: 1.5rem;
   font-family: var(--di-font-family-primary);
-  font-weight: 300;
 }
-.di-body * {
+
+* {
   box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
 }
 
 .di-container {
@@ -416,10 +418,6 @@ p {
   .di-container {
     padding: 0 5rem;
   }
-}
-
-.di-page {
-  padding-bottom: 1.875rem;
 }
 
 .di-flex {
@@ -610,9 +608,9 @@ p {
   padding: 0.75rem 1.25rem;
   cursor: pointer;
   color: var(--di-text-color);
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   border: none;
   white-space: nowrap;
@@ -632,9 +630,9 @@ p {
 }
 
 .di-btn-sm {
+  font-family: var(--di-font-family-primary);
   font-size: 0.8125rem;
   line-height: 1rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
 }
 
@@ -707,9 +705,9 @@ p {
 }
 
 .di-link {
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   color: var(--di-text-color);
   cursor: pointer;
@@ -722,9 +720,9 @@ p {
 }
 
 .di-link-primary {
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   color: var(--di-text-color);
   cursor: pointer;
@@ -738,9 +736,9 @@ p {
 }
 
 .di-link-secondary {
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   color: var(--di-c-gray);
   cursor: pointer;
@@ -754,9 +752,9 @@ p {
 }
 
 .di-link-underline {
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   color: var(--di-text-color);
   cursor: pointer;
@@ -803,9 +801,9 @@ p {
   border-right: none;
   border-left: none;
   border-bottom: 2px solid var(--di-text-color);
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 300;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
@@ -831,9 +829,9 @@ p {
   border: none;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 300;
 }
 .di-form-group-search .di-input:disabled {
@@ -851,9 +849,9 @@ p {
   border: none;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 300;
 }
 .di-form-group-search-reverse .di-input:disabled {
@@ -925,9 +923,9 @@ p {
   background-color: var(--di-c-gorse-20);
   color: var(--di-text-color);
   padding: 0.5rem 0.25rem;
+  font-family: var(--di-font-family-primary);
   font-size: 0.75rem;
   line-height: 1rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 300;
 }
 .di-form-group .di-form-hint {
@@ -937,9 +935,9 @@ p {
   color: var(--di-c-scarlet);
   background-color: transparent;
   padding: 0;
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 300;
 }
 
@@ -970,9 +968,9 @@ p {
   color: var(--di-c-gray);
 }
 .di-form-check .di-form-check-label {
+  font-family: var(--di-font-family-primary);
   font-size: 1.125rem;
   line-height: 1.75rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
 }
 
@@ -985,9 +983,9 @@ p {
   height: 1.25rem;
 }
 .di-form-check-sm .di-form-check-label {
+  font-family: var(--di-font-family-primary);
   font-size: 0.8125rem;
   line-height: 1rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
 }
 
@@ -1162,9 +1160,9 @@ p {
   height: 100%;
   padding: 0.625rem 1.25rem;
   border: none;
+  font-family: var(--di-font-family-primary);
   font-size: 1.125rem;
   line-height: 1.75rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   background-color: var(--di-c-light-gray);
   transition: all 0.2s, filter 0.3s ease, transform 0.3s ease;
@@ -1201,9 +1199,9 @@ p {
   border: 2px solid var(--di-c-gray-20);
   padding: 0.75rem 1rem;
   border-radius: 1.5rem;
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
   color: inherit;
   cursor: pointer;
@@ -1240,41 +1238,41 @@ p {
 
 .di-avatar-xs {
   --diui-avatar-size: 1.5rem;
+  font-family: var(--di-font-family-primary);
   font-size: 0.875rem;
   line-height: 1.25rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
 }
 
 .di-avatar-sm {
   --diui-avatar-size: 2rem;
+  font-family: var(--di-font-family-primary);
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
 }
 
 .di-avatar-md {
   --diui-avatar-size: 2.5rem;
+  font-family: var(--di-font-family-primary);
   font-size: 1.125rem;
   line-height: 1.75rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
 }
 
 .di-avatar-lg {
   --diui-avatar-size: 3rem;
+  font-family: var(--di-font-family-primary);
   font-size: 1.25rem;
   line-height: 1.5rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
 }
 
 .di-avatar-xl {
   --diui-avatar-size: 4rem;
+  font-family: var(--di-font-family-primary);
   font-size: 1.5rem;
   line-height: 1.75rem;
-  font-family: var(--di-font-family-primary);
   font-weight: 400;
 }
 
@@ -1428,6 +1426,16 @@ p {
 
 .di-icon-arrow-right {
   mask-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9393 18.0296L12.6632 16.7489L16.5409 12.8712H3.99927V11.0607H16.5409L12.6465 7.16234L13.9226 5.89404L20.0047 11.9701L13.9393 18.0296Z" fill="currentColor" /></svg>');
+}
+
+.di-header {
+  --di-header-bg-color: var(--di-c-dodger-blue);
+  background-color: var(--di-header-bg-color);
+}
+@media screen and (min-width: 576px), print {
+  .di-header {
+    min-height: 19.6875rem;
+  }
 }
 
 .di-text-gray {

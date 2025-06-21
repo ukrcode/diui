@@ -11,7 +11,8 @@
   margin: 0; // Remove default margin
   color: css-vars.get-var("text-color");
 
-  @include mx.base-font-configuration(16px, 24px, 300);
+
+  @include mx.set-base-font-family;
 
   // Set font size and line height for MOBILE
   // Consider not to change font-suze for mobile 
@@ -22,9 +23,14 @@
   // @include mx.on-tablet {
     // @include mx.base-font-configuration(16px, 24px, 300);
   // }
-
-  * {
-    box-sizing: border-box;
-  }
 }
 
+// TODO Reconsder global styles
+* {
+  box-sizing: border-box;
+}
+
+// TODO Reconsder global styles
+html, body {
+  height: 100%;
+}

@@ -1,0 +1,13 @@
+@use "../../shared/css-vars" as css-vars;
+@use "../../selectors" as vars;
+@use "../../shared/mixins" as mx;
+@use "../../shared/functions" as fn;
+
+#{vars.$header-selector} {
+  --di-header-bg-color: #{css-vars.get-color-var('dodger-blue')};
+  background-color: var(--di-header-bg-color);
+
+  @include mx.on-tablet {
+    min-height: fn.to-rem(315px);
+  }
+}

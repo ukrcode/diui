@@ -2,12 +2,7 @@
 @use "../css-vars" as css-vars;
 @use "../functions" as fn;
 
-@mixin base-font-configuration(
-  $font-size,
-  $line-height,
-  $font-weight: 400,
-  $font-family: "primary"
-) {
+@mixin set-base-font-family($font-family: "primary") {
   $font-family-var-name: "";
 
   @if $font-family == "primary" {
@@ -22,9 +17,18 @@
     $font-family-var-name: "font-family-code";
   }
 
+  font-family: css-vars.get-var($font-family-var-name);
+}
+
+@mixin base-font-configuration(
+  $font-size,
+  $line-height,
+  $font-weight: 400,
+  $font-family: "primary"
+) {
+  @include set-base-font-family($font-family);
+
   font-size: fn.to-rem($font-size);
   line-height: fn.to-rem($line-height);
-
-  font-family: css-vars.get-var($font-family-var-name);
   font-weight: $font-weight;
 }
