@@ -21,6 +21,10 @@
     flex-direction: column;
   }
 
+  &-grow-1 {
+    flex-grow: 1;
+  }
+
   &-column-reverse {
     flex-direction: column-reverse;
   }

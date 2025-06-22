@@ -10,18 +10,18 @@
 .#{config.$class-prefix}body {
   margin: 0; // Remove default margin
   color: css-vars.get-var("text-color");
-
+  word-wrap: break-word; // ????
 
   @include mx.set-base-font-family;
 
   // Set font size and line height for MOBILE
-  // Consider not to change font-suze for mobile 
+  // Consider not to change font-suze for mobile
   // In sake of accessibility
   // @include mx.base-font-configuration(11px, 14px, 300);
-  
+
   // Set font size and line height for TABLET and DESKTOP
   // @include mx.on-tablet {
-    // @include mx.base-font-configuration(16px, 24px, 300);
+  // @include mx.base-font-configuration(16px, 24px, 300);
   // }
 }
 
@@ -31,6 +31,7 @@
 }
 
 // TODO Reconsder global styles
-html, body {
+html,
+body {
   height: 100%;
 }

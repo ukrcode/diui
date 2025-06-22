@@ -11,8 +11,8 @@
 }
 
 #{vars.$badge-primary-selector} {
-  color: css-vars.get-var("text-color-invert");
-  background-color: css-vars.get-var("bg-color-invert");
+  color: css-vars.get-var("text-invert-color");
+  background-color: css-vars.get-var("bg-invert-color");
 }
 
 #{vars.$badge-secondary-selector} {

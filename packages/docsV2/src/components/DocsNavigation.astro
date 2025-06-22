@@ -1,0 +1,44 @@
+---
+import DocsNavLink from "./DocsNavLink.astro";
+
+const { class: className } = Astro.props;
+
+const navLinks = [
+  {
+    url: "/",
+    label: "На головну",
+  },
+  {
+    url: "/docs",
+    label: "Документація",
+  },
+  {
+    url: "/docs/typography",
+    label: "Типографіка",
+  },
+  {
+    url: "/docs/color-background",
+    label: "Колір підложки",
+  },
+  {
+    url: "/docs/color-text",
+    label: "Колір тексту",
+  },
+  {
+    url: "/docs/components",
+    label: "Компоненти",
+  },
+];
+---
+
+<aside class={className}>
+  <nav>
+    <ol>
+      {
+        navLinks.map(({ url, label }) => (
+          <DocsNavLink url={url} label={label} />
+        ))
+      }
+    </ol>
+  </nav>
+</aside>

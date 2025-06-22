@@ -10,9 +10,9 @@
         "e-ukraine-head, Arial, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, sans-serif",
       "font-family-code": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
       "text-color": css-vars.get-var("c-black"),
-      "text-color-invert": css-vars.get-var("c-white"),
+      "text-invert-color": css-vars.get-var("c-white"),
       "bg-color": css-vars.get-var("c-white"),
-      "bg-color-invert": css-vars.get-var("c-black"),
+      "bg-invert-color": css-vars.get-var("c-black"),
     )
   );
 }

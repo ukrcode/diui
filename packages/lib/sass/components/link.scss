@@ -58,7 +58,7 @@
 
 // Regular Link in inverted color scheme
 #{vars.$link-inverted-selector} {
-  color: css-vars.get-var("text-color-invert");
+  color: css-vars.get-var("text-invert-color");
 }
 
 // Small Link with smaller font size

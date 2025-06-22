@@ -1,7 +1,5 @@
-import Image from "next/image";
-
 function UserImage() {
-  return <Image fill src={"/user-temp.jpeg"} alt="User Picture" />;
+  return <img src={"/user-temp.jpeg"} alt="User Picture" />;
 }
 
 export default function AvatarUserImageExample() {

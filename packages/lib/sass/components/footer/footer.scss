@@ -3,9 +3,9 @@
 @use "../../shared/mixins" as mx;
 @use "../../shared/functions" as fn;
 
-#{vars.$header-selector} {
-  --di-header-bg-color: #{css-vars.get-color-var('dodger-blue')};
-  background-color: var(--di-header-bg-color);
+#{vars.$footer-selector} {
+  background-color: #{css-vars.get-var("bg-invert-color")};
+  color: #{css-vars.get-var("text-invert-color")};
 
   // Mobile
   padding-top: fn.to-rem(18px);

@@ -97,9 +97,9 @@
   --di-font-family-head: e-ukraine-head, Arial, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
   --di-font-family-code: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --di-text-color: var(--di-c-black);
-  --di-text-color-invert: var(--di-c-white);
+  --di-text-invert-color: var(--di-c-white);
   --di-bg-color: var(--di-c-white);
-  --di-bg-color-invert: var(--di-c-black);
+  --di-bg-invert-color: var(--di-c-black);
 }
 
 /*
@@ -391,6 +391,7 @@ p {
 .di-body {
   margin: 0;
   color: var(--di-text-color);
+  word-wrap: break-word;
   font-family: var(--di-font-family-primary);
 }
 
@@ -398,7 +399,8 @@ p {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -434,6 +436,9 @@ html, body {
 }
 .di-flex-column {
   flex-direction: column;
+}
+.di-flex-grow-1 {
+  flex-grow: 1;
 }
 .di-flex-column-reverse {
   flex-direction: column-reverse;
@@ -767,7 +772,7 @@ html, body {
 }
 
 .di-link-inverted {
-  color: var(--di-text-color-invert);
+  color: var(--di-text-invert-color);
 }
 
 .di-link-sm {
@@ -1052,8 +1057,8 @@ html, body {
 }
 
 .di-badge-primary {
-  color: var(--di-text-color-invert);
-  background-color: var(--di-bg-color-invert);
+  color: var(--di-text-invert-color);
+  background-color: var(--di-bg-invert-color);
 }
 
 .di-badge-secondary {
@@ -1431,13 +1436,15 @@ html, body {
 .di-header {
   --di-header-bg-color: var(--di-c-dodger-blue);
   background-color: var(--di-header-bg-color);
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
 }
-@media screen and (min-width: 576px), print {
-  .di-header {
-    min-height: 19.6875rem;
-  }
+.di-footer {
+  background-color: var(--di-bg-invert-color);
+  color: var(--di-text-invert-color);
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
 }
-
 .di-text-gray {
   color: var(--di-c-gray);
 }

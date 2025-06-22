@@ -1,0 +1,3 @@
+@use "../config" as config;
+
+$footer-selector: ".#{config.$class-prefix}footer";
