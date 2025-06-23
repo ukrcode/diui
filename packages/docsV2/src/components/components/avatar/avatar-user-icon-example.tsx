@@ -1,7 +1,7 @@
 function UserIcon() {
   return (
     <span
-      className={`di-icon di-icon-user di-bg-gray`}
+      className={`di-icon di-icon-user di-bg-gray  di-avatar-icon`}
       role="img"
       aria-label="User Icon"
     ></span>

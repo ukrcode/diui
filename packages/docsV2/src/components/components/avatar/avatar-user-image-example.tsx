@@ -1,5 +1,5 @@
 function UserImage() {
-  return <img src={"/user-temp.jpeg"} alt="User Picture" />;
+  return <img class="di-avatar-img" src={"/user-image.png"} alt="User Picture" />;
 }
 
 export default function AvatarUserImageExample() {

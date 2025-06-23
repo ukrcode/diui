@@ -1241,6 +1241,17 @@ body {
   border-radius: 50%;
 }
 
+.di-avatar-icon {
+  width: 75% !important;
+  height: 75% !important;
+}
+
+.di-avatar-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .di-avatar-xs {
   --diui-avatar-size: 1.5rem;
   font-family: var(--di-font-family-primary);

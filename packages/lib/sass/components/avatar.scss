@@ -20,6 +20,19 @@
   border-radius: 50%;
 }
 
+// Icon
+#{vars.$avatar-icon-selector} {
+  width: 75% !important; 
+  height: 75% !important;
+};
+
+// Image
+#{vars.$avatar-image-selector} {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 // Sizes
 #{vars.$avatar-xsmall-selector} {
   --diui-avatar-size: #{fn.to-rem(24px)};
