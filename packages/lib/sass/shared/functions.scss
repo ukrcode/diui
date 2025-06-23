@@ -5,3 +5,7 @@
 @function to-rem($sizePx) {
   @return math.div($sizePx, config.$font-basis) + rem;
 }
+
+@function to-em($sizePx) {
+  @return math.div($sizePx, config.$font-basis) + em;
+}

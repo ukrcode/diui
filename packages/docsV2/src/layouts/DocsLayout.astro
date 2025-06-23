@@ -6,26 +6,28 @@ const headerTitle = "Документація";
 ---
 
 <style is:global>
+  .docs {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+  }
+
   .docs-menu {
-    width: 20vw;
   }
 
   .docs-content {
-    flex-grow: 1;
   }
 
   @media screen and (max-width: 836px), print {
     .docs {
-      flex-direction: column;
-    }
-    .docs-menu {
-      width: 100%;
+        grid-template-columns: 1fr;
     }
   }
 </style>
 
 <Layout headerTitle={headerTitle}>
-  <div class="di-container di-flex di-flex-grow-1 di-gap-2 docs">
+  <div class="di-container docs">
     <DocsNavigation class="docs-menu" />
     <div class="docs-content">
       <slot />

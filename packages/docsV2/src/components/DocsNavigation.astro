@@ -3,7 +3,7 @@ import DocsNavLink from "./DocsNavLink.astro";
 
 const { class: className } = Astro.props;
 
-const navLinks = [
+const baseNavLinks = [
   {
     url: "/",
     label: "На головну",
@@ -12,6 +12,9 @@ const navLinks = [
     url: "/docs",
     label: "Документація",
   },
+];
+
+const navLinks = [
   {
     url: "/docs/typography",
     label: "Типографіка",
@@ -40,5 +43,13 @@ const navLinks = [
         ))
       }
     </ol>
+
+    <ul>
+      {
+        baseNavLinks.map(({ url, label }) => (
+          <DocsNavLink url={url} label={label} withIcon={true} />
+        ))
+      }
+    </ul>
   </nav>
 </aside>

@@ -1,9 +1,17 @@
 ---
-const { className } = Astro.props;
-
-const { url, label } = Astro.props;
+const { url, label, withIcon } = Astro.props;
 ---
+<style>
+.nav-link {
+  word-wrap: nowrap;
+}
+</style>
 
 <li>
-  <a class="di-link" href={url}>{label}</a>
+  <a class="nav-link di-link" href={url}
+    >{label}
+    {
+      withIcon && <span aria-hidden="true" class="di-icon di-icon-arrow-undo" />
+    }</a
+  >
 </li>

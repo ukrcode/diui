@@ -5,7 +5,9 @@
 #{vars.$badge-selector} {
   display: inline-block;
   padding: fn.to-rem(4px) fn.to-rem(8px);
-  border-radius: fn.to-rem(24px);
+  // we use "em" here to change border radius when font size changes
+  // Otherwise it is not responsives
+  border-radius: fn.to-em(24px);
 
   white-space: nowrap;
 }

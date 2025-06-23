@@ -1052,7 +1052,7 @@ body {
 .di-badge {
   display: inline-block;
   padding: 0.25rem 0.5rem;
-  border-radius: 1.5rem;
+  border-radius: 1.5em;
   white-space: nowrap;
 }
 
@@ -1354,8 +1354,6 @@ body {
   mask-size: contain;
   mask-position: center;
   background-color: var(--di-text-color);
-  width: 75%;
-  height: 75%;
 }
 
 .di-icon-16 {
