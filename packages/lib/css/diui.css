@@ -415,11 +415,13 @@ body {
   margin-left: auto;
   max-width: 90rem;
 }
+
 @media screen and (min-width: 576px), print {
   .di-container {
     padding: 0 4rem;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .di-container {
     padding: 0 5rem;
