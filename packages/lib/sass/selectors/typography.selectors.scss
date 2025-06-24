@@ -16,6 +16,9 @@ $heading-no-margin-selector: ".#{config.$class-prefix}h-no-margin" !default;
 // Paragraph selector(s)
 $paragraph-selector: "p" !default;
 
+// Text Setting selector(s)
+$text-center-selector: ".#{config.$class-prefix}text-center" !default;
+
 // Text selector(s)
 $text-small-selector: ".#{config.$class-prefix}text-sm" !default;
 $text-extra-small-selector: ".#{config.$class-prefix}text-xsm" !default;

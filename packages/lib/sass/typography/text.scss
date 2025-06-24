@@ -10,6 +10,11 @@
   @include mx.base-font-configuration(16px, 24px, 300);
 }
 
+// text center
+#{vars.$text-center-selector} {
+  text-align: center;
+}
+
 // text-small
 #{vars.$text-small-selector} {
   @include mx.base-font-configuration(13px, 18px, 300);

@@ -1,34 +1,37 @@
 ---
+import { normalizeLocalUrl } from "@/shared/normalize-url";
 import DocsNavLink from "./DocsNavLink.astro";
 
+// TODO: switch to env var
+const docsUrl = normalizeLocalUrl("/docs");
 const { class: className } = Astro.props;
 
 const baseNavLinks = [
   {
-    url: "./",
+    url: normalizeLocalUrl("/"),
     label: "На головну",
   },
   {
-    url: "./docs",
+    url: docsUrl,
     label: "Документація",
   },
 ];
 
 const navLinks = [
   {
-    url: "./docs/typography",
+    url: `${docsUrl}/typography`,
     label: "Типографіка",
   },
   {
-    url: "./docs/color-background",
+    url: `${docsUrl}/color-background`,
     label: "Колір підложки",
   },
   {
-    url: "./docs/color-text",
+    url: `${docsUrl}/color-text`,
     label: "Колір тексту",
   },
   {
-    url: "./docs/components",
+    url: `${docsUrl}/components`,
     label: "Компоненти",
   },
 ];

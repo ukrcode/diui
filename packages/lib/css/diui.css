@@ -301,6 +301,10 @@ p {
   font-weight: 300;
 }
 
+.di-text-center {
+  text-align: center;
+}
+
 .di-text-sm {
   font-family: var(--di-font-family-primary);
   font-size: 0.8125rem;
@@ -763,7 +767,7 @@ body {
   font-weight: 400;
   color: var(--di-text-color);
   cursor: pointer;
-  text-decoration: "underline";
+  text-decoration: underline;
 }
 @media (hover: hover) and (pointer: fine) {
   .di-link-underline:hover {

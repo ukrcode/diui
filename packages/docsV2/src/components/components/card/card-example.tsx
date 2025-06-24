@@ -59,7 +59,6 @@ export default function CardExample() {
       <div className="di-flex di-gap-4 di-mt-2">
         <InfoCard />
         <InfoCard />
-        <InfoCard />
       </div>
     </div>
   );

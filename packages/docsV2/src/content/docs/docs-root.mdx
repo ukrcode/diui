@@ -2,6 +2,9 @@
 layout: ../../layouts/DocsLayout.astro
 ---
 
+import Link from "../../components/Link.astro";
+import { routes } from "../../routes";
+
 Тут ви знайдете всю необхідну інформацію про те, як працює наша бібліотека.
 
-Не знаєте з чого почати? Подивіться [приклади компонентів, які вже готові](/docs/components).
+Не знаєте з чого почати? Подивіться <Link href={routes.docsComponents}>приклади компонентів, які вже готові</Link>.
