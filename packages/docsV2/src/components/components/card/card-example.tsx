@@ -1,3 +1,5 @@
+import "./card-example.css";
+
 function Card() {
   return (
     <article className="di-card">
@@ -56,7 +58,7 @@ export default function CardExample() {
     <div>
       <Card />
 
-      <div className="di-flex di-gap-4 di-mt-2">
+      <div className="di-flex di-gap-4 di-mt-2 card-example">
         <InfoCard />
         <InfoCard />
       </div>

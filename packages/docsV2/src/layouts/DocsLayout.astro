@@ -7,22 +7,30 @@ const headerTitle = "Документація";
 
 <style is:global>
   .docs {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 200px 1fr;
-    gap: 1rem;
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    overflow-x: scroll;
   }
 
   .docs-menu {
+    width: 20%;
   }
 
   .docs-content {
+    width: 80%;
   }
 
   @media screen and (max-width: 836px), print {
     .docs {
-        grid-template-columns: 1fr;
+      flex-direction: column;
+      overflow-x: scroll;
     }
+
+    .docs-menu, .docs-content {
+      width: 100%;
+    }
+
   }
 </style>
 
