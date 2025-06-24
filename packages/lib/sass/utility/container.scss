@@ -18,3 +18,7 @@
     padding: 0 fn.to-rem(80px);
   }
 }
+
+#{vars.$container-root-selector} {
+  padding-bottom: fn.to-rem(40px);
+}

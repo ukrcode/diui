@@ -1,3 +1,4 @@
 @use "../../config" as config;
 
 $container-selector: ".#{config.$class-prefix}container" !default;
+$container-root-selector: ".#{config.$class-prefix}container-root" !default;
