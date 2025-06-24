@@ -1,5 +1,9 @@
+import { normalizeLocalUrl } from "@/shared/normalize-url";
+
+const userImageUrl = normalizeLocalUrl("/user-image.png");
+
 function UserImage() {
-  return <img class="di-avatar-img" src={"/user-image.png"} alt="User Picture" />;
+  return <img class="di-avatar-img" src={userImageUrl} alt="User Picture" />;
 }
 
 export default function AvatarUserImageExample() {

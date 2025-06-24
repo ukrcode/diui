@@ -45,7 +45,7 @@
 
 // Link with underline and primary color on hover
 #{vars.$link-underline-selector} {
-  @include link-base(css-vars.get-var("text-color"), 300, "underline");
+  @include link-base(css-vars.get-var("text-color"), 300, underline);
 
   @include mx.on-not-touch-devices {
     &:hover {

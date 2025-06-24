@@ -8,6 +8,6 @@ import preact from "@astrojs/preact";
 // https://astro.build/config
 export default defineConfig({
   site: "https://github.com/ukrcode",
-  base: "/diui/",
+  base: "/diui",
   integrations: [mdx(), preact()],
 });

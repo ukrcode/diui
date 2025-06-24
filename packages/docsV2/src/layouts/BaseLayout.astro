@@ -1,10 +1,11 @@
 ---
 // TODO: Import it as a package
+import { normalizeLocalUrl } from "@/shared/normalize-url";
 import "../../../lib/css/diui.css";
+import "../styles/global.css";
 
 const pageTitle: string = Astro.props.pageTitle || "Diui Library";
-
-import "../styles/global.css";
+const faviconUrl = normalizeLocalUrl("/favicon.svg");
 ---
 
 <!doctype html>
@@ -12,10 +13,10 @@ import "../styles/global.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={faviconUrl} />
     <title>{pageTitle}</title>
   </head>
-  <body class="di-body di-page di-flex di-flex-column">
+  <body class="di-body di-page">
     <slot />
   </body>
 </html>

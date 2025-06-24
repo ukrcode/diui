@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="di-body di-page">
+      <body className="di-body di-page di-flex di-flex-column">
         <Header />
         <main>{children}</main>
         <Footer />
