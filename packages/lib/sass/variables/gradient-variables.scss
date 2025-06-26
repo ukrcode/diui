@@ -3,12 +3,20 @@
 @mixin create-gradient-variables {
   // Gradients
   $gr-primary: linear-gradient(
-      217deg,
-      rgb(255 0 0 / 80%),
-      rgb(255 0 0 / 0%) 50.71%
+      45deg,
+      rgb(255 20 147 / 1),
+      /* Deep Pink (more intense pink) */ rgb(255 20 147 / 0) 65%
     ),
-    linear-gradient(127deg, rgb(0 255 0 / 80%), rgb(0 255 0 / 0%) 70.71%),
-    linear-gradient(336deg, rgb(0 0 255 / 80%), rgb(0 0 255 / 0%) 70.71%);
+    linear-gradient(
+      160deg,
+      rgb(255 140 0 / 1),
+      /* Vivid Orange */ rgb(255 140 0 / 0) 75%
+    ),
+    linear-gradient(
+      290deg,
+      rgb(138 43 226 / 1),
+      /* Electric Purple (Blue Violet) */ rgb(138 43 226 / 0) 75%
+    );
   $gr-simplified-1: linear-gradient(
     90deg,
     css-vars.get-var("c-yellow-green") 0%,

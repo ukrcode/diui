@@ -87,7 +87,7 @@
   --di-c-warning-60: var(--di-c-gorse-60);
   --di-c-warning-40: var(--di-c-gorse-40);
   --di-c-warning-20: var(--di-c-gorse-20);
-  --di-gr-primary: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 50.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  --di-gr-primary: linear-gradient(45deg, rgb(255, 20, 147), rgba(255, 20, 147, 0) 65%), linear-gradient(160deg, rgb(255, 140, 0), rgba(255, 140, 0, 0) 75%), linear-gradient(290deg, rgb(138, 43, 226), rgba(138, 43, 226, 0) 75%);
   --di-gr-1: linear-gradient(90deg, var(--di-c-yellow-green) 0%, var(--di-c-radiance) 100%);
   --di-gr-2: linear-gradient(90deg, var(--di-c-malachite) 0%, var(--di-c-dodger-blue) 100%);
   --di-gr-3: linear-gradient(90deg, var(--di-c-radiance) 0%, var(--di-c-violet) 100%);
