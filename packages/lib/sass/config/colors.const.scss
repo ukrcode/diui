@@ -2,7 +2,40 @@
 
 $c-black: #000;
 $c-white: #fff;
-$c-light-gray: #e7eef3;
+// $c-light-gray: #e7eef3;
+$c-light-gray: #d9e5ee;
+
+$c-success-colors: (
+  "100": "#1E7F34",
+  "80": "#3F974F",
+  "60": "#60AF6B",
+  "40": "#92C99A",
+  "20": "#C4E3C9",
+);
+
+$c-danger-colors: (
+  "100": "#C62828",
+  "80": "#D84343",
+  "60": "#E57373",
+  "40": "#F19999",
+  "20": "#FBCBCB",
+);
+
+$c-warning-colors: (
+  "100": "#F57C00",
+  "80": "#F99533",
+  "60": "#FCB766",
+  "40": "#FED59C",
+  "20": "#FFF1D4",
+);
+
+$c-info-colors: (
+  "100": "#1565C0",
+  "80": "#357BD1",
+  "60": "#5B95E0",
+  "40": "#8AB4EF",
+  "20": "#C3D8FA",
+);
 
 // gray
 $c-gray-colors: (

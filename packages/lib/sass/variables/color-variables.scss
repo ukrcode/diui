@@ -24,12 +24,17 @@
   @include mx.create-colors-set-vars("c-brick-red", config.$c-brick-red-colors);
   @include mx.create-colors-set-vars("c-pumpkin", config.$c-pumpkin-colors);
   @include mx.create-colors-set-vars("c-scarlet", config.$c-scarlet-colors);
+  @include mx.create-colors-set-vars("c-success", config.$c-success-colors);
+  @include mx.create-colors-set-vars("c-info", config.$c-info-colors);
+  @include mx.create-colors-set-vars("c-warning", config.$c-warning-colors);
+  @include mx.create-colors-set-vars("c-danger", config.$c-danger-colors);
   
   // Business colors mapped from existing colors
   @include mx.map-color-variables("c-primary", "c-dodger-blue");
   @include mx.map-color-variables("c-secondary", "c-gray");
-  @include mx.map-color-variables("c-info", "c-radiance");
-  @include mx.map-color-variables("c-success", "c-malachite");
-  @include mx.map-color-variables("c-danger", "c-scarlet");
-  @include mx.map-color-variables("c-warning", "c-gorse");
+
+  //@include mx.map-color-variables("c-info", "c-radiance");
+  //@include mx.map-color-variables("c-success", "c-malachite");
+  //@include mx.map-color-variables("c-danger", "c-scarlet");
+  //@include mx.map-color-variables("c-warning", "c-gorse");
 }
