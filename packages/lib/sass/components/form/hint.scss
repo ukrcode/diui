@@ -20,7 +20,7 @@
   #{vars.$form-group-invalid-selector} &,
   &#{vars.$hint-invalid-selector},
   #{vars.$input-selector}:invalid ~ & {
-    color: css-vars.get-var("c-scarlet");
+    color: css-vars.get-var("c-danger");
     background-color: transparent;
     padding: 0;
     @include mx.base-font-configuration(16px, 24px, 300);

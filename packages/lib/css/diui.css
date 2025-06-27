@@ -829,8 +829,8 @@ body {
 
 .di-form-group-invalid .di-input,
 .di-input:invalid {
-  color: var(--di-c-scarlet);
-  border-bottom-color: var(--di-c-scarlet);
+  color: var(--di-c-danger);
+  border-bottom-color: var(--di-c-danger);
 }
 
 .di-form-group-search .di-input {
@@ -945,7 +945,7 @@ body {
   margin-top: 0.5rem;
 }
 .di-form-group-invalid .di-form-hint, .di-form-hint.di-form-hint-invalid, .di-input:invalid ~ .di-form-hint {
-  color: var(--di-c-scarlet);
+  color: var(--di-c-danger);
   background-color: transparent;
   padding: 0;
   font-family: var(--di-font-family-primary);

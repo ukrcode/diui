@@ -46,6 +46,6 @@
 // Invalid Input
 #{vars.$form-group-invalid-selector} #{vars.$input-selector},
 #{vars.$input-selector}:invalid {
-  color: css-vars.get-var("c-scarlet");
-  border-bottom-color: css-vars.get-var("c-scarlet");
+  color: css-vars.get-var("c-danger");
+  border-bottom-color: css-vars.get-var("c-danger");
 }
