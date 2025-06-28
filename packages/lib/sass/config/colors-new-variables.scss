@@ -1,0 +1,67 @@
+@use "sass:color" as color;
+
+@function tint-color($color, $weight) {
+  @return color.mix(white, $color, $weight);
+}
+
+@function shade-color($color, $weight) {
+  @return color.mix(black, $color, $weight);
+}
+
+// black & white colors start
+$c-white: #fff !default;
+$c-gray-100: #f5f6f8 !default;
+$c-gray-200: #e5e8eb !default;
+$c-gray-300: #d3d7dc !default;
+$c-gray-400: #c1c7ce !default;
+$c-gray-500: #a0a9b1 !default;
+$c-gray-600: #646d75 !default;
+$c-gray-700: #434a50 !default;
+$c-gray-800: #2f343a !default;
+$c-gray-900: #1b1f22 !default;
+$c-black: #000 !default;
+
+$c-grays: (
+  "100": $c-gray-100,
+  "200": $c-gray-200,
+  "300": $c-gray-300,
+  "400": $c-gray-400,
+  "500": $c-gray-500,
+  "600": $c-gray-600,
+  "700": $c-gray-700,
+  "800": $c-gray-800,
+  "900": $c-gray-900,
+) !default;
+// black & white colors end
+
+// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.2 are 3, 4.5 and 7.
+// See https://www.w3.org/TR/WCAG/#contrast-minimum
+$min-contrast-ratio: 4.5 !default;
+
+// Primary colors
+$c-green: #198754;
+$c-blue: #0d6efd;
+$c-yellow: #ffc107;
+$c-red: #dc3545;
+
+$c-blue-100: tint-color($c-blue, 80%) !default;
+$c-blue-200: tint-color($c-blue, 60%) !default;
+$c-blue-300: tint-color($c-blue, 40%) !default;
+$c-blue-400: tint-color($c-blue, 20%) !default;
+$c-blue-500: $c-blue !default;
+$c-blue-600: shade-color($c-blue, 20%) !default;
+$c-blue-700: shade-color($c-blue, 40%) !default;
+$c-blue-800: shade-color($c-blue, 60%) !default;
+$c-blue-900: shade-color($c-blue, 80%) !default;
+
+$c-blues: (
+  "100": $c-blue-100,
+  "200": $c-blue-200,
+  "300": $c-blue-300,
+  "400": $c-blue-400,
+  "500": $c-blue-500,
+  "600": $c-blue-600,
+  "700": $c-blue-700,
+  "800": $c-blue-800,
+  "900": $c-blue-900,
+);
