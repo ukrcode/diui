@@ -1839,4 +1839,16 @@ body {
 .di-gr-bg-5 {
   background-image: var(--di-gr-5);
 }
+
+:root {
+  --di-di-100: #f5f6f8;
+  --di-di-200: #e5e8eb;
+  --di-di-300: #d3d7dc;
+  --di-di-400: #c1c7ce;
+  --di-di-500: #a0a9b1;
+  --di-di-600: #646d75;
+  --di-di-700: #434a50;
+  --di-di-800: #2f343a;
+  --di-di-900: #1b1f22;
+}
 /*# sourceMappingURL=diui.css.map */
