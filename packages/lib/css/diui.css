@@ -1841,14 +1841,50 @@ body {
 }
 
 :root {
-  --di-di-100: #f5f6f8;
-  --di-di-200: #e5e8eb;
-  --di-di-300: #d3d7dc;
-  --di-di-400: #c1c7ce;
-  --di-di-500: #a0a9b1;
-  --di-di-600: #646d75;
-  --di-di-700: #434a50;
-  --di-di-800: #2f343a;
-  --di-di-900: #1b1f22;
+  --di-gray-100: #f5f6f8;
+  --di-gray-200: #e5e8eb;
+  --di-gray-300: #d3d7dc;
+  --di-gray-400: #c1c7ce;
+  --di-gray-500: #a0a9b1;
+  --di-gray-600: #646d75;
+  --di-gray-700: #434a50;
+  --di-gray-800: #2f343a;
+  --di-gray-900: #1b1f22;
+  --di-blue-100: rgb(206.6, 226, 254.6);
+  --di-blue-200: rgb(158.2, 197, 254.2);
+  --di-blue-300: rgb(109.8, 168, 253.8);
+  --di-blue-400: rgb(61.4, 139, 253.4);
+  --di-blue-500: #0d6efd;
+  --di-blue-600: rgb(10.4, 88, 202.4);
+  --di-blue-700: rgb(7.8, 66, 151.8);
+  --di-blue-800: rgb(5.2, 44, 101.2);
+  --di-blue-900: rgb(2.6, 22, 50.6);
+  --di-green-100: rgb(209, 231, 220.8);
+  --di-green-200: rgb(163, 207, 186.6);
+  --di-green-300: rgb(117, 183, 152.4);
+  --di-green-400: rgb(71, 159, 118.2);
+  --di-green-500: #198754;
+  --di-green-600: rgb(20, 108, 67.2);
+  --di-green-700: rgb(15, 81, 50.4);
+  --di-green-800: rgb(10, 54, 33.6);
+  --di-green-900: rgb(5, 27, 16.8);
+  --di-yellow-100: rgb(255, 242.6, 205.4);
+  --di-yellow-200: rgb(255, 230.2, 155.8);
+  --di-yellow-300: rgb(255, 217.8, 106.2);
+  --di-yellow-400: rgb(255, 205.4, 56.6);
+  --di-yellow-500: #ffc107;
+  --di-yellow-600: rgb(204, 154.4, 5.6);
+  --di-yellow-700: rgb(153, 115.8, 4.2);
+  --di-yellow-800: rgb(102, 77.2, 2.8);
+  --di-yellow-900: rgb(51, 38.6, 1.4);
+  --di-red-100: rgb(248, 214.6, 217.8);
+  --di-red-200: rgb(241, 174.2, 180.6);
+  --di-red-300: rgb(234, 133.8, 143.4);
+  --di-red-400: rgb(227, 93.4, 106.2);
+  --di-red-500: #dc3545;
+  --di-red-600: rgb(176, 42.4, 55.2);
+  --di-red-700: rgb(132, 31.8, 41.4);
+  --di-red-800: rgb(88, 21.2, 27.6);
+  --di-red-900: rgb(44, 10.6, 13.8);
 }
 /*# sourceMappingURL=diui.css.map */

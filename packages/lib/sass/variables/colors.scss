@@ -1,0 +1,137 @@
+@use "sass:color" as color;
+
+@function tint-color($color, $weight) {
+  @return color.mix(white, $color, $weight);
+}
+
+@function shade-color($color, $weight) {
+  @return color.mix(black, $color, $weight);
+}
+
+// black & white colors start
+$white: #fff !default;
+$gray-100: #f5f6f8 !default;
+$gray-200: #e5e8eb !default;
+$gray-300: #d3d7dc !default;
+$gray-400: #c1c7ce !default;
+$gray-500: #a0a9b1 !default;
+$gray-600: #646d75 !default;
+$gray-700: #434a50 !default;
+$gray-800: #2f343a !default;
+$gray-900: #1b1f22 !default;
+$black: #000 !default;
+
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900,
+) !default;
+// black & white colors end
+
+// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.2 are 3, 4.5 and 7.
+// See https://www.w3.org/TR/WCAG/#contrast-minimum
+$min-contrast-ratio: 4.5 !default;
+
+// Primary colors
+$green: #198754;
+$blue: #0d6efd;
+$yellow: #ffc107;
+$red: #dc3545;
+
+// Blue
+$blue-100: tint-color($blue, 80%) !default;
+$blue-200: tint-color($blue, 60%) !default;
+$blue-300: tint-color($blue, 40%) !default;
+$blue-400: tint-color($blue, 20%) !default;
+$blue-500: $blue !default;
+$blue-600: shade-color($blue, 20%) !default;
+$blue-700: shade-color($blue, 40%) !default;
+$blue-800: shade-color($blue, 60%) !default;
+$blue-900: shade-color($blue, 80%) !default;
+
+$blues: (
+  "100": $blue-100,
+  "200": $blue-200,
+  "300": $blue-300,
+  "400": $blue-400,
+  "500": $blue-500,
+  "600": $blue-600,
+  "700": $blue-700,
+  "800": $blue-800,
+  "900": $blue-900,
+);
+
+// Green
+$green-100: tint-color($green, 80%) !default;
+$green-200: tint-color($green, 60%) !default;
+$green-300: tint-color($green, 40%) !default;
+$green-400: tint-color($green, 20%) !default;
+$green-500: $green !default;
+$green-600: shade-color($green, 20%) !default;
+$green-700: shade-color($green, 40%) !default;
+$green-800: shade-color($green, 60%) !default;
+$green-900: shade-color($green, 80%) !default;  
+
+$greens: (
+  "100": $green-100,
+  "200": $green-200,
+  "300": $green-300,
+  "400": $green-400,
+  "500": $green-500,
+  "600": $green-600,
+  "700": $green-700,
+  "800": $green-800,
+  "900": $green-900,
+);
+
+// Yellow
+$yellow-100: tint-color($yellow, 80%) !default;
+$yellow-200: tint-color($yellow, 60%) !default;
+$yellow-300: tint-color($yellow, 40%) !default;
+$yellow-400: tint-color($yellow, 20%) !default;
+$yellow-500: $yellow !default;
+$yellow-600: shade-color($yellow, 20%) !default;
+$yellow-700: shade-color($yellow, 40%) !default;
+$yellow-800: shade-color($yellow, 60%) !default;
+$yellow-900: shade-color($yellow, 80%) !default;
+
+$yellows: (
+  "100": $yellow-100,
+  "200": $yellow-200,
+  "300": $yellow-300,
+  "400": $yellow-400,
+  "500": $yellow-500,
+  "600": $yellow-600,
+  "700": $yellow-700,
+  "800": $yellow-800,
+  "900": $yellow-900,
+);
+
+// Red
+$red-100: tint-color($red, 80%) !default;
+$red-200: tint-color($red, 60%) !default;
+$red-300: tint-color($red, 40%) !default;
+$red-400: tint-color($red, 20%) !default;
+$red-500: $red !default;
+$red-600: shade-color($red, 20%) !default;
+$red-700: shade-color($red, 40%) !default;
+$red-800: shade-color($red, 60%) !default;
+$red-900: shade-color($red, 80%) !default;
+
+$reds: (
+  "100": $red-100,
+  "200": $red-200,
+  "300": $red-300,
+  "400": $red-400,
+  "500": $red-500,
+  "600": $red-600,
+  "700": $red-700,
+  "800": $red-800,
+  "900": $red-900,
+);

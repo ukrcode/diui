@@ -1,0 +1,25 @@
+@use "../variables/colors" as colors;
+@use "../config/root.const" as root-const;
+@use "../shared/css-vars" as css-vars;
+
+:root {
+  @each $color, $value in colors.$grays {
+    @include css-vars.register-var(gray-#{$color}, $value);
+  }
+
+  @each $color, $value in colors.$blues {
+    @include css-vars.register-var(blue-#{$color}, $value);
+  }
+
+  @each $color, $value in colors.$greens {
+    @include css-vars.register-var(green-#{$color}, $value);
+  }
+
+  @each $color, $value in colors.$yellows {
+    @include css-vars.register-var(yellow-#{$color}, $value);
+  }
+
+  @each $color, $value in colors.$reds {
+    @include css-vars.register-var(red-#{$color}, $value);
+  }
+}
