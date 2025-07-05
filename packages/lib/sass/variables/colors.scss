@@ -39,10 +39,22 @@ $grays: (
 $min-contrast-ratio: 4.5 !default;
 
 // Primary colors
-$green: #198754;
-$blue: #0d6efd;
-$yellow: #ffc107;
-$red: #dc3545;
+$green: #198754 !default;
+$blue: #0d6efd !default;
+$yellow: #ffc107 !default;
+$red: #dc3545 !default;
+$cyan: #15d3f8 !default;
+
+// Cyan
+$cyan-100: tint-color($cyan, 80%) !default;
+$cyan-200: tint-color($cyan, 60%) !default;
+$cyan-300: tint-color($cyan, 40%) !default;
+$cyan-400: tint-color($cyan, 20%) !default;
+$cyan-500: $cyan !default;
+$cyan-600: shade-color($cyan, 20%) !default;
+$cyan-700: shade-color($cyan, 40%) !default;
+$cyan-800: shade-color($cyan, 60%) !default;
+$cyan-900: shade-color($cyan, 80%) !default;
 
 // Blue
 $blue-100: tint-color($blue, 80%) !default;
@@ -76,7 +88,7 @@ $green-500: $green !default;
 $green-600: shade-color($green, 20%) !default;
 $green-700: shade-color($green, 40%) !default;
 $green-800: shade-color($green, 60%) !default;
-$green-900: shade-color($green, 80%) !default;  
+$green-900: shade-color($green, 80%) !default;
 
 $greens: (
   "100": $green-100,
@@ -135,3 +147,12 @@ $reds: (
   "800": $red-800,
   "900": $red-900,
 );
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
