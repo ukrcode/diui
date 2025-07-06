@@ -22,4 +22,11 @@
   @each $color, $value in colors.$reds {
     @include css-vars.register-var(red-#{$color}, $value);
   }
+
+  @each $color, $value in colors.$cyans {
+    @include css-vars.register-var(cyan-#{$color}, $value);
+  }
+
+  @include css-vars.register-var("black", colors.$black);
+  @include css-vars.register-var("white", colors.$white);
 }
