@@ -4,5 +4,6 @@
 
 :root {
     @include color-variables.create-color-variables;
+    @include gradient-variables.create-gradient-variables;
     @include typography-variables.create-typography-variables;
 }
