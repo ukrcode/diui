@@ -1,7 +1,7 @@
 export function normalizeLocalUrl(url: string): string {
   const baseUrl = import.meta.env.BASE_URL;
 
-  if (!baseUrl) {
+  if (baseUrl === '/') {
     return url;
   }
 
