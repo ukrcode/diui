@@ -1820,26 +1820,6 @@ body {
   }
 }
 
-.di-gr-bg-1 {
-  background-image: var(--di-gr-1);
-}
-
-.di-gr-bg-2 {
-  background-image: var(--di-gr-2);
-}
-
-.di-gr-bg-3 {
-  background-image: var(--di-gr-3);
-}
-
-.di-gr-bg-4 {
-  background-image: var(--di-gr-4);
-}
-
-.di-gr-bg-5 {
-  background-image: var(--di-gr-5);
-}
-
 :root {
   --di-gray-100: #f5f6f8;
   --di-gray-200: #e5e8eb;

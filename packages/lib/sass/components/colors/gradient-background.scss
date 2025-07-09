@@ -28,23 +28,3 @@
     animation: none;
   }
 }
-
-#{vars.$simplified-gradient-bg-selector-prefix}-1 {
-  background-image: css-vars.get-var("gr-1");
-}
-
-#{vars.$simplified-gradient-bg-selector-prefix}-2 {
-  background-image: css-vars.get-var("gr-2");
-}
-
-#{vars.$simplified-gradient-bg-selector-prefix}-3 {
-  background-image: css-vars.get-var("gr-3");
-}
-
-#{vars.$simplified-gradient-bg-selector-prefix}-4 {
-  background-image: css-vars.get-var("gr-4");
-}
-
-#{vars.$simplified-gradient-bg-selector-prefix}-5 {
-  background-image: css-vars.get-var("gr-5");
-}
