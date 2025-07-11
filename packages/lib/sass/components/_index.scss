@@ -1,15 +1,15 @@
-@use "button";
-@use "link";
-@use "form";
-@use "code";
-@use "badge";
-@use "tabs";
-@use "avatar";
-@use "table";
-@use "card";
-@use "icon";
-@use "header";
-@use "footer";
+@use 'button';
+@use 'link';
+@use 'form';
+@use 'code';
+@use 'badge';
+@use 'tabs';
+@use 'avatar';
+@use 'table';
+@use 'card';
+@use 'icon';
+@use 'header';
+@use 'footer';
 
 // Should go after all components to be possible to override
-@use "colors";
+@use 'colors';

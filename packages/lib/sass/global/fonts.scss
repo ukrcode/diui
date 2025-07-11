@@ -1,10 +1,11 @@
-@mixin apply-font-face($file-name, $font-weight, $font-family: "e-ukraine") {
+@mixin apply-font-face($file-name, $font-weight, $font-family: 'e-ukraine') {
   @font-face {
     font-family: $font-family;
     font-style: normal;
-    src: url("/fonts/#{$file-name}.woff2") format("woff2"),
-      url("/fonts/#{$file-name}.woff") format("woff"),
-      url("/fonts/#{$file-name}.otf") format("opentype");
+    src:
+      url('/fonts/#{$file-name}.woff2') format('woff2'),
+      url('/fonts/#{$file-name}.woff') format('woff'),
+      url('/fonts/#{$file-name}.otf') format('opentype');
     font-weight: $font-weight;
     font-display: swap;
   }
@@ -12,17 +13,17 @@
 
 @mixin register-primary-fonts {
   // Light
-  @include apply-font-face("e-Ukraine-Light", 300);
+  @include apply-font-face('e-Ukraine-Light', 300);
 
   // Regular
-  @include apply-font-face("e-Ukraine-Regular", 400);
+  @include apply-font-face('e-Ukraine-Regular', 400);
 
   // Medium
-  @include apply-font-face("e-Ukraine-Medium", 500);
+  @include apply-font-face('e-Ukraine-Medium', 500);
 
   // Head Light
-  @include apply-font-face("e-UkraineHead-Light", 300, "e-ukraine-head");
-  
+  @include apply-font-face('e-UkraineHead-Light', 300, 'e-ukraine-head');
+
   // Head Regular
-  @include apply-font-face("e-UkraineHead-Regular", 400, "e-ukraine-head");
+  @include apply-font-face('e-UkraineHead-Regular', 400, 'e-ukraine-head');
 }

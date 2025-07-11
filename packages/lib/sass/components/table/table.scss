@@ -1,9 +1,9 @@
-@use "../../selectors" as vars;
-@use "../../shared/css-vars" as css-vars;
-@use "../../shared/functions" as fn;
-@use "../../shared/mixins" as mx;
+@use '../../selectors' as vars;
+@use '../../shared/css-vars' as css-vars;
+@use '../../shared/functions' as fn;
+@use '../../shared/mixins' as mx;
 
-$main-table-color: css-vars.get-color-var("light-gray");
+$main-table-color: css-vars.get-color-var('light-gray');
 $table-border: fn.to-rem(2px) solid $main-table-color;
 $table-cell-padding: fn.to-rem(16px) fn.to-rem(20px);
 
@@ -12,7 +12,7 @@ $table-cell-padding: fn.to-rem(16px) fn.to-rem(20px);
   max-width: 100%;
 
   border-collapse: collapse;
-  
+
   // Head Cells
   #{vars.$table-head-cell-selector} {
     border: $table-border;

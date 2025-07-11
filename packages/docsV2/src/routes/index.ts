@@ -1,17 +1,17 @@
-import { normalizeLocalUrl } from "@/shared/normalize-url";
+import { normalizeLocalUrl } from '@/shared/normalize-url'
 
-const home = normalizeLocalUrl("/");
+const home = normalizeLocalUrl('/')
 // Docs
-const docs = normalizeLocalUrl("/docs");
-const docsComponents = normalizeLocalUrl("/docs/components");
+const docs = normalizeLocalUrl('/docs')
+const docsComponents = normalizeLocalUrl('/docs/components')
 
-const materials = normalizeLocalUrl("/materials");
-const diff = normalizeLocalUrl("/diff");
+const materials = normalizeLocalUrl('/materials')
+const diff = normalizeLocalUrl('/diff')
 
 export const routes = {
   home,
   docs,
   docsComponents,
   materials,
-  diff
-};
+  diff,
+}

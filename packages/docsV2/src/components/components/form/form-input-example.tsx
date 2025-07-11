@@ -1,7 +1,7 @@
 export default function FormFieldsExample() {
   return (
     <div className="di-flex di-flex-wrap di-gap-2">
-      <div className="di-form-group" style={{ width: "200px" }}>
+      <div className="di-form-group" style={{ width: '200px' }}>
         <input
           type="text"
           id="some-text-field-1"
@@ -18,7 +18,7 @@ export default function FormFieldsExample() {
         </div>
       </div>
 
-      <div className="di-form-group" style={{ width: "200px" }}>
+      <div className="di-form-group" style={{ width: '200px' }}>
         <input
           type="text"
           id="some-text-field-2"
@@ -36,5 +36,5 @@ export default function FormFieldsExample() {
         </div>
       </div>
     </div>
-  );
+  )
 }

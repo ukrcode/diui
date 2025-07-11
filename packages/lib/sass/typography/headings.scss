@@ -1,8 +1,8 @@
-@use "../shared/mixins" as mx;
-@use "../shared/functions" as fn;
-@use "../shared/css-vars" as css-vars;
-@use "sass:math" as math;
-@use "../selectors" as vars;
+@use '../shared/mixins' as mx;
+@use '../shared/functions' as fn;
+@use '../shared/css-vars' as css-vars;
+@use 'sass:math' as math;
+@use '../selectors' as vars;
 
 // h1-h3 margins
 $big-heading-top-margin: fn.to-rem(80px);
@@ -54,11 +54,11 @@ $small-heading-mobile-bottom-margin: fn.to-rem(4px);
 
 // h1-head
 #{vars.$heading-1-head-selector} {
-  @include mx.base-font-configuration(26px, 28px, 400, "head");
+  @include mx.base-font-configuration(26px, 28px, 400, 'head');
   @include apply-big-heading-margins;
 
   @include mx.on-tablet {
-    @include mx.base-font-configuration(56px, 60px, 400, "head");
+    @include mx.base-font-configuration(56px, 60px, 400, 'head');
   }
 }
 

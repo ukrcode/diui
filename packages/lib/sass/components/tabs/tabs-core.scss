@@ -1,4 +1,4 @@
-@use "../../selectors" as vars;
+@use '../../selectors' as vars;
 
 #{vars.$tabs-selector} {
   display: flex;

@@ -1,7 +1,7 @@
-@use "../selectors" as vars;
-@use "../shared/css-vars" as css-vars;
-@use "../shared/mixins" as mx;
-@use "../shared/functions" as fn;
+@use '../selectors' as vars;
+@use '../shared/css-vars' as css-vars;
+@use '../shared/mixins' as mx;
+@use '../shared/functions' as fn;
 
 // Base
 #{vars.$avatar-selector} {
@@ -15,16 +15,16 @@
   justify-content: center;
   width: var(--diui-avatar-size);
   height: var(--diui-avatar-size);
-  background-color: css-vars.get-color-var("light-gray");
-  color: css-vars.get-color-var("text-color");
+  background-color: css-vars.get-color-var('light-gray');
+  color: css-vars.get-color-var('text-color');
   border-radius: 50%;
 }
 
 // Icon
 #{vars.$avatar-icon-selector} {
-  width: 75% !important; 
+  width: 75% !important;
   height: 75% !important;
-};
+}
 
 // Image
 #{vars.$avatar-image-selector} {

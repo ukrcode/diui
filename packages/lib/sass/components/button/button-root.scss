@@ -1,8 +1,8 @@
-@use "../../shared/css-vars" as css-vars;
-@use "../../shared/functions" as fn;
-@use "../../shared/mixins" as mx;
-@use "../../selectors" as vars;
-@use "./button-mixins" as btn-mx;
+@use '../../shared/css-vars' as css-vars;
+@use '../../shared/functions' as fn;
+@use '../../shared/mixins' as mx;
+@use '../../selectors' as vars;
+@use './button-mixins' as btn-mx;
 
 // @mixin add-button-mobile-styles {
 // padding: fn.to-rem(12px) fn.to-rem(20px);
@@ -17,12 +17,12 @@
   padding: fn.to-rem(12px) fn.to-rem(20px);
   cursor: pointer;
 
-  color: css-vars.get-var("text-color");
+  color: css-vars.get-var('text-color');
   @include mx.base-font-configuration(16px, 24px, 400);
   border: none;
   white-space: nowrap;
 
-  background-color: css-vars.get-var("c-light-gray");
+  background-color: css-vars.get-var('c-light-gray');
 
   &:disabled {
     cursor: not-allowed;

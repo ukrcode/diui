@@ -45,5 +45,5 @@ export default function ColorTextExample() {
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, rem
       </p>
     </>
-  );
+  )
 }

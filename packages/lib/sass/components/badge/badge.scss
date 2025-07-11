@@ -1,6 +1,6 @@
-@use "../../selectors" as vars;
-@use "../../shared/functions" as fn;
-@use "../../shared/css-vars" as css-vars;
+@use '../../selectors' as vars;
+@use '../../shared/functions' as fn;
+@use '../../shared/css-vars' as css-vars;
 
 #{vars.$badge-selector} {
   display: inline-block;
@@ -13,92 +13,92 @@
 }
 
 #{vars.$badge-primary-selector} {
-  color: css-vars.get-var("text-invert-color");
-  background-color: css-vars.get-var("bg-invert-color");
+  color: css-vars.get-var('text-invert-color');
+  background-color: css-vars.get-var('bg-invert-color');
 }
 
 #{vars.$badge-secondary-selector} {
-  color: css-vars.get-color-var("black");
-  background-color: css-vars.get-color-var("gray-20");
+  color: css-vars.get-color-var('black');
+  background-color: css-vars.get-color-var('gray-20');
 }
 
 #{vars.$badge-success-selector} {
-  color: css-vars.get-color-var("white");
-  background-color: css-vars.get-color-var("success");
+  color: css-vars.get-color-var('white');
+  background-color: css-vars.get-color-var('success');
 }
 
 #{vars.$badge-info-selector} {
-  color: css-vars.get-color-var("white");
-  background-color: css-vars.get-color-var("info");
+  color: css-vars.get-color-var('white');
+  background-color: css-vars.get-color-var('info');
 }
 
 #{vars.$badge-warning-selector} {
-  color: css-vars.get-color-var("black");
-  background-color: css-vars.get-color-var("warning");
+  color: css-vars.get-color-var('black');
+  background-color: css-vars.get-color-var('warning');
 }
 
 #{vars.$badge-danger-selector} {
-  color: css-vars.get-color-var("white");
-  background-color: css-vars.get-color-var("danger");
+  color: css-vars.get-color-var('white');
+  background-color: css-vars.get-color-var('danger');
 }
 
 // Colors
 #{vars.$badge-light-gray-selector} {
-  color: css-vars.get-color-var("black");
-  background-color: css-vars.get-color-var("light-gray");
+  color: css-vars.get-color-var('black');
+  background-color: css-vars.get-color-var('light-gray');
 }
 
 #{vars.$badge-gray-selector} {
-  color: css-vars.get-color-var("white");
-  background-color: css-vars.get-color-var("gray");
+  color: css-vars.get-color-var('white');
+  background-color: css-vars.get-color-var('gray');
 }
 
 #{vars.$badge-gorse-selector} {
-  color: css-vars.get-color-var("black");
-  background-color: css-vars.get-color-var("gorse");
+  color: css-vars.get-color-var('black');
+  background-color: css-vars.get-color-var('gorse');
 }
 
 #{vars.$badge-yellow-green-selector} {
-  color: css-vars.get-color-var("black");
-  background-color: css-vars.get-color-var("yellow-green");
+  color: css-vars.get-color-var('black');
+  background-color: css-vars.get-color-var('yellow-green');
 }
 
 #{vars.$badge-lima-selector} {
-  color: css-vars.get-color-var("white");
-  background-color: css-vars.get-color-var("lima");
+  color: css-vars.get-color-var('white');
+  background-color: css-vars.get-color-var('lima');
 }
 
 #{vars.$badge-malachite-selector} {
-  color: css-vars.get-color-var("white");
-  background-color: css-vars.get-color-var("malachite");
+  color: css-vars.get-color-var('white');
+  background-color: css-vars.get-color-var('malachite');
 }
 
 #{vars.$badge-radiance-selector} {
-  color: css-vars.get-color-var("white");
-  background-color: css-vars.get-color-var("radiance");
+  color: css-vars.get-color-var('white');
+  background-color: css-vars.get-color-var('radiance');
 }
 
 #{vars.$badge-dodger-blue-selector} {
-  color: css-vars.get-color-var("white");
-  background-color: css-vars.get-color-var("dodger-blue");
+  color: css-vars.get-color-var('white');
+  background-color: css-vars.get-color-var('dodger-blue');
 }
 
 #{vars.$badge-violet-selector} {
-  color: css-vars.get-color-var("white");
-  background-color: css-vars.get-color-var("violet");
+  color: css-vars.get-color-var('white');
+  background-color: css-vars.get-color-var('violet');
 }
 
 #{vars.$badge-brick-red-selector} {
-  color: css-vars.get-color-var("white");
-  background-color: css-vars.get-color-var("brick-red");
+  color: css-vars.get-color-var('white');
+  background-color: css-vars.get-color-var('brick-red');
 }
 
 #{vars.$badge-scarlet-selector} {
-  color: css-vars.get-color-var("white");
-  background-color: css-vars.get-color-var("scarlet");
+  color: css-vars.get-color-var('white');
+  background-color: css-vars.get-color-var('scarlet');
 }
 
 #{vars.$badge-pumpkin-selector} {
-  color: css-vars.get-color-var("white");
-  background-color: css-vars.get-color-var("pumpkin");
+  color: css-vars.get-color-var('white');
+  background-color: css-vars.get-color-var('pumpkin');
 }

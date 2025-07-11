@@ -1,8 +1,8 @@
-@use "../../shared/css-vars" as css-vars;
-@use "../../shared/functions" as fn;
-@use "../../shared/mixins" as mx;
-@use "../../selectors" as vars;
-@use "./form-mixins" as form-mx;
+@use '../../shared/css-vars' as css-vars;
+@use '../../shared/functions' as fn;
+@use '../../shared/mixins' as mx;
+@use '../../selectors' as vars;
+@use './form-mixins' as form-mx;
 
 $icon-space-width: 24px;
 $horizontal-gap: 32px;
@@ -24,7 +24,7 @@ $horizontal-gap-with-icon: $icon-space-width + $horizontal-gap;
 
 @mixin search-input-base {
   width: 100%;
-  background-color: css-vars.get-var("bg-color");
+  background-color: css-vars.get-var('bg-color');
   border-radius: fn.to-rem($horizontal-gap);
   border: none;
   padding-top: fn.to-rem(12px);
@@ -33,8 +33,8 @@ $horizontal-gap-with-icon: $icon-space-width + $horizontal-gap;
   @include mx.base-font-configuration(16px, 24px, 300);
 
   &:disabled {
-    color: css-vars.get-var("c-gray");
-    background-color: css-vars.get-var("c-gray-20");
+    color: css-vars.get-var('c-gray');
+    background-color: css-vars.get-var('c-gray-20');
     border: none;
   }
 }
@@ -55,7 +55,7 @@ $horizontal-gap-with-icon: $icon-space-width + $horizontal-gap;
 
 @mixin search-icon {
   @include mx.icon-as-bg(24px);
-  background-color: css-vars.get-color-var("gray");
+  background-color: css-vars.get-color-var('gray');
 }
 
 // Search Input Icon
@@ -82,11 +82,11 @@ $horizontal-gap-with-icon: $icon-space-width + $horizontal-gap;
 #{vars.$search-label-selector} {
   @include place-in-start($horizontal-gap-with-icon);
   transition: none;
-  color: css-vars.get-var("c-gray");
+  color: css-vars.get-var('c-gray');
 }
 
 #{vars.$search-label-reverse-selector} {
   @include place-in-start($horizontal-gap);
   transition: none;
-  color: css-vars.get-var("c-gray");
+  color: css-vars.get-var('c-gray');
 }

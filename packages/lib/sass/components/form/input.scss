@@ -1,8 +1,8 @@
-@use "../../shared/css-vars" as css-vars;
-@use "../../shared/functions" as fn;
-@use "../../shared/mixins" as mx;
-@use "../../selectors" as vars;
-@use "./form-mixins" as form-mx;
+@use '../../shared/css-vars' as css-vars;
+@use '../../shared/functions' as fn;
+@use '../../shared/mixins' as mx;
+@use '../../selectors' as vars;
+@use './form-mixins' as form-mx;
 
 // Label
 #{vars.$label-selector} {
@@ -11,7 +11,7 @@
   left: fn.to-rem(0px);
 
   transition: 0.2s ease all;
-  color: css-vars.get-var("c-gray");
+  color: css-vars.get-var('c-gray');
 }
 
 // Label when input is focused
@@ -29,7 +29,7 @@
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 2px solid css-vars.get-var("text-color");
+  border-bottom: 2px solid css-vars.get-var('text-color');
   @include mx.base-font-configuration(16px, 24px, 300);
 
   padding-top: fn.to-rem(5px);
@@ -37,8 +37,8 @@
 
   // Disabled Input
   &:disabled {
-    color: css-vars.get-var("c-gray");
-    border-bottom-color: css-vars.get-var("c-gray");
+    color: css-vars.get-var('c-gray');
+    border-bottom-color: css-vars.get-var('c-gray');
     background-color: transparent;
   }
 }
@@ -46,6 +46,6 @@
 // Invalid Input
 #{vars.$form-group-invalid-selector} #{vars.$input-selector},
 #{vars.$input-selector}:invalid {
-  color: css-vars.get-var("c-danger");
-  border-bottom-color: css-vars.get-var("c-danger");
+  color: css-vars.get-var('c-danger');
+  border-bottom-color: css-vars.get-var('c-danger');
 }

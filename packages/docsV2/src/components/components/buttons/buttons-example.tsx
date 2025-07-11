@@ -1,4 +1,4 @@
-import "./buttons-example.css";
+import './buttons-example.css'
 
 export default function ButtonsExample() {
   return (
@@ -17,9 +17,7 @@ export default function ButtonsExample() {
             Outline Disabled
           </button>
 
-          <button className="di-btn di-btn-text">
-            Text
-          </button>
+          <button className="di-btn di-btn-text">Text</button>
 
           <button className="di-btn di-btn-icon" aria-label="download">
             <span className="di-icon di-icon-download di-icon-24"></span>
@@ -49,9 +47,7 @@ export default function ButtonsExample() {
             Outline Disabled small
           </button>
 
-          <button className="di-btn di-btn-text di-btn-sm">
-            Text
-          </button>
+          <button className="di-btn di-btn-text di-btn-sm">Text</button>
 
           <button disabled className="di-btn di-btn-text di-btn-sm">
             Text Disabled
@@ -59,5 +55,5 @@ export default function ButtonsExample() {
         </div>
       </section>
     </>
-  );
+  )
 }

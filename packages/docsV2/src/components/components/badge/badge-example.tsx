@@ -26,5 +26,5 @@ export default function BadgeExample() {
         <div className="di-badge di-badge-pumpkin">Label pumpkin</div>
       </div>
     </div>
-  );
+  )
 }

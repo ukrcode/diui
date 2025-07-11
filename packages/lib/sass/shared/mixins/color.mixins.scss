@@ -1,14 +1,14 @@
-@use "../css-vars" as css-vars;
-@use "sass:map" as map;
+@use '../css-vars' as css-vars;
+@use 'sass:map' as map;
 
 @mixin create-colors-set-vars($color-name, $colors) {
   @include css-vars.register-vars(
     (
-      $color-name: map.get($colors, "100"),
-      "#{$color-name}-80": map.get($colors, "80"),
-      "#{$color-name}-60": map.get($colors, "60"),
-      "#{$color-name}-40": map.get($colors, "40"),
-      "#{$color-name}-20": map.get($colors, "20"),
+      $color-name: map.get($colors, '100'),
+      '#{$color-name}-80': map.get($colors, '80'),
+      '#{$color-name}-60': map.get($colors, '60'),
+      '#{$color-name}-40': map.get($colors, '40'),
+      '#{$color-name}-20': map.get($colors, '20'),
     )
   );
 }
@@ -17,10 +17,10 @@
   @include css-vars.register-vars(
     (
       $color-name: css-vars.get-var($color-name-to-map),
-      "#{$color-name}-80": css-vars.get-var("#{$color-name-to-map}-80"),
-      "#{$color-name}-60": css-vars.get-var("#{$color-name-to-map}-60"),
-      "#{$color-name}-40": css-vars.get-var("#{$color-name-to-map}-40"),
-      "#{$color-name}-20": css-vars.get-var("#{$color-name-to-map}-20"),
+      '#{$color-name}-80': css-vars.get-var('#{$color-name-to-map}-80'),
+      '#{$color-name}-60': css-vars.get-var('#{$color-name-to-map}-60'),
+      '#{$color-name}-40': css-vars.get-var('#{$color-name-to-map}-40'),
+      '#{$color-name}-20': css-vars.get-var('#{$color-name-to-map}-20'),
     )
   );
 }

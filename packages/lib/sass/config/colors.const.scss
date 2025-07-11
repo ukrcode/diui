@@ -5,132 +5,132 @@ $c-white: #fff;
 $c-light-gray: #d9e5ee;
 
 $c-success-colors: (
-  "100": #1E7F34,
-  "80": #3F974F,
-  "60": #60AF6B,
-  "40": #92C99A,
-  "20": #C4E3C9,
+  '100': #1e7f34,
+  '80': #3f974f,
+  '60': #60af6b,
+  '40': #92c99a,
+  '20': #c4e3c9,
 );
 
 $c-danger-colors: (
-  "100": #C62828,
-  "80": #D84343,
-  "60": #E57373,
-  "40": #F19999,
-  "20": #FBCBCB,
+  '100': #c62828,
+  '80': #d84343,
+  '60': #e57373,
+  '40': #f19999,
+  '20': #fbcbcb,
 );
 
 $c-warning-colors: (
-  "100": #F57C00,
-  "80": #F99533,
-  "60": #FCB766,
-  "40": #FED59C,
-  "20": #FFF1D4,
+  '100': #f57c00,
+  '80': #f99533,
+  '60': #fcb766,
+  '40': #fed59c,
+  '20': #fff1d4,
 );
 
 $c-info-colors: (
-  "100": #1565C0,
-  "80": #357BD1,
-  "60": #5B95E0,
-  "40": #8AB4EF,
-  "20": #C3D8FA,
+  '100': #1565c0,
+  '80': #357bd1,
+  '60': #5b95e0,
+  '40': #8ab4ef,
+  '20': #c3d8fa,
 );
 
 // gray
 $c-gray-colors: (
-  "100": #959595,
-  "80": #aaa,
-  "60": #bfbfbf,
-  "40": #d5d5d5,
-  "20": #eaeaea,
+  '100': #959595,
+  '80': #aaa,
+  '60': #bfbfbf,
+  '40': #d5d5d5,
+  '20': #eaeaea,
 );
 
 // gorse
 $c-gorse-colors: (
-  "100": #ffdb4d,
-  "80": #ffe270,
-  "60": #fee994,
-  "40": #fff0b7,
-  "20": #fff7db,
+  '100': #ffdb4d,
+  '80': #ffe270,
+  '60': #fee994,
+  '40': #fff0b7,
+  '20': #fff7db,
 );
 
 // yellow-green
 $c-yellow-green-colors: (
-  "100": #d7f64d,
-  "80": #dff770,
-  "60": #e6f994,
-  "40": #effbb7,
-  "20": #f7fddb,
+  '100': #d7f64d,
+  '80': #dff770,
+  '60': #e6f994,
+  '40': #effbb7,
+  '20': #f7fddb,
 );
 
 // lima
 $c-lima-colors: (
-  "100": #89db33,
-  "80": #a0e25b,
-  "60": #b8e984,
-  "40": #cff0ad,
-  "20": #e7f7d6,
+  '100': #89db33,
+  '80': #a0e25b,
+  '60': #b8e984,
+  '40': #cff0ad,
+  '20': #e7f7d6,
 );
 
 // malachite
 $c-malachite-colors: (
-  "100": #04c65d,
-  "80": #36d17d,
-  "60": #68dc9d,
-  "40": #9ae8be,
-  "20": #ccf3de,
+  '100': #04c65d,
+  '80': #36d17d,
+  '60': #68dc9d,
+  '40': #9ae8be,
+  '20': #ccf3de,
 );
 
 // radiance
 $c-radiance-colors: (
-  "100": #007eff,
-  "80": #3397ff,
-  "60": #66b1fe,
-  "40": #99cbff,
-  "20": #cce5ff,
+  '100': #007eff,
+  '80': #3397ff,
+  '60': #66b1fe,
+  '40': #99cbff,
+  '20': #cce5ff,
 );
 
 // dodger-blue
 $c-dodger-blue-colors: (
-  "100": #5b5aff,
-  "80": #7b7bff,
-  "60": #9c9cfe,
-  "40": #bdbdff,
-  "20": #dedeff,
+  '100': #5b5aff,
+  '80': #7b7bff,
+  '60': #9c9cfe,
+  '40': #bdbdff,
+  '20': #dedeff,
 );
 
 // violet
 $c-violet-colors: (
-  "100": #aa2b8e,
-  "80": #bb55a4,
-  "60": #cc7fbb,
-  "40": #ddaad1,
-  "20": #eed4e8,
+  '100': #aa2b8e,
+  '80': #bb55a4,
+  '60': #cc7fbb,
+  '40': #ddaad1,
+  '20': #eed4e8,
 );
 
 // brick-red
 $c-brick-red-colors: (
-  "100": #cc2e4f,
-  "80": #d65772,
-  "60": #e08195,
-  "40": #eaabb8,
-  "20": #f4d5db,
+  '100': #cc2e4f,
+  '80': #d65772,
+  '60': #e08195,
+  '40': #eaabb8,
+  '20': #f4d5db,
 );
 
 // scarlet
 $c-scarlet-colors: (
-  "100": #ff3800,
-  "80": #ff5f33,
-  "60": #fe8766,
-  "40": #ffaf99,
-  "20": #ffd7cc,
+  '100': #ff3800,
+  '80': #ff5f33,
+  '60': #fe8766,
+  '40': #ffaf99,
+  '20': #ffd7cc,
 );
 
 // pumpkin
 $c-pumpkin-colors: (
-  "100": #ff831a,
-  "80": #ff9b47,
-  "60": #feb475,
-  "40": #ffcda3,
-  "20": #ffe6d1,
+  '100': #ff831a,
+  '80': #ff9b47,
+  '60': #feb475,
+  '40': #ffcda3,
+  '20': #ffe6d1,
 );

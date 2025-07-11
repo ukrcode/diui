@@ -1,11 +1,11 @@
 type SearchInputProps = {
-  id: string;
-  rootClassName?: string;
-  disabled?: boolean;
-  isInvalidHint?: boolean;
+  id: string
+  rootClassName?: string
+  disabled?: boolean
+  isInvalidHint?: boolean
 
-  isReverse?: boolean;
-};
+  isReverse?: boolean
+}
 
 function SearchInput({
   id,
@@ -18,9 +18,9 @@ function SearchInput({
     <div className={`di-flex di-flex-wrap di-gap-2 di-p-2 ${rootClassName}`}>
       <div
         className={`di-form-group ${
-          isReverse ? "di-form-group-search-reverse" : "di-form-group-search"
+          isReverse ? 'di-form-group-search-reverse' : 'di-form-group-search'
         }`}
-        style={{ width: "200px" }}
+        style={{ width: '200px' }}
       >
         <span
           className={`di-search-input-icon di-icon di-icon-24 di-icon-magnify-glass di-bg-gray`}
@@ -45,14 +45,14 @@ function SearchInput({
         <div
           id={`${id}-hint`}
           className={`di-form-hint ${
-            isInvalidHint ? "di-form-hint-invalid" : ""
+            isInvalidHint ? 'di-form-hint-invalid' : ''
           }`}
         >
           Hint Text
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default function SearchInputExample() {
@@ -66,5 +66,5 @@ export default function SearchInputExample() {
       />
       <SearchInput id="some-text-field-020102" disabled isInvalidHint />
     </>
-  );
+  )
 }

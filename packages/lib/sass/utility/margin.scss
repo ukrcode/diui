@@ -1,5 +1,5 @@
-@use "../selectors" as vars;
-@use "../shared/functions" as fn;
+@use '../selectors' as vars;
+@use '../shared/functions' as fn;
 
 #{vars.$margin-selector} {
   &-0 {

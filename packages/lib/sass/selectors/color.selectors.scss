@@ -1,10 +1,10 @@
-@use "../config" as config;
+@use '../config' as config;
 
 // Background color selector(s)
-$bg-color-selector-prefix: ".#{config.$class-prefix}bg-" !default;
+$bg-color-selector-prefix: '.#{config.$class-prefix}bg-' !default;
 
 // Text color selector(s)
-$text-color-selector-prefix: ".#{config.$class-prefix}text-" !default;
+$text-color-selector-prefix: '.#{config.$class-prefix}text-' !default;
 
 // Gradient color selector(s)
-$primary-gradient-bg-selector: ".#{config.$class-prefix}gr-bg-primary" !default;
+$primary-gradient-bg-selector: '.#{config.$class-prefix}gr-bg-primary' !default;

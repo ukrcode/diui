@@ -1,18 +1,19 @@
-@use "../shared/css-vars" as css-vars;
+@use '../shared/css-vars' as css-vars;
 
 @mixin create-typography-variables {
   // Fonts
   @include css-vars.register-vars(
     (
-      "font-family-primary":
-        "e-ukraine, Arial, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, sans-serif",
-      "font-family-head":
-        "e-ukraine-head, Arial, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, sans-serif",
-      "font-family-code": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
-      "text-color": css-vars.get-var("c-black"),
-      "text-invert-color": css-vars.get-var("c-white"),
-      "bg-color": css-vars.get-var("c-white"),
-      "bg-invert-color": css-vars.get-var("c-black"),
+      'font-family-primary':
+        'e-ukraine, Arial, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, sans-serif',
+      'font-family-head':
+        'e-ukraine-head, Arial, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, sans-serif',
+      'font-family-code':
+        'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+      'text-color': css-vars.get-var('c-black'),
+      'text-invert-color': css-vars.get-var('c-white'),
+      'bg-color': css-vars.get-var('c-white'),
+      'bg-invert-color': css-vars.get-var('c-black'),
     )
   );
 }

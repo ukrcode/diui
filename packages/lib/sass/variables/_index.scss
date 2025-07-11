@@ -1,9 +1,9 @@
-@use "./color-variables";
-@use "./gradient-variables";
-@use "./typography-variables";
+@use './color-variables';
+@use './gradient-variables';
+@use './typography-variables';
 
 :root {
-    @include color-variables.create-color-variables;
-    @include gradient-variables.create-gradient-variables;
-    @include typography-variables.create-typography-variables;
+  @include color-variables.create-color-variables;
+  @include gradient-variables.create-gradient-variables;
+  @include typography-variables.create-typography-variables;
 }

@@ -1,25 +1,25 @@
-@use "../../shared/css-vars" as css-vars;
-@use "../../shared/mixins" as mx;
+@use '../../shared/css-vars' as css-vars;
+@use '../../shared/mixins' as mx;
 
-@use "../../selectors" as vars;
-@use "./button-mixins" as btn-mx;
+@use '../../selectors' as vars;
+@use './button-mixins' as btn-mx;
 
 // Outline Button
 #{vars.$button-outline-selector} {
   background-color: transparent;
-  color: css-vars.get-var("text-color");
-  border: 2px solid css-vars.get-var("text-color");
+  color: css-vars.get-var('text-color');
+  border: 2px solid css-vars.get-var('text-color');
 
   @include mx.on-not-touch-devices {
     &:hover {
-      color: css-vars.get-var("bg-color");
-      background-color: css-vars.get-var("text-color");
+      color: css-vars.get-var('bg-color');
+      background-color: css-vars.get-var('text-color');
     }
   }
 
   &:disabled {
-    color: css-vars.get-var("c-gray");
-    border-color: css-vars.get-var("c-gray");
+    color: css-vars.get-var('c-gray');
+    border-color: css-vars.get-var('c-gray');
     background-color: transparent;
   }
 }

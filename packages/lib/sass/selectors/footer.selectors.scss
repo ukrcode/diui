@@ -1,3 +1,3 @@
-@use "../config" as config;
+@use '../config' as config;
 
-$footer-selector: ".#{config.$class-prefix}footer";
+$footer-selector: '.#{config.$class-prefix}footer';

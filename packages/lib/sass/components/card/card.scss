@@ -1,7 +1,7 @@
-@use "../../selectors" as vars;
-@use "../../shared/css-vars" as css-vars;
-@use "../../shared/functions" as fn;
-@use "../../shared/mixins" as mx;
+@use '../../selectors' as vars;
+@use '../../shared/css-vars' as css-vars;
+@use '../../shared/functions' as fn;
+@use '../../shared/mixins' as mx;
 
 $border-width: 2px;
 
@@ -24,7 +24,7 @@ $border-width: 2px;
   display: flex;
   gap: fn.to-rem(24px);
 
-  background-color: css-vars.get-var("bg-color");
+  background-color: css-vars.get-var('bg-color');
   padding: fn.to-rem(24px);
 }
 
@@ -36,12 +36,10 @@ $border-width: 2px;
 
 // Info card
 #{vars.$info-card-selector} {
-  border-top: 2px solid css-vars.get-var("text-color");
+  border-top: 2px solid css-vars.get-var('text-color');
 }
 
-
 // FAQ Card
-
 
 #{vars.$card-content-selector} {
   // padding: fn.to-rem(45px) fn.to-rem(60px) fn.to-rem(25px);

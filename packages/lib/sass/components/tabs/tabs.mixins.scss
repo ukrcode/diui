@@ -1,11 +1,11 @@
-@use "../../selectors" as vars;
-@use "../../shared/css-vars" as css-vars;
+@use '../../selectors' as vars;
+@use '../../shared/css-vars' as css-vars;
 
 $tab-horizontal-padding: 20px;
 
 // Active tab
 @mixin active-tab-styles {
-  color: css-vars.get-color-var("black");
+  color: css-vars.get-color-var('black');
 }
 
 @mixin tab-press-styles {

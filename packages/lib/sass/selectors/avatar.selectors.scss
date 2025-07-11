@@ -1,18 +1,18 @@
-@use "../config" as config;
+@use '../config' as config;
 
 // Avatar selectors
-$avatar-selector: ".#{config.$class-prefix}avatar" !default;
+$avatar-selector: '.#{config.$class-prefix}avatar' !default;
 // Avatar Types
-$avatar-square-selector: ".#{config.$class-prefix}avatar-square" !default;
-$avatar-rounded-square-selector: ".#{config.$class-prefix}avatar-r-square" !default;
+$avatar-square-selector: '.#{config.$class-prefix}avatar-square' !default;
+$avatar-rounded-square-selector: '.#{config.$class-prefix}avatar-r-square' !default;
 // Avatar Icon
-$avatar-icon-selector: ".#{config.$class-prefix}avatar-icon" !default;
+$avatar-icon-selector: '.#{config.$class-prefix}avatar-icon' !default;
 // Avatar Image
-$avatar-image-selector: ".#{config.$class-prefix}avatar-img" !default;
+$avatar-image-selector: '.#{config.$class-prefix}avatar-img' !default;
 
 // Size selectors
-$avatar-xlarge-selector: ".#{config.$class-prefix}avatar-xl" !default;
-$avatar-large-selector: ".#{config.$class-prefix}avatar-lg" !default;
-$avatar-medium-selector: ".#{config.$class-prefix}avatar-md" !default;
-$avatar-small-selector: ".#{config.$class-prefix}avatar-sm" !default;
-$avatar-xsmall-selector: ".#{config.$class-prefix}avatar-xs" !default;
+$avatar-xlarge-selector: '.#{config.$class-prefix}avatar-xl' !default;
+$avatar-large-selector: '.#{config.$class-prefix}avatar-lg' !default;
+$avatar-medium-selector: '.#{config.$class-prefix}avatar-md' !default;
+$avatar-small-selector: '.#{config.$class-prefix}avatar-sm' !default;
+$avatar-xsmall-selector: '.#{config.$class-prefix}avatar-xs' !default;

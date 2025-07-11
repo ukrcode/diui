@@ -5,7 +5,7 @@ function UserIcon() {
       role="img"
       aria-label="User Icon"
     ></span>
-  );
+  )
 }
 
 export default function AvatarUserIconExample() {
@@ -74,5 +74,5 @@ export default function AvatarUserIconExample() {
         </div>
       </div>
     </>
-  );
+  )
 }

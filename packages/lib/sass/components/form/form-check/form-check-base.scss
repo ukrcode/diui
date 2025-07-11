@@ -1,7 +1,7 @@
-@use "../../../shared/functions" as fn;
-@use "../../../shared/mixins" as mx;
-@use "../../../selectors" as vars;
-@use "../../../shared/css-vars" as css-vars;
+@use '../../../shared/functions' as fn;
+@use '../../../shared/mixins' as mx;
+@use '../../../selectors' as vars;
+@use '../../../shared/css-vars' as css-vars;
 
 // Regular Form Check Styles
 #{vars.$form-check-selector} {
@@ -25,16 +25,16 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    border: #{css-vars.get-var("text-color")} solid #{fn.to-rem(2px)};
+    border: #{css-vars.get-var('text-color')} solid #{fn.to-rem(2px)};
 
     &:disabled {
-      border-color: css-vars.get-color-var("gray-40");
-      background-color: css-vars.get-color-var("gray-20");
-      color: css-vars.get-color-var("gray");
+      border-color: css-vars.get-color-var('gray-40');
+      background-color: css-vars.get-color-var('gray-20');
+      color: css-vars.get-color-var('gray');
 
       // Label for disabled input
       & + #{vars.$form-check-label-selector} {
-        color: css-vars.get-color-var("gray");
+        color: css-vars.get-color-var('gray');
       }
     }
   }

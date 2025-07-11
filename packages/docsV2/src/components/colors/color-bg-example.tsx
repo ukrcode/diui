@@ -67,5 +67,5 @@ export default function ColorBgExample() {
         minus illum fugiat sed omnis adipisci aliquid earum hic voluptate sunt!
       </p>
     </div>
-  );
+  )
 }

@@ -1,7 +1,7 @@
 function IconAllSizesExample({ iconName }: { iconName: string }) {
   return (
     <div
-      style={{ display: "flex", alignItems: "center", marginBottom: "1rem" }}
+      style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}
     >
       <span
         className={`di-icon di-icon-${iconName} di-icon-64`}
@@ -39,7 +39,7 @@ function IconAllSizesExample({ iconName }: { iconName: string }) {
         aria-label="File Icon"
       ></span>
     </div>
-  );
+  )
 }
 
 export default function IconExample() {
@@ -56,5 +56,5 @@ export default function IconExample() {
       <IconAllSizesExample iconName="arrow-undo" />
       <IconAllSizesExample iconName="arrow-right" />
     </>
-  );
+  )
 }

@@ -1,8 +1,8 @@
-@use "../config" as config;
+@use '../config' as config;
 
-$button-root-selector: ".#{config.$class-prefix}btn";
-$button-sm-selector: ".#{config.$class-prefix}btn-sm";
-$button-primary-selector: ".#{config.$class-prefix}btn-primary";
-$button-outline-selector: ".#{config.$class-prefix}btn-outline";
-$button-text-selector: ".#{config.$class-prefix}btn-text";
-$button-icon-selector: ".#{config.$class-prefix}btn-icon";
+$button-root-selector: '.#{config.$class-prefix}btn';
+$button-sm-selector: '.#{config.$class-prefix}btn-sm';
+$button-primary-selector: '.#{config.$class-prefix}btn-primary';
+$button-outline-selector: '.#{config.$class-prefix}btn-outline';
+$button-text-selector: '.#{config.$class-prefix}btn-text';
+$button-icon-selector: '.#{config.$class-prefix}btn-icon';

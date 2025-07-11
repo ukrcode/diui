@@ -1,6 +1,6 @@
 export default function FormFieldsExample() {
   return (
-    <div className="di-form-group" style={{ width: "200px" }}>
+    <div className="di-form-group" style={{ width: '200px' }}>
       <input
         type="text"
         id="some-text-field-100"
@@ -18,5 +18,5 @@ export default function FormFieldsExample() {
         Hint Text
       </div>
     </div>
-  );
+  )
 }

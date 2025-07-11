@@ -7,5 +7,5 @@ export default function SpecialTextExample() {
 
       <p className="di-quote">Some Cool Quote</p>
     </>
-  );
+  )
 }

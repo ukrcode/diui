@@ -1,20 +1,20 @@
-@use "../../config" as config;
-@use "../css-vars" as css-vars;
-@use "../functions" as fn;
+@use '../../config' as config;
+@use '../css-vars' as css-vars;
+@use '../functions' as fn;
 
-@mixin set-base-font-family($font-family: "primary") {
-  $font-family-var-name: "";
+@mixin set-base-font-family($font-family: 'primary') {
+  $font-family-var-name: '';
 
-  @if $font-family == "primary" {
-    $font-family-var-name: "font-family-primary";
+  @if $font-family == 'primary' {
+    $font-family-var-name: 'font-family-primary';
   }
 
-  @if $font-family == "head" {
-    $font-family-var-name: "font-family-head";
+  @if $font-family == 'head' {
+    $font-family-var-name: 'font-family-head';
   }
 
-  @if $font-family == "code" {
-    $font-family-var-name: "font-family-code";
+  @if $font-family == 'code' {
+    $font-family-var-name: 'font-family-code';
   }
 
   font-family: css-vars.get-var($font-family-var-name);
@@ -24,7 +24,7 @@
   $font-size,
   $line-height,
   $font-weight: 400,
-  $font-family: "primary"
+  $font-family: 'primary'
 ) {
   @include set-base-font-family($font-family);
 

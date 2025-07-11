@@ -1,5 +1,5 @@
-@use "../shared/functions" as fn;
-@use "../config" as config;
+@use '../shared/functions' as fn;
+@use '../config' as config;
 
 .#{config.$class-prefix}page {
   // padding-bottom: fn.to-rem(30px);

@@ -1,28 +1,28 @@
-@use "../config" as config;
+@use '../config' as config;
 
-$icon-selector: ".#{config.$class-prefix}icon";
+$icon-selector: '.#{config.$class-prefix}icon';
 
 // Icon Sizes
-$icon-size-8-selector: ".#{config.$class-prefix}icon-size-8";
-$icon-size-12-selector: ".#{config.$class-prefix}icon-size-12";
-$icon-size-16-selector: ".#{config.$class-prefix}icon-size-16";
-$icon-size-20-selector: ".#{config.$class-prefix}icon-size-20";
-$icon-size-24-selector: ".#{config.$class-prefix}icon-size-24";
-$icon-size-32-selector: ".#{config.$class-prefix}icon-size-32";
-$icon-size-40-selector: ".#{config.$class-prefix}icon-size-40";
-$icon-size-48-selector: ".#{config.$class-prefix}icon-size-48";
-$icon-size-56-selector: ".#{config.$class-prefix}icon-size-56";
-$icon-size-64-selector: ".#{config.$class-prefix}icon-size-64";
+$icon-size-8-selector: '.#{config.$class-prefix}icon-size-8';
+$icon-size-12-selector: '.#{config.$class-prefix}icon-size-12';
+$icon-size-16-selector: '.#{config.$class-prefix}icon-size-16';
+$icon-size-20-selector: '.#{config.$class-prefix}icon-size-20';
+$icon-size-24-selector: '.#{config.$class-prefix}icon-size-24';
+$icon-size-32-selector: '.#{config.$class-prefix}icon-size-32';
+$icon-size-40-selector: '.#{config.$class-prefix}icon-size-40';
+$icon-size-48-selector: '.#{config.$class-prefix}icon-size-48';
+$icon-size-56-selector: '.#{config.$class-prefix}icon-size-56';
+$icon-size-64-selector: '.#{config.$class-prefix}icon-size-64';
 
 // Icon Types
-$icon-file-selector: ".#{config.$class-prefix}icon-file";
-$icon-download-selector: ".#{config.$class-prefix}icon-download";
-$icon-plus-selector: ".#{config.$class-prefix}icon-plus";
-$icon-minus-selector: ".#{config.$class-prefix}icon-minus";
-$icon-check-selector: ".#{config.$class-prefix}icon-check";
-$icon-magnify-glass-selector: ".#{config.$class-prefix}icon-magnify-glass";
-$icon-user-selector: ".#{config.$class-prefix}icon-user";
-$icon-chevron-right-selector: ".#{config.$class-prefix}icon-chevron-right";
-$icon-chevron-left-selector: ".#{config.$class-prefix}icon-chevron-left";
-$icon-arrow-undo-selector: ".#{config.$class-prefix}icon-arrow-undo";
-$icon-arrow-right-selector: ".#{config.$class-prefix}icon-arrow-right";
+$icon-file-selector: '.#{config.$class-prefix}icon-file';
+$icon-download-selector: '.#{config.$class-prefix}icon-download';
+$icon-plus-selector: '.#{config.$class-prefix}icon-plus';
+$icon-minus-selector: '.#{config.$class-prefix}icon-minus';
+$icon-check-selector: '.#{config.$class-prefix}icon-check';
+$icon-magnify-glass-selector: '.#{config.$class-prefix}icon-magnify-glass';
+$icon-user-selector: '.#{config.$class-prefix}icon-user';
+$icon-chevron-right-selector: '.#{config.$class-prefix}icon-chevron-right';
+$icon-chevron-left-selector: '.#{config.$class-prefix}icon-chevron-left';
+$icon-arrow-undo-selector: '.#{config.$class-prefix}icon-arrow-undo';
+$icon-arrow-right-selector: '.#{config.$class-prefix}icon-arrow-right';

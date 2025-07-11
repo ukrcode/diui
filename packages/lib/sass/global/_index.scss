@@ -1,7 +1,7 @@
-@use "../shared/mixins" as mx;
-@use "../config" as config;
-@use "../shared/css-vars" as css-vars;
-@use "./fonts" as fonts;
+@use '../shared/mixins' as mx;
+@use '../config' as config;
+@use '../shared/css-vars' as css-vars;
+@use './fonts' as fonts;
 
 // Register primary fonts
 @include fonts.register-primary-fonts;
@@ -9,7 +9,7 @@
 // Body styles
 .#{config.$class-prefix}body {
   margin: 0; // Remove default margin
-  color: css-vars.get-var("text-color");
+  color: css-vars.get-var('text-color');
   word-wrap: break-word; // ????
 
   @include mx.set-base-font-family;

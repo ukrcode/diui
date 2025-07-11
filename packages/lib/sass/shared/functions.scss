@@ -1,6 +1,6 @@
-@use "css-vars" as css-vars;
-@use "../config" as config;
-@use "sass:math";
+@use 'css-vars' as css-vars;
+@use '../config' as config;
+@use 'sass:math';
 
 @function to-rem($sizePx) {
   @return math.div($sizePx, config.$font-basis) + rem;

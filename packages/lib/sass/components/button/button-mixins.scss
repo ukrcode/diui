@@ -1,4 +1,4 @@
-@use "../../shared/css-vars" as css-vars;
+@use '../../shared/css-vars' as css-vars;
 
 @mixin add-btn-active-styles {
   &:active:not(:disabled) {
@@ -14,5 +14,5 @@
 @mixin no-border-btn {
   background-color: transparent;
   border: none;
-  color: css-vars.get-var("text-color");
+  color: css-vars.get-var('text-color');
 }

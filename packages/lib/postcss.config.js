@@ -1,25 +1,25 @@
-const path = require("path");
+const path = require('path')
 
-const sassPlugin = require("@csstools/postcss-sass");
-const assetsUrlPlugin = require("postcss-url");
+const sassPlugin = require('@csstools/postcss-sass')
+const assetsUrlPlugin = require('postcss-url')
 
 const config = {
   plugins: [
     sassPlugin({
-      style: "expanded",
+      style: 'expanded',
       sourceMap: true,
     }),
     assetsUrlPlugin({
-      url: "copy",
+      url: 'copy',
       // base path to search assets from
-      basePath: path.resolve(__dirname, "assets"),
+      basePath: path.resolve(__dirname, 'assets'),
       // dir to copy assets
-      assetsPath: "assets",
+      assetsPath: 'assets',
       // using hash names for assets (generates from asset content)
     }),
   ],
-  syntax: "postcss-scss",
+  syntax: 'postcss-scss',
   map: { annotation: true },
-};
+}
 
-module.exports = config;
+module.exports = config

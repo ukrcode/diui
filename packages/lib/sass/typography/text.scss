@@ -1,6 +1,6 @@
-@use "../shared/mixins" as mx;
-@use "../shared/functions" as fn;
-@use "../selectors" as vars;
+@use '../shared/mixins' as mx;
+@use '../shared/functions' as fn;
+@use '../selectors' as vars;
 
 // Paragraph
 #{vars.$paragraph-selector} {

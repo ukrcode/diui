@@ -5,15 +5,13 @@ export default function HeadingsExample() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
         non! Fuga eaque quae quas architecto repellat amet, nobis qui ex, enim
         repellendus dolores quidem aliquam nulla nostrum doloremque dolorum
-        blanditiis:{" "}
+        blanditiis:{' '}
         <a className="di-link" href="#">
           Some cool Link
         </a>
       </p>
 
-      <h1 className="di-h1">
-        H1 Lorem ipsum dolor
-      </h1>
+      <h1 className="di-h1">H1 Lorem ipsum dolor</h1>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eos
@@ -68,5 +66,5 @@ export default function HeadingsExample() {
         H6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
       </h6>
     </section>
-  );
+  )
 }

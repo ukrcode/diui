@@ -1,7 +1,7 @@
-@use "../../config" as config;
-@use "../../shared/css-vars" as css-vars;
-@use "../../shared/mixins" as mx;
-@use "../../selectors" as vars;
+@use '../../config' as config;
+@use '../../shared/css-vars' as css-vars;
+@use '../../shared/mixins' as mx;
+@use '../../selectors' as vars;
 
 @keyframes granimate {
   0%,
@@ -21,7 +21,7 @@
 
 #{vars.$primary-gradient-bg-selector} {
   background-size: 150vw 150vh;
-  background-image: css-vars.get-var("gr-primary");
+  background-image: css-vars.get-var('gr-primary');
   animation: 15s linear 0s infinite alternate none running granimate;
 
   @include mx.on-reduced-motion {

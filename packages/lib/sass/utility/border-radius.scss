@@ -1,7 +1,7 @@
-@use "../shared/mixins" as mx;
-@use "../shared/functions" as fn;
-@use "../config" as config;
-@use "../selectors" as vars;
+@use '../shared/mixins' as mx;
+@use '../shared/functions' as fn;
+@use '../config' as config;
+@use '../selectors' as vars;
 
 #{vars.$circle-selector} {
   border-radius: 50%;

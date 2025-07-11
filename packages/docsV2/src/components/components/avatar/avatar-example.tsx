@@ -28,5 +28,5 @@ export default function AvatarExample() {
         <div className="di-avatar di-avatar-r-square di-avatar-xs">PP</div>
       </div>
     </>
-  );
+  )
 }

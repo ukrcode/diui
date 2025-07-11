@@ -1,5 +1,5 @@
-@use "../../shared/functions" as fn;
-@use "../../selectors" as vars;
+@use '../../shared/functions' as fn;
+@use '../../selectors' as vars;
 
 // Form field wrapper
 #{vars.$form-group-selector} {

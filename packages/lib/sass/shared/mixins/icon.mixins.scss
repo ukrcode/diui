@@ -1,5 +1,5 @@
-@use "../functions" as fn;
-@use "../css-vars" as css-vars;
+@use '../functions' as fn;
+@use '../css-vars' as css-vars;
 
 @mixin icon-as-bg($size: 16px) {
   display: inline-block;
@@ -14,5 +14,5 @@
   mask-size: contain;
   mask-position: center;
 
-  background-color: css-vars.get-var("text-color");
+  background-color: css-vars.get-var('text-color');
 }

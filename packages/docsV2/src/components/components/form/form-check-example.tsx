@@ -113,10 +113,7 @@ export default function FormCheckExample() {
             className="di-form-check-input"
             type="radio"
           />
-          <label
-            className="di-form-check-label"
-            htmlFor="form-radio-id-4"
-          >
+          <label className="di-form-check-label" htmlFor="form-radio-id-4">
             Small Radio Button
           </label>
         </div>
@@ -176,5 +173,5 @@ export default function FormCheckExample() {
         </div>
       </div>
     </div>
-  );
+  )
 }

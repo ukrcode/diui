@@ -1,15 +1,15 @@
-@use "../../selectors" as vars;
-@use "../../shared/css-vars" as css-vars;
-@use "../../shared/functions" as fn;
-@use "../../shared/mixins" as mx;
-@use "./tabs.mixins" as tabs-mx;
+@use '../../selectors' as vars;
+@use '../../shared/css-vars' as css-vars;
+@use '../../shared/functions' as fn;
+@use '../../shared/mixins' as mx;
+@use './tabs.mixins' as tabs-mx;
 
 $tab-horizontal-padding: 20px;
 
 // Button tab
 #{vars.$tab-button-selector} {
-  background-color: css-vars.get-color-var("gray-20");
-  border: 2px solid css-vars.get-color-var("gray-20");
+  background-color: css-vars.get-color-var('gray-20');
+  border: 2px solid css-vars.get-color-var('gray-20');
 
   padding: fn.to-rem(12px) fn.to-rem(16px);
   border-radius: fn.to-rem(24px);
@@ -20,8 +20,8 @@ $tab-horizontal-padding: 20px;
 
   @include mx.on-not-touch-devices {
     &:hover {
-      background-color: css-vars.get-color-var("gray-40");
-      border: 2px solid css-vars.get-color-var("gray-40");
+      background-color: css-vars.get-color-var('gray-40');
+      border: 2px solid css-vars.get-color-var('gray-40');
     }
   }
 
@@ -29,6 +29,6 @@ $tab-horizontal-padding: 20px;
 }
 
 #{vars.$tab-button-selector}#{vars.$tab-active-selector} {
-  border-color: css-vars.get-var("text-color");
+  border-color: css-vars.get-var('text-color');
   background-color: transparent;
 }

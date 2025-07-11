@@ -1,4 +1,4 @@
-import { components as originalComponents } from "../../mdx-components";
+import { components as originalComponents } from '../../mdx-components'
 
 export const docsComponents = {
   ...originalComponents,
@@ -12,4 +12,4 @@ export const docsComponents = {
       {children}
     </h2>
   ),
-};
+}

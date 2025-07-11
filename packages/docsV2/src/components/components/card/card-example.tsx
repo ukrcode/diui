@@ -1,4 +1,4 @@
-import "./card-example.css";
+import './card-example.css'
 
 function Card() {
   return (
@@ -30,7 +30,7 @@ function Card() {
         </div>
       </div>
     </article>
-  );
+  )
 }
 
 function InfoCard({ className }: { className?: string }) {
@@ -50,7 +50,7 @@ function InfoCard({ className }: { className?: string }) {
         convallis enim nunc nec nisi.
       </p>
     </article>
-  );
+  )
 }
 
 export default function CardExample() {
@@ -63,5 +63,5 @@ export default function CardExample() {
         <InfoCard />
       </div>
     </div>
-  );
+  )
 }
