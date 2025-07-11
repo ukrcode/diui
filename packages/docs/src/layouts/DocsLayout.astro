@@ -1,0 +1,44 @@
+---
+import DocsNavigation from '../components/DocsNavigation.astro'
+import Layout from './Layout.astro'
+
+const headerTitle = 'Документація'
+---
+
+<style is:global>
+  .docs {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    overflow-x: scroll;
+  }
+
+  .docs-menu {
+    width: 20%;
+  }
+
+  .docs-content {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 836px), print {
+    .docs {
+      flex-direction: column;
+      overflow-x: scroll;
+    }
+
+    .docs-menu,
+    .docs-content {
+      width: 100%;
+    }
+  }
+</style>
+
+<Layout headerTitle={headerTitle}>
+  <div class="di-container di-container-root docs">
+    <DocsNavigation class="docs-menu" />
+    <div class="docs-content">
+      <slot />
+    </div>
+  </div>
+</Layout>

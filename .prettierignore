@@ -47,4 +47,4 @@ coverage/
 *.min.js
 
 # Documentation build
-packages/docsV2/dist/
+packages/docs/dist/

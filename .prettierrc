@@ -9,5 +9,14 @@
   "printWidth": 80,
   "endOfLine": "lf",
   "bracketSameLine": false,
-  "quoteProps": "as-needed"
+  "quoteProps": "as-needed",
+  "plugins": ["prettier-plugin-astro"],
+  "overrides": [
+    {
+      "files": "*.astro",
+      "options": {
+        "parser": "astro"
+      }
+    }
+  ]
 }

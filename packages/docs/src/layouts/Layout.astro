@@ -1,0 +1,20 @@
+---
+// TODO: Import it as a package
+import '../../../lib/css/diui.css'
+
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+
+const headerTitle: string = Astro.props.headerTitle || 'Diui'
+const pageTitle: string = Astro.props.pageTitle || 'Diui Library'
+
+import '../styles/global.css'
+
+import BaseLayout from './BaseLayout.astro'
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <Header headerTitle={headerTitle} />
+  <slot />
+  <Footer />
+</BaseLayout>
