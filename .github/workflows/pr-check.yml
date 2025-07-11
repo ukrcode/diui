@@ -1,0 +1,103 @@
+name: PR Build and Lint Check
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+
+# Allow this job to clone the repo and check the PR
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  lint-and-build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'pnpm'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run lint check
+        id: lint
+        run: |
+          echo "::group::Running lint check"
+          pnpm lint
+          echo "::endgroup::"
+
+      - name: Run format check
+        id: format
+        run: |
+          echo "::group::Running format check"
+          pnpm format:check
+          echo "::endgroup::"
+
+      - name: Build all packages
+        id: build
+        run: |
+          echo "::group::Building all packages"
+          pnpm build:all
+          echo "::endgroup::"
+
+      - name: Comment PR on success
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const comment = `## ✅ PR Checks Passed!
+            
+            All checks completed successfully:
+            - ✅ **Lint check**: No linting errors found
+            - ✅ **Format check**: Code formatting is consistent
+            - ✅ **Build**: All packages built successfully
+            
+            This PR is ready for review! 🚀`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            })
+
+      - name: Comment PR on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const comment = `## ❌ PR Checks Failed
+            
+            Some checks failed. Please review and fix the following:
+            
+            **Failed Steps:**
+            ${{ steps.lint.outcome == 'failure' && '- ❌ **Lint check**: Fix linting errors' || '- ✅ Lint check passed' }}
+            ${{ steps.format.outcome == 'failure' && '- ❌ **Format check**: Run \`pnpm format\` to fix formatting' || '- ✅ Format check passed' }}
+            ${{ steps.build.outcome == 'failure' && '- ❌ **Build**: Fix build errors' || '- ✅ Build passed' }}
+            
+            Please check the [workflow logs](${context.payload.pull_request.html_url}/checks) for more details.
+            
+            **Quick fixes:**
+            - Run \`pnpm lint:fix\` to auto-fix linting issues
+            - Run \`pnpm format\` to fix formatting issues
+            - Run \`pnpm build:all\` locally to test the build`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            })
