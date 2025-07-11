@@ -13,7 +13,7 @@ permissions:
 jobs:
   lint-and-build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -59,14 +59,14 @@ jobs:
         with:
           script: |
             const comment = `## ✅ PR Checks Passed!
-            
+
             All checks completed successfully:
             - ✅ **Lint check**: No linting errors found
             - ✅ **Format check**: Code formatting is consistent
             - ✅ **Build**: All packages built successfully
-            
+
             This PR is ready for review! 🚀`;
-            
+
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
@@ -80,21 +80,21 @@ jobs:
         with:
           script: |
             const comment = `## ❌ PR Checks Failed
-            
+
             Some checks failed. Please review and fix the following:
-            
+
             **Failed Steps:**
             ${{ steps.lint.outcome == 'failure' && '- ❌ **Lint check**: Fix linting errors' || '- ✅ Lint check passed' }}
             ${{ steps.format.outcome == 'failure' && '- ❌ **Format check**: Run \`pnpm format\` to fix formatting' || '- ✅ Format check passed' }}
             ${{ steps.build.outcome == 'failure' && '- ❌ **Build**: Fix build errors' || '- ✅ Build passed' }}
-            
+
             Please check the [workflow logs](${context.payload.pull_request.html_url}/checks) for more details.
-            
+
             **Quick fixes:**
             - Run \`pnpm lint:fix\` to auto-fix linting issues
             - Run \`pnpm format\` to fix formatting issues
             - Run \`pnpm build:all\` locally to test the build`;
-            
+
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
