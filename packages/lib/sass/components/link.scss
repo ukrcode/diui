@@ -1,7 +1,6 @@
 @use '../shared/mixins' as mx;
-@use '../shared/functions' as fn;
+@use '../shared/functions' as fns;
 @use '../selectors' as vars;
-@use '../shared/css-vars' as css-vars;
 
 @mixin link-base($font-color, $font-weight: 300, $text-decoration: none) {
   @include mx.base-font-configuration(16px, 24px, 400);
@@ -14,7 +13,7 @@
 @mixin primary-color-on-hover {
   @include mx.on-not-touch-devices {
     &:hover {
-      color: css-vars.get-color-var('primary');
+      color: fns.get-var('primary');
       text-decoration: none;
     }
   }
@@ -22,7 +21,7 @@
 
 // Regular Link with undeline on hover
 #{vars.$link-selector} {
-  @include link-base(css-vars.get-var('text-color'), 400);
+  @include link-base(fns.get-var('text-color'), 400);
 
   @include mx.on-not-touch-devices {
     &:hover {
@@ -33,23 +32,23 @@
 
 // A link with regular text color changing to primary color on hover
 #{vars.$link-primary-selector} {
-  @include link-base(css-vars.get-var('text-color'), 300);
+  @include link-base(fns.get-var('text-color'), 300);
   @include primary-color-on-hover;
 }
 
 // A link with secondary text color changing to primary color on hover
 #{vars.$link-secondary-selector} {
-  @include link-base(css-vars.get-color-var('gray'), 300);
+  @include link-base(fns.get-color-var('gray'), 300);
   @include primary-color-on-hover;
 }
 
 // Link with underline and primary color on hover
 #{vars.$link-underline-selector} {
-  @include link-base(css-vars.get-var('text-color'), 300, underline);
+  @include link-base(fns.get-var('text-color'), 300, underline);
 
   @include mx.on-not-touch-devices {
     &:hover {
-      color: css-vars.get-color-var('primary');
+      color: fns.get-var('primary');
     }
   }
 }
@@ -58,13 +57,13 @@
 
 // Regular Link in inverted color scheme
 #{vars.$link-inverted-selector} {
-  color: css-vars.get-var('text-invert-color');
+  color: fns.get-var('text-invert-color');
 }
 
 // Small Link with smaller font size
 #{vars.$link-sm-selector} {
-  font-size: fn.to-rem(12px);
-  line-height: fn.to-rem(16px);
+  font-size: fns.to-rem(12px);
+  line-height: fns.to-rem(16px);
 
   // Commented code is an initial implementation
   // where font-size was changed for mobile, to make it smaller

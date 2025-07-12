@@ -19,7 +19,7 @@ export default function BadgeExample() {
         <div className="di-badge di-badge-lima">Label Lima</div>
         <div className="di-badge di-badge-malachite">Label malachite</div>
         <div className="di-badge di-badge-radiance">Label radiance</div>
-        <div className="di-badge di-badge-dodger-blue">Label dodger blue</div>
+        <div className="di-badge di-badge-blue">Label dodger blue</div>
         <div className="di-badge di-badge-violet">Label violet</div>
         <div className="di-badge di-badge-scarlet">Label scarlet</div>
         <div className="di-badge di-badge-brick-red">Label brick red</div>

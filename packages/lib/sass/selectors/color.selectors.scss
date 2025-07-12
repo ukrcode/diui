@@ -1,6 +1,7 @@
 @use '../config' as config;
 
 // Background color selector(s)
+$text-bg-color-selector-prefix: '.#{config.$class-prefix}text-bg-' !default;
 $bg-color-selector-prefix: '.#{config.$class-prefix}bg-' !default;
 
 // Text color selector(s)

@@ -23,13 +23,13 @@
 }
 
 #{vars.$badge-success-selector} {
-  color: css-vars.get-color-var('white');
-  background-color: css-vars.get-color-var('success');
+  color: css-vars.get-var('white');
+  background-color: css-vars.get-var('success');
 }
 
 #{vars.$badge-info-selector} {
-  color: css-vars.get-color-var('white');
-  background-color: css-vars.get-color-var('info');
+  color: css-vars.get-var('white');
+  background-color: css-vars.get-var('info');
 }
 
 #{vars.$badge-warning-selector} {
@@ -78,9 +78,9 @@
   background-color: css-vars.get-color-var('radiance');
 }
 
-#{vars.$badge-dodger-blue-selector} {
-  color: css-vars.get-color-var('white');
-  background-color: css-vars.get-color-var('dodger-blue');
+#{vars.$badge-blue-selector} {
+  color: css-vars.get-var('white');
+  background-color: css-vars.get-var('blue');
 }
 
 #{vars.$badge-violet-selector} {

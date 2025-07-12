@@ -10,8 +10,8 @@
 
   @include mx.on-not-touch-devices {
     &:hover {
-      border-color: css-vars.get-var('c-dodger-blue');
-      background-color: css-vars.get-var('c-dodger-blue');
+      border-color: css-vars.get-var('blue');
+      background-color: css-vars.get-var('blue');
     }
   }
 

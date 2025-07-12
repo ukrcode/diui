@@ -21,7 +21,7 @@ export default function ColorTextExample() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facere
       </p>
 
-      <p className="di-text-dodger-blue">
+      <p className="di-text-blue">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
       </p>
 

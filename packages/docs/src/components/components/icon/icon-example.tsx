@@ -14,27 +14,27 @@ function IconAllSizesExample({ iconName }: { iconName: string }) {
         aria-label="File Icon"
       ></span>
       <span
-        className={`di-icon di-icon-${iconName} di-icon-48 di-bg-success`}
+        className={`di-icon di-icon-${iconName} di-icon-48 di-bg-blue`}
         role="img"
         aria-label="File Icon"
       ></span>
       <span
-        className={`di-icon di-icon-${iconName} di-icon-40 di-bg-warning`}
+        className={`di-icon di-icon-${iconName} di-icon-40 di-bg-green`}
         role="img"
         aria-label="File Icon"
       ></span>
       <span
-        className={`di-icon di-icon-${iconName} di-icon-32 di-bg-info`}
+        className={`di-icon di-icon-${iconName} di-icon-32 di-bg-yellow`}
         role="img"
         aria-label="File Icon"
       ></span>
       <span
-        className={`di-icon di-icon-${iconName} di-icon-24 di-bg-danger`}
+        className={`di-icon di-icon-${iconName} di-icon-24 di-bg-cyan`}
         role="img"
         aria-label="File Icon"
       ></span>
       <span
-        className={`di-icon di-icon-${iconName} di-bg-violet`}
+        className={`di-icon di-icon-${iconName} di-bg-red`}
         role="img"
         aria-label="File Icon"
       ></span>

@@ -1,17 +1,17 @@
-@use '../../shared/css-vars' as css-vars;
 @use '../../selectors' as vars;
 @use '../../shared/mixins' as mx;
-@use '../../shared/functions' as fn;
+@use '../../shared/functions' as fns;
 
 #{vars.$header-selector} {
-  --di-header-bg-color: #{css-vars.get-color-var('dodger-blue')};
+  --di-header-bg-color: #{fns.get-var('primary')};
+  color: #{fns.get-var('white')};
   background-color: var(--di-header-bg-color);
 
   // Mobile
-  padding-top: fn.to-rem(18px);
-  padding-bottom: fn.to-rem(18px);
+  padding-top: fns.to-rem(18px);
+  padding-bottom: fns.to-rem(18px);
 
   @include mx.on-tablet {
-    // min-height: fn.to-rem(315px);
+    // min-height: fns.to-rem(315px);
   }
 }

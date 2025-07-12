@@ -4,8 +4,8 @@
 @use '../../shared/functions' as fn;
 
 #{vars.$footer-selector} {
-  background-color: #{css-vars.get-var('bg-invert-color')};
-  color: #{css-vars.get-var('text-invert-color')};
+  background-color: #{css-vars.get-var('black')};
+  color: #{css-vars.get-var('white')};
 
   // Mobile
   padding-top: fn.to-rem(18px);

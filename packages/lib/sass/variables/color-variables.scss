@@ -2,6 +2,8 @@
 @use '../config' as config;
 @use '../shared/mixins' as mx;
 
+// DEPRECATED
+
 // https://github.com/twbs/bootstrap/blob/main/scss/_root.scss
 
 @mixin create-color-variables {

@@ -1,6 +1,8 @@
 @use './color-variables';
 @use './gradient-variables';
 @use './typography-variables';
+@forward './colors';
+@use './flags';
 
 :root {
   @include color-variables.create-color-variables;

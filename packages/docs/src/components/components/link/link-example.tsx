@@ -7,7 +7,7 @@ export default function LinkExample() {
         </a>
       </div>
 
-      <div className="di-p-2 di-bg-black">
+      <div className="di-p-2 di-text-bg-black">
         <a className="di-link di-link-inverted" href="#">
           Simple Inverted Link
         </a>
@@ -31,7 +31,7 @@ export default function LinkExample() {
         </a>
       </div>
 
-      <div className="di-p-2 di-bg-black">
+      <div className="di-p-2 di-text-bg-black">
         <a className="di-link-underline di-link-inverted" href="#">
           Secondary Link
         </a>
