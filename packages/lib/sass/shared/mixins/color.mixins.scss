@@ -1,8 +1,9 @@
-@use '../css-vars' as css-vars;
+@use '../functions' as fns;
+@use '../../variables/flags' as flags;
 @use 'sass:map' as map;
 
 @mixin create-colors-set-vars($color-name, $colors) {
-  @include css-vars.register-vars(
+  @include fns.register-vars(
     (
       $color-name: map.get($colors, '100'),
       '#{$color-name}-80': map.get($colors, '80'),
@@ -14,13 +15,25 @@
 }
 
 @mixin map-color-variables($color-name, $color-name-to-map) {
-  @include css-vars.register-vars(
+  @include fns.register-vars(
     (
-      $color-name: css-vars.get-var($color-name-to-map),
-      '#{$color-name}-80': css-vars.get-var('#{$color-name-to-map}-80'),
-      '#{$color-name}-60': css-vars.get-var('#{$color-name-to-map}-60'),
-      '#{$color-name}-40': css-vars.get-var('#{$color-name-to-map}-40'),
-      '#{$color-name}-20': css-vars.get-var('#{$color-name-to-map}-20'),
+      $color-name: fns.get-var($color-name-to-map),
+      '#{$color-name}-80': fns.get-var('#{$color-name-to-map}-80'),
+      '#{$color-name}-60': fns.get-var('#{$color-name-to-map}-60'),
+      '#{$color-name}-40': fns.get-var('#{$color-name-to-map}-40'),
+      '#{$color-name}-20': fns.get-var('#{$color-name-to-map}-20'),
     )
   );
+}
+
+// Bootstrap reference
+// https://github.com/twbs/bootstrap/blob/main/scss/helpers/_color-bg.scss
+
+@mixin bg-color-text($color, $value) {
+  color: fns.color-contrast($value)
+    if(flags.$enable-important-utilities, !important, null);
+  // original line
+  // background-color: RGBA(var(--#{$prefix}#{$color}-rgb), var(--#{$prefix}bg-opacity, 1)) if($enable-important-utilities, !important, null);
+  background-color: fns.get-var($color)
+    if(flags.$enable-important-utilities, !important, null);
 }

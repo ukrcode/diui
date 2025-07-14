@@ -1,34 +1,23 @@
 // variables
 @use '../../variables/colors' as colors;
-@use '../../variables/flags.scss' as flags;
+@use '../../variables/flags' as flags;
 
 // helpers
 @use '../../selectors/color.selectors' as selectors;
 @use '../../shared/functions' as fns;
-
-// Bootstrap reference
-// https://github.com/twbs/bootstrap/blob/main/scss/helpers/_color-bg.scss
-
-@mixin colored-background($color, $value) {
-  color: fns.color-contrast($value)
-    if(flags.$enable-important-utilities, !important, null);
-  // original line
-  // background-color: RGBA(var(--#{$prefix}#{$color}-rgb), var(--#{$prefix}bg-opacity, 1)) if($enable-important-utilities, !important, null);
-  background-color: fns.get-var($color)
-    if(flags.$enable-important-utilities, !important, null);
-}
+@use '../../shared/mixins' as mxs;
 
 // Theme Colors
 @each $color, $value in colors.$theme-colors {
   #{selectors.$text-bg-color-selector-prefix}#{$color} {
-    @include colored-background($color, $value);
+    @include mxs.bg-color-text($color, $value);
   }
 }
 
 // Main Colors Text + Bg
 @each $color, $value in colors.$main-colors {
   #{selectors.$text-bg-color-selector-prefix}#{$color} {
-    @include colored-background($color, $value);
+    @include mxs.bg-color-text($color, $value);
   }
 }
 
