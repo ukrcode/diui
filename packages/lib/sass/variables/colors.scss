@@ -26,6 +26,7 @@ $black: #000 !default;
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.2 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG/#contrast-minimum
 $min-contrast-ratio: 4.5 !default;
+
 // Customize the light and dark text colors for use in our color contrast function.
 $color-contrast-dark: $black !default;
 $color-contrast-light: $white !default;
@@ -102,7 +103,6 @@ $cyan-600: shade-color($cyan, 20%) !default;
 $cyan-700: shade-color($cyan, 40%) !default;
 $cyan-800: shade-color($cyan, 60%) !default;
 $cyan-900: shade-color($cyan, 80%) !default;
-
 $grays: (
   '100': $gray-100,
   '200': $gray-200,
@@ -114,7 +114,6 @@ $grays: (
   '800': $gray-800,
   '900': $gray-900,
 ) !default;
-
 $blues: (
   '100': $blue-100,
   '200': $blue-200,
@@ -126,7 +125,6 @@ $blues: (
   '800': $blue-800,
   '900': $blue-900,
 );
-
 $greens: (
   '100': $green-100,
   '200': $green-200,
@@ -138,7 +136,6 @@ $greens: (
   '800': $green-800,
   '900': $green-900,
 );
-
 $yellows: (
   '100': $yellow-100,
   '200': $yellow-200,
@@ -150,7 +147,6 @@ $yellows: (
   '800': $yellow-800,
   '900': $yellow-900,
 );
-
 $reds: (
   '100': $red-100,
   '200': $red-200,
@@ -162,7 +158,6 @@ $reds: (
   '800': $red-800,
   '900': $red-900,
 );
-
 $cyans: (
   '100': $cyan-100,
   '200': $cyan-200,
@@ -174,7 +169,6 @@ $cyans: (
   '800': $cyan-800,
   '900': $cyan-900,
 );
-
 $primary: $blue !default;
 $secondary: $gray-600 !default;
 $success: $green !default;
@@ -183,7 +177,6 @@ $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-900 !default;
-
 $theme-colors: (
   'primary': $primary,
   'secondary': $secondary,
@@ -194,7 +187,6 @@ $theme-colors: (
   'light': $light,
   'dark': $dark,
 ) !default;
-
 $main-colors: (
   'black': $black,
   'white': $white,
