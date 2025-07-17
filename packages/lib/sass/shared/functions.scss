@@ -183,6 +183,7 @@ $_luminance-list: 0.0008 0.001 0.0011 0.0013 0.0015 0.0017 0.002 0.0022 0.0025
   $color-contrast-light: colors.$color-contrast-light,
   $min-contrast-ratio: colors.$min-contrast-ratio
 ) {
+  /* stylelint-disable-next-line scss/dollar-variable-colon-space-after */
   $foregrounds:
     $color-contrast-light, $color-contrast-dark, colors.$white, colors.$black;
   $max-ratio: 0;
