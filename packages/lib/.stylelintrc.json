@@ -1,5 +1,6 @@
 {
   "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-prettier"],
   "rules": {
     "number-max-precision": 5,
     "scss/operator-no-newline-after": null
