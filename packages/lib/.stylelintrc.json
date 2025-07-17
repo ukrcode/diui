@@ -3,6 +3,7 @@
   "plugins": ["stylelint-prettier"],
   "rules": {
     "number-max-precision": 5,
-    "scss/operator-no-newline-after": null
+    "scss/operator-no-newline-after": null,
+    "prettier/prettier": true
   }
 }
