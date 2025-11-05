@@ -10,7 +10,7 @@
 
 ## Ліцензії
 
-- 🧩 Код: MIT License
+- 🤖 Код: [MIT License](./LICENSE)
 - 🔤 Шрифт e-Ukraine: CC BY 4.0 (автор — Dmytro Rastvortsev / Fedoriv Agency)
 
 ---
